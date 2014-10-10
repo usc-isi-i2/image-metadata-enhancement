@@ -1,4 +1,0 @@
-#Metadata: Fileset: prefixIdx
-#Fri Oct 10 15:13:56 PDT 2014
-tdb.file.type=rangeindex
-tdb.file.indexorder=GPU
