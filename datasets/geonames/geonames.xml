@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<geonames>
+<poi>
+<name>Hahn Plaza</name>
+<typeClass>leisure</typeClass>
+<typeName>park</typeName>
+<lng>-118.2853524</lng>
+<lat>34.0202908</lat>
+<elevation>57.0</elevation>
+<distance>0</distance>
+</poi>
+<poi>
+<name/>
+<typeClass>amenity</typeClass>
+<typeName>fountain</typeName>
+<lng>-118.2851929</lng>
+<lat>34.0202047</lat>
+<distance>0.02</distance>
+</poi>
+<poi>
+<name>Alumni Park</name>
+<typeClass>leisure</typeClass>
+<typeName>park</typeName>
+<lng>-118.2847968</lng>
+<lat>34.0202908</lat>
+<elevation>57.0</elevation>
+<distance>0.05</distance>
+</poi>
+<poi>
+<name/>
+<typeClass>amenity</typeClass>
+<typeName>fountain</typeName>
+<lng>-118.2845401</lng>
+<lat>34.0205373</lat>
+<distance>0.08</distance>
+</poi>
+</geonames>

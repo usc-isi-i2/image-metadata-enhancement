@@ -1,0 +1,191 @@
+{
+   "html_attributions" : [],
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0201297,
+               "lng" : -118.2854538
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "5d81e73e687264c660330bd56b2d0001237b3447",
+         "name" : "Trousdale Pkwy",
+         "place_id" : "ChIJW-3QDePHwoARohfj-Q1XUws",
+         "reference" : "CsQBugAAAJV6e3ComCMGMjggejNEln7Lp2jXs7KWLHg3Q57lYKt-gCZC9CFn1Mv44rhdT5hCMzVuC9YLIli_hWjO_mSA6VnQXeSOoHeEwhNGJILMKGvsX4HOnBxw3NTqdF2GWuIqh_VAlPls9OmIbta0VyoDSfxmK06YhEkG2Wnf1-5fbnSH0_YLrFV6qm66rVD0bkUNg2AJizhZSzasG5RwIStcgQpc0USBvCr8h-I6HSUPB_OL03UoMKNMR2PJJXFYiLuTIxIQoUWhSR9rKZJKCthiqOJ8RhoUtngZopd0h8c--z7AJp1Jcitwu-k",
+         "scope" : "GOOGLE",
+         "types" : [ "route" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0196799,
+               "lng" : -118.2850781
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+         "id" : "f73adae7b28eca4a355e5c9bff1bbe8b270dd0fe",
+         "name" : "Hancock Memorial Museum",
+         "place_id" : "ChIJaSqPRuTHwoARibTlM__oxq8",
+         "reference" : "CpQBgwAAAMdYEVAIxbK5dyvRx7T_CPeGiCLZaltnOlEjd0L7A1FCaN8nbqplMYfHRhp-cUF0gU3gVk69ROP0RyI8uPirIflSKRGTn0vfFmoXdG9b28yRy64uR84vNblUSA8wgBWHhjeoaptrUl003CYObvx_sVl_OG1uJrDuteiUH8Wt8Yfba1kVY80laaieEtJeFrvA6RIQR_yEX1aAeHH6KUEpWxCwQxoUvI-CWFRCsEBKchRjA8u7wAFReCA",
+         "scope" : "GOOGLE",
+         "types" : [ "museum", "point_of_interest", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.02056,
+               "lng" : -118.285418
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "1ad3d9295c8b92789dda03c127b18084f7da17a1",
+         "name" : "Tommy Trojan",
+         "photos" : [
+            {
+               "height" : 1024,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAAYPJZNwmSMk40T67Sr8MTWVFiTo7AaPvYP7ur7W7jHhB_wTP1bvIsgGYM6ewJJuIeDCOLMHvkAhgEtVuVdvrfI0ma0fp_CRai5qELmTxg_tKrmS7n2l_KvLzuGqoa49phYGxw-qBoVckwLzNMZ_UeBBIQSvk61LnWXrDswNBeI7GPTBoUZn_z9V9I0DuT3WEtT22hNLVNfrs",
+               "width" : 768
+            }
+         ],
+         "place_id" : "ChIJkTFYcuPHwoARj9noktA7j_8",
+         "price_level" : 2,
+         "rating" : 4.2,
+         "reference" : "CnRvAAAAKVYrdgHhsssJDvYcvf3FI_hCdfBrvsddRAOQIMz3baiJBcezu6RjN2xWqmmiCMscYKQQ0rzRfdj620XqptH56Fu5iR5iVH8PpCxlnK_s89DrzObYSYfeXyonQVv0tqarKFsQrxL3UIQjvn70uBFU8hIQCFej2kqwThGyj9WP2PA-gBoUycVt2tdP_LIGu8AWC1CGSOzkSyo",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3531 Trousdale Pkwy, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020502,
+               "lng" : -118.285657
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "5558e7a97db514e8d92de091036486a8615a5bbd",
+         "name" : "FedEx Office Print & Ship Center",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1664,
+               "html_attributions" : [],
+               "photo_reference" : "CnRqAAAA1mUg7bRuVjSLLvoKIxNLQ6JeOiykyoLt3LTD-VUvtxk713v5RlXmzHoGviUbRoWmyb_ub2VjxnCybf4MvpKrcCmJMmjUDZ57YWHpe2peieZBHLse1lDiEx0zbl4X9TMFuiDl6SmFtljyLRttkV2hLBIQ3FCcavM9PPfxMb3WDf7B1hoUwj0Shehn3A1tnrl7ynG9BHtnCuU",
+               "width" : 2497
+            }
+         ],
+         "place_id" : "ChIJKdjam-fHwoARgYNcUf4cu4Q",
+         "price_level" : 2,
+         "reference" : "CpQBgwAAAHLHw_K2imdR43nEiXOdldMU88xpPRMeyeEx8jNZFXZWUOObYcW1IUY8TO5A6eyBIxluggB5nDNKkuHSTkgqcmHrd5itpjRt7wN2vsLz7oUj_s7uMu_B_Nq1LVzIRzR9fxIpyrjQk-d7Ms9cMTfTqwskadj3GV1vtnLJhy_BXiVbLuZggyql5xRDKpGH1geXPBIQM5RC65ZyUKAQMXRqWSd-rxoUhGn3plak2ggzfGsvvixKGfZSy34",
+         "scope" : "GOOGLE",
+         "types" : [ "store", "establishment" ],
+         "vicinity" : "840 Childs Way, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020173,
+               "lng" : -118.285785
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "e88a18d815407bd333caee7276f71085c8ffa067",
+         "name" : "USC Career Center",
+         "place_id" : "ChIJm7V0EuPHwoARanFHVo504BM",
+         "price_level" : 2,
+         "reference" : "CoQBcwAAAFmHoV2N1KTeY43pWFw41Om2xL_oprOUH5SgvoRxZ3Wy_jvwaDzl2dpOHhp2Ndzf81m2Gg1kdeIfRQG_ax8-kPwtS8W41erTa9qHb3BgLk-TOxSSzCSa8QSUJCaRe06x53mFhCehydmRZB1teewPzbu90A9UbgR1L0mgrVfwaERTEhBh1vV3f4esSp2g25DmnSL8GhSAPevsJEWUN4lj-hKCxy7Jod7ogg",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3601 Trousdale Pkwy, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020289,
+               "lng" : -118.285729
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "cad6408c3c3fa218da6d9457ebb3b405fdc98c80",
+         "name" : "USC Daily Trojan",
+         "place_id" : "ChIJm7V0EuPHwoAR8yTIQ0KzxEo",
+         "reference" : "CoQBcgAAADKgjuW6ZyUe21A-dTDtHjZAerEQxmSK6klxzBCpxoMNHEUnzDHGPJbWe-GPDvvqWyahkiCpqOk5iB_bDp3WkFHTfT7LjsU0cGf4fV9eXO3gzPZVhr78MwIvz7YPiuJTnx5QnsMeOzaENmG0E36WrvGjEklSOjanfKnapAx5fLa_EhDxmNo0U3AigfzXI5LZkhyNGhSgCpCKzKr76ziHEBzKMt5MD2VW8w",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3601 Trousdale Pkwy, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020351,
+               "lng" : -118.285277
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "0c4aa296b3a72f086709ba189e985e655ae3ee73",
+         "name" : "Hahn Plaza",
+         "photos" : [
+            {
+               "height" : 874,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAAYI-LaUljxAhIAj9jrCscEoB0HOQqdI0N6BqMm6To8V1C7lvwNuzxpIeL3YT7QLvlO8gRWILTuS5Ahbacgl6P6bRad8yOgrGZUSUgV56oXDMU98dLlqP2LCSczNL8fmcK5g42etZ-pFAsCWe9NqaBKRIQPeOIICg3jntJLmcGusy0lxoUlkieoklM1HkBfFB1hdga4Di9OGA",
+               "width" : 2134
+            }
+         ],
+         "place_id" : "ChIJcWAKDOPHwoARo-4JHRYQGIw",
+         "reference" : "CnRtAAAACdVkQpZwHSiFZAQyAhnX5rVbfL1-7C6KuTZoj_Spn6juHG5GeoRvv2wohE7piI-CyOn5-LzrbUoawEWc8kelGDbfdk26UsOxpEuNf2B-rWVCtKUC5fCjVKE2tGkfHUu92BbI9yGMgu53cRA0AptY9xIQ1ws_APXMUN9PRc0iepN29xoU-sOkbEZ0BjK696Cx57uHuhKyu44",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020289,
+               "lng" : -118.285729
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "be002fbda3d19b83295fd7743a5828fe98e7867c",
+         "name" : "Student Affairs",
+         "place_id" : "ChIJ5TPWEuPHwoARXt2jkt29298",
+         "reference" : "CoQBcgAAAELq-Hs25F_eavSLR_XTqC4NI8ehybRePb5kGsHtgcd1CTxm2HHf9Q9q4mQ2-f5v7lslRpWl7Sw2zkd8p28Z-kyt5BZq05QxXLV0093aK3hl4ru-U6fRyradz7j4neXf_KsWBshW3Jz4gQ3Ta8xtWHNDRs0fxFfCx07RrzLhPScREhDPL_yRdXQvGKgLyKftuyOGGhRu1D0Wl5o0jG5zjW9UYr2axlpAJA",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 33.9891116,
+               "lng" : -118.2914872
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.0382641,
+                  "lng" : -118.2255361
+               },
+               "southwest" : {
+                  "lat" : 33.929046,
+                  "lng" : -118.385591
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "e509cbbf4804a8b16324a4ef78159d5275b07592",
+         "name" : "South Los Angeles",
+         "place_id" : "ChIJ6bcf1Nu3woARGCYveWr_oiQ",
+         "reference" : "CqQBlAAAAJcKzuJIdeJDGBWyxP61qhtSDHUkO_q7eCqzSWA2YusYvHQFVfX4dKJEvOIJRgN5wdMfKdO3LkIDKhdQ73aie4fRkq5vFDxyZbPCelDXyTo4GfStHRLkEm5QD-TQGEe4ljxjvcdU-1CxT5c7t6KMaglSK_r4PlQQGrUeRoXCSgyG8zmsev94zVQ_4eK8HKJTK2LM0Uyi4a4yjMHzV5bxBr0SEJyaMnXhvXOCToZjKlKody0aFCoxHcKXxEL7ZZhQcLu3-DBpHFVI",
+         "scope" : "GOOGLE",
+         "types" : [ "neighborhood", "political" ],
+         "vicinity" : "Windsor Hills"
+      }
+   ],
+   "status" : "OK"
+}

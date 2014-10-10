@@ -1,0 +1,1233 @@
+
+<!-- saved from url=(0062)http://local.host:9999/publish/R2RML/foursquare.json-model.ttl -->
+<html data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style type="text/css"></style></head><body cz-shortcut-listen="true"><pre style="word-wrap: break-word; white-space: pre-wrap;">@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix schemax: &lt;http://topbraid.org/schemax/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix rr: &lt;http://www.w3.org/ns/r2rml#&gt; .
+@prefix km-dev: &lt;http://isi.edu/integration/karma/dev#&gt; .
+
+_:node193u21jngx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "foursquare.json" ;
+	km-dev:modelPublicationTime "1412979281649"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"id\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"name\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"categories\"},{\"columnName\":\"name\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"state\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"city\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"postalCode\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"state\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"response\"},{\"columnName\":\"suggestedBounds\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lng_1\"}],[{\"columnName\":\"response\"},{\"columnName\":\"suggestedBounds\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"response\"},{\"columnName\":\"suggestedBounds\"},{\"columnName\":\"Glue_1\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"id\"}],[{\"columnName\":\"response\"},{\"columnName\":\"suggestedBounds\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"response\"},{\"columnName\":\"suggestedBounds\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lat_1\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"name\"}],[{\"columnName\":\"response\"},{\"columnName\":\"suggestedBounds\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"boundingbox\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"categories\"},{\"columnName\":\"name\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"city\"}],[{\"columnName\":\"response\"},{\"columnName\":\"groups\"},{\"columnName\":\"items\"},{\"columnName\":\"venue\"},{\"columnName\":\"location\"},{\"columnName\":\"postalCode\"}]]" ;
+	km-dev:hasModelLabel "foursquare.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"suggestedBounds\"},
+                    {\"columnName\": \"sw\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"values\",
+                \"value\": [
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"response\"},
+                            {\"columnName\": \"suggestedBounds\"},
+                            {\"columnName\": \"sw\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    },
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"response\"},
+                            {\"columnName\": \"suggestedBounds\"},
+                            {\"columnName\": \"ne\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    }
+                ],
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"GlueCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"suggestedBounds\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"lng_1\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"boundingbox\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return boundingbox(getValue(\\\"lat\\\"), getValue(\\\"lat_1\\\"), getValue(\\\"lng\\\"), getValue(\\\"lng_1\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"boundingbox\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1 (add)\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"suggestedBounds\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"boundingbox\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/box\",
+                    \"DomainLabel\": \"schema:GeoShape1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoShape1 (add)\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"boundingbox\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"suggestedBounds\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"boundingbox\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"id\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"https://api.foursquare.com/v2/venues/\\\" + getValue(\\\"id\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"categories\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"name\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return ''.join(getValue(\\\"name\\\").split()).lower()\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"categories\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"categories\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"name\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return ''.join(getValue(\\\"name\\\").split()).lower()\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"city\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/addressLocality\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:PostalAddress1 (add)\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1 (add)\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"city\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"city\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"state\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/addressRegion\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:PostalAddress1\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"state\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"state\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"categories\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isSubclassOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"categories\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"categories\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"response\"},
+                    {\"columnName\": \"groups\"},
+                    {\"columnName\": \"items\"},
+                    {\"columnName\": \"venue\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"postalCode\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/postalCode\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:PostalAddress1\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"postalCode\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"response\\\"},{\\\"columnName\\\":\\\"groups\\\"},{\\\"columnName\\\":\\\"items\\\"},{\\\"columnName\\\":\\\"venue\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"postalCode\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d a rr:TriplesMap .
+
+_:node193u21jngx1 km-dev:hasTriplesMap km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d .
+
+km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx2 rr:tableName "foursquare.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasLogicalTable _:node193u21jngx2 .
+
+km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d rr:logicalTable _:node193u21jngx2 ;
+	rr:subjectMap _:node193u21jngx3 .
+
+_:node193u21jngx1 km-dev:hasSubjectMap _:node193u21jngx3 .
+
+_:node193u21jngx3 km-dev:isPartOfMapping _:node193u21jngx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_b414d452-d836-4898-b013-7fc712926eee rr:predicate schema:latitude .
+
+_:node193u21jngx4 rr:column "[\"response\",\"groups\",\"items\",\"venue\",\"location\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx4 .
+
+km-dev:PredicateObjectMap_b414d452-d836-4898-b013-7fc712926eee rr:objectMap _:node193u21jngx4 .
+
+km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d rr:predicateObjectMap km-dev:PredicateObjectMap_b414d452-d836-4898-b013-7fc712926eee .
+
+km-dev:PredicateObjectMap_b414d452-d836-4898-b013-7fc712926eee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b414d452-d836-4898-b013-7fc712926eee .
+
+km-dev:PredicateObjectMap_0de260f9-75cb-4f9a-9437-73d2774d515f rr:predicate schema:longitude .
+
+_:node193u21jngx5 rr:column "[\"response\",\"groups\",\"items\",\"venue\",\"location\",\"lng\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx5 .
+
+km-dev:PredicateObjectMap_0de260f9-75cb-4f9a-9437-73d2774d515f rr:objectMap _:node193u21jngx5 .
+
+km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d rr:predicateObjectMap km-dev:PredicateObjectMap_0de260f9-75cb-4f9a-9437-73d2774d515f .
+
+km-dev:PredicateObjectMap_0de260f9-75cb-4f9a-9437-73d2774d515f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0de260f9-75cb-4f9a-9437-73d2774d515f .
+
+km-dev:TriplesMap_26678407-7ec7-4535-a664-aea0773b9c78 a rr:TriplesMap .
+
+_:node193u21jngx1 km-dev:hasTriplesMap km-dev:TriplesMap_26678407-7ec7-4535-a664-aea0773b9c78 .
+
+km-dev:TriplesMap_26678407-7ec7-4535-a664-aea0773b9c78 km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx6 rr:tableName "foursquare.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasLogicalTable _:node193u21jngx6 .
+
+km-dev:TriplesMap_26678407-7ec7-4535-a664-aea0773b9c78 rr:logicalTable _:node193u21jngx6 ;
+	rr:subjectMap _:node193u21jngx7 .
+
+_:node193u21jngx1 km-dev:hasSubjectMap _:node193u21jngx7 .
+
+_:node193u21jngx7 km-dev:isPartOfMapping _:node193u21jngx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoShape1" ;
+	rr:class schema:GeoShape ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoShape1" .
+
+km-dev:PredicateObjectMap_11fe80ff-d1cb-45f1-b888-f0521b4f0ab5 rr:predicate schema:box .
+
+_:node193u21jngx8 rr:column "[\"response\",\"suggestedBounds\",\"Glue_1\",\"boundingbox\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx8 .
+
+km-dev:PredicateObjectMap_11fe80ff-d1cb-45f1-b888-f0521b4f0ab5 rr:objectMap _:node193u21jngx8 .
+
+km-dev:TriplesMap_26678407-7ec7-4535-a664-aea0773b9c78 rr:predicateObjectMap km-dev:PredicateObjectMap_11fe80ff-d1cb-45f1-b888-f0521b4f0ab5 .
+
+km-dev:PredicateObjectMap_11fe80ff-d1cb-45f1-b888-f0521b4f0ab5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_11fe80ff-d1cb-45f1-b888-f0521b4f0ab5 .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 a rr:TriplesMap .
+
+_:node193u21jngx1 km-dev:hasTriplesMap km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx9 rr:tableName "foursquare.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasLogicalTable _:node193u21jngx9 .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 rr:logicalTable _:node193u21jngx9 ;
+	rr:subjectMap _:node193u21jngx10 .
+
+_:node193u21jngx1 km-dev:hasSubjectMap _:node193u21jngx10 .
+
+_:node193u21jngx10 km-dev:isPartOfMapping _:node193u21jngx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place .
+
+_:node193u21jngx11 rr:template "{[\"response\",\"groups\",\"items\",\"venue\",\"categories\",\"name\"]}" .
+
+_:node193u21jngx10 rr:class _:node193u21jngx11 ;
+	rr:template "https://api.foursquare.com/v2/venues/{[\"response\",\"groups\",\"items\",\"venue\",\"id\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_fb1dc5c7-9ec2-46bf-880b-eaf3f1d5e77c rr:predicate schema:address .
+
+km-dev:RefObjectMap_89e00951-e9a4-4941-bd0d-473d2b906d21 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap km-dev:RefObjectMap_89e00951-e9a4-4941-bd0d-473d2b906d21 .
+
+km-dev:PredicateObjectMap_fb1dc5c7-9ec2-46bf-880b-eaf3f1d5e77c rr:objectMap km-dev:RefObjectMap_89e00951-e9a4-4941-bd0d-473d2b906d21 .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 rr:predicateObjectMap km-dev:PredicateObjectMap_fb1dc5c7-9ec2-46bf-880b-eaf3f1d5e77c .
+
+km-dev:PredicateObjectMap_fb1dc5c7-9ec2-46bf-880b-eaf3f1d5e77c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fb1dc5c7-9ec2-46bf-880b-eaf3f1d5e77c .
+
+km-dev:PredicateObjectMap_dea4249b-c95e-4f65-94a4-064342a40331 rr:predicate schema:geo .
+
+km-dev:RefObjectMap_0ffe8bca-5bb4-4c60-8ec2-9eb0b9d4b417 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c9a24bb2-bc82-45c5-b6c0-360cb3f0f95d ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap km-dev:RefObjectMap_0ffe8bca-5bb4-4c60-8ec2-9eb0b9d4b417 .
+
+km-dev:PredicateObjectMap_dea4249b-c95e-4f65-94a4-064342a40331 rr:objectMap km-dev:RefObjectMap_0ffe8bca-5bb4-4c60-8ec2-9eb0b9d4b417 .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 rr:predicateObjectMap km-dev:PredicateObjectMap_dea4249b-c95e-4f65-94a4-064342a40331 .
+
+km-dev:PredicateObjectMap_dea4249b-c95e-4f65-94a4-064342a40331 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dea4249b-c95e-4f65-94a4-064342a40331 .
+
+km-dev:PredicateObjectMap_a4e1efa9-5496-4e23-9112-fbb8311c56c9 rr:predicate schema:geo .
+
+km-dev:RefObjectMap_7c82f158-1641-4d52-aa70-e6c81f8a129e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_26678407-7ec7-4535-a664-aea0773b9c78 ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap km-dev:RefObjectMap_7c82f158-1641-4d52-aa70-e6c81f8a129e .
+
+km-dev:PredicateObjectMap_a4e1efa9-5496-4e23-9112-fbb8311c56c9 rr:objectMap km-dev:RefObjectMap_7c82f158-1641-4d52-aa70-e6c81f8a129e .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 rr:predicateObjectMap km-dev:PredicateObjectMap_a4e1efa9-5496-4e23-9112-fbb8311c56c9 .
+
+km-dev:PredicateObjectMap_a4e1efa9-5496-4e23-9112-fbb8311c56c9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a4e1efa9-5496-4e23-9112-fbb8311c56c9 .
+
+km-dev:PredicateObjectMap_d678937c-246e-4345-b42c-4d53df90b245 rr:predicate rdfs:label .
+
+_:node193u21jngx12 rr:column "[\"response\",\"groups\",\"items\",\"venue\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx12 .
+
+km-dev:PredicateObjectMap_d678937c-246e-4345-b42c-4d53df90b245 rr:objectMap _:node193u21jngx12 .
+
+km-dev:TriplesMap_deefc9a4-904b-4ae9-a03d-f6a3a9b203f9 rr:predicateObjectMap km-dev:PredicateObjectMap_d678937c-246e-4345-b42c-4d53df90b245 .
+
+km-dev:PredicateObjectMap_d678937c-246e-4345-b42c-4d53df90b245 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d678937c-246e-4345-b42c-4d53df90b245 .
+
+km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 a rr:TriplesMap .
+
+_:node193u21jngx1 km-dev:hasTriplesMap km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 .
+
+km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx13 rr:tableName "foursquare.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasLogicalTable _:node193u21jngx13 .
+
+km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 rr:logicalTable _:node193u21jngx13 ;
+	rr:subjectMap _:node193u21jngx14 .
+
+_:node193u21jngx1 km-dev:hasSubjectMap _:node193u21jngx14 .
+
+_:node193u21jngx14 km-dev:isPartOfMapping _:node193u21jngx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/PostalAddress1" ;
+	rr:class schema:PostalAddress ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:PostalAddress1" .
+
+km-dev:PredicateObjectMap_4fafa985-d71d-41bf-a67b-9eb0912da5df rr:predicate schema:addressLocality .
+
+_:node193u21jngx15 rr:column "[\"response\",\"groups\",\"items\",\"venue\",\"location\",\"city\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx15 .
+
+km-dev:PredicateObjectMap_4fafa985-d71d-41bf-a67b-9eb0912da5df rr:objectMap _:node193u21jngx15 .
+
+km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 rr:predicateObjectMap km-dev:PredicateObjectMap_4fafa985-d71d-41bf-a67b-9eb0912da5df .
+
+km-dev:PredicateObjectMap_4fafa985-d71d-41bf-a67b-9eb0912da5df a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4fafa985-d71d-41bf-a67b-9eb0912da5df .
+
+km-dev:PredicateObjectMap_e9a6a6c0-26f5-4a41-be33-49356ff3bc81 rr:predicate schema:addressRegion .
+
+_:node193u21jngx16 rr:column "[\"response\",\"groups\",\"items\",\"venue\",\"location\",\"state\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx16 .
+
+km-dev:PredicateObjectMap_e9a6a6c0-26f5-4a41-be33-49356ff3bc81 rr:objectMap _:node193u21jngx16 .
+
+km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 rr:predicateObjectMap km-dev:PredicateObjectMap_e9a6a6c0-26f5-4a41-be33-49356ff3bc81 .
+
+km-dev:PredicateObjectMap_e9a6a6c0-26f5-4a41-be33-49356ff3bc81 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e9a6a6c0-26f5-4a41-be33-49356ff3bc81 .
+
+km-dev:PredicateObjectMap_96508e04-d430-4e8d-ae53-de1ded2ab7cd rr:predicate schema:postalCode .
+
+_:node193u21jngx17 rr:column "[\"response\",\"groups\",\"items\",\"venue\",\"location\",\"postalCode\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasObjectMap _:node193u21jngx17 .
+
+km-dev:PredicateObjectMap_96508e04-d430-4e8d-ae53-de1ded2ab7cd rr:objectMap _:node193u21jngx17 .
+
+km-dev:TriplesMap_b7875a61-1fff-4e09-a80f-a4e87368fac7 rr:predicateObjectMap km-dev:PredicateObjectMap_96508e04-d430-4e8d-ae53-de1ded2ab7cd .
+
+km-dev:PredicateObjectMap_96508e04-d430-4e8d-ae53-de1ded2ab7cd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u21jngx1 .
+
+_:node193u21jngx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_96508e04-d430-4e8d-ae53-de1ded2ab7cd .
+</pre></body></html>

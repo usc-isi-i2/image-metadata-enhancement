@@ -1,0 +1,2020 @@
+
+<!-- saved from url=(0057)http://local.host:9999/publish/R2RML/GoogleData-model.ttl -->
+<html data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style type="text/css"></style></head><body cz-shortcut-listen="true"><pre style="word-wrap: break-word; white-space: pre-wrap;">@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix schemax: &lt;http://topbraid.org/schemax/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix rr: &lt;http://www.w3.org/ns/r2rml#&gt; .
+@prefix km-dev: &lt;http://isi.edu/integration/karma/dev#&gt; .
+
+_:node193u2ogt9x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "googledata.json" ;
+	km-dev:modelPublicationTime "1412980032425"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"results\"},{\"columnName\":\"photos\"},{\"columnName\":\"photo_reference\"}],[{\"columnName\":\"results\"},{\"columnName\":\"types\"},{\"columnName\":\"values\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"results\"},{\"columnName\":\"name\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"northeast\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"southwest\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"results\"},{\"columnName\":\"place_id\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"southwest\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"northeast\"},{\"columnName\":\"lng\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"results\"},{\"columnName\":\"placeid\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"boundingbox\"}],[{\"columnName\":\"results\"},{\"columnName\":\"types\"},{\"columnName\":\"values\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"Glue_1\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"location\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lat_1\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"results\"},{\"columnName\":\"photos\"},{\"columnName\":\"photoreference\"}],[{\"columnName\":\"results\"},{\"columnName\":\"name\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lng_1\"}],[{\"columnName\":\"results\"},{\"columnName\":\"geometry\"},{\"columnName\":\"viewport\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"lat\"}]]" ;
+	km-dev:hasModelLabel "GoogleData" ;
+	km-dev:hasBaseURI "http://semantic-web/medusa/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"location\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"location\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"northeast\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/box\",
+                    \"DomainLabel\": \"schema:GeoShape1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoShape1\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"northeast\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/box\",
+                    \"DomainLabel\": \"schema:GeoShape1\",
+                    \"DomainId\": \"http://schema.org/GeoShape1\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"southwest\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/box\",
+                    \"DomainLabel\": \"schema:GeoShape1\",
+                    \"DomainId\": \"http://schema.org/GeoShape1\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"southwest\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/box\",
+                    \"DomainLabel\": \"schema:GeoShape1\",
+                    \"DomainId\": \"http://schema.org/GeoShape1\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/addressLocality\",
+                    \"DomainLabel\": \"schema:PostalAddress1 (add)\",
+                    \"DomainId\": \"http://schema.org/PostalAddress1\",
+                    \"DomainUri\": \"http://schema.org/PostalAddress\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"place_id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"placeid\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"https://maps.googleapis.com/maps/api/place/details/json?placeid=\\\" + getValue(\\\"place_id\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"place_id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"placeid\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"photos\"},
+                    {\"columnName\": \"photo_reference\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"photoreference\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return imageurl(getValue(\\\"photo_reference\\\"))\\n    \",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photo_reference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photoreference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"photos\"},
+                    {\"columnName\": \"photo_reference\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/image\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photo_reference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photo_reference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"placeid\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:string\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"placeid\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"placeid\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/multipleValues\",
+                    \"DomainLabel\": \"schema:PropertyValueSpecification1 (add)\",
+                    \"DomainId\": \"http://schema.org/PropertyValueSpecification1 (add)\",
+                    \"DomainUri\": \"http://schema.org/PropertyValueSpecification\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/multipleValues\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"photos\"},
+                    {\"columnName\": \"photo_reference\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photo_reference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photo_reference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://semantic-web/medusa/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"GoogleData\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"GoogleData\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"photos\"},
+                    {\"columnName\": \"photoreference\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/image\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photoreference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photoreference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"southwest\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"values\",
+                \"value\": [
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"results\"},
+                            {\"columnName\": \"geometry\"},
+                            {\"columnName\": \"viewport\"},
+                            {\"columnName\": \"southwest\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    },
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"results\"},
+                            {\"columnName\": \"geometry\"},
+                            {\"columnName\": \"viewport\"},
+                            {\"columnName\": \"northeast\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    }
+                ],
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"GlueCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"photos\"},
+                    {\"columnName\": \"photoreference\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/ImageObject\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/ImageObject1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:ImageObject1 (add)\",
+                    \"DomainId\": \"http://schema.org/ImageObject1 (add)\",
+                    \"DomainUri\": \"http://schema.org/ImageObject\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photoreference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"photos\\\"},{\\\"columnName\\\":\\\"photoreference\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"lng_1\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"lng_1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return getValue(\\\"lng_1\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng_1\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng_1\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"southwest\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"southwest\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"southwest\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"northeast\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"northeast\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"northeast\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"lng_1\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"boundingbox\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return boundingbox(getValue(\\\"lat_1\\\"), getValue(\\\"lat\\\"), getValue(\\\"lng_1\\\"), getValue(\\\"lng\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lng_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"boundingbox\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"geometry\"},
+                    {\"columnName\": \"viewport\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"boundingbox\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/box\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoShape1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoShape1\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"boundingbox\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"geometry\\\"},{\\\"columnName\\\":\\\"viewport\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"boundingbox\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isSubclassOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"name\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return ''.join(getValue(\\\"name\\\").split()).lower()\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"results\"},
+                    {\"columnName\": \"types\"},
+                    {\"columnName\": \"values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"values\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return ''.join(getValue(\\\"values\\\").replace(\\\"_\\\",\\\"\\\").split()).lower()\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"results\\\"},{\\\"columnName\\\":\\\"types\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c a rr:TriplesMap .
+
+_:node193u2ogt9x1 km-dev:hasTriplesMap km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c .
+
+km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x2 rr:tableName "googledata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasLogicalTable _:node193u2ogt9x2 .
+
+km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c rr:logicalTable _:node193u2ogt9x2 ;
+	rr:subjectMap _:node193u2ogt9x3 .
+
+_:node193u2ogt9x1 km-dev:hasSubjectMap _:node193u2ogt9x3 .
+
+_:node193u2ogt9x3 km-dev:isPartOfMapping _:node193u2ogt9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_ff997341-08b7-49e5-a244-a2b58bf054ec rr:predicate schema:latitude .
+
+_:node193u2ogt9x4 rr:column "[\"results\",\"geometry\",\"location\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap _:node193u2ogt9x4 .
+
+km-dev:PredicateObjectMap_ff997341-08b7-49e5-a244-a2b58bf054ec rr:objectMap _:node193u2ogt9x4 .
+
+km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c rr:predicateObjectMap km-dev:PredicateObjectMap_ff997341-08b7-49e5-a244-a2b58bf054ec .
+
+km-dev:PredicateObjectMap_ff997341-08b7-49e5-a244-a2b58bf054ec a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ff997341-08b7-49e5-a244-a2b58bf054ec .
+
+km-dev:PredicateObjectMap_b0a4bd96-daf0-408b-a16e-c9cc77d77bf7 rr:predicate schema:longitude .
+
+_:node193u2ogt9x5 rr:column "[\"results\",\"geometry\",\"location\",\"lng\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap _:node193u2ogt9x5 .
+
+km-dev:PredicateObjectMap_b0a4bd96-daf0-408b-a16e-c9cc77d77bf7 rr:objectMap _:node193u2ogt9x5 .
+
+km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c rr:predicateObjectMap km-dev:PredicateObjectMap_b0a4bd96-daf0-408b-a16e-c9cc77d77bf7 .
+
+km-dev:PredicateObjectMap_b0a4bd96-daf0-408b-a16e-c9cc77d77bf7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b0a4bd96-daf0-408b-a16e-c9cc77d77bf7 .
+
+km-dev:TriplesMap_30f04369-bfac-4cd6-8221-ce42b7148cb8 a rr:TriplesMap .
+
+_:node193u2ogt9x1 km-dev:hasTriplesMap km-dev:TriplesMap_30f04369-bfac-4cd6-8221-ce42b7148cb8 .
+
+km-dev:TriplesMap_30f04369-bfac-4cd6-8221-ce42b7148cb8 km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x6 rr:tableName "googledata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasLogicalTable _:node193u2ogt9x6 .
+
+km-dev:TriplesMap_30f04369-bfac-4cd6-8221-ce42b7148cb8 rr:logicalTable _:node193u2ogt9x6 ;
+	rr:subjectMap _:node193u2ogt9x7 .
+
+_:node193u2ogt9x1 km-dev:hasSubjectMap _:node193u2ogt9x7 .
+
+_:node193u2ogt9x7 km-dev:isPartOfMapping _:node193u2ogt9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoShape1" ;
+	rr:class schema:GeoShape ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoShape1" .
+
+km-dev:PredicateObjectMap_59e84cce-053a-4ea3-bf89-399b4b42457a rr:predicate schema:box .
+
+_:node193u2ogt9x8 rr:column "[\"results\",\"geometry\",\"viewport\",\"Glue_1\",\"boundingbox\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap _:node193u2ogt9x8 .
+
+km-dev:PredicateObjectMap_59e84cce-053a-4ea3-bf89-399b4b42457a rr:objectMap _:node193u2ogt9x8 .
+
+km-dev:TriplesMap_30f04369-bfac-4cd6-8221-ce42b7148cb8 rr:predicateObjectMap km-dev:PredicateObjectMap_59e84cce-053a-4ea3-bf89-399b4b42457a .
+
+km-dev:PredicateObjectMap_59e84cce-053a-4ea3-bf89-399b4b42457a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_59e84cce-053a-4ea3-bf89-399b4b42457a .
+
+km-dev:TriplesMap_d815715e-c21a-4d86-91cd-ff9b2c751732 a rr:TriplesMap .
+
+_:node193u2ogt9x1 km-dev:hasTriplesMap km-dev:TriplesMap_d815715e-c21a-4d86-91cd-ff9b2c751732 .
+
+km-dev:TriplesMap_d815715e-c21a-4d86-91cd-ff9b2c751732 km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x9 rr:tableName "googledata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasLogicalTable _:node193u2ogt9x9 .
+
+km-dev:TriplesMap_d815715e-c21a-4d86-91cd-ff9b2c751732 rr:logicalTable _:node193u2ogt9x9 ;
+	rr:subjectMap _:node193u2ogt9x10 .
+
+_:node193u2ogt9x1 km-dev:hasSubjectMap _:node193u2ogt9x10 .
+
+_:node193u2ogt9x10 km-dev:isPartOfMapping _:node193u2ogt9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/ImageObject1" ;
+	rr:class schema:ImageObject ;
+	rr:template "{[\"results\",\"photos\",\"photoreference\"]}" .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 a rr:TriplesMap .
+
+_:node193u2ogt9x1 km-dev:hasTriplesMap km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x11 rr:tableName "googledata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasLogicalTable _:node193u2ogt9x11 .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 rr:logicalTable _:node193u2ogt9x11 ;
+	rr:subjectMap _:node193u2ogt9x12 .
+
+_:node193u2ogt9x1 km-dev:hasSubjectMap _:node193u2ogt9x12 .
+
+_:node193u2ogt9x12 km-dev:isPartOfMapping _:node193u2ogt9x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place .
+
+_:node193u2ogt9x13 rr:template "{[\"results\",\"types\",\"values\"]}" .
+
+_:node193u2ogt9x12 rr:class _:node193u2ogt9x13 ;
+	rr:template "https://maps.googleapis.com/maps/api/place/details/json?placeid={[\"results\",\"place_id\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_d30bfbad-a9e3-4e19-a84f-cc7aadc53e4c rr:predicate schema:geo .
+
+km-dev:RefObjectMap_485e88ad-6779-4ccb-a205-344290f1a415 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a91ba24c-e78c-4645-aaeb-7b5790e2906c ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap km-dev:RefObjectMap_485e88ad-6779-4ccb-a205-344290f1a415 .
+
+km-dev:PredicateObjectMap_d30bfbad-a9e3-4e19-a84f-cc7aadc53e4c rr:objectMap km-dev:RefObjectMap_485e88ad-6779-4ccb-a205-344290f1a415 .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 rr:predicateObjectMap km-dev:PredicateObjectMap_d30bfbad-a9e3-4e19-a84f-cc7aadc53e4c .
+
+km-dev:PredicateObjectMap_d30bfbad-a9e3-4e19-a84f-cc7aadc53e4c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d30bfbad-a9e3-4e19-a84f-cc7aadc53e4c .
+
+km-dev:PredicateObjectMap_2d1b4a02-49ca-4881-b641-38475f57a65c rr:predicate schema:geo .
+
+km-dev:RefObjectMap_5c932a28-e8ba-4b29-8770-54eb764eaf3d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_30f04369-bfac-4cd6-8221-ce42b7148cb8 ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap km-dev:RefObjectMap_5c932a28-e8ba-4b29-8770-54eb764eaf3d .
+
+km-dev:PredicateObjectMap_2d1b4a02-49ca-4881-b641-38475f57a65c rr:objectMap km-dev:RefObjectMap_5c932a28-e8ba-4b29-8770-54eb764eaf3d .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 rr:predicateObjectMap km-dev:PredicateObjectMap_2d1b4a02-49ca-4881-b641-38475f57a65c .
+
+km-dev:PredicateObjectMap_2d1b4a02-49ca-4881-b641-38475f57a65c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2d1b4a02-49ca-4881-b641-38475f57a65c .
+
+km-dev:PredicateObjectMap_4e0f786a-c80e-4ca6-953b-06f2f22f40ed rr:predicate schema:photo .
+
+km-dev:RefObjectMap_966b4466-4055-45c2-98e5-8e1a74086fb4 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d815715e-c21a-4d86-91cd-ff9b2c751732 ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap km-dev:RefObjectMap_966b4466-4055-45c2-98e5-8e1a74086fb4 .
+
+km-dev:PredicateObjectMap_4e0f786a-c80e-4ca6-953b-06f2f22f40ed rr:objectMap km-dev:RefObjectMap_966b4466-4055-45c2-98e5-8e1a74086fb4 .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 rr:predicateObjectMap km-dev:PredicateObjectMap_4e0f786a-c80e-4ca6-953b-06f2f22f40ed .
+
+km-dev:PredicateObjectMap_4e0f786a-c80e-4ca6-953b-06f2f22f40ed a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4e0f786a-c80e-4ca6-953b-06f2f22f40ed .
+
+km-dev:PredicateObjectMap_9072496f-8616-4385-8190-d20b56bdc4e2 rr:predicate rdfs:label .
+
+_:node193u2ogt9x14 rr:column "[\"results\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasObjectMap _:node193u2ogt9x14 .
+
+km-dev:PredicateObjectMap_9072496f-8616-4385-8190-d20b56bdc4e2 rr:objectMap _:node193u2ogt9x14 .
+
+km-dev:TriplesMap_1f05468c-6f61-44a4-b043-41087ebbb4b4 rr:predicateObjectMap km-dev:PredicateObjectMap_9072496f-8616-4385-8190-d20b56bdc4e2 .
+
+km-dev:PredicateObjectMap_9072496f-8616-4385-8190-d20b56bdc4e2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node193u2ogt9x1 .
+
+_:node193u2ogt9x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9072496f-8616-4385-8190-d20b56bdc4e2 .
+</pre></body></html>

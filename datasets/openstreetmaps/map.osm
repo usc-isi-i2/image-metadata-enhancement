@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.3.3 (22367 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="34.0193081" minlon="-118.2860316" maxlat="34.0212502" maxlon="-118.2842188"/>
+ <node id="122844997" visible="true" version="5" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0203542" lon="-118.2829624"/>
+ <node id="122844993" visible="true" version="4" changeset="12050378" timestamp="2012-06-28T19:57:28Z" user="Aaron Lidman" uid="53073" lat="34.0227849" lon="-118.2885510"/>
+ <node id="123071711" visible="true" version="2" changeset="3610130" timestamp="2010-01-13T14:07:14Z" user="woodpeck_fixbot" uid="147510" lat="34.0217120" lon="-118.2843480"/>
+ <node id="358805620" visible="true" version="1" changeset="783501" timestamp="2009-03-11T06:35:09Z" user="iandees" uid="4732" lat="34.0202908" lon="-118.2847968">
+  <tag k="ele" v="57"/>
+  <tag k="gnis:county_id" v="037"/>
+  <tag k="gnis:created" v="01/01/1995"/>
+  <tag k="gnis:feature_id" v="1657467"/>
+  <tag k="gnis:state_id" v="06"/>
+  <tag k="leisure" v="park"/>
+  <tag k="name" v="Alumni Park"/>
+ </node>
+ <node id="358805624" visible="true" version="1" changeset="783501" timestamp="2009-03-11T06:35:10Z" user="iandees" uid="4732" lat="34.0211240" lon="-118.2859080">
+  <tag k="ele" v="56"/>
+  <tag k="gnis:county_id" v="037"/>
+  <tag k="gnis:created" v="01/01/1995"/>
+  <tag k="gnis:feature_id" v="1657469"/>
+  <tag k="gnis:state_id" v="06"/>
+  <tag k="leisure" v="park"/>
+  <tag k="name" v="Associates Park"/>
+ </node>
+ <node id="358805653" visible="true" version="1" changeset="783501" timestamp="2009-03-11T06:35:12Z" user="iandees" uid="4732" lat="34.0202908" lon="-118.2853524">
+  <tag k="ele" v="57"/>
+  <tag k="gnis:county_id" v="037"/>
+  <tag k="gnis:created" v="01/01/1995"/>
+  <tag k="gnis:feature_id" v="1657505"/>
+  <tag k="gnis:state_id" v="06"/>
+  <tag k="leisure" v="park"/>
+  <tag k="name" v="Hahn Plaza"/>
+ </node>
+ <node id="544672185" visible="true" version="1" changeset="2983611" timestamp="2009-10-29T18:56:22Z" user="jerjozwik" uid="36489" lat="34.0212004" lon="-118.2834051"/>
+ <node id="544672192" visible="true" version="1" changeset="2983611" timestamp="2009-10-29T18:56:22Z" user="jerjozwik" uid="36489" lat="34.0207593" lon="-118.2836884"/>
+ <node id="544672196" visible="true" version="1" changeset="2983611" timestamp="2009-10-29T18:56:22Z" user="jerjozwik" uid="36489" lat="34.0211221" lon="-118.2845038"/>
+ <node id="544672199" visible="true" version="1" changeset="2983611" timestamp="2009-10-29T18:56:22Z" user="jerjozwik" uid="36489" lat="34.0215632" lon="-118.2842205"/>
+ <node id="1286136428" visible="true" version="1" changeset="8150304" timestamp="2011-05-15T10:55:56Z" user="StellanL" uid="28775" lat="34.0236543" lon="-118.2840503">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="123071704" visible="true" version="6" changeset="12696849" timestamp="2012-08-12T00:16:40Z" user="ctr112280" uid="351693" lat="34.0187609" lon="-118.2861726"/>
+ <node id="1673645073" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:34Z" user="Dan Wood" uid="609760" lat="34.0213854" lon="-118.2855882"/>
+ <node id="1673643850" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:57Z" user="Dan Wood" uid="609760" lat="34.0190937" lon="-118.2858339"/>
+ <node id="1673643879" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:58Z" user="Dan Wood" uid="609760" lat="34.0192200" lon="-118.2853020"/>
+ <node id="1673643891" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:59Z" user="Dan Wood" uid="609760" lat="34.0192878" lon="-118.2840574"/>
+ <node id="1673643932" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:02Z" user="Dan Wood" uid="609760" lat="34.0193819" lon="-118.2843036"/>
+ <node id="1673643809" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:53Z" user="Dan Wood" uid="609760" lat="34.0189037" lon="-118.2863664"/>
+ <node id="1673643818" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:54Z" user="Dan Wood" uid="609760" lat="34.0189412" lon="-118.2854740"/>
+ <node id="1673643838" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:55Z" user="Dan Wood" uid="609760" lat="34.0190542" lon="-118.2867182"/>
+ <node id="1673643906" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:14:59Z" user="Dan Wood" uid="609760" lat="34.0193145" lon="-118.2850192"/>
+ <node id="1673643919" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:00Z" user="Dan Wood" uid="609760" lat="34.0193365" lon="-118.2841673"/>
+ <node id="1673643925" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:01Z" user="Dan Wood" uid="609760" lat="34.0193725" lon="-118.2856620"/>
+ <node id="1673643958" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:03Z" user="Dan Wood" uid="609760" lat="34.0194436" lon="-118.2847268"/>
+ <node id="1673643959" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:03Z" user="Dan Wood" uid="609760" lat="34.0194496" lon="-118.2840943"/>
+ <node id="1673644013" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:08Z" user="Dan Wood" uid="609760" lat="34.0195221" lon="-118.2859811"/>
+ <node id="1673644053" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:10Z" user="Dan Wood" uid="609760" lat="34.0195590" lon="-118.2843407"/>
+ <node id="1673644058" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:11Z" user="Dan Wood" uid="609760" lat="34.0195691" lon="-118.2846502"/>
+ <node id="1673644076" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:12Z" user="Dan Wood" uid="609760" lat="34.0195952" lon="-118.2851382"/>
+ <node id="1673644105" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:14Z" user="Dan Wood" uid="609760" lat="34.0196679" lon="-118.2847986"/>
+ <node id="1673644986" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:27Z" user="Dan Wood" uid="609760" lat="34.0212433" lon="-118.2852501"/>
+ <node id="1673643946" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:03Z" user="Dan Wood" uid="609760" lat="34.0194118" lon="-118.2846574"/>
+ <node id="1673643952" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:03Z" user="Dan Wood" uid="609760" lat="34.0194341" lon="-118.2844213"/>
+ <node id="1673644007" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:08Z" user="Dan Wood" uid="609760" lat="34.0195067" lon="-118.2842230"/>
+ <node id="1673644152" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:18Z" user="Dan Wood" uid="609760" lat="34.0197929" lon="-118.2834727"/>
+ <node id="1673644172" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:20Z" user="Dan Wood" uid="609760" lat="34.0198479" lon="-118.2864959"/>
+ <node id="1673644366" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:30Z" user="Dan Wood" uid="609760" lat="34.0201070" lon="-118.2842188"/>
+ <node id="1673644795" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:02Z" user="Dan Wood" uid="609760" lat="34.0207625" lon="-118.2839313"/>
+ <node id="1673644797" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:03Z" user="Dan Wood" uid="609760" lat="34.0208059" lon="-118.2860066"/>
+ <node id="1673644798" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:03Z" user="Dan Wood" uid="609760" lat="34.0208184" lon="-118.2857980"/>
+ <node id="1673644808" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:07Z" user="Dan Wood" uid="609760" lat="34.0209315" lon="-118.2858698"/>
+ <node id="1673644813" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:09Z" user="Dan Wood" uid="609760" lat="34.0209665" lon="-118.2858759"/>
+ <node id="1673644782" visible="true" version="2" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0206504" lon="-118.2836279"/>
+ <node id="1673644796" visible="true" version="2" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0207730" lon="-118.2839082"/>
+ <node id="1673643972" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:05Z" user="Dan Wood" uid="609760" lat="34.0194895" lon="-118.2849028"/>
+ <node id="1673643978" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:05Z" user="Dan Wood" uid="609760" lat="34.0194937" lon="-118.2852034"/>
+ <node id="1673643984" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:05Z" user="Dan Wood" uid="609760" lat="34.0194942" lon="-118.2839241"/>
+ <node id="1673643985" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:06Z" user="Dan Wood" uid="609760" lat="34.0194946" lon="-118.2839252"/>
+ <node id="1673644091" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:13Z" user="Dan Wood" uid="609760" lat="34.0196526" lon="-118.2842802"/>
+ <node id="1673644112" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:15Z" user="Dan Wood" uid="609760" lat="34.0196727" lon="-118.2863329"/>
+ <node id="1673644895" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:21Z" user="Dan Wood" uid="609760" lat="34.0211672" lon="-118.2855686"/>
+ <node id="1673644902" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:23Z" user="Dan Wood" uid="609760" lat="34.0211887" lon="-118.2851202"/>
+ <node id="1673644903" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:24Z" user="Dan Wood" uid="609760" lat="34.0211935" lon="-118.2857373"/>
+ <node id="1673643998" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:07Z" user="Dan Wood" uid="609760" lat="34.0194949" lon="-118.2839250"/>
+ <node id="1673644140" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:17Z" user="Dan Wood" uid="609760" lat="34.0197699" lon="-118.2850258"/>
+ <node id="1673644148" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:18Z" user="Dan Wood" uid="609760" lat="34.0197894" lon="-118.2844464"/>
+ <node id="1673644235" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:24Z" user="Dan Wood" uid="609760" lat="34.0199144" lon="-118.2833983"/>
+ <node id="1673644246" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:24Z" user="Dan Wood" uid="609760" lat="34.0199322" lon="-118.2850983"/>
+ <node id="1673644282" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:25Z" user="Dan Wood" uid="609760" lat="34.0199772" lon="-118.2856925"/>
+ <node id="1673644538" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:38Z" user="Dan Wood" uid="609760" lat="34.0202104" lon="-118.2857481"/>
+ <node id="1673644712" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:44Z" user="Dan Wood" uid="609760" lat="34.0204006" lon="-118.2840322"/>
+ <node id="1673644865" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:15Z" user="Dan Wood" uid="609760" lat="34.0211019" lon="-118.2846981"/>
+ <node id="1673644026" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:09Z" user="Dan Wood" uid="609760" lat="34.0195479" lon="-118.2846024"/>
+ <node id="1673644041" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:09Z" user="Dan Wood" uid="609760" lat="34.0195546" lon="-118.2853412"/>
+ <node id="1673644102" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:14Z" user="Dan Wood" uid="609760" lat="34.0196558" lon="-118.2860470"/>
+ <node id="1673644253" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:24Z" user="Dan Wood" uid="609760" lat="34.0199325" lon="-118.2858746"/>
+ <node id="1673644324" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:29Z" user="Dan Wood" uid="609760" lat="34.0200756" lon="-118.2860938"/>
+ <node id="1673644739" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:53Z" user="Dan Wood" uid="609760" lat="34.0205518" lon="-118.2855200"/>
+ <node id="1673644781" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:58Z" user="Dan Wood" uid="609760" lat="34.0206629" lon="-118.2854481"/>
+ <node id="1673644785" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:59Z" user="Dan Wood" uid="609760" lat="34.0206944" lon="-118.2850105"/>
+ <node id="1673644787" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:00Z" user="Dan Wood" uid="609760" lat="34.0206987" lon="-118.2855287"/>
+ <node id="1673644724" visible="true" version="2" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0204410" lon="-118.2831318"/>
+ <node id="1673644175" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:20Z" user="Dan Wood" uid="609760" lat="34.0198713" lon="-118.2849605"/>
+ <node id="1673644206" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:22Z" user="Dan Wood" uid="609760" lat="34.0198838" lon="-118.2846591"/>
+ <node id="1673644442" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:34Z" user="Dan Wood" uid="609760" lat="34.0201539" lon="-118.2834444"/>
+ <node id="1673644792" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:01Z" user="Dan Wood" uid="609760" lat="34.0207468" lon="-118.2856368"/>
+ <node id="1673644793" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:02Z" user="Dan Wood" uid="609760" lat="34.0207540" lon="-118.2859747"/>
+ <node id="1673644794" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:02Z" user="Dan Wood" uid="609760" lat="34.0207566" lon="-118.2849696"/>
+ <node id="1673644803" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:05Z" user="Dan Wood" uid="609760" lat="34.0208861" lon="-118.2857580"/>
+ <node id="1673644867" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:16Z" user="Dan Wood" uid="609760" lat="34.0211079" lon="-118.2852591"/>
+ <node id="1673644286" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:26Z" user="Dan Wood" uid="609760" lat="34.0199784" lon="-118.2835503"/>
+ <node id="1673644305" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:27Z" user="Dan Wood" uid="609760" lat="34.0200126" lon="-118.2844144"/>
+ <node id="1673644317" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:28Z" user="Dan Wood" uid="609760" lat="34.0200367" lon="-118.2861179"/>
+ <node id="1673644346" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:30Z" user="Dan Wood" uid="609760" lat="34.0200952" lon="-118.2833046"/>
+ <node id="1673644397" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:31Z" user="Dan Wood" uid="609760" lat="34.0201239" lon="-118.2863240"/>
+ <node id="1673644415" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:32Z" user="Dan Wood" uid="609760" lat="34.0201318" lon="-118.2860430"/>
+ <node id="1673644423" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:33Z" user="Dan Wood" uid="609760" lat="34.0201453" lon="-118.2857886"/>
+ <node id="1673644465" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:35Z" user="Dan Wood" uid="609760" lat="34.0201632" lon="-118.2862996"/>
+ <node id="1673644481" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:36Z" user="Dan Wood" uid="609760" lat="34.0201937" lon="-118.2859017"/>
+ <node id="1673644547" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:38Z" user="Dan Wood" uid="609760" lat="34.0202257" lon="-118.2841377"/>
+ <node id="1673644567" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:38Z" user="Dan Wood" uid="609760" lat="34.0202275" lon="-118.2832237"/>
+ <node id="1673644578" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:39Z" user="Dan Wood" uid="609760" lat="34.0202285" lon="-118.2841443"/>
+ <node id="1673644599" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:39Z" user="Dan Wood" uid="609760" lat="34.0202588" lon="-118.2858612"/>
+ <node id="1673644608" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:40Z" user="Dan Wood" uid="609760" lat="34.0202706" lon="-118.2855040"/>
+ <node id="1673644637" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:41Z" user="Dan Wood" uid="609760" lat="34.0202933" lon="-118.2841268"/>
+ <node id="1673644784" visible="true" version="2" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0206580" lon="-118.2836679"/>
+ <node id="1673644684" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:42Z" user="Dan Wood" uid="609760" lat="34.0203364" lon="-118.2851459"/>
+ <node id="1673644700" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:43Z" user="Dan Wood" uid="609760" lat="34.0203520" lon="-118.2851813"/>
+ <node id="1673644713" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:45Z" user="Dan Wood" uid="609760" lat="34.0204014" lon="-118.2840341"/>
+ <node id="1673644736" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:52Z" user="Dan Wood" uid="609760" lat="34.0205337" lon="-118.2839532"/>
+ <node id="1673644738" visible="true" version="3" changeset="22478589" timestamp="2014-05-22T04:48:17Z" user="daxiong" uid="1963738" lat="34.0205455" lon="-118.2846622"/>
+ <node id="1673644801" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:04Z" user="Dan Wood" uid="609760" lat="34.0208404" lon="-118.2855752"/>
+ <node id="1673644805" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:06Z" user="Dan Wood" uid="609760" lat="34.0209210" lon="-118.2862763"/>
+ <node id="1673644838" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:11Z" user="Dan Wood" uid="609760" lat="34.0210637" lon="-118.2854280"/>
+ <node id="1673644848" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:12Z" user="Dan Wood" uid="609760" lat="34.0210780" lon="-118.2851879"/>
+ <node id="1673644891" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:21Z" user="Dan Wood" uid="609760" lat="34.0211539" lon="-118.2853686"/>
+ <node id="1673644719" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:15:47Z" user="Dan Wood" uid="609760" lat="34.0204253" lon="-118.2858545"/>
+ <node id="1673644945" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:25Z" user="Dan Wood" uid="609760" lat="34.0212228" lon="-118.2855325"/>
+ <node id="1673644960" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:25Z" user="Dan Wood" uid="609760" lat="34.0212230" lon="-118.2856937"/>
+ <node id="1673645009" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:29Z" user="Dan Wood" uid="609760" lat="34.0212629" lon="-118.2852968"/>
+ <node id="1673645016" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:29Z" user="Dan Wood" uid="609760" lat="34.0212641" lon="-118.2852960"/>
+ <node id="1673645082" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:35Z" user="Dan Wood" uid="609760" lat="34.0214125" lon="-118.2856299"/>
+ <node id="1673645467" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:16:59Z" user="Dan Wood" uid="609760" lat="34.0215276" lon="-118.2858996"/>
+ <node id="1673646528" visible="true" version="2" changeset="12050378" timestamp="2012-06-28T19:57:29Z" user="Aaron Lidman" uid="53073" lat="34.0216025" lon="-118.2857399"/>
+ <node id="1732243586" visible="true" version="1" changeset="11427112" timestamp="2012-04-26T19:47:09Z" user="StellanL" uid="28775" lat="34.0212021" lon="-118.2872039"/>
+ <node id="1732243587" visible="true" version="1" changeset="11427112" timestamp="2012-04-26T19:47:09Z" user="StellanL" uid="28775" lat="34.0203286" lon="-118.2852537"/>
+ <node id="1732243620" visible="true" version="1" changeset="11427112" timestamp="2012-04-26T19:47:10Z" user="StellanL" uid="28775" lat="34.0196520" lon="-118.2814374"/>
+ <node id="602606658" visible="true" version="4" changeset="21965982" timestamp="2014-04-26T23:04:33Z" user="par_is" uid="2049125" lat="34.0201764" lon="-118.2849398"/>
+ <node id="1673644662" visible="true" version="2" changeset="11427112" timestamp="2012-04-26T19:47:23Z" user="StellanL" uid="28775" lat="34.0203083" lon="-118.2852083"/>
+ <node id="1673644898" visible="true" version="2" changeset="12050378" timestamp="2012-06-28T19:57:29Z" user="Aaron Lidman" uid="53073" lat="34.0211808" lon="-118.2847516"/>
+ <node id="1673646405" visible="true" version="2" changeset="12050378" timestamp="2012-06-28T19:57:29Z" user="Aaron Lidman" uid="53073" lat="34.0215817" lon="-118.2845027"/>
+ <node id="1673647378" visible="true" version="2" changeset="12050378" timestamp="2012-06-28T19:57:30Z" user="Aaron Lidman" uid="53073" lat="34.0220033" lon="-118.2854910"/>
+ <node id="1732243889" visible="true" version="7" changeset="12823363" timestamp="2012-08-22T17:13:14Z" user="techlady" uid="104962" lat="34.0220068" lon="-118.2890535">
+  <tag k="directions" v="both"/>
+  <tag k="highway" v="stop"/>
+  <tag k="stop" v="NS"/>
+ </node>
+ <node id="2305853436" visible="true" version="1" changeset="16146825" timestamp="2013-05-16T02:41:31Z" user="Rouge568" uid="86253" lat="34.0205373" lon="-118.2845401">
+  <tag k="amenity" v="fountain"/>
+ </node>
+ <node id="2305853437" visible="true" version="1" changeset="16146825" timestamp="2013-05-16T02:41:31Z" user="Rouge568" uid="86253" lat="34.0202047" lon="-118.2851929">
+  <tag k="amenity" v="fountain"/>
+ </node>
+ <node id="2305853438" visible="true" version="1" changeset="16146825" timestamp="2013-05-16T02:41:31Z" user="Rouge568" uid="86253" lat="34.0205711" lon="-118.2854250">
+  <tag k="name" v="Tommy Trojan"/>
+  <tag k="statue" v="yes"/>
+ </node>
+ <node id="122844995" visible="true" version="6" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0211279" lon="-118.2847093"/>
+ <node id="122728406" visible="true" version="6" changeset="12822988" timestamp="2012-08-22T16:57:55Z" user="techlady" uid="104962" lat="34.0203899" lon="-118.2877419">
+  <tag k="directions" v="both"/>
+  <tag k="highway" v="stop"/>
+  <tag k="stop" v="NS"/>
+ </node>
+ <node id="122728413" visible="true" version="5" changeset="16146825" timestamp="2013-05-16T02:41:33Z" user="Rouge568" uid="86253" lat="34.0219911" lon="-118.2867028"/>
+ <node id="123209598" visible="true" version="7" changeset="12317038" timestamp="2012-07-19T09:54:20Z" user="OSMF Redaction Account" uid="722137" lat="34.0212120" lon="-118.2895080">
+  <tag k="directions" v="full"/>
+  <tag k="highway" v="stop"/>
+  <tag k="stop" v="NEWS"/>
+ </node>
+ <node id="1862347571" visible="true" version="1" changeset="12696849" timestamp="2012-08-12T00:16:39Z" user="ctr112280" uid="351693" lat="34.0201154" lon="-118.2853338"/>
+ <node id="1862347574" visible="true" version="1" changeset="12696849" timestamp="2012-08-12T00:16:39Z" user="ctr112280" uid="351693" lat="34.0202044" lon="-118.2854192"/>
+ <node id="1862347582" visible="true" version="1" changeset="12696849" timestamp="2012-08-12T00:16:39Z" user="ctr112280" uid="351693" lat="34.0188139" lon="-118.2862997"/>
+ <node id="1862347583" visible="true" version="1" changeset="12696849" timestamp="2012-08-12T00:16:39Z" user="ctr112280" uid="351693" lat="34.0195382" lon="-118.2858433"/>
+ <node id="2613066260" visible="true" version="1" changeset="19857242" timestamp="2014-01-07T05:27:17Z" user="nathansnider" uid="977071" lat="34.0185355" lon="-118.2834542"/>
+ <node id="2613066270" visible="true" version="1" changeset="19857242" timestamp="2014-01-07T05:27:17Z" user="nathansnider" uid="977071" lat="34.0192879" lon="-118.2829719"/>
+ <node id="2613066333" visible="true" version="1" changeset="19857242" timestamp="2014-01-07T05:27:19Z" user="nathansnider" uid="977071" lat="34.0228407" lon="-118.2836733"/>
+ <node id="2613066341" visible="true" version="1" changeset="19857242" timestamp="2014-01-07T05:27:19Z" user="nathansnider" uid="977071" lat="34.0234958" lon="-118.2838711"/>
+ <node id="2613066338" visible="true" version="2" changeset="21965982" timestamp="2014-04-26T23:04:33Z" user="par_is" uid="2049125" lat="34.0199509" lon="-118.2844183"/>
+ <node id="2613066358" visible="true" version="1" changeset="19857242" timestamp="2014-01-07T05:27:19Z" user="nathansnider" uid="977071" lat="34.0193951" lon="-118.2831723"/>
+ <node id="214470799" visible="true" version="4" changeset="19857242" timestamp="2014-01-07T05:27:23Z" user="nathansnider" uid="977071" lat="34.0230176" lon="-118.2836504"/>
+ <node id="123071708" visible="true" version="5" changeset="19857242" timestamp="2014-01-07T05:27:25Z" user="nathansnider" uid="977071" lat="34.0195058" lon="-118.2857075"/>
+ <node id="123071713" visible="true" version="6" changeset="19857242" timestamp="2014-01-07T05:27:25Z" user="nathansnider" uid="977071" lat="34.0226155" lon="-118.2838263">
+  <tag k="stop" v="EW"/>
+ </node>
+ <node id="1673644081" visible="true" version="2" changeset="19857242" timestamp="2014-01-07T05:27:26Z" user="nathansnider" uid="977071" lat="34.0195321" lon="-118.2834886"/>
+ <node id="1673648371" visible="true" version="2" changeset="19857242" timestamp="2014-01-07T05:27:26Z" user="nathansnider" uid="977071" lat="34.0232009" lon="-118.2836869"/>
+ <node id="1732243544" visible="true" version="2" changeset="19857242" timestamp="2014-01-07T05:27:26Z" user="nathansnider" uid="977071" lat="34.0188618" lon="-118.2819630"/>
+ <node id="1673648172" visible="true" version="2" changeset="19857242" timestamp="2014-01-07T05:27:26Z" user="nathansnider" uid="977071" lat="34.0229249" lon="-118.2836528"/>
+ <node id="1286136446" visible="true" version="2" changeset="19857242" timestamp="2014-01-07T05:27:26Z" user="nathansnider" uid="977071" lat="34.0233711" lon="-118.2837601"/>
+ <node id="2699034216" visible="true" version="1" changeset="20877383" timestamp="2014-03-02T23:51:29Z" user="daxiong" uid="1963738" lat="34.0207621" lon="-118.2838854"/>
+ <node id="2699041578" visible="true" version="1" changeset="20877522" timestamp="2014-03-03T00:02:15Z" user="daxiong" uid="1963738" lat="34.0214987" lon="-118.2855656"/>
+ <node id="2699041580" visible="true" version="1" changeset="20877522" timestamp="2014-03-03T00:02:15Z" user="daxiong" uid="1963738" lat="34.0206998" lon="-118.2860825"/>
+ <node id="2700459348" visible="true" version="1" changeset="20897061" timestamp="2014-03-03T20:36:50Z" user="daxiong" uid="1963738" lat="34.0206398" lon="-118.2859486"/>
+ <node id="2700459349" visible="true" version="1" changeset="20897061" timestamp="2014-03-03T20:36:50Z" user="daxiong" uid="1963738" lat="34.0201630" lon="-118.2862410"/>
+ <node id="2700459350" visible="true" version="1" changeset="20897061" timestamp="2014-03-03T20:36:50Z" user="daxiong" uid="1963738" lat="34.0198944" lon="-118.2856165"/>
+ <node id="2738332817" visible="true" version="1" changeset="21275430" timestamp="2014-03-23T23:25:57Z" user="daxiong" uid="1963738" lat="34.0204312" lon="-118.2831127"/>
+ <node id="2738732224" visible="true" version="1" changeset="21276799" timestamp="2014-03-24T02:30:29Z" user="daxiong" uid="1963738" lat="34.0216827" lon="-118.2847394"/>
+ <node id="2738732226" visible="true" version="1" changeset="21276799" timestamp="2014-03-24T02:30:29Z" user="daxiong" uid="1963738" lat="34.0215562" lon="-118.2844444"/>
+ <node id="2738732227" visible="true" version="1" changeset="21276799" timestamp="2014-03-24T02:30:29Z" user="daxiong" uid="1963738" lat="34.0214231" lon="-118.2853909"/>
+ <node id="2738732233" visible="true" version="1" changeset="21276799" timestamp="2014-03-24T02:30:30Z" user="daxiong" uid="1963738" lat="34.0207117" lon="-118.2861091"/>
+ <node id="2776870273" visible="true" version="1" changeset="21568279" timestamp="2014-04-08T09:59:12Z" user="daxiong" uid="1963738" lat="34.0222651" lon="-118.2840287"/>
+ <node id="2817034888" visible="true" version="1" changeset="21945075" timestamp="2014-04-26T00:40:24Z" user="techlady" uid="104962" lat="34.0192758" lon="-118.2849419"/>
+ <node id="2817034889" visible="true" version="1" changeset="21945075" timestamp="2014-04-26T00:40:24Z" user="techlady" uid="104962" lat="34.0193214" lon="-118.2849110"/>
+ <node id="2817034890" visible="true" version="1" changeset="21945075" timestamp="2014-04-26T00:40:24Z" user="techlady" uid="104962" lat="34.0192936" lon="-118.2848943"/>
+ <node id="2817034891" visible="true" version="1" changeset="21945075" timestamp="2014-04-26T00:40:24Z" user="techlady" uid="104962" lat="34.0192780" lon="-118.2848628"/>
+ <node id="2817034892" visible="true" version="1" changeset="21945075" timestamp="2014-04-26T00:40:24Z" user="techlady" uid="104962" lat="34.0192841" lon="-118.2848178"/>
+ <node id="2817034893" visible="true" version="1" changeset="21945075" timestamp="2014-04-26T00:40:24Z" user="techlady" uid="104962" lat="34.0192358" lon="-118.2848460"/>
+ <node id="1673643866" visible="true" version="2" changeset="21945075" timestamp="2014-04-26T00:40:25Z" user="techlady" uid="104962" lat="34.0192041" lon="-118.2847810"/>
+ <node id="2817034895" visible="true" version="2" changeset="21945082" timestamp="2014-04-26T00:41:04Z" user="techlady" uid="104962" lat="34.0197048" lon="-118.2846227">
+  <tag k="amenity" v="theatre"/>
+  <tag k="name" v="Newman Recital Hall in Hancock Foundation"/>
+ </node>
+ <node id="2854143276" visible="true" version="2" changeset="22478329" timestamp="2014-05-22T04:01:50Z" user="daxiong" uid="1963738" lat="34.0203302" lon="-118.2842098"/>
+ <node id="2854143275" visible="true" version="2" changeset="22478329" timestamp="2014-05-22T04:01:50Z" user="daxiong" uid="1963738" lat="34.0203980" lon="-118.2841661"/>
+ <node id="2873929500" visible="true" version="1" changeset="22478329" timestamp="2014-05-22T04:01:50Z" user="daxiong" uid="1963738" lat="34.0207595" lon="-118.2839479"/>
+ <node id="2873934661" visible="true" version="1" changeset="22478358" timestamp="2014-05-22T04:07:21Z" user="daxiong" uid="1963738" lat="34.0205955" lon="-118.2846294"/>
+ <node id="1673644721" visible="true" version="2" changeset="22478358" timestamp="2014-05-22T04:07:22Z" user="daxiong" uid="1963738" lat="34.0204421" lon="-118.2845382"/>
+ <node id="1673644776" visible="true" version="2" changeset="22478358" timestamp="2014-05-22T04:07:22Z" user="daxiong" uid="1963738" lat="34.0206200" lon="-118.2845731"/>
+ <node id="1673644743" visible="true" version="3" changeset="22478589" timestamp="2014-05-22T04:48:18Z" user="daxiong" uid="1963738" lat="34.0205744" lon="-118.2844664"/>
+ <node id="2873960810" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738" lat="34.0206166" lon="-118.2845323"/>
+ <node id="2873960811" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738" lat="34.0206035" lon="-118.2845005"/>
+ <node id="2873960812" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738" lat="34.0205929" lon="-118.2844831"/>
+ <node id="2873960815" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738" lat="34.0204534" lon="-118.2846101"/>
+ <node id="2873960816" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738" lat="34.0204429" lon="-118.2845704"/>
+ <node id="1673644732" visible="true" version="5" changeset="22478776" timestamp="2014-05-22T05:13:56Z" user="daxiong" uid="1963738" lat="34.0204942" lon="-118.2846546"/>
+ <node id="2873960814" visible="true" version="2" changeset="22478776" timestamp="2014-05-22T05:13:56Z" user="daxiong" uid="1963738" lat="34.0204725" lon="-118.2846409"/>
+ <node id="2873960813" visible="true" version="2" changeset="22478776" timestamp="2014-05-22T05:13:56Z" user="daxiong" uid="1963738" lat="34.0205205" lon="-118.2846625"/>
+ <node id="2874006272" visible="true" version="1" changeset="22479736" timestamp="2014-05-22T06:48:24Z" user="daxiong" uid="1963738" lat="34.0204647" lon="-118.2844860"/>
+ <node id="2874027915" visible="true" version="1" changeset="22480116" timestamp="2014-05-22T07:16:57Z" user="daxiong" uid="1963738" lat="34.0205253" lon="-118.2844505"/>
+ <way id="177356219" visible="true" version="4" changeset="21276799" timestamp="2014-03-24T02:30:31Z" user="daxiong" uid="1963738">
+  <nd ref="1732243889"/>
+  <nd ref="1732243586"/>
+  <nd ref="2738732233"/>
+  <nd ref="2699041580"/>
+  <nd ref="2700459348"/>
+  <nd ref="1732243587"/>
+  <nd ref="1673644662"/>
+  <nd ref="602606658"/>
+  <tag k="access" v="private"/>
+  <tag k="highway" v="pedestrian"/>
+  <tag k="name" v="Childs Way"/>
+  <tag k="name_1" v="West 36th Street"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="Los Angeles, CA"/>
+  <tag k="tiger:name_base" v="Childs"/>
+  <tag k="tiger:name_base_1" v="36th"/>
+  <tag k="tiger:name_direction_prefix_1" v="W"/>
+  <tag k="tiger:name_type" v="Way"/>
+  <tag k="tiger:name_type_1" v="St"/>
+  <tag k="tiger:zip_left" v="90007"/>
+  <tag k="tiger:zip_right" v="90007"/>
+ </way>
+ <way id="43332255" visible="true" version="1" changeset="2983611" timestamp="2009-10-29T18:56:23Z" user="jerjozwik" uid="36489">
+  <nd ref="544672185"/>
+  <nd ref="544672192"/>
+  <nd ref="544672196"/>
+  <nd ref="544672199"/>
+  <nd ref="544672185"/>
+  <tag k="amenity" v="public_building"/>
+  <tag k="building" v="yes"/>
+  <tag k="name" v="Von Kleinsmid Center for International and Public Affairs"/>
+ </way>
+ <way id="154906704" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:21:30Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644986"/>
+  <nd ref="1673644902"/>
+  <nd ref="1673644848"/>
+  <nd ref="1673644867"/>
+  <nd ref="1673644787"/>
+  <nd ref="1673644781"/>
+  <nd ref="1673644739"/>
+  <nd ref="1673644793"/>
+  <nd ref="1673644808"/>
+  <nd ref="1673644803"/>
+  <nd ref="1673644798"/>
+  <nd ref="1673644792"/>
+  <nd ref="1673644801"/>
+  <nd ref="1673644813"/>
+  <nd ref="1673644903"/>
+  <nd ref="1673644838"/>
+  <nd ref="1673644891"/>
+  <nd ref="1673644945"/>
+  <nd ref="1673644895"/>
+  <nd ref="1673644960"/>
+  <nd ref="1673645073"/>
+  <nd ref="1673645009"/>
+  <nd ref="1673645016"/>
+  <nd ref="1673644986"/>
+  <tag k="addr:state" v="CA"/>
+  <tag k="amenity" v="public_building"/>
+  <tag k="building" v="yes"/>
+  <tag k="ele" v="56"/>
+  <tag k="gnis:county_name" v="Los Angeles"/>
+  <tag k="gnis:feature_id" v="1657472"/>
+  <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+  <tag k="gnis:reviewed" v="no"/>
+  <tag k="name" v="Bovard Administration Building"/>
+  <tag k="source" v="USGS Geonames"/>
+ </way>
+ <way id="154906717" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:21:40Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644547"/>
+  <nd ref="1673644712"/>
+  <nd ref="1673644713"/>
+  <nd ref="1673644736"/>
+  <nd ref="1673644567"/>
+  <nd ref="1673644346"/>
+  <nd ref="1673644442"/>
+  <nd ref="1673644286"/>
+  <nd ref="1673644235"/>
+  <nd ref="1673644152"/>
+  <nd ref="1673644366"/>
+  <nd ref="1673644578"/>
+  <nd ref="1673644547"/>
+  <tag k="addr:state" v="CA"/>
+  <tag k="amenity" v="library"/>
+  <tag k="building" v="yes"/>
+  <tag k="ele" v="58"/>
+  <tag k="gnis:county_name" v="Los Angeles"/>
+  <tag k="gnis:feature_id" v="1657488"/>
+  <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+  <tag k="gnis:reviewed" v="no"/>
+  <tag k="name" v="Edward L Doheny Junior Memorial Library"/>
+  <tag k="source" v="USGS Geonames"/>
+ </way>
+ <way id="154906724" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:21:44Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644719"/>
+  <nd ref="1673644608"/>
+  <nd ref="1673644282"/>
+  <nd ref="1673644415"/>
+  <nd ref="1673644719"/>
+  <tag k="addr:state" v="CA"/>
+  <tag k="building" v="yes"/>
+  <tag k="ele" v="57"/>
+  <tag k="gnis:county_name" v="Los Angeles"/>
+  <tag k="gnis:feature_id" v="1657503"/>
+  <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+  <tag k="gnis:reviewed" v="no"/>
+  <tag k="name" v="Gwynn Wilson Student Union"/>
+  <tag k="source" v="USGS Geonames"/>
+ </way>
+ <way id="154906731" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:21:50Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644317"/>
+  <nd ref="1673644253"/>
+  <nd ref="1673644102"/>
+  <nd ref="1673644172"/>
+  <nd ref="1673644397"/>
+  <nd ref="1673644465"/>
+  <nd ref="1673644324"/>
+  <nd ref="1673644317"/>
+  <tag k="addr:state" v="CA"/>
+  <tag k="building" v="yes"/>
+  <tag k="ele" v="56"/>
+  <tag k="gnis:county_name" v="Los Angeles"/>
+  <tag k="gnis:feature_id" v="1657524"/>
+  <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+  <tag k="gnis:reviewed" v="no"/>
+  <tag k="name" v="Norman Topping Student Activities Center"/>
+  <tag k="source" v="USGS Geonames"/>
+ </way>
+ <way id="154906767" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:12Z" user="Dan Wood" uid="609760">
+  <nd ref="1673643925"/>
+  <nd ref="1673643879"/>
+  <nd ref="1673643818"/>
+  <nd ref="1673643850"/>
+  <nd ref="1673643925"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="154906777" visible="true" version="2" changeset="19857242" timestamp="2014-01-07T05:27:35Z" user="nathansnider" uid="977071">
+  <nd ref="2613066338"/>
+  <nd ref="1673644305"/>
+  <nd ref="1673644721"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="154906779" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:18Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644662"/>
+  <nd ref="1673644732"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="154906781" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:19Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644785"/>
+  <nd ref="1673644738"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="154906783" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:20Z" user="Dan Wood" uid="609760">
+  <nd ref="122844995"/>
+  <nd ref="1673644776"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="154906792" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:25Z" user="Dan Wood" uid="609760">
+  <nd ref="1673644599"/>
+  <nd ref="1673644538"/>
+  <nd ref="1673644423"/>
+  <nd ref="1673644481"/>
+  <nd ref="1673644599"/>
+ </way>
+ <way id="154906798" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:28Z" user="Dan Wood" uid="609760">
+  <nd ref="1673645467"/>
+  <nd ref="1673645082"/>
+  <nd ref="1673644797"/>
+  <nd ref="1673644805"/>
+  <nd ref="1673645467"/>
+  <tag k="leisure" v="park"/>
+ </way>
+ <way id="154906721" visible="true" version="2" changeset="21276799" timestamp="2014-03-24T02:30:30Z" user="daxiong" uid="1963738">
+  <nd ref="1673647378"/>
+  <nd ref="2738732224"/>
+  <nd ref="1673646405"/>
+  <nd ref="1673644898"/>
+  <nd ref="1673646528"/>
+  <nd ref="1673647378"/>
+  <tag k="leisure" v="park"/>
+  <tag k="name" v="Founders Park"/>
+ </way>
+ <way id="154906768" visible="true" version="2" changeset="11754679" timestamp="2012-05-31T04:59:02Z" user="techlady" uid="104962">
+  <nd ref="1673644112"/>
+  <nd ref="1673644013"/>
+  <nd ref="1673643809"/>
+  <nd ref="1673643838"/>
+  <nd ref="1673644112"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="154906674" visible="true" version="3" changeset="21945082" timestamp="2014-04-26T00:41:04Z" user="techlady" uid="104962">
+  <nd ref="1673644105"/>
+  <nd ref="1673644206"/>
+  <nd ref="1673644148"/>
+  <nd ref="1673644026"/>
+  <nd ref="1673644058"/>
+  <nd ref="1673643958"/>
+  <nd ref="1673643946"/>
+  <nd ref="1673643866"/>
+  <nd ref="2817034893"/>
+  <nd ref="2817034892"/>
+  <nd ref="2817034891"/>
+  <nd ref="2817034890"/>
+  <nd ref="2817034889"/>
+  <nd ref="2817034888"/>
+  <nd ref="1673643906"/>
+  <nd ref="1673643972"/>
+  <nd ref="1673644076"/>
+  <nd ref="1673643978"/>
+  <nd ref="1673644041"/>
+  <nd ref="1673644246"/>
+  <nd ref="1673644175"/>
+  <nd ref="1673644140"/>
+  <nd ref="1673644105"/>
+  <tag k="addr:state" v="CA"/>
+  <tag k="building" v="university"/>
+  <tag k="ele" v="57"/>
+  <tag k="gnis:county_name" v="Los Angeles"/>
+  <tag k="gnis:feature_id" v="1657466"/>
+  <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+  <tag k="gnis:reviewed" v="no"/>
+  <tag k="name" v="Allan Hancock Foundation"/>
+  <tag k="source" v="USGS Geonames"/>
+ </way>
+ <way id="154906673" visible="true" version="4" changeset="21967885" timestamp="2014-04-27T03:49:05Z" user="RexTCA" uid="382583">
+  <nd ref="1673643891"/>
+  <nd ref="1673643919"/>
+  <nd ref="1673643959"/>
+  <nd ref="1673644007"/>
+  <nd ref="1673643932"/>
+  <nd ref="1673643952"/>
+  <nd ref="1673644053"/>
+  <nd ref="1673644091"/>
+  <nd ref="1673643998"/>
+  <nd ref="1673643985"/>
+  <nd ref="1673643984"/>
+  <nd ref="1673643891"/>
+  <tag k="addr:state" v="CA"/>
+  <tag k="building" v="office"/>
+  <tag k="ele" v="57"/>
+  <tag k="gnis:county_name" v="Los Angeles"/>
+  <tag k="gnis:feature_id" v="1657466"/>
+  <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+  <tag k="gnis:reviewed" v="no"/>
+  <tag k="name" v="John R. Hubbard Hall, Syudent Administrative Services"/>
+  <tag k="source" v="survey"/>
+ </way>
+ <way id="154906784" visible="true" version="2" changeset="22478329" timestamp="2014-05-22T04:01:50Z" user="daxiong" uid="1963738">
+  <nd ref="1673644796"/>
+  <nd ref="2873929500"/>
+  <nd ref="1673644743"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="154906676" visible="true" version="3" changeset="22478329" timestamp="2014-05-22T04:01:50Z" user="daxiong" uid="1963738">
+  <nd ref="1673644865"/>
+  <nd ref="1673644795"/>
+  <nd ref="2854143275"/>
+  <nd ref="2854143276"/>
+  <nd ref="1673644305"/>
+  <nd ref="1673644684"/>
+  <nd ref="1673644700"/>
+  <nd ref="1673644865"/>
+  <tag k="leisure" v="park"/>
+  <tag k="name" v="Alumni Park"/>
+ </way>
+ <way id="154906782" visible="true" version="3" changeset="22479736" timestamp="2014-05-22T06:48:24Z" user="daxiong" uid="1963738">
+  <nd ref="1673644637"/>
+  <nd ref="2854143276"/>
+  <nd ref="2874006272"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="13324614" visible="true" version="11" changeset="21276799" timestamp="2014-03-24T02:30:30Z" user="daxiong" uid="1963738">
+  <nd ref="122844993"/>
+  <nd ref="122728413"/>
+  <nd ref="2699041578"/>
+  <nd ref="2738732227"/>
+  <nd ref="122844995"/>
+  <nd ref="1673644796"/>
+  <nd ref="2699034216"/>
+  <nd ref="1673644784"/>
+  <nd ref="1673644782"/>
+  <nd ref="1673644724"/>
+  <nd ref="2738332817"/>
+  <nd ref="122844997"/>
+  <nd ref="1732243620"/>
+  <tag k="highway" v="footway"/>
+  <tag k="name" v="West 35th Place"/>
+  <tag k="name_1" v="Hellman Way"/>
+  <tag k="tiger:cfcc" v="A71"/>
+  <tag k="tiger:county" v="Los Angeles, CA"/>
+  <tag k="tiger:name_base" v="35th"/>
+  <tag k="tiger:name_base_1" v="Hellman"/>
+  <tag k="tiger:name_direction_prefix" v="W"/>
+  <tag k="tiger:name_type" v="Pl"/>
+  <tag k="tiger:name_type_1" v="Way"/>
+ </way>
+ <way id="255631244" visible="true" version="2" changeset="21945075" timestamp="2014-04-26T00:40:25Z" user="techlady" uid="104962">
+  <nd ref="123071708"/>
+  <nd ref="2613066260"/>
+  <tag k="highway" v="footway"/>
+  <tag k="name" v="Downey Way"/>
+ </way>
+ <way id="165568071" visible="true" version="3" changeset="19857242" timestamp="2014-01-07T05:27:42Z" user="nathansnider" uid="977071">
+  <nd ref="123209598"/>
+  <nd ref="122728406"/>
+  <nd ref="1862347583"/>
+  <tag k="access" v="private"/>
+  <tag k="highway" v="service"/>
+  <tag k="name" v="Downey Way"/>
+  <tag k="name_1" v="West 36th Place"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="Los Angeles, CA"/>
+  <tag k="tiger:name_base" v="Downey"/>
+  <tag k="tiger:name_base_1" v="36th"/>
+  <tag k="tiger:name_direction_prefix_1" v="W"/>
+  <tag k="tiger:name_type" v="Way"/>
+  <tag k="tiger:name_type_1" v="Pl"/>
+  <tag k="tiger:zip_left" v="90089"/>
+  <tag k="tiger:zip_right" v="90089"/>
+ </way>
+ <way id="13365310" visible="true" version="16" changeset="21568279" timestamp="2014-04-08T09:59:12Z" user="daxiong" uid="1963738">
+  <nd ref="123071704"/>
+  <nd ref="123071708"/>
+  <nd ref="1862347571"/>
+  <nd ref="1732243587"/>
+  <nd ref="1673644785"/>
+  <nd ref="1673644794"/>
+  <nd ref="122844995"/>
+  <nd ref="2738732226"/>
+  <nd ref="123071711"/>
+  <nd ref="2776870273"/>
+  <nd ref="123071713"/>
+  <nd ref="2613066333"/>
+  <nd ref="1673648172"/>
+  <nd ref="214470799"/>
+  <nd ref="1673648371"/>
+  <nd ref="1286136446"/>
+  <nd ref="2613066341"/>
+  <nd ref="1286136428"/>
+  <tag k="bicycle" v="designated"/>
+  <tag k="highway" v="pedestrian"/>
+  <tag k="name" v="Trousdale Parkway"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="Los Angeles, CA"/>
+  <tag k="tiger:name_base" v="Trousdale"/>
+  <tag k="tiger:name_type" v="Pky"/>
+ </way>
+ <way id="47307384" visible="true" version="6" changeset="21961155" timestamp="2014-04-26T18:42:52Z" user="Data411" uid="415250">
+  <nd ref="602606658"/>
+  <nd ref="2613066338"/>
+  <nd ref="1673644081"/>
+  <nd ref="2613066358"/>
+  <nd ref="2613066270"/>
+  <nd ref="1732243544"/>
+  <tag k="access" v="private"/>
+  <tag k="highway" v="service"/>
+  <tag k="name" v="Childs Way"/>
+  <tag k="name_1" v="West 36th Street"/>
+  <tag k="service" v="driveway"/>
+  <tag k="surface" v="paved"/>
+  <tag k="tiger:cfcc" v="A41"/>
+  <tag k="tiger:county" v="Los Angeles, CA"/>
+  <tag k="tiger:name_base" v="Childs"/>
+  <tag k="tiger:name_base_1" v="36th"/>
+  <tag k="tiger:name_direction_prefix_1" v="W"/>
+  <tag k="tiger:name_type" v="Way"/>
+  <tag k="tiger:name_type_1" v="St"/>
+  <tag k="tiger:zip_left" v="90007"/>
+  <tag k="tiger:zip_right" v="90007"/>
+ </way>
+ <way id="264358559" visible="true" version="1" changeset="20897061" timestamp="2014-03-03T20:36:50Z" user="daxiong" uid="1963738">
+  <nd ref="2700459348"/>
+  <nd ref="2700459349"/>
+  <nd ref="2700459350"/>
+  <tag k="bicycle" v="no"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="175666297" visible="true" version="2" changeset="20897061" timestamp="2014-03-03T20:36:51Z" user="daxiong" uid="1963738">
+  <nd ref="1732243587"/>
+  <nd ref="1862347574"/>
+  <nd ref="2700459350"/>
+  <nd ref="1862347583"/>
+  <nd ref="1862347582"/>
+  <tag k="highway" v="pedestrian"/>
+ </way>
+ <way id="283542129" visible="true" version="1" changeset="22478343" timestamp="2014-05-22T04:04:28Z" user="daxiong" uid="1963738">
+  <nd ref="1673644305"/>
+  <nd ref="2854143276"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283542278" visible="true" version="1" changeset="22478358" timestamp="2014-05-22T04:07:21Z" user="daxiong" uid="1963738">
+  <nd ref="1673644794"/>
+  <nd ref="2873934661"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283543816" visible="true" version="1" changeset="22478589" timestamp="2014-05-22T04:48:17Z" user="daxiong" uid="1963738">
+  <nd ref="2873934661"/>
+  <nd ref="1673644738"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283544725" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738">
+  <nd ref="1673644776"/>
+  <nd ref="2873960810"/>
+  <nd ref="2873960811"/>
+  <nd ref="2873960812"/>
+  <nd ref="1673644743"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283544726" visible="true" version="1" changeset="22478766" timestamp="2014-05-22T05:13:19Z" user="daxiong" uid="1963738">
+  <nd ref="1673644738"/>
+  <nd ref="2873960813"/>
+  <nd ref="1673644732"/>
+  <nd ref="2873960814"/>
+  <nd ref="2873960815"/>
+  <nd ref="2873960816"/>
+  <nd ref="1673644721"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283552533" visible="true" version="1" changeset="22480116" timestamp="2014-05-22T07:16:57Z" user="daxiong" uid="1963738">
+  <nd ref="2854143275"/>
+  <nd ref="2874027915"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283552936" visible="true" version="1" changeset="22480245" timestamp="2014-05-22T07:26:55Z" user="daxiong" uid="1963738">
+  <nd ref="2873934661"/>
+  <nd ref="1673644776"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="283552999" visible="true" version="1" changeset="22480258" timestamp="2014-05-22T07:28:06Z" user="daxiong" uid="1963738">
+  <nd ref="1673644743"/>
+  <nd ref="2874027915"/>
+  <nd ref="2874006272"/>
+  <nd ref="1673644721"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <relation id="2081632" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:29Z" user="Dan Wood" uid="609760">
+  <member type="way" ref="154906724" role="outer"/>
+  <member type="way" ref="154906792" role="inner"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="2081637" visible="true" version="1" changeset="10969895" timestamp="2012-03-13T18:22:33Z" user="Dan Wood" uid="609760">
+  <member type="way" ref="154906724" role="outer"/>
+  <member type="way" ref="154906768" role="outer"/>
+  <member type="way" ref="154906792" role="inner"/>
+  <member type="way" ref="154906794" role="inner"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+</osm>
