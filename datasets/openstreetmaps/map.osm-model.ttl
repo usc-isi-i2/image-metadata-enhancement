@@ -1,0 +1,751 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1948a2jqlx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "map.osm" ;
+	km-dev:modelPublicationTime "1413323247446"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"tag\"},{\"columnName\":\"v\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lon\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"tag\"},{\"columnName\":\"k\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lon\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:created\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"leisure\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"ele\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:created\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:state_id\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"name\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"Values_1\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"statue\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"Values_2\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"Type\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:county_id\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:feature_id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"stop\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"directions\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"amenity\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"directions\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:state_id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"Values_3\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"Glue_1\"},{\"columnName\":\"Values_4\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"highway\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"amenity\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"stop\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"highway\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"leisure\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"ele\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"statue\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:feature_id\"},{\"columnName\":\"Values\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"gnis:county_id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"node\"},{\"columnName\":\"Unfold: k\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasModelLabel "map.osm" ;
+	km-dev:hasBaseURI "http://semanticweb/medusa" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"lon\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"keyhNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"tag\"},
+                    {\"columnName\": \"k\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"valuehNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"tag\"},
+                    {\"columnName\": \"v\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"tag\\\"},{\\\"columnName\\\":\\\"v\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"tag\\\"},{\\\"columnName\\\":\\\"k\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:created\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"leisure\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"ele\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:state_id\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:created\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"statue\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:county_id\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:feature_id\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"stop\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"directions\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"amenity\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"directions\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:state_id\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"highway\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"amenity\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"stop\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"highway\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"statue\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"ele\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"leisure\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:feature_id\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"name\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"gnis:county_id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnfoldCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"Unfold: k\"},
+                    {\"columnName\": \"name\"},
+                    {\"columnName\": \"Values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"Values\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return trimData(getValue(\\\"Values\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"Unfold: k\"},
+                    {\"columnName\": \"statue\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"values\",
+                \"value\": [
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"osm\"},
+                            {\"columnName\": \"node\"},
+                            {\"columnName\": \"Unfold: k\"},
+                            {\"columnName\": \"statue\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    },
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"osm\"},
+                            {\"columnName\": \"node\"},
+                            {\"columnName\": \"Unfold: k\"},
+                            {\"columnName\": \"stop\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    },
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"osm\"},
+                            {\"columnName\": \"node\"},
+                            {\"columnName\": \"Unfold: k\"},
+                            {\"columnName\": \"highway\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    },
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"osm\"},
+                            {\"columnName\": \"node\"},
+                            {\"columnName\": \"Unfold: k\"},
+                            {\"columnName\": \"amenity\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    },
+                    {
+                        \"name\": \"checked\",
+                        \"value\": [
+                            {\"columnName\": \"osm\"},
+                            {\"columnName\": \"node\"},
+                            {\"columnName\": \"Unfold: k\"},
+                            {\"columnName\": \"leisure\"}
+                        ],
+                        \"type\": \"hNodeId\"
+                    }
+                ],
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_2\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_3\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_4\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"GlueCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"Unfold: k\"},
+                    {\"columnName\": \"name\"},
+                    {\"columnName\": \"Values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1 (add)\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"name\\\"},{\\\"columnName\\\":\\\"Values\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"Unfold: k\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"Values\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"Type\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return 'class/' + getType(getValue(\\\"Values\\\"), getValue(\\\"Values_1\\\"), getValue(\\\"Values_2\\\"),getValue(\\\"Values_3\\\"),getValue(\\\"Values_4\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_1\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_2\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_3\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Values_4\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"Unfold: k\"},
+                    {\"columnName\": \"Glue_1\"},
+                    {\"columnName\": \"Type\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isSubclassOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"Unfold: k\\\"},{\\\"columnName\\\":\\\"Glue_1\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://semanticweb/medusa\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"node\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"node\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 a rr:TriplesMap .
+
+_:node1948a2jqlx1 km-dev:hasTriplesMap km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 .
+
+km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx2 rr:tableName "map.osm" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasLogicalTable _:node1948a2jqlx2 .
+
+km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 rr:logicalTable _:node1948a2jqlx2 ;
+	rr:subjectMap _:node1948a2jqlx3 .
+
+_:node1948a2jqlx1 km-dev:hasSubjectMap _:node1948a2jqlx3 .
+
+_:node1948a2jqlx3 km-dev:isPartOfMapping _:node1948a2jqlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_73c8205f-d919-45e3-86e2-cc5230dacfd7 rr:predicate schema:latitude .
+
+_:node1948a2jqlx4 rr:column "[\"osm\",\"node\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasObjectMap _:node1948a2jqlx4 .
+
+km-dev:PredicateObjectMap_73c8205f-d919-45e3-86e2-cc5230dacfd7 rr:objectMap _:node1948a2jqlx4 .
+
+km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 rr:predicateObjectMap km-dev:PredicateObjectMap_73c8205f-d919-45e3-86e2-cc5230dacfd7 .
+
+km-dev:PredicateObjectMap_73c8205f-d919-45e3-86e2-cc5230dacfd7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_73c8205f-d919-45e3-86e2-cc5230dacfd7 .
+
+km-dev:PredicateObjectMap_99d6b63d-9545-41fc-bf16-581bf44f2f19 rr:predicate schema:longitude .
+
+_:node1948a2jqlx5 rr:column "[\"osm\",\"node\",\"lon\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasObjectMap _:node1948a2jqlx5 .
+
+km-dev:PredicateObjectMap_99d6b63d-9545-41fc-bf16-581bf44f2f19 rr:objectMap _:node1948a2jqlx5 .
+
+km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 rr:predicateObjectMap km-dev:PredicateObjectMap_99d6b63d-9545-41fc-bf16-581bf44f2f19 .
+
+km-dev:PredicateObjectMap_99d6b63d-9545-41fc-bf16-581bf44f2f19 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99d6b63d-9545-41fc-bf16-581bf44f2f19 .
+
+km-dev:TriplesMap_f912b945-370e-4d06-8f0c-99accb4b12c0 a rr:TriplesMap .
+
+_:node1948a2jqlx1 km-dev:hasTriplesMap km-dev:TriplesMap_f912b945-370e-4d06-8f0c-99accb4b12c0 .
+
+km-dev:TriplesMap_f912b945-370e-4d06-8f0c-99accb4b12c0 km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx6 rr:tableName "map.osm" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasLogicalTable _:node1948a2jqlx6 .
+
+km-dev:TriplesMap_f912b945-370e-4d06-8f0c-99accb4b12c0 rr:logicalTable _:node1948a2jqlx6 ;
+	rr:subjectMap _:node1948a2jqlx7 .
+
+_:node1948a2jqlx1 km-dev:hasSubjectMap _:node1948a2jqlx7 .
+
+_:node1948a2jqlx7 km-dev:isPartOfMapping _:node1948a2jqlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place .
+
+_:node1948a2jqlx8 rr:template "{[\"osm\",\"node\",\"Unfold: k\",\"Glue_1\",\"Type\"]}" .
+
+_:node1948a2jqlx7 rr:class _:node1948a2jqlx8 ;
+	rr:template "{[\"osm\",\"node\",\"id\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_0d379d08-2812-4cdc-821d-b11bafb9ffe6 rr:predicate schema:geo .
+
+km-dev:RefObjectMap_f9f1613d-3e2e-46a8-bbc0-27b5e0c684e4 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_08dfe1f7-5153-459b-b52e-771ec07d3912 ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasObjectMap km-dev:RefObjectMap_f9f1613d-3e2e-46a8-bbc0-27b5e0c684e4 .
+
+km-dev:PredicateObjectMap_0d379d08-2812-4cdc-821d-b11bafb9ffe6 rr:objectMap km-dev:RefObjectMap_f9f1613d-3e2e-46a8-bbc0-27b5e0c684e4 .
+
+km-dev:TriplesMap_f912b945-370e-4d06-8f0c-99accb4b12c0 rr:predicateObjectMap km-dev:PredicateObjectMap_0d379d08-2812-4cdc-821d-b11bafb9ffe6 .
+
+km-dev:PredicateObjectMap_0d379d08-2812-4cdc-821d-b11bafb9ffe6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0d379d08-2812-4cdc-821d-b11bafb9ffe6 .
+
+km-dev:PredicateObjectMap_0b215129-d2eb-4ce2-8604-0cb7b4e606f3 rr:predicate rdfs:label .
+
+_:node1948a2jqlx9 rr:column "[\"osm\",\"node\",\"Unfold: k\",\"name\",\"Values\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasObjectMap _:node1948a2jqlx9 .
+
+km-dev:PredicateObjectMap_0b215129-d2eb-4ce2-8604-0cb7b4e606f3 rr:objectMap _:node1948a2jqlx9 .
+
+km-dev:TriplesMap_f912b945-370e-4d06-8f0c-99accb4b12c0 rr:predicateObjectMap km-dev:PredicateObjectMap_0b215129-d2eb-4ce2-8604-0cb7b4e606f3 .
+
+km-dev:PredicateObjectMap_0b215129-d2eb-4ce2-8604-0cb7b4e606f3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948a2jqlx1 .
+
+_:node1948a2jqlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0b215129-d2eb-4ce2-8604-0cb7b4e606f3 .

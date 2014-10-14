@@ -1,0 +1,739 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1948c6beex1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "geonames.xml" ;
+	km-dev:modelPublicationTime "1413325467086"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasModelLabel "geonames.xml" ;
+	km-dev:hasBaseURI "http://semanticweb/medusa" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"lng\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lng\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"name\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return trimData(getValue(\\\"name\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place1 (add)\",
+                    \"DomainId\": \"http://schema.org/Place1 (add)\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"typeName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"typeName\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return 'class/' + trimData(getValue(\\\"typeName\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"typeClass\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"typeClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return ''.join(getValue(\\\"typeClass\\\").replace(\\\"_\\\", \\\"\\\").split()).lower()\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"typeClass\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isSubclassOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"typeClass\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"typeName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isSubclassOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isKey\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://semantic-web/medusa\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://semanticweb/medusa\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d a rr:TriplesMap .
+
+_:node1948c6beex1 km-dev:hasTriplesMap km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d .
+
+km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex2 rr:tableName "geonames.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasLogicalTable _:node1948c6beex2 .
+
+km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d rr:logicalTable _:node1948c6beex2 ;
+	rr:subjectMap _:node1948c6beex3 .
+
+_:node1948c6beex1 km-dev:hasSubjectMap _:node1948c6beex3 .
+
+_:node1948c6beex3 km-dev:isPartOfMapping _:node1948c6beex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_3a90a3e1-e74e-472c-8594-f31bdf7fb265 rr:predicate schema:latitude .
+
+_:node1948c6beex4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasObjectMap _:node1948c6beex4 .
+
+km-dev:PredicateObjectMap_3a90a3e1-e74e-472c-8594-f31bdf7fb265 rr:objectMap _:node1948c6beex4 .
+
+km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d rr:predicateObjectMap km-dev:PredicateObjectMap_3a90a3e1-e74e-472c-8594-f31bdf7fb265 .
+
+km-dev:PredicateObjectMap_3a90a3e1-e74e-472c-8594-f31bdf7fb265 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3a90a3e1-e74e-472c-8594-f31bdf7fb265 .
+
+km-dev:PredicateObjectMap_384b3e30-47a1-4d57-b6a1-f20d607ef723 rr:predicate schema:longitude .
+
+_:node1948c6beex5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasObjectMap _:node1948c6beex5 .
+
+km-dev:PredicateObjectMap_384b3e30-47a1-4d57-b6a1-f20d607ef723 rr:objectMap _:node1948c6beex5 .
+
+km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d rr:predicateObjectMap km-dev:PredicateObjectMap_384b3e30-47a1-4d57-b6a1-f20d607ef723 .
+
+km-dev:PredicateObjectMap_384b3e30-47a1-4d57-b6a1-f20d607ef723 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_384b3e30-47a1-4d57-b6a1-f20d607ef723 .
+
+km-dev:TriplesMap_413f52dd-74db-4b54-96ea-e92175e58523 a rr:TriplesMap .
+
+_:node1948c6beex1 km-dev:hasTriplesMap km-dev:TriplesMap_413f52dd-74db-4b54-96ea-e92175e58523 .
+
+km-dev:TriplesMap_413f52dd-74db-4b54-96ea-e92175e58523 km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex6 rr:tableName "geonames.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasLogicalTable _:node1948c6beex6 .
+
+km-dev:TriplesMap_413f52dd-74db-4b54-96ea-e92175e58523 rr:logicalTable _:node1948c6beex6 ;
+	rr:subjectMap _:node1948c6beex7 .
+
+_:node1948c6beex1 km-dev:hasSubjectMap _:node1948c6beex7 .
+
+_:node1948c6beex7 km-dev:isPartOfMapping _:node1948c6beex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place .
+
+_:node1948c6beex8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
+
+_:node1948c6beex7 rr:class _:node1948c6beex8 ;
+	rr:template "{[\"geonames\",\"poi\",\"name\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_a2697ca2-9ee5-41f3-ba3e-a7d87a777f4c rr:predicate schema:geo .
+
+km-dev:RefObjectMap_07c7db26-27d9-43b0-866d-1ae2fc55aba1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6c87395c-b75a-4d75-917b-3408e03cba7d ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasObjectMap km-dev:RefObjectMap_07c7db26-27d9-43b0-866d-1ae2fc55aba1 .
+
+km-dev:PredicateObjectMap_a2697ca2-9ee5-41f3-ba3e-a7d87a777f4c rr:objectMap km-dev:RefObjectMap_07c7db26-27d9-43b0-866d-1ae2fc55aba1 .
+
+km-dev:TriplesMap_413f52dd-74db-4b54-96ea-e92175e58523 rr:predicateObjectMap km-dev:PredicateObjectMap_a2697ca2-9ee5-41f3-ba3e-a7d87a777f4c .
+
+km-dev:PredicateObjectMap_a2697ca2-9ee5-41f3-ba3e-a7d87a777f4c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1948c6beex1 .
+
+_:node1948c6beex1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2697ca2-9ee5-41f3-ba3e-a7d87a777f4c .
