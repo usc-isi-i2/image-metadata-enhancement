@@ -7,9 +7,9 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node195hkpas4x1 a km-dev:R2RMLMapping ;
+_:node195hnh8f2x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "geonames.xml" ;
-	km-dev:modelPublicationTime "1414710209413"^^xsd:long ;
+	km-dev:modelPublicationTime "1414713090531"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
 	km-dev:hasInputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}]]" ;
 	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}]]" ;
@@ -708,112 +708,186 @@ _:node195hkpas4x1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
     }
 ]""" .
 
-km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 a rr:TriplesMap .
+km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 a rr:TriplesMap .
 
-_:node195hkpas4x1 km-dev:hasTriplesMap km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 .
+_:node195hnh8f2x1 km-dev:hasTriplesMap km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 .
 
-km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 km-dev:isPartOfMapping _:node195hkpas4x1 .
+km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x2 rr:tableName "geonames.xml" ;
+_:node195hnh8f2x2 rr:tableName "geonames.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasLogicalTable _:node195hkpas4x2 .
+_:node195hnh8f2x1 km-dev:hasLogicalTable _:node195hnh8f2x2 .
 
-km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 rr:logicalTable _:node195hkpas4x2 ;
-	rr:subjectMap _:node195hkpas4x3 .
+km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 rr:logicalTable _:node195hnh8f2x2 ;
+	rr:subjectMap _:node195hnh8f2x3 .
 
-_:node195hkpas4x1 km-dev:hasSubjectMap _:node195hkpas4x3 .
+_:node195hnh8f2x1 km-dev:hasSubjectMap _:node195hnh8f2x3 .
 
-_:node195hkpas4x3 km-dev:isPartOfMapping _:node195hkpas4x1 ;
+_:node195hnh8f2x3 km-dev:isPartOfMapping _:node195hnh8f2x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
 	rr:class schema:GeoCoordinates ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "schema:GeoCoordinates1" .
 
-km-dev:PredicateObjectMap_0e5f0d5f-9a77-4f72-bc3c-7dda9df5dd89 rr:predicate schema:latitude .
+km-dev:PredicateObjectMap_d0ad7ed0-6230-413c-ab37-04ab7f8f3d06 rr:predicate schema:latitude .
 
-_:node195hkpas4x4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
+_:node195hnh8f2x4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasObjectMap _:node195hkpas4x4 .
+_:node195hnh8f2x1 km-dev:hasObjectMap _:node195hnh8f2x4 .
 
-km-dev:PredicateObjectMap_0e5f0d5f-9a77-4f72-bc3c-7dda9df5dd89 rr:objectMap _:node195hkpas4x4 .
+km-dev:PredicateObjectMap_d0ad7ed0-6230-413c-ab37-04ab7f8f3d06 rr:objectMap _:node195hnh8f2x4 .
 
-km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 rr:predicateObjectMap km-dev:PredicateObjectMap_0e5f0d5f-9a77-4f72-bc3c-7dda9df5dd89 .
+km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 rr:predicateObjectMap km-dev:PredicateObjectMap_d0ad7ed0-6230-413c-ab37-04ab7f8f3d06 .
 
-km-dev:PredicateObjectMap_0e5f0d5f-9a77-4f72-bc3c-7dda9df5dd89 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+km-dev:PredicateObjectMap_d0ad7ed0-6230-413c-ab37-04ab7f8f3d06 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0e5f0d5f-9a77-4f72-bc3c-7dda9df5dd89 .
+_:node195hnh8f2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d0ad7ed0-6230-413c-ab37-04ab7f8f3d06 .
 
-km-dev:PredicateObjectMap_967c975e-9dbb-447f-aeca-2ad3e59dc93a rr:predicate schema:longitude .
+km-dev:PredicateObjectMap_5d814398-0a5a-4dc5-9f62-75f99a7f8768 rr:predicate schema:longitude .
 
-_:node195hkpas4x5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
+_:node195hnh8f2x5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasObjectMap _:node195hkpas4x5 .
+_:node195hnh8f2x1 km-dev:hasObjectMap _:node195hnh8f2x5 .
 
-km-dev:PredicateObjectMap_967c975e-9dbb-447f-aeca-2ad3e59dc93a rr:objectMap _:node195hkpas4x5 .
+km-dev:PredicateObjectMap_5d814398-0a5a-4dc5-9f62-75f99a7f8768 rr:objectMap _:node195hnh8f2x5 .
 
-km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 rr:predicateObjectMap km-dev:PredicateObjectMap_967c975e-9dbb-447f-aeca-2ad3e59dc93a .
+km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 rr:predicateObjectMap km-dev:PredicateObjectMap_5d814398-0a5a-4dc5-9f62-75f99a7f8768 .
 
-km-dev:PredicateObjectMap_967c975e-9dbb-447f-aeca-2ad3e59dc93a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+km-dev:PredicateObjectMap_5d814398-0a5a-4dc5-9f62-75f99a7f8768 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_967c975e-9dbb-447f-aeca-2ad3e59dc93a .
+_:node195hnh8f2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5d814398-0a5a-4dc5-9f62-75f99a7f8768 .
 
-km-dev:TriplesMap_76af6980-1031-4ec3-9789-ee588825bad1 a rr:TriplesMap .
+km-dev:TriplesMap_84f0d8f0-baf9-4e7a-82a0-cafb7b1bec50 a rr:TriplesMap .
 
-_:node195hkpas4x1 km-dev:hasTriplesMap km-dev:TriplesMap_76af6980-1031-4ec3-9789-ee588825bad1 .
+_:node195hnh8f2x1 km-dev:hasTriplesMap km-dev:TriplesMap_84f0d8f0-baf9-4e7a-82a0-cafb7b1bec50 .
 
-km-dev:TriplesMap_76af6980-1031-4ec3-9789-ee588825bad1 km-dev:isPartOfMapping _:node195hkpas4x1 .
+km-dev:TriplesMap_84f0d8f0-baf9-4e7a-82a0-cafb7b1bec50 km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x6 rr:tableName "geonames.xml" ;
+_:node195hnh8f2x6 rr:tableName "geonames.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasLogicalTable _:node195hkpas4x6 .
+_:node195hnh8f2x1 km-dev:hasLogicalTable _:node195hnh8f2x6 .
 
-km-dev:TriplesMap_76af6980-1031-4ec3-9789-ee588825bad1 rr:logicalTable _:node195hkpas4x6 ;
-	rr:subjectMap _:node195hkpas4x7 .
+km-dev:TriplesMap_84f0d8f0-baf9-4e7a-82a0-cafb7b1bec50 rr:logicalTable _:node195hnh8f2x6 ;
+	rr:subjectMap _:node195hnh8f2x7 .
 
-_:node195hkpas4x1 km-dev:hasSubjectMap _:node195hkpas4x7 .
+_:node195hnh8f2x1 km-dev:hasSubjectMap _:node195hnh8f2x7 .
 
-_:node195hkpas4x7 km-dev:isPartOfMapping _:node195hkpas4x1 ;
+_:node195hnh8f2x7 km-dev:isPartOfMapping _:node195hnh8f2x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Place1" ;
 	rr:class schema:Place .
 
-_:node195hkpas4x8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
+_:node195hnh8f2x8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
 
-_:node195hkpas4x7 rr:class _:node195hkpas4x8 .
+_:node195hnh8f2x7 rr:class _:node195hnh8f2x8 .
 
-_:node195hkpas4x9 rr:template "{[\"geonames\",\"poi\",\"typeClass\"]}" .
+_:node195hnh8f2x9 rr:template "{[\"geonames\",\"poi\",\"typeClass\"]}" .
 
-_:node195hkpas4x7 rr:class _:node195hkpas4x9 ;
-	rr:template "{[\"geonames\",\"poi\",\"name\"]}" ;
+_:node195hnh8f2x7 rr:class _:node195hnh8f2x9 ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Place1" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_831b9752-aafb-4191-8c7e-0157940aad71 rr:predicate schema:geo .
+km-dev:PredicateObjectMap_b631292f-0351-4cd7-b4ac-5ed1a0adf9a2 rr:predicate schema:geo .
 
-km-dev:RefObjectMap_37e54e09-f04b-4a06-af1a-0803aea74ad7 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_e9af2410-a2c4-42b7-a229-bfbe4b589046 ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+km-dev:RefObjectMap_a7a4efa9-5b80-4ee6-b0fc-1391c1442573 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e537c304-0b91-47ab-a807-e099a5ff0f37 ;
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasObjectMap km-dev:RefObjectMap_37e54e09-f04b-4a06-af1a-0803aea74ad7 .
+_:node195hnh8f2x1 km-dev:hasObjectMap km-dev:RefObjectMap_a7a4efa9-5b80-4ee6-b0fc-1391c1442573 .
 
-km-dev:PredicateObjectMap_831b9752-aafb-4191-8c7e-0157940aad71 rr:objectMap km-dev:RefObjectMap_37e54e09-f04b-4a06-af1a-0803aea74ad7 .
+km-dev:PredicateObjectMap_b631292f-0351-4cd7-b4ac-5ed1a0adf9a2 rr:objectMap km-dev:RefObjectMap_a7a4efa9-5b80-4ee6-b0fc-1391c1442573 .
 
-km-dev:TriplesMap_76af6980-1031-4ec3-9789-ee588825bad1 rr:predicateObjectMap km-dev:PredicateObjectMap_831b9752-aafb-4191-8c7e-0157940aad71 .
+km-dev:TriplesMap_84f0d8f0-baf9-4e7a-82a0-cafb7b1bec50 rr:predicateObjectMap km-dev:PredicateObjectMap_b631292f-0351-4cd7-b4ac-5ed1a0adf9a2 .
 
-km-dev:PredicateObjectMap_831b9752-aafb-4191-8c7e-0157940aad71 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hkpas4x1 .
+km-dev:PredicateObjectMap_b631292f-0351-4cd7-b4ac-5ed1a0adf9a2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
 
-_:node195hkpas4x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_831b9752-aafb-4191-8c7e-0157940aad71 .
+_:node195hnh8f2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b631292f-0351-4cd7-b4ac-5ed1a0adf9a2 .
+
+km-dev:PredicateObjectMap_c078d7b6-6555-42d7-bcad-b901fc6d621b rr:predicate rdfs:label .
+
+_:node195hnh8f2x10 rr:column "[\"geonames\",\"poi\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
+
+_:node195hnh8f2x1 km-dev:hasObjectMap _:node195hnh8f2x10 .
+
+km-dev:PredicateObjectMap_c078d7b6-6555-42d7-bcad-b901fc6d621b rr:objectMap _:node195hnh8f2x10 .
+
+km-dev:TriplesMap_84f0d8f0-baf9-4e7a-82a0-cafb7b1bec50 rr:predicateObjectMap km-dev:PredicateObjectMap_c078d7b6-6555-42d7-bcad-b901fc6d621b .
+
+km-dev:PredicateObjectMap_c078d7b6-6555-42d7-bcad-b901fc6d621b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195hnh8f2x1 .
+
+_:node195hnh8f2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c078d7b6-6555-42d7-bcad-b901fc6d621b .
