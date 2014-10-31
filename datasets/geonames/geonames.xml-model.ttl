@@ -7,12 +7,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node195hnvh77x1 a km-dev:R2RMLMapping ;
+_:node195i173n6x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "geonames.xml" ;
-	km-dev:modelPublicationTime "1414713558247"^^xsd:long ;
+	km-dev:modelPublicationTime "1414723243750"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}]]" ;
 	km-dev:hasModelLabel "geonames.xml" ;
 	km-dev:hasBaseURI "http://semanticweb/medusa/" ;
 	km-dev:hasWorksheetHistory """[
@@ -428,7 +428,7 @@ _:node195hnvh77x1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -483,7 +483,7 @@ _:node195hnvh77x1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -809,126 +809,351 @@ _:node195hnvh77x1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
+                    \"edgeTargetId\": \"HN5761\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP4:WS5737AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
+                    \"edgeTargetId\": \"HN5855\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP4:WS5831AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
+                    \"edgeTargetId\": \"HN25\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
+                    \"edgeTargetId\": \"HN127\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS103AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
+                    \"edgeTargetId\": \"HN233\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS209AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
     }
 ]""" .
 
-km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae a rr:TriplesMap .
+km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 a rr:TriplesMap .
 
-_:node195hnvh77x1 km-dev:hasTriplesMap km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae .
+_:node195i173n6x1 km-dev:hasTriplesMap km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 .
 
-km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x2 rr:tableName "geonames.xml" ;
+_:node195i173n6x2 rr:tableName "geonames.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasLogicalTable _:node195hnvh77x2 .
+_:node195i173n6x1 km-dev:hasLogicalTable _:node195i173n6x2 .
 
-km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae rr:logicalTable _:node195hnvh77x2 ;
-	rr:subjectMap _:node195hnvh77x3 .
+km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 rr:logicalTable _:node195i173n6x2 ;
+	rr:subjectMap _:node195i173n6x3 .
 
-_:node195hnvh77x1 km-dev:hasSubjectMap _:node195hnvh77x3 .
+_:node195i173n6x1 km-dev:hasSubjectMap _:node195i173n6x3 .
 
-_:node195hnvh77x3 km-dev:isPartOfMapping _:node195hnvh77x1 ;
+_:node195i173n6x3 km-dev:isPartOfMapping _:node195i173n6x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
 	rr:class schema:GeoCoordinates ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "schema:GeoCoordinates1" .
 
-km-dev:PredicateObjectMap_5e854a7c-14a7-4c4f-b203-b92e2ac27300 rr:predicate schema:latitude .
+km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 rr:predicate schema:latitude .
 
-_:node195hnvh77x4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
+_:node195i173n6x4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasObjectMap _:node195hnvh77x4 .
+_:node195i173n6x1 km-dev:hasObjectMap _:node195i173n6x4 .
 
-km-dev:PredicateObjectMap_5e854a7c-14a7-4c4f-b203-b92e2ac27300 rr:objectMap _:node195hnvh77x4 .
+km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 rr:objectMap _:node195i173n6x4 .
 
-km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae rr:predicateObjectMap km-dev:PredicateObjectMap_5e854a7c-14a7-4c4f-b203-b92e2ac27300 .
+km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 rr:predicateObjectMap km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 .
 
-km-dev:PredicateObjectMap_5e854a7c-14a7-4c4f-b203-b92e2ac27300 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e854a7c-14a7-4c4f-b203-b92e2ac27300 .
+_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 .
 
-km-dev:PredicateObjectMap_f33c79cf-0294-4373-8cbb-7051a4324f30 rr:predicate schema:longitude .
+km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e rr:predicate schema:longitude .
 
-_:node195hnvh77x5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
+_:node195i173n6x5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasObjectMap _:node195hnvh77x5 .
+_:node195i173n6x1 km-dev:hasObjectMap _:node195i173n6x5 .
 
-km-dev:PredicateObjectMap_f33c79cf-0294-4373-8cbb-7051a4324f30 rr:objectMap _:node195hnvh77x5 .
+km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e rr:objectMap _:node195i173n6x5 .
 
-km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae rr:predicateObjectMap km-dev:PredicateObjectMap_f33c79cf-0294-4373-8cbb-7051a4324f30 .
+km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 rr:predicateObjectMap km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e .
 
-km-dev:PredicateObjectMap_f33c79cf-0294-4373-8cbb-7051a4324f30 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f33c79cf-0294-4373-8cbb-7051a4324f30 .
+_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e .
 
-km-dev:TriplesMap_e1d58977-70b0-4bd0-a17b-3d40540bc082 a rr:TriplesMap .
+km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 a rr:TriplesMap .
 
-_:node195hnvh77x1 km-dev:hasTriplesMap km-dev:TriplesMap_e1d58977-70b0-4bd0-a17b-3d40540bc082 .
+_:node195i173n6x1 km-dev:hasTriplesMap km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 .
 
-km-dev:TriplesMap_e1d58977-70b0-4bd0-a17b-3d40540bc082 km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x6 rr:tableName "geonames.xml" ;
+_:node195i173n6x6 rr:tableName "geonames.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasLogicalTable _:node195hnvh77x6 .
+_:node195i173n6x1 km-dev:hasLogicalTable _:node195i173n6x6 .
 
-km-dev:TriplesMap_e1d58977-70b0-4bd0-a17b-3d40540bc082 rr:logicalTable _:node195hnvh77x6 ;
-	rr:subjectMap _:node195hnvh77x7 .
+km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 rr:logicalTable _:node195i173n6x6 ;
+	rr:subjectMap _:node195i173n6x7 .
 
-_:node195hnvh77x1 km-dev:hasSubjectMap _:node195hnvh77x7 .
+_:node195i173n6x1 km-dev:hasSubjectMap _:node195i173n6x7 .
 
-_:node195hnvh77x7 km-dev:isPartOfMapping _:node195hnvh77x1 ;
+_:node195i173n6x7 km-dev:isPartOfMapping _:node195i173n6x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Place1" ;
 	rr:class schema:Place .
 
-_:node195hnvh77x8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
+_:node195i173n6x8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
 
-_:node195hnvh77x7 rr:class _:node195hnvh77x8 ;
+_:node195i173n6x7 rr:class _:node195i173n6x8 ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "schema:Place1" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_de87a1e8-60ca-46e0-a221-b5f4ceff7505 rr:predicate schema:geo .
+km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 rr:predicate schema:geo .
 
-km-dev:RefObjectMap_77b25810-594d-43af-bfb7-3c97c1ca6512 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9a4bd445-8e9a-4f97-836f-52e51eed13ae ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:RefObjectMap_e65f8d60-2c12-4c40-99f2-1d3c2c1ae4ec a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 ;
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasObjectMap km-dev:RefObjectMap_77b25810-594d-43af-bfb7-3c97c1ca6512 .
+_:node195i173n6x1 km-dev:hasObjectMap km-dev:RefObjectMap_e65f8d60-2c12-4c40-99f2-1d3c2c1ae4ec .
 
-km-dev:PredicateObjectMap_de87a1e8-60ca-46e0-a221-b5f4ceff7505 rr:objectMap km-dev:RefObjectMap_77b25810-594d-43af-bfb7-3c97c1ca6512 .
+km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 rr:objectMap km-dev:RefObjectMap_e65f8d60-2c12-4c40-99f2-1d3c2c1ae4ec .
 
-km-dev:TriplesMap_e1d58977-70b0-4bd0-a17b-3d40540bc082 rr:predicateObjectMap km-dev:PredicateObjectMap_de87a1e8-60ca-46e0-a221-b5f4ceff7505 .
+km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 rr:predicateObjectMap km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 .
 
-km-dev:PredicateObjectMap_de87a1e8-60ca-46e0-a221-b5f4ceff7505 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_de87a1e8-60ca-46e0-a221-b5f4ceff7505 .
+_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 .
 
-km-dev:PredicateObjectMap_cd0a7387-cd94-4150-a6d7-619ddf6aa786 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 rr:predicate rdfs:label .
 
-_:node195hnvh77x9 rr:column "[\"geonames\",\"poi\",\"name\"]" ;
+_:node195i173n6x9 rr:column "[\"geonames\",\"poi\",\"name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasObjectMap _:node195hnvh77x9 .
+_:node195i173n6x1 km-dev:hasObjectMap _:node195i173n6x9 .
 
-km-dev:PredicateObjectMap_cd0a7387-cd94-4150-a6d7-619ddf6aa786 rr:objectMap _:node195hnvh77x9 .
+km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 rr:objectMap _:node195i173n6x9 .
 
-km-dev:TriplesMap_e1d58977-70b0-4bd0-a17b-3d40540bc082 rr:predicateObjectMap km-dev:PredicateObjectMap_cd0a7387-cd94-4150-a6d7-619ddf6aa786 .
+km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 rr:predicateObjectMap km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 .
 
-km-dev:PredicateObjectMap_cd0a7387-cd94-4150-a6d7-619ddf6aa786 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195hnvh77x1 .
+km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i173n6x1 .
 
-_:node195hnvh77x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd0a7387-cd94-4150-a6d7-619ddf6aa786 .
+_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 .
