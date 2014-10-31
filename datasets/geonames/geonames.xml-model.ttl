@@ -7,15 +7,71 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node195i173n6x1 a km-dev:R2RMLMapping ;
+_:node195i4kg82x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "geonames.xml" ;
-	km-dev:modelPublicationTime "1414723243750"^^xsd:long ;
+	km-dev:modelPublicationTime "1414726828291"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeClass\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"name\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"typeName\"}],[{\"columnName\":\"geonames\"},{\"columnName\":\"poi\"},{\"columnName\":\"lng\"}]]" ;
 	km-dev:hasModelLabel "geonames.xml" ;
-	km-dev:hasBaseURI "http://semanticweb/medusa/" ;
+	km-dev:hasBaseURI "http://semantic-web/medusa/" ;
 	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"geonames\"},
+                    {\"columnName\": \"poi\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
     {
         \"tags\": [\"Modeling\"],
         \"inputParameters\": [
@@ -41,17 +97,12 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://schema.org/longitude\",
                     \"isPrimary\": true,
-                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
                     \"DomainId\": \"http://schema.org/GeoCoordinates1\",
                     \"DomainUri\": \"http://schema.org/GeoCoordinates\"
                 }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isKey\",
-                \"value\": false,
                 \"type\": \"other\"
             },
             {
@@ -81,15 +132,6 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
         \"tags\": [\"Modeling\"],
         \"inputParameters\": [
             {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"geonames\"},
-                    {\"columnName\": \"poi\"},
-                    {\"columnName\": \"lat\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
                 \"name\": \"worksheetId\",
                 \"value\": \"W\",
                 \"type\": \"worksheetId\"
@@ -100,43 +142,28 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://schema.org/latitude\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"schema:GeoCoordinates1\",
-                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
-                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isKey\",
-                \"value\": false,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": false,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://semantic-web/medusa/\"
+                },
                 \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
-        \"commandName\": \"SetSemanticTypeCommand\"
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
         \"tags\": [\"Transformation\"],
@@ -211,34 +238,14 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"metaPropertyName\",
-                \"value\": \"isUriOfClass\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"value\": \"http://schema.org/Place\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"value\": \"http://schema.org/Place1 (add)\",
-                \"type\": \"other\"
-            },
-            {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
                     \"DomainLabel\": \"schema:Place1 (add)\",
-                    \"DomainId\": \"http://schema.org/Place1 (add)\",
+                    \"DomainId\": \"http://schema.org/Place1\",
                     \"DomainUri\": \"http://schema.org/Place\"
                 }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isKey\",
-                \"value\": false,
                 \"type\": \"other\"
             },
             {
@@ -262,7 +269,7 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
                 \"type\": \"hNodeIdList\"
             }
         ],
-        \"commandName\": \"SetMetaPropertyCommand\"
+        \"commandName\": \"SetSemanticTypeCommand\"
     },
     {
         \"tags\": [\"Transformation\"],
@@ -315,181 +322,6 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SubmitPythonTransformationCommand\"
     },
     {
-        \"tags\": [\"Transformation\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"geonames\"},
-                    {\"columnName\": \"poi\"},
-                    {\"columnName\": \"typeClass\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newColumnName\",
-                \"value\": \"typeClass\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"transformationCode\",
-                \"value\": \"return ''.join(getValue(\\\"typeClass\\\").replace(\\\"_\\\", \\\"\\\").split()).lower()\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"errorDefaultValue\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SubmitPythonTransformationCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"geonames\"},
-                    {\"columnName\": \"poi\"},
-                    {\"columnName\": \"typeClass\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyName\",
-                \"value\": \"isSubclassOfClass\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyUri\",
-                \"value\": \"http://schema.org/Place\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"metaPropertyId\",
-                \"value\": \"http://schema.org/Place1\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isKey\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": false,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetMetaPropertyCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"geonames\"},
-                    {\"columnName\": \"poi\"},
-                    {\"columnName\": \"typeClass\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"isKey\",
-                \"value\": false,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"typeClass\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"UnassignSemanticTypeCommand\"
-    },
-    {
         \"tags\": [\"Modeling\"],
         \"inputParameters\": [
             {
@@ -532,11 +364,6 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"isKey\",
-                \"value\": false,
-                \"type\": \"other\"
-            },
-            {
                 \"name\": \"trainAndShowUpdates\",
                 \"value\": false,
                 \"type\": \"other\"
@@ -568,117 +395,6 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
                 \"type\": \"worksheetId\"
             },
             {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"properties\",
-                \"value\": {
-                    \"hasServiceProperties\": false,
-                    \"hasPrefix\": false,
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": true,
-                    \"baseURI\": \"http://semantic-web/medusa\"
-                },
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetWorksheetPropertiesCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"properties\",
-                \"value\": {
-                    \"hasServiceProperties\": false,
-                    \"hasPrefix\": false,
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": true,
-                    \"baseURI\": \"http://semanticweb/medusa\"
-                },
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetWorksheetPropertiesCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"properties\",
-                \"value\": {
-                    \"hasServiceProperties\": false,
-                    \"hasPrefix\": false,
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": true,
-                    \"baseURI\": \"http://semanticweb/medusa/\"
-                },
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetWorksheetPropertiesCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
                 \"name\": \"initialEdges\",
                 \"value\": [{
                     \"edgeId\": \"http://schema.org/geo\",
@@ -694,332 +410,6 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
                     \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
                     \"edgeSourceId\": \"http://schema.org/Place1\"
                 }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"geonames\"},
-                    {\"columnName\": \"poi\"},
-                    {\"columnName\": \"name\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
-                    \"DomainLabel\": \"schema:Place1\",
-                    \"DomainId\": \"http://schema.org/Place1\",
-                    \"DomainUri\": \"http://schema.org/Place\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": false,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"geonames\\\"},{\\\"columnName\\\":\\\"poi\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [{
-                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
-                    \"edgeTargetId\": \"HN217\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP1:WS193AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [{
-                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
-                    \"edgeTargetId\": \"HN5761\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP4:WS5737AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [{
-                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
-                    \"edgeTargetId\": \"HN5855\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP4:WS5831AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [{
-                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
-                    \"edgeTargetId\": \"HN25\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP1:WS1AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [{
-                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
-                    \"edgeTargetId\": \"HN127\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP1:WS103AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"ChangeInternalNodeLinksCommand\"
-    },
-    {
-        \"tags\": [\"Modeling\"],
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"initialEdges\",
-                \"value\": [{
-                    \"edgeId\": \"http://isi.edu/integration/karma/dev#columnSubClassOfLink\",
-                    \"edgeTargetId\": \"HN233\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"alignmentId\",
-                \"value\": \"WSP1:WS209AL\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"newEdges\",
-                \"value\": [],
                 \"type\": \"other\"
             },
             {
@@ -1037,123 +427,123 @@ _:node195i173n6x1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 a rr:TriplesMap .
+km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 a rr:TriplesMap .
 
-_:node195i173n6x1 km-dev:hasTriplesMap km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 .
+_:node195i4kg82x1 km-dev:hasTriplesMap km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 .
 
-km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x2 rr:tableName "geonames.xml" ;
+_:node195i4kg82x2 rr:tableName "geonames.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasLogicalTable _:node195i173n6x2 .
+_:node195i4kg82x1 km-dev:hasLogicalTable _:node195i4kg82x2 .
 
-km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 rr:logicalTable _:node195i173n6x2 ;
-	rr:subjectMap _:node195i173n6x3 .
+km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 rr:logicalTable _:node195i4kg82x2 ;
+	rr:subjectMap _:node195i4kg82x3 .
 
-_:node195i173n6x1 km-dev:hasSubjectMap _:node195i173n6x3 .
+_:node195i4kg82x1 km-dev:hasSubjectMap _:node195i4kg82x3 .
 
-_:node195i173n6x3 km-dev:isPartOfMapping _:node195i173n6x1 ;
+_:node195i4kg82x3 km-dev:isPartOfMapping _:node195i4kg82x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
 	rr:class schema:GeoCoordinates ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "schema:GeoCoordinates1" .
 
-km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 rr:predicate schema:latitude .
+km-dev:PredicateObjectMap_e624b21f-cb87-40d5-90c1-bd031f594268 rr:predicate schema:latitude .
 
-_:node195i173n6x4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
+_:node195i4kg82x4 rr:column "[\"geonames\",\"poi\",\"lat\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasObjectMap _:node195i173n6x4 .
+_:node195i4kg82x1 km-dev:hasObjectMap _:node195i4kg82x4 .
 
-km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 rr:objectMap _:node195i173n6x4 .
+km-dev:PredicateObjectMap_e624b21f-cb87-40d5-90c1-bd031f594268 rr:objectMap _:node195i4kg82x4 .
 
-km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 rr:predicateObjectMap km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 .
+km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 rr:predicateObjectMap km-dev:PredicateObjectMap_e624b21f-cb87-40d5-90c1-bd031f594268 .
 
-km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:PredicateObjectMap_e624b21f-cb87-40d5-90c1-bd031f594268 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_57272408-73d8-47e4-bc61-cb6c2009e234 .
+_:node195i4kg82x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e624b21f-cb87-40d5-90c1-bd031f594268 .
 
-km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e rr:predicate schema:longitude .
+km-dev:PredicateObjectMap_3938e122-fb49-46d0-90cf-97edfcd3e74b rr:predicate schema:longitude .
 
-_:node195i173n6x5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
+_:node195i4kg82x5 rr:column "[\"geonames\",\"poi\",\"lng\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasObjectMap _:node195i173n6x5 .
+_:node195i4kg82x1 km-dev:hasObjectMap _:node195i4kg82x5 .
 
-km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e rr:objectMap _:node195i173n6x5 .
+km-dev:PredicateObjectMap_3938e122-fb49-46d0-90cf-97edfcd3e74b rr:objectMap _:node195i4kg82x5 .
 
-km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 rr:predicateObjectMap km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e .
+km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 rr:predicateObjectMap km-dev:PredicateObjectMap_3938e122-fb49-46d0-90cf-97edfcd3e74b .
 
-km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:PredicateObjectMap_3938e122-fb49-46d0-90cf-97edfcd3e74b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c0b08404-8346-4d7b-a69c-6ed269fc1d7e .
+_:node195i4kg82x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3938e122-fb49-46d0-90cf-97edfcd3e74b .
 
-km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 a rr:TriplesMap .
+km-dev:TriplesMap_b108d98c-3c82-4b97-9f95-51cc251af1e7 a rr:TriplesMap .
 
-_:node195i173n6x1 km-dev:hasTriplesMap km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 .
+_:node195i4kg82x1 km-dev:hasTriplesMap km-dev:TriplesMap_b108d98c-3c82-4b97-9f95-51cc251af1e7 .
 
-km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:TriplesMap_b108d98c-3c82-4b97-9f95-51cc251af1e7 km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x6 rr:tableName "geonames.xml" ;
+_:node195i4kg82x6 rr:tableName "geonames.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasLogicalTable _:node195i173n6x6 .
+_:node195i4kg82x1 km-dev:hasLogicalTable _:node195i4kg82x6 .
 
-km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 rr:logicalTable _:node195i173n6x6 ;
-	rr:subjectMap _:node195i173n6x7 .
+km-dev:TriplesMap_b108d98c-3c82-4b97-9f95-51cc251af1e7 rr:logicalTable _:node195i4kg82x6 ;
+	rr:subjectMap _:node195i4kg82x7 .
 
-_:node195i173n6x1 km-dev:hasSubjectMap _:node195i173n6x7 .
+_:node195i4kg82x1 km-dev:hasSubjectMap _:node195i4kg82x7 .
 
-_:node195i173n6x7 km-dev:isPartOfMapping _:node195i173n6x1 ;
+_:node195i4kg82x7 km-dev:isPartOfMapping _:node195i4kg82x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Place1" ;
 	rr:class schema:Place .
 
-_:node195i173n6x8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
+_:node195i4kg82x8 rr:template "{[\"geonames\",\"poi\",\"typeName\"]}" .
 
-_:node195i173n6x7 rr:class _:node195i173n6x8 ;
+_:node195i4kg82x7 rr:class _:node195i4kg82x8 ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "schema:Place1" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 rr:predicate schema:geo .
+km-dev:PredicateObjectMap_bdf2eb5e-6401-4ac1-a16c-eac344e65b97 rr:predicate schema:geo .
 
-km-dev:RefObjectMap_e65f8d60-2c12-4c40-99f2-1d3c2c1ae4ec a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_b767f688-b39e-4a72-86c3-ce03b3ebbae0 ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:RefObjectMap_c0f79ed2-6401-4114-83cd-5f8f9ceb044a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_11d390fe-9558-46db-a32c-a00fdcaa77d8 ;
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasObjectMap km-dev:RefObjectMap_e65f8d60-2c12-4c40-99f2-1d3c2c1ae4ec .
+_:node195i4kg82x1 km-dev:hasObjectMap km-dev:RefObjectMap_c0f79ed2-6401-4114-83cd-5f8f9ceb044a .
 
-km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 rr:objectMap km-dev:RefObjectMap_e65f8d60-2c12-4c40-99f2-1d3c2c1ae4ec .
+km-dev:PredicateObjectMap_bdf2eb5e-6401-4ac1-a16c-eac344e65b97 rr:objectMap km-dev:RefObjectMap_c0f79ed2-6401-4114-83cd-5f8f9ceb044a .
 
-km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 rr:predicateObjectMap km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 .
+km-dev:TriplesMap_b108d98c-3c82-4b97-9f95-51cc251af1e7 rr:predicateObjectMap km-dev:PredicateObjectMap_bdf2eb5e-6401-4ac1-a16c-eac344e65b97 .
 
-km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:PredicateObjectMap_bdf2eb5e-6401-4ac1-a16c-eac344e65b97 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e6ce952d-074b-417f-8974-5e454a71b376 .
+_:node195i4kg82x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bdf2eb5e-6401-4ac1-a16c-eac344e65b97 .
 
-km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_eacaeac3-7144-4a72-8c8e-a7630c0518a9 rr:predicate rdfs:label .
 
-_:node195i173n6x9 rr:column "[\"geonames\",\"poi\",\"name\"]" ;
+_:node195i4kg82x9 rr:column "[\"geonames\",\"poi\",\"name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasObjectMap _:node195i173n6x9 .
+_:node195i4kg82x1 km-dev:hasObjectMap _:node195i4kg82x9 .
 
-km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 rr:objectMap _:node195i173n6x9 .
+km-dev:PredicateObjectMap_eacaeac3-7144-4a72-8c8e-a7630c0518a9 rr:objectMap _:node195i4kg82x9 .
 
-km-dev:TriplesMap_4f4b805c-a4c7-4b23-bfd2-ffad5dc43ba1 rr:predicateObjectMap km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 .
+km-dev:TriplesMap_b108d98c-3c82-4b97-9f95-51cc251af1e7 rr:predicateObjectMap km-dev:PredicateObjectMap_eacaeac3-7144-4a72-8c8e-a7630c0518a9 .
 
-km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node195i173n6x1 .
+km-dev:PredicateObjectMap_eacaeac3-7144-4a72-8c8e-a7630c0518a9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node195i4kg82x1 .
 
-_:node195i173n6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d212b6f0-fd9a-4a96-87bc-64d64ef461e4 .
+_:node195i4kg82x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eacaeac3-7144-4a72-8c8e-a7630c0518a9 .
