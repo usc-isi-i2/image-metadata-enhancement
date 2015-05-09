@@ -1,0 +1,20 @@
+[
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS4135-foursquare-photos-sample_json-context.json",
+    "height": 540,
+    "width": 720,
+    "a": "Photograph",
+    "dateCreated": "2012-09-17T23:03:03",
+    "uri": "http://medusa.usc.edu/data/foursquare/50579e17e4b0d3a23c5522d1",
+    "url": "https://irs1.4sqi.net/img/general/original/30854580_BBvX-mxSyESI3kHNCFawbmN2U8KYYC0Yp3iEDo4goDE.jpg"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS4135-foursquare-photos-sample_json-context.json",
+    "height": 720,
+    "width": 537,
+    "a": "Photograph",
+    "dateCreated": "2011-09-10T19:46:12",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e6bb074c65b5bef28ecc741",
+    "url": "https://irs0.4sqi.net/img/general/original/553LE2Q0G3YN5J1GRJSEEKX3BTTNIRJMGUFYQMET13DKHGST.jpg"
+}
+]

@@ -1,0 +1,356 @@
+{
+    "id": "foursquare-photos-sample.json",
+    "name": "foursquare-photos-sample.json",
+    "description": null,
+    "sourceColumns": [
+        {
+            "id": "HN4177",
+            "hNodeId": "HN4177",
+            "columnName": "id"
+        },
+        {
+            "id": "HN4272",
+            "hNodeId": "HN4272",
+            "columnName": "createdAt_iso"
+        },
+        {
+            "id": "HN4196",
+            "hNodeId": "HN4196",
+            "columnName": "height"
+        },
+        {
+            "id": "HN5189",
+            "hNodeId": "HN5189",
+            "columnName": "photo_url"
+        },
+        {
+            "id": "HN4194",
+            "hNodeId": "HN4194",
+            "columnName": "width"
+        }
+    ],
+    "mappingToSourceColumns": [
+        {
+            "id": "HN4194",
+            "sourceColumnId": "HN4194"
+        },
+        {
+            "id": "HN5189",
+            "sourceColumnId": "HN5189"
+        },
+        {
+            "id": "HN4177",
+            "sourceColumnId": "HN4177"
+        },
+        {
+            "id": "HN4196",
+            "sourceColumnId": "HN4196"
+        },
+        {
+            "id": "HN4272",
+            "sourceColumnId": "HN4272"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "http://schema.org/Photograph1",
+                "label": {
+                    "uri": "http://schema.org/Photograph"
+                },
+                "type": "InternalNode",
+                "modelIds": []
+            },
+            {
+                "id": "HN4177",
+                "label": {
+                    "uri": "HN4177"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN4177",
+                "columnName": "id",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN4177",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN4177",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN4272",
+                "label": {
+                    "uri": "HN4272"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN4272",
+                "columnName": "createdAt_iso",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN4272",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/dateCreated"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN4272",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/dateCreated"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN4196",
+                "label": {
+                    "uri": "HN4196"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN4196",
+                "columnName": "height",
+                "rdfLiteralType": {
+                    "uri": "http://www.w3.org/2001/XMLSchema#integer"
+                },
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN4196",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/height"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN4196",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/height"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.8226024845161666
+                    },
+                    {
+                        "hNodeId": "HN4196",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/width"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.17739751548383337
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN5189",
+                "label": {
+                    "uri": "HN5189"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN5189",
+                "columnName": "photo_url",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN5189",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/url"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN5189",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/url"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.9506345484774332
+                    },
+                    {
+                        "hNodeId": "HN5189",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.030239998008417132
+                    },
+                    {
+                        "hNodeId": "HN5189",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/description"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.019125453514149675
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN4194",
+                "label": {
+                    "uri": "HN4194"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN4194",
+                "columnName": "width",
+                "rdfLiteralType": {
+                    "uri": "http://www.w3.org/2001/XMLSchema#integer"
+                },
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN4194",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/width"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN4194",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/width"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.8226024845161666
+                    },
+                    {
+                        "hNodeId": "HN4194",
+                        "domain": {
+                            "uri": "http://schema.org/Photograph"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/height"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.17739751548383337
+                    }
+                ],
+                "modelIds": []
+            }
+        ],
+        "links": [
+            {
+                "id": "http://schema.org/Photograph1---http://isi.edu/integration/karma/dev#classLink---HN4177",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Photograph1---http://schema.org/dateCreated---HN4272",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/dateCreated"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Photograph1---http://schema.org/height---HN4196",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/height"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Photograph1---http://schema.org/url---HN5189",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/url"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Photograph1---http://schema.org/width---HN4194",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/width"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            }
+        ]
+    }
+}

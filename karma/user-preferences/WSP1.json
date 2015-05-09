@@ -13,8 +13,8 @@
         {
             "Command": "ImportServiceCommandPreferences",
             "PreferenceValues": {
-                "WorksheetName": "foursquare1",
-                "ServiceUrl": "https://api.foursquare.com/v2/venues/search?ll=34.02052371646544,-118.28535318374634&oauth_token=GGCGJ04UILGC43NGC2MRQODT1WQQQCN5EQCPORAWSIBPWKEU&v=20150508"
+                "WorksheetName": "photos",
+                "ServiceUrl": "https://api.foursquare.com/v2/venues/43695300f964a5208c291fe3/photos?oauth_token=GGCGJ04UILGC43NGC2MRQODT1WQQQCN5EQCPORAWSIBPWKEU&v=20150508"
             }
         }
     ]
