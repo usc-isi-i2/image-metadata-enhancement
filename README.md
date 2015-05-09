@@ -13,3 +13,7 @@ GET request to get photos of a venue
 https://api.foursquare.com/v2/venues/43695300f964a5208c291fe3/photos?oauth_token=GGCGJ04UILGC43NGC2MRQODT1WQQQCN5EQCPORAWSIBPWKEU&v=20150508
 ```
 
+## Google nearBySearch
+```
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&key=
+```
