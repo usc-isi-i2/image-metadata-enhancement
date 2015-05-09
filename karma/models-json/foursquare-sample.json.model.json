@@ -1,0 +1,807 @@
+{
+    "id": "foursquare-sample.json",
+    "name": "foursquare-sample.json",
+    "description": null,
+    "sourceColumns": [
+        {
+            "id": "HN78",
+            "hNodeId": "HN78",
+            "columnName": "country"
+        },
+        {
+            "id": "HN64",
+            "hNodeId": "HN64",
+            "columnName": "lat"
+        },
+        {
+            "id": "HN66",
+            "hNodeId": "HN66",
+            "columnName": "lng"
+        },
+        {
+            "id": "HN36",
+            "hNodeId": "HN36",
+            "columnName": "id"
+        },
+        {
+            "id": "HN98",
+            "hNodeId": "HN98",
+            "columnName": "pluralName"
+        },
+        {
+            "id": "HN45",
+            "hNodeId": "HN45",
+            "columnName": "phone"
+        },
+        {
+            "id": "HN38",
+            "hNodeId": "HN38",
+            "columnName": "name"
+        },
+        {
+            "id": "HN74",
+            "hNodeId": "HN74",
+            "columnName": "city"
+        },
+        {
+            "id": "HN76",
+            "hNodeId": "HN76",
+            "columnName": "state"
+        },
+        {
+            "id": "HN62",
+            "hNodeId": "HN62",
+            "columnName": "address"
+        }
+    ],
+    "mappingToSourceColumns": [
+        {
+            "id": "HN74",
+            "sourceColumnId": "HN74"
+        },
+        {
+            "id": "HN45",
+            "sourceColumnId": "HN45"
+        },
+        {
+            "id": "HN62",
+            "sourceColumnId": "HN62"
+        },
+        {
+            "id": "HN78",
+            "sourceColumnId": "HN78"
+        },
+        {
+            "id": "HN36",
+            "sourceColumnId": "HN36"
+        },
+        {
+            "id": "HN64",
+            "sourceColumnId": "HN64"
+        },
+        {
+            "id": "HN76",
+            "sourceColumnId": "HN76"
+        },
+        {
+            "id": "HN38",
+            "sourceColumnId": "HN38"
+        },
+        {
+            "id": "HN66",
+            "sourceColumnId": "HN66"
+        },
+        {
+            "id": "HN98",
+            "sourceColumnId": "HN98"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "http://schema.org/Country1",
+                "label": {
+                    "uri": "http://schema.org/Country"
+                },
+                "type": "InternalNode",
+                "modelIds": []
+            },
+            {
+                "id": "HN78",
+                "label": {
+                    "uri": "HN78"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN78",
+                "columnName": "country",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN78",
+                        "domain": {
+                            "uri": "http://schema.org/Country"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN78",
+                        "domain": {
+                            "uri": "http://schema.org/Country"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/GeoCoordinates1",
+                "label": {
+                    "uri": "http://schema.org/GeoCoordinates"
+                },
+                "type": "InternalNode",
+                "modelIds": []
+            },
+            {
+                "id": "HN64",
+                "label": {
+                    "uri": "HN64"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN64",
+                "columnName": "lat",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN64",
+                        "domain": {
+                            "uri": "http://schema.org/GeoCoordinates"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/latitude"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN64",
+                        "domain": {
+                            "uri": "http://schema.org/GeoCoordinates"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/latitude"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN66",
+                "label": {
+                    "uri": "HN66"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN66",
+                "columnName": "lng",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN66",
+                        "domain": {
+                            "uri": "http://schema.org/GeoCoordinates"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/longitude"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN66",
+                        "domain": {
+                            "uri": "http://schema.org/GeoCoordinates"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/longitude"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1",
+                "label": {
+                    "uri": "http://schema.org/Place"
+                },
+                "type": "InternalNode",
+                "modelIds": []
+            },
+            {
+                "id": "HN36",
+                "label": {
+                    "uri": "HN36"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN36",
+                "columnName": "id",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN36",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN36",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/PostalAddress1",
+                "label": {
+                    "uri": "http://schema.org/PostalAddress"
+                },
+                "type": "InternalNode",
+                "modelIds": []
+            },
+            {
+                "id": "HN98",
+                "label": {
+                    "uri": "HN98"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN98",
+                "columnName": "pluralName",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN98",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/description"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN98",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/description"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.9938404394128026
+                    },
+                    {
+                        "hNodeId": "HN98",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.0038415205154498696
+                    },
+                    {
+                        "hNodeId": "HN98",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/streetAddress"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.0018781763941347269
+                    },
+                    {
+                        "hNodeId": "HN98",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 4.3986367761279744E-4
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN45",
+                "label": {
+                    "uri": "HN45"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN45",
+                "columnName": "phone",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN45",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/telephone"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN45",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/telephone"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN38",
+                "label": {
+                    "uri": "HN38"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN38",
+                "columnName": "name",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN38",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN38",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.8719506491748761
+                    },
+                    {
+                        "hNodeId": "HN38",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/streetAddress"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.06410393881989468
+                    },
+                    {
+                        "hNodeId": "HN38",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/address"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.06139212446928234
+                    },
+                    {
+                        "hNodeId": "HN38",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/description"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.00255328753594687
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN74",
+                "label": {
+                    "uri": "HN74"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN74",
+                "columnName": "city",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN74",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/addressLocality"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN74",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/addressLocality"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.724306411498802
+                    },
+                    {
+                        "hNodeId": "HN74",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/address"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.10565094884704365
+                    },
+                    {
+                        "hNodeId": "HN74",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.09960867375612523
+                    },
+                    {
+                        "hNodeId": "HN74",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/streetAddress"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.0704339658980291
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN76",
+                "label": {
+                    "uri": "HN76"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN76",
+                "columnName": "state",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN76",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/addressRegion"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN76",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/addressRegion"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.8457866751677032
+                    },
+                    {
+                        "hNodeId": "HN76",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/address"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.09252799168259186
+                    },
+                    {
+                        "hNodeId": "HN76",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/streetAddress"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.06168533314970488
+                    }
+                ],
+                "modelIds": []
+            },
+            {
+                "id": "HN62",
+                "label": {
+                    "uri": "HN62"
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN62",
+                "columnName": "address",
+                "rdfLiteralType": null,
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/streetAddress"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": [
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://schema.org/PostalAddress"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/streetAddress"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.6052368128829299
+                    },
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/address"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.3812261465213967
+                    },
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 0.013487338166704438
+                    },
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://schema.org/Place"
+                        },
+                        "type": {
+                            "uri": "http://schema.org/description"
+                        },
+                        "origin": "CRFModel",
+                        "confidenceScore": 4.97024289690263E-5
+                    }
+                ],
+                "modelIds": []
+            }
+        ],
+        "links": [
+            {
+                "id": "http://schema.org/Country1---http://www.w3.org/2000/01/rdf-schema#label---HN78",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/GeoCoordinates1---http://schema.org/latitude---HN64",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/latitude"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/GeoCoordinates1---http://schema.org/longitude---HN66",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/longitude"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1---http://isi.edu/integration/karma/dev#classLink---HN36",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1---http://schema.org/address---http://schema.org/PostalAddress1",
+                "weight": 0.01,
+                "type": "ObjectPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/address"
+                },
+                "objectPropertyType": "Direct",
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1---http://schema.org/description---HN98",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/description"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1---http://schema.org/geo---http://schema.org/GeoCoordinates1",
+                "weight": 0.01,
+                "type": "ObjectPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/geo"
+                },
+                "objectPropertyType": "Direct",
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1---http://schema.org/telephone---HN45",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/telephone"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/Place1---http://www.w3.org/2000/01/rdf-schema#label---HN38",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/PostalAddress1---http://schema.org/addressCountry---http://schema.org/Country1",
+                "weight": 0.01,
+                "type": "ObjectPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/addressCountry"
+                },
+                "objectPropertyType": "Direct",
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/PostalAddress1---http://schema.org/addressLocality---HN74",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/addressLocality"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/PostalAddress1---http://schema.org/addressRegion---HN76",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/addressRegion"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            },
+            {
+                "id": "http://schema.org/PostalAddress1---http://schema.org/streetAddress---HN62",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://schema.org/streetAddress"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": []
+            }
+        ]
+    }
+}
