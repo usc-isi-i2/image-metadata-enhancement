@@ -1,0 +1,376 @@
+[
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        },
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28535318374634",
+            "latitude": "34.02052371646544"
+        }
+    ],
+    "address": {
+        "streetAddress": "U S C (University of Southern California)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Sculpture Gardens",
+    "a": "class/sculpturegarden",
+    "label": "tommytrojan",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4b11ac2bf964a520ef8123e3"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        },
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28611875947594",
+            "latitude": "34.020328576487735"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy (Childs Way)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Performing Arts Venues",
+    "a": "class/performingartsvenue",
+    "label": "thetrojangrandballroomintheronaldtutorcampuscenter",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4ee7d04a5c5c04b331afb76b"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.286402",
+            "latitude": "34.020286"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "Los Angeles, CA 90007",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90007",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Burger Joints",
+    "a": "class/burgerjoint",
+    "label": "thehabit",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/52b4b1fd11d268c032c43454"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28476",
+            "latitude": "34.01953699"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3616 Trousdale Pkwy (University of Southern California)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "History Museums",
+    "a": "class/historymuseum",
+    "label": "hancockmemorialmuseum(ahf)",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4d420004aed776eb92266a97"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28612565994263",
+            "latitude": "34.020332528390696"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy (USC Tutor Campus Center)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Chinese Restaurants",
+    "a": "class/chineserestaurant",
+    "label": "pandaexpress",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c6d96b8c52437049c9728eb"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28487414483239",
+            "latitude": "34.02092224942763"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3575 Trousdale Pkwy (In front of Bovard)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Bars",
+    "a": "class/bar",
+    "label": "uscpsycho'spsychogatetailgate",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4e5f2928149582866d3d6718"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.286121",
+            "latitude": "34.020305"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "Ronald Tutor Campus Center",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Coffee Shops",
+    "a": "class/coffeeshop",
+    "label": "thecoffeebean&tealeaf",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c7424dab474a1cd8cc0b5bf"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        },
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.285861",
+            "latitude": "34.01979098"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "American Restaurants",
+    "a": "class/americanrestaurant",
+    "label": "moretonfig",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c74141c6f789c74c80b424c"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        },
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.285395",
+            "latitude": "34.020353"
+        }
+    ],
+    "address": {
+        "streetAddress": "3601 Trousdale Pkwy (University of Southern California)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Drugstores / Pharmacies",
+    "a": "class/drugstore/pharmacy",
+    "label": "universityparkcampuspharmacy(stu)",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c758f5fb474a1cd4ba2b9bf"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28606128692627",
+            "latitude": "34.02056373251961"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy (USC Tutor Campus Center)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Sandwich Places",
+    "a": "class/sandwichplace",
+    "label": "seedsmarketplace",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c76c29ef247370449f563eb"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.286233",
+            "latitude": "34.020298"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Mexican Restaurants",
+    "a": "class/mexicanrestaurant",
+    "label": "verde",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/520d488211d2aedd58d69608"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28613102537922",
+            "latitude": "34.020309"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "U S C (University of Southern California)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Pizza Places",
+    "a": "class/pizzaplace",
+    "label": "californiapizzakitchen",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c4a04035609c9b6b391158f"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        },
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28609347343445",
+            "latitude": "34.02031474343165"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy (USC Tutor Campus Center)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Taco Places",
+    "a": "class/tacoplace",
+    "label": "wahoo'sfishtaco",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c76b79293faa0934a8aeefb"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.2862651348114",
+            "latitude": "34.02027917350229"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy, TCC Basement (University of Southern California)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "Sports Bars",
+    "a": "class/sportsbar",
+    "label": "traditionsbar&grill",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c6c84fc99b9236aecf4e2c9"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare_json-context.json",
+    "geo": [
+        {
+            "a": "GeoCoordinates",
+            "longitude": "-118.28609883785248",
+            "latitude": "34.02059040987855"
+        },
+        {
+            "a": "GeoShape",
+            "box": "34.0193899991 -118.28643382925843 34.0193899991 -118.288601488 34.021190000900006 -118.28426617074156 34.021190000900006 -118.282098512 34.0193899991 -118.28643382925843"
+        }
+    ],
+    "address": {
+        "streetAddress": "3607 Trousdale Pkwy (USC Tutor Campus Center)",
+        "addressLocality": "Los Angeles",
+        "postalCode": "90089",
+        "addressRegion": "CA",
+        "a": "PostalAddress"
+    },
+    "description": "American Restaurants",
+    "a": "class/americanrestaurant",
+    "label": "lemonadeusc",
+    "uri": "https://api.foursquare.com/v2/venues/https://api.foursquare.com/v2/venues/4c782964566db60c4bb3400e"
+}
+]

@@ -1,7 +1,8 @@
-karma/AlignmentGraph
-karma/R2RML
-karma/UserUploadedFiles
-karma/SemanticTypeModels
-karma/JSON
-karma/UserPrefs
+
 karma/preloaded-ontologies/commented-out
+
+karma/semantic-type-files/
+karma/models-autosave/
+karma/user-uploaded-files/
+karma/alignment-graph/
+karma/models-graphviz/
