@@ -1,0 +1,449 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CvQB7AAAADD5x2pqO-Gj4Ky-U9UnCCRWjlwtwaY-TXv5k6VGpKxiigGgJ02bADXK_3EPyxlZ6oJye00-d2VvG4jawiHkKNO46HLukmlbGJFwtJYHdPLqZwWTfLO9MsronDYLJ4P8P8sd4BixTA2cdfrwsH37egVejs1d1uPBAKGCJsIyAj2nICyZRaeyFaU35ofAAt6tVL7qPEYBVWSrMnv5VHVKwRYc3TDAOXh1C1UR5AijUAwCZ0ozw8HrluJyNfK9S0B-IEGgekPo61M_RqZsG650lc5dhYVm26Nf64FRyDChGyiJvW1c5QG0PhLklpPZg2ehKBIQykMTBQsQeBA46Q-dgHKhnRoUhGiOH6Jxd-nqcna-q8sECrQfM6o",
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 33.9891116,
+               "lng" : -118.2914872
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.0382641,
+                  "lng" : -118.2255361
+               },
+               "southwest" : {
+                  "lat" : 33.929046,
+                  "lng" : -118.385591
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "e509cbbf4804a8b16324a4ef78159d5275b07592",
+         "name" : "South Los Angeles",
+         "place_id" : "ChIJ6bcf1Nu3woARGCYveWr_oiQ",
+         "reference" : "CpQBhQAAAOBiIaX2S18TE547FjV5YNYqDTEY66M6Wzm0YLfquLrhdpNZK6U4IpcQYGXV8ORtyT-j3_frbkAvZNlVTvYJ_He6zfsXdXGrLwvoEe0UtJIE1Wypkdj-uTBjQpAYLc1wBHXS10SVjcTBDw5beVUsZyStxZkX1TJNM0wst5aRefPB7WlSg7BXrl-hkf1TYNc8NBIQYL2FO7ueO1xhwApoK-rz1RoUZ5Ddge-sxDMZtQZMEGnKxnnvkXE",
+         "scope" : "GOOGLE",
+         "types" : [ "neighborhood", "political" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0204306,
+               "lng" : -118.2846372
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.0211798,
+                  "lng" : -118.2837882
+               },
+               "southwest" : {
+                  "lat" : 34.020026,
+                  "lng" : -118.2855153
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c72cabdfe4538fcadacfb785d46a17033ae19481",
+         "name" : "Alumni Park",
+         "place_id" : "ChIJvarBoePHwoARGyp2B5PlRno",
+         "reference" : "CnRoAAAA6xJtYSXJyiG_vP-qQ_0jdz7SybaBP93rnQ6MQoYSOddr1WzAETyB9GSGYm_aI2oGqTGke5Mk-K8Bp9aySyUUnTXlr8elelOIdMcM3mBhLZrWEnULiofxRSvVr-OzKQ-KjqJGH8fUGtIhEPyh8EHoNhIQZ0oqkQoqQsKxKxLQjO9GpRoUsaFs9meyXqRmk9QWEYz0GSMSl4o",
+         "scope" : "GOOGLE",
+         "types" : [ "park", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.02056,
+               "lng" : -118.285418
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "1ad3d9295c8b92789dda03c127b18084f7da17a1",
+         "name" : "Tommy Trojan",
+         "photos" : [
+            {
+               "height" : 1024,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAApeAZycAPkASzPblvIED9lPauBOnzoJ5QepnvlHLDoViXZxyK18e9ahKWj5oIi63LgSkYBMqTRjd1dRAayVxcJIRFNzy0W8I4-lv0UeqIcoRecFKtkWqKjB3hZ0Mtx2OuLK_pWNZ46SQiqrUGJUsQqRIQwwtlUPFFtdCMlUGcdKgnThoUrb2F9e-_Sr7wDCF14UP2dzDzx40",
+               "width" : 768
+            }
+         ],
+         "place_id" : "ChIJkTFYcuPHwoARj9noktA7j_8",
+         "price_level" : 2,
+         "rating" : 4.1,
+         "reference" : "CmRgAAAAdm6d5_jvnu5fHRE5QszqKOSL59Uf6S6TsBy6Afgz5uI0IxcAagzL45A4wGMtsi9t3Hdl0jHU629CdaYf6ik_TWWCFslQjzdPQh1UNCU5lfgWihNbOujhreWsPuwtiJLSEhAxQ4gRMlsuUpTaWOMP8OoOGhRxLcz0hMW4fivU_8wKd_mkg59cIQ",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3531 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020788,
+               "lng" : -118.286427
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "db79f4120d002b9399b7fcf42070871b896d17d7",
+         "name" : "USC Bookstores",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 675,
+               "html_attributions" : [],
+               "photo_reference" : "CnRqAAAAJHLckX3D_OYT98VTpRZtpLOKWup0g0UL4IpwaBDPZqaKpYQodIJnmOvS0zHkVBGwqaNHhlB06k5ZWx4KGv4dUqK9q5QswiuVFrCt5Bxom79t9XqbaCgLPKyes5oyrmw3WuxV8mO7kJrC8XdDWi1xChIQggbxdma76Dv7ixh_mNJUnRoUVQg0pZkXwKwGvwDI0O-RkjDcQQA",
+               "width" : 675
+            }
+         ],
+         "place_id" : "ChIJf9bqDOPHwoARS46QS61-WQo",
+         "reference" : "CnRhAAAAGIWE_m2a_HYQE-1vQUWSt6kegnOFLdobK1Nw4wqfGPnbXPA6EXjszaexlNEjs-fXipBatPNetoiFtlhy662oXpZTLtXAFf4lQa_TeeZQuG_f2HvJ2thhXAkmSud6Cb3lm3BVLEr4bB35MU-GaoXSMxIQR0O6A5RRv9UEb0ihpR_zyhoUqnaGjl7F0RSiEgUn7ReuIw3m5Xw",
+         "scope" : "GOOGLE",
+         "types" : [
+            "book_store",
+            "convenience_store",
+            "food",
+            "clothing_store",
+            "electronics_store",
+            "store",
+            "establishment"
+         ],
+         "vicinity" : "840 Childs Way, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.019853,
+               "lng" : -118.285995
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+         "id" : "8c914eca7df91e550601a4a7ebdb73822f0c0174",
+         "name" : "Moreton Fig",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 750,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAAtdCezB0ffxgUIYzidjLNBZQ4cikejoUO2-T8TjFJXlPKoefXC2Xrk7yAIhSWigdkSBpDo7Cdj6Belqnfcd4otz3kmGl-1v6J_ytI8iXK4Oh8RsTDsYf3dzwRAw7Z_Ca1Orrhjp_GQXVuDPqO79NyNhIQmjn6tNeYMMA96zjZ9eGwIhoU0wGmc6-1s6cHbF108WXKPQEDhP0",
+               "width" : 1000
+            }
+         ],
+         "place_id" : "ChIJW-yJPuPHwoAR8VoJQABn7KE",
+         "price_level" : 3,
+         "reference" : "CmRfAAAA_wRNzVY3bNHyGMPPvqNMkcnI0XLij1AKXSkBf8otSqlcuGFP8TM8SK_lRxfNHeKcDJsT2G4Ju-ObZEc3adT1uVGrzVBrp4VDtC1E7_V9vWthR9NCvjuCnD-KOmNGO2jFEhAMWRd9XErfmCiIlKrE5zTxGhSuMlKd9rzJbkqoa7CnhVSteTRd_A",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "establishment" ],
+         "vicinity" : "3607 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020502,
+               "lng" : -118.285657
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "5558e7a97db514e8d92de091036486a8615a5bbd",
+         "name" : "FedEx Office Print & Ship Center",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1000,
+               "html_attributions" : [],
+               "photo_reference" : "CpQBhgAAAGoWl6DwELz5HOgd7-nqNvb7p5-SYUwlwPS6zpsQhivM5jceUEb18cKI9Ksd3TLrXubpdBCd0ZOPurFAj9dwcldTU5c2oD2F79AfeNqzKWP9YRFKq84dkxqgGgRztdN14wELyNcBPILSIRKHMnvOVJCf0A7FcoFiaxlGQY-e4tfoplhi3eW0NuA8VtKgvi1qQxIQEhWOEZqyQMp-fBmFRI8o3xoUfgZULZv4_8vij4cE9Pxfi9WZvLk",
+               "width" : 1000
+            }
+         ],
+         "place_id" : "ChIJKdjam-fHwoARgYNcUf4cu4Q",
+         "price_level" : 2,
+         "reference" : "CoQBdAAAAP_d4dKQnSJKesAKmwfRsWAyI7SsEvDqOBqoxhuQMdddnnYR0zYXGPj-eeeGM4fL4uylCA5xsDOUe1GXgIN5fMuklYrBoS6Y2oAETLZkZItd-fjbeQjLntff025BCMXkC0PozVHhYE7UkPZ7ftXVktpC2TY7F16tn_embJIEOqPiEhDXeT1qO263cwoVU03X6g0VGhQ60NHnYhwkjz9yJDtQi7p3I9w_7g",
+         "scope" : "GOOGLE",
+         "types" : [ "store", "establishment" ],
+         "vicinity" : "840 Childs Way, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020005,
+               "lng" : -118.286207
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "45d24eb8589b17c6bdb7f8e62f62c0d6bf751004",
+         "name" : "Panda Express",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1600,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAwcNfL6-tJI7EBwOrWdg1zhmeBKU86AcQkm2nPbur0AMQhSMd7LQ6-WRc37Jq7i6b8cx6lYRNx6YYXXirGrNJ5z9AAXojkFr3HCfQwMCvO0dJzki6XwSYOnLCD3DsMa3oElMkuSlyPbrtgYKXw8K8iBIQi0erPTz7gPu6uHLgOm1vixoUZKiJAOS-nR6hmfwNHKhPpDjvK_0",
+               "width" : 2400
+            }
+         ],
+         "place_id" : "ChIJW-yJPuPHwoARGh0NU_IeYpI",
+         "price_level" : 1,
+         "reference" : "CnRhAAAAtIh3f9QxtrPKyFM33N9L_NqEKs62HnLZa9FFeBBDry6MekZuXJie7XKb0EaZXMJfJ_fVtCQcI6RAwOB-wcsmUR5XLkAgwpCO0ZBRdlz0JuH1l4ZivR2r7J6drbDDh__1oHAnhECnrJyiRs6BZwhr-BIQKDKI6B0PvndUztnmRVC9jxoUMTA3_0M9kKw0nDnEDWsG69TS3xY",
+         "scope" : "GOOGLE",
+         "types" : [ "meal_takeaway", "restaurant", "food", "establishment" ],
+         "vicinity" : "3607 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.019974,
+               "lng" : -118.286156
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c9eb790f7d82b1c2d917b1bbde55a2f778896eea",
+         "name" : "USC Admission Center",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJ92Y9FePHwoARVbhMsyYq6G0",
+         "price_level" : 2,
+         "reference" : "CnRnAAAA0FITX6PU683MWT1tKo4yihMdAK0lQIyT3ZG1kuwESjuXWgwdD12HE0zrmNi3qny2nmEUJ79VnAb1bFcoubzVahDegc-u6jmLffn1NCEUcf3t-xqgfc1DkSOhpftMJif_bVGaonobm0Ld9VWBbCwq1xIQwgwzkBfUkS-Zxk-BK2ruxBoUPL_f4E9hogpJrG3PtETwNqJ5eQU",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3607 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020986,
+               "lng" : -118.285568
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "9f8df400b5f9b72bdb0d40b72c952f738252ab13",
+         "name" : "Earth Sciences",
+         "place_id" : "ChIJHz5rcOPHwoARvKb0t5pfRhc",
+         "reference" : "CnRhAAAAtFkV_K89qeGc3cyhQItBD7-26ch7PKhZ4B55LPH5B-nO_wc3Wx_Yzpum6Ar44FIrCEO4FGSVphfgiLloDbpsJZNfKlNPzd-kZQ1Of6_ataQ0SibRWYZ02deDQbwlRvD-ZBeQRrK3UE5_t-pZKz3bEhIQBg2WEceSq3AYwQ5uFDZf2BoUk9GChaUmYrpGOcqGSDrQP1cf9vM",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020173,
+               "lng" : -118.285785
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "e88a18d815407bd333caee7276f71085c8ffa067",
+         "name" : "USC Career Center",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJm7V0EuPHwoARanFHVo504BM",
+         "price_level" : 2,
+         "reference" : "CnRkAAAAnPDRxP-Ti05cEDN-6zihgFn2cF0t39gxo7q7mM0bdEWPrQMb0gfjpXYT0-RYrG_lw8zVs5aPTVVb-GybzPZxVicegdhoz5NJ53mt4NenYFDPV7_cz6LVucT63wUKGcgCqSTtj7oW2zC7hfPA6FqPSRIQl1RY57sGJ-FpWmT3anvIFRoUvYph1xfmPY_jv8oRYOKJ95SR-Zo",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3601 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020617,
+               "lng" : -118.286068
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "03d95045d1c9f9f78fdbcea0f1250cb01f3c29fb",
+         "name" : "Seeds Marketplace",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJscVzaePHwoARaN_58rEJlac",
+         "price_level" : 1,
+         "reference" : "CnRlAAAA1mKTePP5LNp3Npsoujm2lXb_uhSSDIDTNUW9meHH80Sd5RhBwkenryTSduDz0LY7xelryX6fV3iVT4PmxIQliQGc9HSKDBaOP43XcY2lhb8ot1oKfld9cOXbWvK1STHgQPwVF0-8XjdWG9hZ9zXZtRIQtMidUcrNH1KcQ0RRQgfW7xoU2xIT2uima9e1x2236fsVGIxeV3U",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3607 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020289,
+               "lng" : -118.285729
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "cad6408c3c3fa218da6d9457ebb3b405fdc98c80",
+         "name" : "USC Daily Trojan",
+         "place_id" : "ChIJm7V0EuPHwoAR8yTIQ0KzxEo",
+         "reference" : "CnRjAAAAjYdPwyZcghb3YlZ7slSwdKFYAwbAjxbiYmVY9OVwD7pKl5Ng0FQd-yOWGohN1dSAR4XqAx90inMsWkIUx5T1J5XMwTfEkUzCK8iKA8WwEFFCCfT8gsjo_NsD3SR65y-MS1-WaduEYnxuFtZC_3AjyBIQg7bkz1xTOOn3r-Gb30yskBoUJZkF8vROs-AnG8HmrSoUoP6uT6E",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3601 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.02115,
+               "lng" : -118.28594
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "256aa38355316d51d7277ba37704f04ec219fc6c",
+         "name" : "Associates Park",
+         "place_id" : "ChIJURuiZuPHwoARn0zE9SAJ6To",
+         "reference" : "CnRiAAAAxFruiBsO54m78G2EQFD1w9AbMc9oF8oN2NWoyAW5wkBY9Z6hO6UJUqpngSssmgwBpMabXSerhE5uzHhrdfzUUoK0H2HuZG0IO60wS1OAz9tEQ6QU-MJIn2uq_1ayyvs-fcNriJ63Z0P3kuO5q_pjgBIQiCsNbt6SXbxX7dR5GrIHiBoUxL7nBXbSEV6OVXLOmFEUPfwKvZo",
+         "scope" : "GOOGLE",
+         "types" : [ "park", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.01968,
+               "lng" : -118.285078
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+         "id" : "fcd1ea9232d15935f7cb355ea0df7ebc6e37d054",
+         "name" : "Hancock Memorial Museum",
+         "place_id" : "ChIJaSqPRuTHwoARibTlM__oxq8",
+         "reference" : "CnRrAAAAH9Q1ArGRY50B1pyfwtigiPO9z-O7r0Z-v_LwRdzQo3IFW4gaTDo2e-zhb4SDDH6KTO33vPKfykqY65LDIfxkDQfzL2NPFnrxcyw02QKFBk5K1pNwA0Lb81joCVfjUDo9w7BOSg5zzApyHiLZDyOJCRIQLJ_Oc-tUJEdTIvqDnD2x8RoULZC2v90rJ3ZPwkhooG6saM23kNY",
+         "scope" : "GOOGLE",
+         "types" : [ "museum", "establishment" ],
+         "vicinity" : "University Ave At Childs Way , Los Angeles, CA 90089"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020351,
+               "lng" : -118.285277
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "0c4aa296b3a72f086709ba189e985e655ae3ee73",
+         "name" : "Hahn Plaza",
+         "photos" : [
+            {
+               "height" : 874,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAASQEc4qj5EoEbwefVED5WBkYH6eKma5KivH0CmYnRaIcTM6f_kVKC0DtcqNQgbDcjQpVYG1gEeifA8WDXTQ2i_Bw6m5bFrD8OB9KXCx3PkHG3pJtW5gyhQcUsXI9k05HOrX3Jl5etWW0UNVCS80psURIQYydaYm7lWIOzjOYFqeG7_xoUSkbN5r1zAsBHW5stW7nqwqOQ-b4",
+               "width" : 2134
+            }
+         ],
+         "place_id" : "ChIJcWAKDOPHwoARo-4JHRYQGIw",
+         "reference" : "CmReAAAAygOCLUtIiYlxjJHWZHvANRrrVhNgAAPGA3jGIM2KXydQSmxEkC10Tuuc1QEB1D_NK6xcBGIGo2rmianSDeJpHC1s8IO7ajfaO44z6hccYdQg7muwAvumrU2hJEC267loEhD9XijdZPWAbCbztagBZqWXGhTp6a6QfbpM93_ddZMMt7LM-W2zUw",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020431,
+               "lng" : -118.284637
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "61802fe88d4292ed049e985a975b50e389f78743",
+         "name" : "Alumni Park",
+         "place_id" : "ChIJvarBoePHwoARGyp2B5PlRno",
+         "reference" : "CmReAAAAtuGQyNlV3oNaYZLXPLYYEJxSnz-Ti91xUqjxAqVod5Sa564Pz-hNunMns2U1vw_Oef8gHGkA_EfdNza5l4mN-WnM5N8z0CLIDv1enq_KvfAPsa69nHcT2OfqNTWbLx1HEhDln5KHMshaMkz2JXfV9mpFGhQhlKAUjvui3YgdvhAkOazxo9AppA",
+         "scope" : "GOOGLE",
+         "types" : [ "park", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020289,
+               "lng" : -118.285729
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "be002fbda3d19b83295fd7743a5828fe98e7867c",
+         "name" : "Student Affairs",
+         "place_id" : "ChIJ5TPWEuPHwoARXt2jkt29298",
+         "reference" : "CnRjAAAA4T080-x0H-9MxMKxD493OJqmqicadJ7H1f-10eLtA_Y_ZDxWN5h_R0Yqn--eq4vGfP5x7K-VbCdbyOj0rIwQuy5PGP7aDiPFQZwCE-O6m034NaDwZ4bAtrm_g1DhaZQRcxS3gqicdfy7wwmE3sjD_xIQmyWWs_8ETi7LTCDWAqcIlBoUF85kpkF5qX8FmqFjb5SmalB8sI8",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020011,
+               "lng" : -118.284745
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "9329cbd619920cd59e4772ceba1ffb44e0d2b1b3",
+         "name" : "Herklotz Courtyard",
+         "place_id" : "ChIJDaWKB-PHwoARmJ47qF_AIYs",
+         "reference" : "CnRmAAAAT-d4pyLI7rd1qduz7ahNWRL1snO0XXjSDAvhSZKFb1zxlEGRdZojHbnPWkNR4RdTPmhEXPoDTILYisfQQakIziUrJiGotUn14JuVUCeNpxmStEf0wadf7aCuOoyGQIRPH2mCVknF695ZyGk20M-lJhIQxzpZU9Wy9AusLEFg1Xs79BoUb1SO4Gd8fcJt3FP5g1_UVYRs4gw",
+         "scope" : "GOOGLE",
+         "types" : [ "park", "university", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.020914,
+               "lng" : -118.285537
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "a01127cabaa6eb1f4d94a68f4f3c6907a9960d0f",
+         "name" : "institute for advanced catholic studies at the university of southern california",
+         "place_id" : "ChIJyxcA7uPHwoARqJlVV_vI3s0",
+         "reference" : "CrQBpQAAABqVydWNCaQq8vvvJE7OeRYVwc9zCUP-8GtsOArH4IRG4LOXLIG0-f1NeBS78o1sWUtwNtsKHIPXT6mMThzp8RtGsv59EbZN2PqULdz6AfR23Aq6fHyOByFbdMX2wGUyG1bdQ-uGIERhcY83oLA_7uMW9ws0XQ8HZT_jouuOrKRcxY1bmXKn1K-zvTW_AuDth5IHhZvGSF9YK56wN2UdILRsen5RfZrc25TcnAxCzcDHEhBigK7vhImrSpq_p2sgtABLGhQM_9CRqpDtU2LeDQjvLXyUtA5W5g",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "3551 Trousdale Parkway, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0522342,
+               "lng" : -118.2436849
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.3373061,
+                  "lng" : -118.1552891
+               },
+               "southwest" : {
+                  "lat" : 33.7036917,
+                  "lng" : -118.6681759
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+         "name" : "Los Angeles",
+         "place_id" : "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+         "reference" : "CoQBcQAAAJ7HEb7Res_bE1etleZwVq2GnLfhLZID39VEpNKu_vNDiYHLGAzAIw2DOL1oDUlDy0q_8_vCkgSnv7ReOsqsktWAELX3yhk02pZelLc3UZr5873UyHFUIR9-xK-62pkaxz4V3o36m0SgGhtMr1_WtGohHmB75OZUF37yw_jGluBiEhCdhlgq-JtA2JEFdxksmsQ-GhTM82njCB_ChGMlXGy7BqvLEwjBaA",
+         "scope" : "GOOGLE",
+         "types" : [ "locality", "political" ],
+         "vicinity" : "Los Angeles"
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,374 @@
+[
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285785",
+        "latitude": "34.020173"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3601 Trousdale Parkway, Los Angeles"
+    },
+    "description": "Establishment",
+    "a": "Place",
+    "label": "USC Career Center",
+    "uri": "http://medusa.usc.edu/data/google/e88a18d815407bd333caee7276f71085c8ffa067"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.286156",
+        "latitude": "34.019974"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3607 Trousdale Parkway, Los Angeles"
+    },
+    "description": "Establishment",
+    "a": "Place",
+    "label": "USC Admission Center",
+    "uri": "http://medusa.usc.edu/data/google/c9eb790f7d82b1c2d917b1bbde55a2f778896eea"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285657",
+        "latitude": "34.020502"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "840 Childs Way, Los Angeles"
+    },
+    "description": [
+        "Store",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "FedEx Office Print & Ship Center",
+    "uri": "http://medusa.usc.edu/data/google/5558e7a97db514e8d92de091036486a8615a5bbd"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.2914872",
+        "latitude": "33.9891116"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Political",
+        "Neighborhood"
+    ],
+    "a": "Place",
+    "label": "South Los Angeles",
+    "uri": "http://medusa.usc.edu/data/google/e509cbbf4804a8b16324a4ef78159d5275b07592"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.286427",
+        "latitude": "34.020788"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "840 Childs Way, Los Angeles"
+    },
+    "description": [
+        "Book Store",
+        "Electronics Store",
+        "Store",
+        "Food",
+        "Convenience Store",
+        "Establishment",
+        "Clothing Store"
+    ],
+    "a": "Place",
+    "label": "USC Bookstores",
+    "uri": "http://medusa.usc.edu/data/google/db79f4120d002b9399b7fcf42070871b896d17d7"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.284637",
+        "latitude": "34.020431"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Park",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "Alumni Park",
+    "uri": "http://medusa.usc.edu/data/google/61802fe88d4292ed049e985a975b50e389f78743"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285729",
+        "latitude": "34.020289"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3601 Trousdale Parkway, Los Angeles"
+    },
+    "description": "Establishment",
+    "a": "Place",
+    "label": "USC Daily Trojan",
+    "uri": "http://medusa.usc.edu/data/google/cad6408c3c3fa218da6d9457ebb3b405fdc98c80"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.2846372",
+        "latitude": "34.0204306"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Park",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "Alumni Park",
+    "uri": "http://medusa.usc.edu/data/google/c72cabdfe4538fcadacfb785d46a17033ae19481"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285078",
+        "latitude": "34.01968"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "University Ave At Childs Way , Los Angeles, CA 90089"
+    },
+    "description": [
+        "Museum",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "Hancock Memorial Museum",
+    "uri": "http://medusa.usc.edu/data/google/fcd1ea9232d15935f7cb355ea0df7ebc6e37d054"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.286068",
+        "latitude": "34.020617"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3607 Trousdale Parkway, Los Angeles"
+    },
+    "description": "Establishment",
+    "a": "Place",
+    "label": "Seeds Marketplace",
+    "uri": "http://medusa.usc.edu/data/google/03d95045d1c9f9f78fdbcea0f1250cb01f3c29fb"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.286207",
+        "latitude": "34.020005"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3607 Trousdale Parkway, Los Angeles"
+    },
+    "description": [
+        "Restaurant",
+        "Food",
+        "Meal Takeaway",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "Panda Express",
+    "uri": "http://medusa.usc.edu/data/google/45d24eb8589b17c6bdb7f8e62f62c0d6bf751004"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285729",
+        "latitude": "34.020289"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Establishment",
+        "University"
+    ],
+    "a": "Place",
+    "label": "Student Affairs",
+    "uri": "http://medusa.usc.edu/data/google/be002fbda3d19b83295fd7743a5828fe98e7867c"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285537",
+        "latitude": "34.020914"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3551 Trousdale Parkway, Los Angeles"
+    },
+    "description": "Establishment",
+    "a": "Place",
+    "label": "institute for advanced catholic studies at the university of southern california",
+    "uri": "http://medusa.usc.edu/data/google/a01127cabaa6eb1f4d94a68f4f3c6907a9960d0f"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285277",
+        "latitude": "34.020351"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Establishment",
+        "University"
+    ],
+    "a": "Place",
+    "label": "Hahn Plaza",
+    "uri": "http://medusa.usc.edu/data/google/0c4aa296b3a72f086709ba189e985e655ae3ee73"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285418",
+        "latitude": "34.02056"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3531 Trousdale Parkway, Los Angeles"
+    },
+    "description": "Establishment",
+    "a": "Place",
+    "label": "Tommy Trojan",
+    "uri": "http://medusa.usc.edu/data/google/1ad3d9295c8b92789dda03c127b18084f7da17a1"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.2436849",
+        "latitude": "34.0522342"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Political",
+        "Locality"
+    ],
+    "a": "Place",
+    "label": "Los Angeles",
+    "uri": "http://medusa.usc.edu/data/google/7f7b7d8118ae8db8ed3f541159ac928c484d12ad"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.28594",
+        "latitude": "34.02115"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Park",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "Associates Park",
+    "uri": "http://medusa.usc.edu/data/google/256aa38355316d51d7277ba37704f04ec219fc6c"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.284745",
+        "latitude": "34.020011"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Park",
+        "Establishment",
+        "University"
+    ],
+    "a": "Place",
+    "label": "Herklotz Courtyard",
+    "uri": "http://medusa.usc.edu/data/google/9329cbd619920cd59e4772ceba1ffb44e0d2b1b3"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285995",
+        "latitude": "34.019853"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "3607 Trousdale Parkway, Los Angeles"
+    },
+    "description": [
+        "Restaurant",
+        "Food",
+        "Bar",
+        "Establishment"
+    ],
+    "a": "Place",
+    "label": "Moreton Fig",
+    "uri": "http://medusa.usc.edu/data/google/8c914eca7df91e550601a4a7ebdb73822f0c0174"
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-nearbysearch-sample_json-context.json",
+    "geo": {
+        "a": "GeoCoordinates",
+        "longitude": "-118.285568",
+        "latitude": "34.020986"
+    },
+    "address": {
+        "a": "PostalAddress",
+        "label": "Los Angeles"
+    },
+    "description": [
+        "Establishment",
+        "University"
+    ],
+    "a": "Place",
+    "label": "Earth Sciences",
+    "uri": "http://medusa.usc.edu/data/google/9f8df400b5f9b72bdb0d40b72c952f738252ab13"
+}
+]
