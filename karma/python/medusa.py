@@ -36,3 +36,25 @@ def md_getRoll(field):
 	"""Get roll"""
 	return field.split(',')[2]
 
+
+def md_face_uri(count):
+	if int(count) > 0:
+		return "medusa-content:human-face"
+	else:
+		return ''
+
+def md_automobile_uri(count):
+	if int(count) > 0:
+		return "medusa-content:automobile"
+	else:
+		return ''
+
+def md_out_indoor_uri(value):
+	value = value.strip()
+	if value == 'Outdoor':
+		return "medusa-content:outdoor-scene"
+	elif value == 'Indoor':
+		return "medusa-content:indoor-scene"
+
+	return ''
+

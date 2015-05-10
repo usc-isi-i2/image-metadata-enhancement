@@ -7,6 +7,8 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix medusa: <http://medusa.usc.edu/ontology/>.
 
+@prefix medusa-content: <http://medusa.usc.edu/thesauri/content/>.
+
 medusa:medusa-core a owl:Ontology;
     dct:title "The Ontology for representing semanitc metadata for images"@en;
     .
@@ -31,6 +33,10 @@ medusa:SensorOrientation a rdfs:Class;
     rdfs:subClassOf medusa:SensorAttribute;
     .
 
+medusa:ContentFeature a rdfs:Class;
+    rdfs:label "ContentFeature"@en;
+    rdfs:comment "Describes the content of a photograph"@en;
+    .
 
     
 #########################################################
@@ -52,6 +58,14 @@ medusa:sensorOrientation rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf medusa:sensorAttribute ;
     rdfs:range medusa:SensorOrientation ;
     rdfs:comment "The orientation of the camera that captured a Photograph." 
+    .
+
+
+medusa:contentFeatures rdf:type owl:ObjectProperty ;
+    rdfs:label "contentFeature"@en ;
+    rdfs:domain schema:Photograph ;
+    rdfs:range medusa:ContentFeature ;
+    rdfs:comment "Describes the content of a photograph" 
     .
 
 
@@ -94,6 +108,28 @@ medusa:roll a owl:DatatypeProperty ;
     .
 
 
+#########################################################
+#
+# Controlled Vocabularies
+#
+#########################################################
 
+medusa-content:human-face a medusa:ContentFeature ;
+    rdfs:comment "The prescence of a human face" ;
+    rdfs:label "Human Face"
+    .
 
+medusa-content:automobile a medusa:ContentFeature ;
+    rdfs:comment "The prescence of an automobile" ;
+    rdfs:label "Automobile, Car" 
+    .
 
+medusa-content:outdoor-scene a medusa:ContentFeature ;
+    rdfs:comment "The setting is outdoors" ;
+    rdfs:label "Outdoors, Outside"
+    .
+
+medusa-content:indoor-scene a medusa:ContentFeature ;
+    rdfs:comment "The setting is indoors" ;
+    rdfs:label "Indoors, Inside" 
+    .
