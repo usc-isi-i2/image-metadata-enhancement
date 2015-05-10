@@ -14,3 +14,17 @@ def md_getAccuracy(field):
 def md_photo_uri(image_name):
 	"""Get the URI of a photo coming from Medusa."""
 	return "photo/"+image_name.strip().lower().replace('.jpg','')
+
+
+def md_getAzimuth(field):
+	"""Get azimuth"""
+	return field.split(',')[0]
+
+def md_getPitch(field):
+	"""Get pitch"""
+	return field.split(',')[1]
+
+def md_getRoll(field):
+	"""Get roll"""
+	return field.split(',')[2]
+

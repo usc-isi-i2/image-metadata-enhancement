@@ -2,18 +2,19 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix medusa: <http://medusa.usc.edu/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <http://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node19kv7inqex1 a km-dev:R2RMLMapping ;
+_:node19kv93cg7x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "medusa-cam-sample.json" ;
-	km-dev:modelPublicationTime "1431272251214"^^xsd:long ;
+	km-dev:modelPublicationTime "1431273845255"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"Image\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"accuracy\"}],[{\"columnName\":\"photo_uri\"}],[{\"columnName\":\"long\"}],[{\"columnName\":\"lat\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Location (long, lat, accuracy)\"}],[{\"columnName\":\"Image\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"photo_uri\"}],[{\"columnName\":\"lat\"}],[{\"columnName\":\"roll\"}],[{\"columnName\":\"accuracy\"}],[{\"columnName\":\"long\"}],[{\"columnName\":\"azimuth\"}],[{\"columnName\":\"pitch\"}]]" ;
 	km-dev:hasModelLabel "medusa-cam" ;
 	km-dev:hasBaseURI "http://medusa.usc.edu/data/medusa/" ;
 	km-dev:hasWorksheetHistory """[
@@ -360,29 +361,496 @@ _:node19kv7inqex1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"lat\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1 (add)\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP12:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/GeoCoordinates1\",
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1 (add)\",
+                    \"edgeSourceUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP12:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/Place1\",
+                    \"edgeId\": \"http://schema.org/contentLocation\",
+                    \"edgeTargetId\": \"http://schema.org/Place1\",
+                    \"edgeSourceId\": \"http://schema.org/Photograph1\",
+                    \"edgeSourceUri\": \"http://schema.org/Photograph\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"long\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"long\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"long\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"azimuth\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return md_getAzimuth(getValue(\\\"Azimuth, Pitch, Roll\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Azimuth, Pitch, Roll\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"azimuth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"pitch\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return md_getPitch(getValue(\\\"Azimuth, Pitch, Roll\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Azimuth, Pitch, Roll\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pitch\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"roll\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return md_getRoll(getValue(\\\"Azimuth, Pitch, Roll\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Azimuth, Pitch, Roll\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"roll\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
     }
 ]""" .
 
-km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 a rr:TriplesMap .
+km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 a rr:TriplesMap .
 
-_:node19kv7inqex1 km-dev:hasTriplesMap km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 .
+_:node19kv93cg7x1 km-dev:hasTriplesMap km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 .
 
-km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 km-dev:isPartOfMapping _:node19kv7inqex1 .
+km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 km-dev:isPartOfMapping _:node19kv93cg7x1 .
 
-_:node19kv7inqex2 rr:tableName "medusa-cam-sample.json" ;
+_:node19kv93cg7x2 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kv7inqex1 .
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
 
-_:node19kv7inqex1 km-dev:hasLogicalTable _:node19kv7inqex2 .
+_:node19kv93cg7x1 km-dev:hasLogicalTable _:node19kv93cg7x2 .
 
-km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 rr:logicalTable _:node19kv7inqex2 ;
-	rr:subjectMap _:node19kv7inqex3 .
+km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 rr:logicalTable _:node19kv93cg7x2 ;
+	rr:subjectMap _:node19kv93cg7x3 .
 
-_:node19kv7inqex1 km-dev:hasSubjectMap _:node19kv7inqex3 .
+_:node19kv93cg7x1 km-dev:hasSubjectMap _:node19kv93cg7x3 .
 
-_:node19kv7inqex3 km-dev:isPartOfMapping _:node19kv7inqex1 ;
+_:node19kv93cg7x3 km-dev:isPartOfMapping _:node19kv93cg7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_c1bcee30-7020-4803-951f-f86d39863930 rr:predicate schema:latitude .
+
+_:node19kv93cg7x4 rr:column "lat" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasObjectMap _:node19kv93cg7x4 .
+
+km-dev:PredicateObjectMap_c1bcee30-7020-4803-951f-f86d39863930 rr:objectMap _:node19kv93cg7x4 .
+
+km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 rr:predicateObjectMap km-dev:PredicateObjectMap_c1bcee30-7020-4803-951f-f86d39863930 .
+
+km-dev:PredicateObjectMap_c1bcee30-7020-4803-951f-f86d39863930 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c1bcee30-7020-4803-951f-f86d39863930 .
+
+km-dev:PredicateObjectMap_c0acf1ea-2038-4ebd-893d-758e1475a71c rr:predicate schema:longitude .
+
+_:node19kv93cg7x5 rr:column "long" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasObjectMap _:node19kv93cg7x5 .
+
+km-dev:PredicateObjectMap_c0acf1ea-2038-4ebd-893d-758e1475a71c rr:objectMap _:node19kv93cg7x5 .
+
+km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 rr:predicateObjectMap km-dev:PredicateObjectMap_c0acf1ea-2038-4ebd-893d-758e1475a71c .
+
+km-dev:PredicateObjectMap_c0acf1ea-2038-4ebd-893d-758e1475a71c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c0acf1ea-2038-4ebd-893d-758e1475a71c .
+
+km-dev:TriplesMap_9f19d3f6-4b6c-4e5f-994e-d6d86bbe40f7 a rr:TriplesMap .
+
+_:node19kv93cg7x1 km-dev:hasTriplesMap km-dev:TriplesMap_9f19d3f6-4b6c-4e5f-994e-d6d86bbe40f7 .
+
+km-dev:TriplesMap_9f19d3f6-4b6c-4e5f-994e-d6d86bbe40f7 km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x6 rr:tableName "medusa-cam-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasLogicalTable _:node19kv93cg7x6 .
+
+km-dev:TriplesMap_9f19d3f6-4b6c-4e5f-994e-d6d86bbe40f7 rr:logicalTable _:node19kv93cg7x6 ;
+	rr:subjectMap _:node19kv93cg7x7 .
+
+_:node19kv93cg7x1 km-dev:hasSubjectMap _:node19kv93cg7x7 .
+
+_:node19kv93cg7x7 km-dev:isPartOfMapping _:node19kv93cg7x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Photograph1" ;
 	rr:class schema:Photograph ;
 	rr:template "{photo_uri}" ;
 	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_954a71fd-56d3-426f-b9c1-a6ad87d657bc rr:predicate schema:contentLocation .
+
+km-dev:RefObjectMap_288824ed-792e-4ad4-bf1c-88a82c4d1ec4 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4c62092b-7486-4061-8de9-d87646241e0a ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasObjectMap km-dev:RefObjectMap_288824ed-792e-4ad4-bf1c-88a82c4d1ec4 .
+
+km-dev:PredicateObjectMap_954a71fd-56d3-426f-b9c1-a6ad87d657bc rr:objectMap km-dev:RefObjectMap_288824ed-792e-4ad4-bf1c-88a82c4d1ec4 .
+
+km-dev:TriplesMap_9f19d3f6-4b6c-4e5f-994e-d6d86bbe40f7 rr:predicateObjectMap km-dev:PredicateObjectMap_954a71fd-56d3-426f-b9c1-a6ad87d657bc .
+
+km-dev:PredicateObjectMap_954a71fd-56d3-426f-b9c1-a6ad87d657bc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_954a71fd-56d3-426f-b9c1-a6ad87d657bc .
+
+km-dev:TriplesMap_4c62092b-7486-4061-8de9-d87646241e0a a rr:TriplesMap .
+
+_:node19kv93cg7x1 km-dev:hasTriplesMap km-dev:TriplesMap_4c62092b-7486-4061-8de9-d87646241e0a .
+
+km-dev:TriplesMap_4c62092b-7486-4061-8de9-d87646241e0a km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x8 rr:tableName "medusa-cam-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasLogicalTable _:node19kv93cg7x8 .
+
+km-dev:TriplesMap_4c62092b-7486-4061-8de9-d87646241e0a rr:logicalTable _:node19kv93cg7x8 ;
+	rr:subjectMap _:node19kv93cg7x9 .
+
+_:node19kv93cg7x1 km-dev:hasSubjectMap _:node19kv93cg7x9 .
+
+_:node19kv93cg7x9 km-dev:isPartOfMapping _:node19kv93cg7x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Place1" .
+
+km-dev:PredicateObjectMap_874200a4-ccc9-43b6-a349-934143befb99 rr:predicate schema:geo .
+
+km-dev:RefObjectMap_42aba350-cd79-4720-825e-298a142b121a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_385cff07-18c9-4238-8425-680da84df735 ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasObjectMap km-dev:RefObjectMap_42aba350-cd79-4720-825e-298a142b121a .
+
+km-dev:PredicateObjectMap_874200a4-ccc9-43b6-a349-934143befb99 rr:objectMap km-dev:RefObjectMap_42aba350-cd79-4720-825e-298a142b121a .
+
+km-dev:TriplesMap_4c62092b-7486-4061-8de9-d87646241e0a rr:predicateObjectMap km-dev:PredicateObjectMap_874200a4-ccc9-43b6-a349-934143befb99 .
+
+km-dev:PredicateObjectMap_874200a4-ccc9-43b6-a349-934143befb99 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kv93cg7x1 .
+
+_:node19kv93cg7x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_874200a4-ccc9-43b6-a349-934143befb99 .
