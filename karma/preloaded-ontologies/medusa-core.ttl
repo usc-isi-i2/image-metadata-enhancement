@@ -1,0 +1,99 @@
+@prefix schema: <http://schema.org/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix medusa: <http://medusa.usc.edu/ontology/>.
+
+medusa:medusa-core a owl:Ontology;
+    dct:title "The Ontology for representing semanitc metadata for images"@en;
+    .
+
+
+#########################################################
+#
+# Classes
+#
+#########################################################
+
+
+medusa:SensorAttribute a rdfs:Class;
+    rdfs:label "SensorAttribute"@en;
+    rdfs:comment "Generic class for sensor attributes"@en;
+    rdfs:subClassOf schema:OrganizeAction;
+    .
+
+medusa:SensorOrientation a rdfs:Class;
+    rdfs:label "SensorOrientation"@en;
+    rdfs:comment "Orientation of a sensor such as a camera"@en;
+    rdfs:subClassOf medusa:SensorAttribute;
+    .
+
+
+    
+#########################################################
+#
+# Object Properties
+#
+#########################################################
+
+medusa:sensorAttribute rdf:type owl:ObjectProperty ; 
+    rdfs:label "sensorAttribute"@en ;
+    rdfs:domain schema:Photograph ; 
+    rdfs:range medusa:SensorAttribute ;
+    rdfs:comment "Attributes of a sensor used to capture a photograph." 
+    .
+
+
+medusa:sensorOrientation rdf:type owl:ObjectProperty ;
+    rdfs:label "sensorOrientation"@en ;
+    rdfs:subPropertyOf medusa:sensorAttribute ;
+    rdfs:range medusa:SensorOrientation ;
+    rdfs:comment "The orientation of the camera that captured a Photograph." 
+    .
+
+
+#########################################################
+#
+# Data Properties
+#
+#########################################################
+
+
+medusa:accuracy a owl:DatatypeProperty ;
+    rdfs:label "accuracy"@en ;
+    rdfs:comment "The accuracy of a geolocation or other sensor reading."@en;
+    rdfs:domain schema:GeoCoordinates ;
+    rdfs:range xsd:decimal ;
+    .
+
+
+medusa:azimuth a owl:DatatypeProperty ;
+    rdfs:label "azimuth"@en ;
+    rdfs:comment "The azimuth of a sensor"@en;
+    rdfs:domain medusa:SensorOrientation ;
+    rdfs:range xsd:decimal ;
+    .
+
+
+medusa:pitch a owl:DatatypeProperty ;
+    rdfs:label "pitch"@en ;
+    rdfs:comment "The pitch of a sensor"@en;
+    rdfs:domain medusa:SensorOrientation ;
+    rdfs:range xsd:decimal ;
+    .
+
+
+medusa:roll a owl:DatatypeProperty ;
+    rdfs:label "roll"@en ;
+    rdfs:comment "The roll of a sensor"@en;
+    rdfs:domain medusa:SensorOrientation ;
+    rdfs:range xsd:decimal ;
+    .
+
+
+
+
+
