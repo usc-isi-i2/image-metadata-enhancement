@@ -8,6 +8,8 @@
 @prefix medusa: <http://medusa.usc.edu/ontology/>.
 
 @prefix medusa-content: <http://medusa.usc.edu/thesauri/content/>.
+@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/>.
+
 
 medusa:medusa-core a owl:Ontology;
     dct:title "The Ontology for representing semanitc metadata for images"@en;
@@ -22,20 +24,32 @@ medusa:medusa-core a owl:Ontology;
 
 
 medusa:SensorAttribute a rdfs:Class;
-    rdfs:label "SensorAttribute"@en;
-    rdfs:comment "Generic class for sensor attributes"@en;
-    rdfs:subClassOf schema:OrganizeAction;
+    rdfs:label "SensorAttribute"@en ;
+    rdfs:subClassOf schema:OrganizeAction ;    
+    rdfs:comment "Generic class for sensor attributes"@en ;
     .
 
-medusa:SensorOrientation a rdfs:Class;
-    rdfs:label "SensorOrientation"@en;
-    rdfs:comment "Orientation of a sensor such as a camera"@en;
-    rdfs:subClassOf medusa:SensorAttribute;
+medusa:SensorOrientation a rdfs:Class ;
+    rdfs:label "SensorOrientation"@en ;
+    rdfs:subClassOf medusa:SensorAttribute ;
+    rdfs:comment "Orientation of a sensor such as a camera"@en ;
     .
 
-medusa:ContentFeature a rdfs:Class;
-    rdfs:label "ContentFeature"@en;
-    rdfs:comment "Describes the content of a photograph"@en;
+medusa:Feature a rdfs:Class ;
+    rdfs:label "Feature"@en ;
+    rdfs:comment "Describes features of a photograph"@en ;
+    .
+
+medusa:ContentFeature a rdfs:Class ;
+    rdfs:label "ContentFeature"@en ;
+    rdfs:subClassOf medusa:Feature ;
+    rdfs:comment "Describes the content of a photograph"@en ;
+    .
+
+medusa:TechnicalFeature a rdfs:Class ;
+    rdfs:label "TechnicalFeature"@en ;
+    rdfs:subClassOf medusa:Feature ;
+    rdfs:comment "Describes a technical feature of a photograph"@en ;
     .
 
     
@@ -62,10 +76,17 @@ medusa:sensorOrientation rdf:type owl:ObjectProperty ;
 
 
 medusa:contentFeatures rdf:type owl:ObjectProperty ;
-    rdfs:label "contentFeature"@en ;
+    rdfs:label "contentFeatures"@en ;
     rdfs:domain schema:Photograph ;
     rdfs:range medusa:ContentFeature ;
     rdfs:comment "Describes the content of a photograph" 
+    .
+
+medusa:technicalFeatures rdf:type owl:ObjectProperty ;
+    rdfs:label "technicalFeatures"@en ;
+    rdfs:domain schema:Photograph ;
+    rdfs:range medusa:TechnicalFeature ;
+    rdfs:comment "Describes a technical feature of a photograph" 
     .
 
 
@@ -108,6 +129,14 @@ medusa:roll a owl:DatatypeProperty ;
     .
 
 
+medusa:angleOfView a owl:DatatypeProperty ;
+    rdfs:label "angleOfView"@en ;
+    rdfs:comment "The angle of view of a Photograph"@en;
+    rdfs:domain schema:Photograph ;
+    rdfs:range xsd:decimal ;
+    .
+
+
 #########################################################
 #
 # Controlled Vocabularies
@@ -132,4 +161,11 @@ medusa-content:outdoor-scene a medusa:ContentFeature ;
 medusa-content:indoor-scene a medusa:ContentFeature ;
     rdfs:comment "The setting is indoors" ;
     rdfs:label "Indoors, Inside" 
+    .
+
+
+
+medusa-technical:blurry a medusa:TechnicalFeature ;
+    rdfs:comment "The Photograph is out of focuss" ;
+    rdfs:label "Blurry, Out of Focus" 
     .

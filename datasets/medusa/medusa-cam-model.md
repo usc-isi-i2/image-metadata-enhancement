@@ -67,13 +67,21 @@ From column: _Indoor/Outdoor_
 return md_out_indoor_uri(getValue("Indoor/Outdoor"))
 ```
 
+#### _blurry_uri_
+From column: _Blurry_
+>``` python
+return md_blurry_uri(getValue("Blurry"))
+```
+
 
 ### Semantic Types
 | Column | Property | Class |
 |  ----- | -------- | ----- |
+| _Angle of view_ | `medusa:angleOfView` | `schema:Photograph1`|
 | _accuracy_ | `medusa:accuracy` | `schema:GeoCoordinates1`|
 | _automobile_feature_ | `uri` | `medusa:ContentFeature2`|
 | _azimuth_ | `medusa:azimuth` | `medusa:SensorOrientation1`|
+| _blurry_uri_ | `uri` | `medusa:TechnicalFeature1`|
 | _faces_feature_ | `uri` | `medusa:ContentFeature1`|
 | _in_out_door_uri_ | `uri` | `medusa:ContentFeature3`|
 | _lat_ | `schema:latitude` | `schema:GeoCoordinates1`|
@@ -91,5 +99,6 @@ return md_out_indoor_uri(getValue("Indoor/Outdoor"))
 | `schema:Photograph1` | `medusa:contentFeatures` | `medusa:ContentFeature2`|
 | `schema:Photograph1` | `medusa:contentFeatures` | `medusa:ContentFeature3`|
 | `schema:Photograph1` | `medusa:sensorOrientation` | `medusa:SensorOrientation1`|
+| `schema:Photograph1` | `medusa:technicalFeatures` | `medusa:TechnicalFeature1`|
 | `schema:Photograph1` | `schema:contentLocation` | `schema:Place1`|
 | `schema:Place1` | `schema:geo` | `schema:GeoCoordinates1`|

@@ -1,0 +1,154 @@
+[
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-medusa-cam-sample_json-context.json",
+    "sensorOrientation": {
+        "roll": 19.59588786084745,
+        "a": "SensorOrientation",
+        "azimuth": -30.427167695707823,
+        "pitch": -67.71710456376935
+    },
+    "a": "Photograph",
+    "contentFeatures": {
+        "a": "ContentFeature",
+        "uri": "http://medusa.usc.edu/thesauri/content/indoor-scene"
+    },
+    "angleOfView": 1.0407311297537762,
+    "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150427_185804_1146576096",
+    "contentLocation": {
+        "geo": {
+            "a": "GeoCoordinates",
+            "longitude": -118.2827801,
+            "latitude": 34.0349438,
+            "accuracy": 71.00700378417969
+        },
+        "a": "Place",
+        "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150427_185804_1146576096/location"
+    }
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-medusa-cam-sample_json-context.json",
+    "sensorOrientation": {
+        "roll": 37.531899734503824,
+        "a": "SensorOrientation",
+        "azimuth": -150.92320669329504,
+        "pitch": -62.422191655013734
+    },
+    "a": "Photograph",
+    "contentFeatures": [
+        {
+            "a": "ContentFeature",
+            "uri": "http://medusa.usc.edu/thesauri/content/automobile"
+        },
+        {
+            "a": "ContentFeature",
+            "uri": "http://medusa.usc.edu/thesauri/content/outdoor-scene"
+        }
+    ],
+    "angleOfView": 1.0407311297537762,
+    "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150428_112040_1038447558",
+    "contentLocation": {
+        "geo": {
+            "a": "GeoCoordinates",
+            "longitude": -118.2827237,
+            "latitude": 34.0346166,
+            "accuracy": 81.22899627685547
+        },
+        "a": "Place",
+        "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150428_112040_1038447558/location"
+    }
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-medusa-cam-sample_json-context.json",
+    "sensorOrientation": {
+        "roll": 151.31023253242466,
+        "a": "SensorOrientation",
+        "azimuth": 157.53381894187024,
+        "pitch": -83.5455693614645
+    },
+    "technicalFeatures": {
+        "a": "TechnicalFeature",
+        "uri": "http://medusa.usc.edu/thesauri/technical/blurry"
+    },
+    "a": "Photograph",
+    "contentFeatures": [
+        {
+            "a": "ContentFeature",
+            "uri": "http://medusa.usc.edu/thesauri/content/indoor-scene"
+        },
+        {
+            "a": "ContentFeature",
+            "uri": "http://medusa.usc.edu/thesauri/content/human-face"
+        }
+    ],
+    "angleOfView": 1.0407311297537762,
+    "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150427_185834_-918504856",
+    "contentLocation": {
+        "geo": {
+            "a": "GeoCoordinates",
+            "longitude": -118.2827544,
+            "latitude": 34.0349537,
+            "accuracy": 70.52200317382812
+        },
+        "a": "Place",
+        "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150427_185834_-918504856/location"
+    }
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-medusa-cam-sample_json-context.json",
+    "sensorOrientation": {
+        "roll": 51.822540610381424,
+        "a": "SensorOrientation",
+        "azimuth": 169.47044878068127,
+        "pitch": -74.89258028689376
+    },
+    "a": "Photograph",
+    "contentFeatures": [
+        {
+            "a": "ContentFeature",
+            "uri": "http://medusa.usc.edu/thesauri/content/automobile"
+        },
+        {
+            "a": "ContentFeature",
+            "uri": "http://medusa.usc.edu/thesauri/content/outdoor-scene"
+        }
+    ],
+    "angleOfView": 1.0407311297537762,
+    "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150428_112049_-1229958766",
+    "contentLocation": {
+        "geo": {
+            "a": "GeoCoordinates",
+            "longitude": -118.2826474,
+            "latitude": 34.0346397,
+            "accuracy": 45
+        },
+        "a": "Place",
+        "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150428_112049_-1229958766/location"
+    }
+},
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-medusa-cam-sample_json-context.json",
+    "sensorOrientation": {
+        "roll": 23.107004660300454,
+        "a": "SensorOrientation",
+        "azimuth": 110.71964089890031,
+        "pitch": -64.70671917765375
+    },
+    "a": "Photograph",
+    "contentFeatures": {
+        "a": "ContentFeature",
+        "uri": "http://medusa.usc.edu/thesauri/content/indoor-scene"
+    },
+    "angleOfView": 1.0407311297537762,
+    "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150427_185847_-305294432",
+    "contentLocation": {
+        "geo": {
+            "a": "GeoCoordinates",
+            "longitude": -118.2827469,
+            "latitude": 34.0349432,
+            "accuracy": 71.5989990234375
+        },
+        "a": "Place",
+        "uri": "http://medusa.usc.edu/data/medusa/photo/img_20150427_185847_-305294432/location"
+    }
+}
+]

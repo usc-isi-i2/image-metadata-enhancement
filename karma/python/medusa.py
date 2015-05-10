@@ -13,28 +13,28 @@ def md_photo_location_uri(image_uri):
 
 def md_getLong(field):
 	"""Get longitude"""
-	return field.split(',')[0]
+	return field.split(',')[0].strip()
 
 def md_getLat(field):
 	"""Get latitude"""
-	return field.split(',')[1]
+	return field.split(',')[1].strip()
 
 def md_getAccuracy(field):
 	"""Get accuracy"""
-	return field.split(',')[2]
+	return field.split(',')[2].strip()
 
 
 def md_getAzimuth(field):
 	"""Get azimuth"""
-	return field.split(',')[0]
+	return field.split(',')[0].strip()
 
 def md_getPitch(field):
 	"""Get pitch"""
-	return field.split(',')[1]
+	return field.split(',')[1].strip()
 
 def md_getRoll(field):
 	"""Get roll"""
-	return field.split(',')[2]
+	return field.split(',')[2].strip()
 
 
 def md_face_uri(count):
@@ -58,3 +58,8 @@ def md_out_indoor_uri(value):
 
 	return ''
 
+def md_blurry_uri(value):
+	if int(value) > 0:
+		return "medusa-technical:blurry"
+	else:
+		return ''

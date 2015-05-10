@@ -6,16 +6,17 @@
 @prefix medusa: <http://medusa.usc.edu/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <http://schema.org/> .
+@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node19kvhn60vx1 a km-dev:R2RMLMapping ;
+_:node19kvn2b7ux1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "medusa-cam-sample.json" ;
-	km-dev:modelPublicationTime "1431282882591"^^xsd:long ;
+	km-dev:modelPublicationTime "1431288491262"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"Indoor/Outdoor\"}],[{\"columnName\":\"Num Cars\"}],[{\"columnName\":\"Num Faces\"}],[{\"columnName\":\"Location (long, lat, accuracy)\"}],[{\"columnName\":\"Azimuth, Pitch, Roll\"}],[{\"columnName\":\"Image\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"photo_uri\"}],[{\"columnName\":\"lat\"}],[{\"columnName\":\"azimuth\"}],[{\"columnName\":\"accuracy\"}],[{\"columnName\":\"in_out_door_uri\"}],[{\"columnName\":\"pitch\"}],[{\"columnName\":\"long\"}],[{\"columnName\":\"automobile_feature\"}],[{\"columnName\":\"faces_feature\"}],[{\"columnName\":\"photo_location_uri\"}],[{\"columnName\":\"roll\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Indoor/Outdoor\"}],[{\"columnName\":\"Num Cars\"}],[{\"columnName\":\"Angle of view\"}],[{\"columnName\":\"Num Faces\"}],[{\"columnName\":\"Location (long, lat, accuracy)\"}],[{\"columnName\":\"Azimuth, Pitch, Roll\"}],[{\"columnName\":\"Blurry\"}],[{\"columnName\":\"Image\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"photo_uri\"}],[{\"columnName\":\"Angle of view\"}],[{\"columnName\":\"lat\"}],[{\"columnName\":\"azimuth\"}],[{\"columnName\":\"blurry_uri\"}],[{\"columnName\":\"accuracy\"}],[{\"columnName\":\"in_out_door_uri\"}],[{\"columnName\":\"pitch\"}],[{\"columnName\":\"long\"}],[{\"columnName\":\"automobile_feature\"}],[{\"columnName\":\"faces_feature\"}],[{\"columnName\":\"photo_location_uri\"}],[{\"columnName\":\"roll\"}]]" ;
 	km-dev:hasModelLabel "medusa-cam" ;
 	km-dev:hasBaseURI "http://medusa.usc.edu/data/medusa/" ;
 	km-dev:hasWorksheetHistory """[
@@ -1632,373 +1633,1868 @@ _:node19kvhn60vx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Blurry\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"blurry_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return md_blurry_uri(getValue(\\\"Blurry\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Blurry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"blurry_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Angle of view\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://medusa.usc.edu/ontology/angleOfView\",
+                    \"DomainLabel\": \"schema:Photograph1\",
+                    \"DomainId\": \"http://schema.org/Photograph1\",
+                    \"DomainUri\": \"http://schema.org/Photograph\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Angle of view\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Angle of view\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"Image\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Image\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_location_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_location_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Cars\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Num Cars\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"automobile_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"automobile_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Faces\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Num Faces\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"faces_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"faces_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Blurry\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Blurry\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"blurry_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"blurry_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Indoor/Outdoor\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Indoor/Outdoor\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"in_out_door_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"in_out_door_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Angle of view\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Angle of view\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Light\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Light\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Accelerometer\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Accelerometer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Magnetic field\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Magnetic field\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Azimuth, Pitch, Roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"roll\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"pitch\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"pitch\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"azimuth\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"azimuth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Location (long, lat, accuracy)\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Location (long, lat, accuracy)\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"accuracy\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"accuracy\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"lat\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"lat\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"long\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"long\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"Image\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Image\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Cars\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Num Cars\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"automobile_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"automobile_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Faces\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Num Faces\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"faces_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"faces_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Blurry\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Blurry\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"blurry_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"blurry_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Indoor/Outdoor\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Indoor/Outdoor\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"in_out_door_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"in_out_door_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Angle of view\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Angle of view\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Light\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Light\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Accelerometer\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Accelerometer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Magnetic field\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Magnetic field\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Azimuth, Pitch, Roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"roll\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"pitch\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"pitch\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"azimuth\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"azimuth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Location (long, lat, accuracy)\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Location (long, lat, accuracy)\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_location_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_location_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"accuracy\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"accuracy\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"lat\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"lat\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"long\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"long\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"blurry_uri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://medusa.usc.edu/ontology/TechnicalFeature\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://medusa.usc.edu/ontology/TechnicalFeature1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"medusa:TechnicalFeature1 (add)\",
+                    \"DomainId\": \"http://medusa.usc.edu/ontology/TechnicalFeature1 (add)\",
+                    \"DomainUri\": \"http://medusa.usc.edu/ontology/TechnicalFeature\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"blurry_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"blurry_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP18:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://medusa.usc.edu/ontology/TechnicalFeature1\",
+                    \"edgeId\": \"http://medusa.usc.edu/ontology/technicalFeatures\",
+                    \"edgeTargetId\": \"http://medusa.usc.edu/ontology/TechnicalFeature1\",
+                    \"edgeSourceId\": \"http://schema.org/Photograph1\",
+                    \"edgeSourceUri\": \"http://schema.org/Photograph\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"Image\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Image\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Cars\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Num Cars\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"automobile_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"automobile_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Faces\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Num Faces\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"faces_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"faces_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Blurry\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Blurry\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"blurry_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"blurry_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Indoor/Outdoor\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Indoor/Outdoor\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"in_out_door_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"in_out_door_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Angle of view\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Angle of view\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Azimuth, Pitch, Roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"roll\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"pitch\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"pitch\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"azimuth\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"azimuth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Location (long, lat, accuracy)\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Location (long, lat, accuracy)\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_location_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_location_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"accuracy\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"accuracy\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"lat\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"lat\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"long\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"long\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Light\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Light\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Accelerometer\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Accelerometer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Magnetic field\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Magnetic field\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"Image\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Image\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Cars\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Num Cars\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"automobile_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"automobile_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Faces\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Num Faces\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"faces_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"faces_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Blurry\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Blurry\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Indoor/Outdoor\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Indoor/Outdoor\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"in_out_door_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"in_out_door_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"blurry_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"blurry_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Angle of view\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Angle of view\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Azimuth, Pitch, Roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"roll\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"pitch\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"pitch\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"azimuth\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"azimuth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Location (long, lat, accuracy)\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Location (long, lat, accuracy)\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_location_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_location_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"accuracy\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"accuracy\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"lat\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"lat\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"long\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"long\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Light\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Light\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Accelerometer\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Accelerometer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Magnetic field\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Magnetic field\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Angle of view\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://medusa.usc.edu/ontology/angleOfView\",
+                    \"DomainLabel\": \"schema:Photograph1\",
+                    \"DomainId\": \"http://schema.org/Photograph1\",
+                    \"DomainUri\": \"http://schema.org/Photograph\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Angle of view\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Angle of view\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"roll\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://medusa.usc.edu/ontology/roll\",
+                    \"DomainLabel\": \"medusa:SensorOrientation1\",
+                    \"DomainId\": \"http://medusa.usc.edu/ontology/SensorOrientation1\",
+                    \"DomainUri\": \"http://medusa.usc.edu/ontology/SensorOrientation\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"roll\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"roll\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"pitch\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://medusa.usc.edu/ontology/pitch\",
+                    \"DomainLabel\": \"medusa:SensorOrientation1\",
+                    \"DomainId\": \"http://medusa.usc.edu/ontology/SensorOrientation1\",
+                    \"DomainUri\": \"http://medusa.usc.edu/ontology/SensorOrientation\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pitch\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pitch\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"azimuth\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://medusa.usc.edu/ontology/azimuth\",
+                    \"DomainLabel\": \"medusa:SensorOrientation1\",
+                    \"DomainId\": \"http://medusa.usc.edu/ontology/SensorOrientation1\",
+                    \"DomainUri\": \"http://medusa.usc.edu/ontology/SensorOrientation\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"azimuth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"azimuth\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"accuracy\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://medusa.usc.edu/ontology/accuracy\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"accuracy\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"accuracy\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"lat\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"long\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"xsd:decimal\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"long\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"long\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"Image\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Image\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Cars\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Num Cars\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"automobile_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"automobile_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Num Faces\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Num Faces\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"faces_feature\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"faces_feature\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Blurry\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Blurry\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Indoor/Outdoor\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Indoor/Outdoor\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"in_out_door_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"in_out_door_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"blurry_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"blurry_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Angle of view\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Angle of view\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Azimuth, Pitch, Roll\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Azimuth, Pitch, Roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Location (long, lat, accuracy)\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"Location (long, lat, accuracy)\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"photo_location_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"photo_location_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"accuracy\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"accuracy\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"lat\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"lat\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"long\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"long\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"roll\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"roll\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"pitch\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"pitch\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"azimuth\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"azimuth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Light\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Light\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Accelerometer\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Accelerometer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Magnetic field\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Magnetic field\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
     }
 ]""" .
 
-km-dev:TriplesMap_d5d920e6-2b53-4da1-9cb8-cad3eda4374b a rr:TriplesMap .
+km-dev:TriplesMap_af98ca9c-675a-42e5-b2ff-b3002aadc997 a rr:TriplesMap .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_d5d920e6-2b53-4da1-9cb8-cad3eda4374b .
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_af98ca9c-675a-42e5-b2ff-b3002aadc997 .
 
-km-dev:TriplesMap_d5d920e6-2b53-4da1-9cb8-cad3eda4374b km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:TriplesMap_af98ca9c-675a-42e5-b2ff-b3002aadc997 km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx2 rr:tableName "medusa-cam-sample.json" ;
+_:node19kvn2b7ux2 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx2 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux2 .
 
-km-dev:TriplesMap_d5d920e6-2b53-4da1-9cb8-cad3eda4374b rr:logicalTable _:node19kvhn60vx2 ;
-	rr:subjectMap _:node19kvhn60vx3 .
+km-dev:TriplesMap_af98ca9c-675a-42e5-b2ff-b3002aadc997 rr:logicalTable _:node19kvn2b7ux2 ;
+	rr:subjectMap _:node19kvn2b7ux3 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx3 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux3 .
 
-_:node19kvhn60vx3 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux3 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://medusa.usc.edu/ontology/ContentFeature1" ;
 	rr:class medusa:ContentFeature ;
 	rr:template "{faces_feature}" .
 
-km-dev:TriplesMap_a82c4be9-0ef3-4432-b1b4-a8593e5a4dda a rr:TriplesMap .
+km-dev:TriplesMap_928c98fd-60ca-40c8-9855-41e95b04bb72 a rr:TriplesMap .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_a82c4be9-0ef3-4432-b1b4-a8593e5a4dda .
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_928c98fd-60ca-40c8-9855-41e95b04bb72 .
 
-km-dev:TriplesMap_a82c4be9-0ef3-4432-b1b4-a8593e5a4dda km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:TriplesMap_928c98fd-60ca-40c8-9855-41e95b04bb72 km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx4 rr:tableName "medusa-cam-sample.json" ;
+_:node19kvn2b7ux4 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx4 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux4 .
 
-km-dev:TriplesMap_a82c4be9-0ef3-4432-b1b4-a8593e5a4dda rr:logicalTable _:node19kvhn60vx4 ;
-	rr:subjectMap _:node19kvhn60vx5 .
+km-dev:TriplesMap_928c98fd-60ca-40c8-9855-41e95b04bb72 rr:logicalTable _:node19kvn2b7ux4 ;
+	rr:subjectMap _:node19kvn2b7ux5 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx5 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux5 .
 
-_:node19kvhn60vx5 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux5 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://medusa.usc.edu/ontology/ContentFeature2" ;
 	rr:class medusa:ContentFeature ;
 	rr:template "{automobile_feature}" .
 
-km-dev:TriplesMap_bcbbfb83-d183-4c30-be66-84438a53a2a2 a rr:TriplesMap .
+km-dev:TriplesMap_05f6b136-e624-4f23-b02c-cf8446c67f25 a rr:TriplesMap .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_bcbbfb83-d183-4c30-be66-84438a53a2a2 .
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_05f6b136-e624-4f23-b02c-cf8446c67f25 .
 
-km-dev:TriplesMap_bcbbfb83-d183-4c30-be66-84438a53a2a2 km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:TriplesMap_05f6b136-e624-4f23-b02c-cf8446c67f25 km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx6 rr:tableName "medusa-cam-sample.json" ;
+_:node19kvn2b7ux6 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx6 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux6 .
 
-km-dev:TriplesMap_bcbbfb83-d183-4c30-be66-84438a53a2a2 rr:logicalTable _:node19kvhn60vx6 ;
-	rr:subjectMap _:node19kvhn60vx7 .
+km-dev:TriplesMap_05f6b136-e624-4f23-b02c-cf8446c67f25 rr:logicalTable _:node19kvn2b7ux6 ;
+	rr:subjectMap _:node19kvn2b7ux7 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx7 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux7 .
 
-_:node19kvhn60vx7 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux7 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://medusa.usc.edu/ontology/ContentFeature3" ;
 	rr:class medusa:ContentFeature ;
 	rr:template "{in_out_door_uri}" .
 
-km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 a rr:TriplesMap .
+km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e a rr:TriplesMap .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 .
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e .
 
-km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx8 rr:tableName "medusa-cam-sample.json" ;
+_:node19kvn2b7ux8 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx8 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux8 .
 
-km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 rr:logicalTable _:node19kvhn60vx8 ;
-	rr:subjectMap _:node19kvhn60vx9 .
+km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e rr:logicalTable _:node19kvn2b7ux8 ;
+	rr:subjectMap _:node19kvn2b7ux9 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx9 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux9 .
 
-_:node19kvhn60vx9 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux9 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://medusa.usc.edu/ontology/SensorOrientation1" ;
 	rr:class medusa:SensorOrientation ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "medusa:SensorOrientation1" .
 
-km-dev:PredicateObjectMap_8f6d5bdc-9697-4bf4-a8d0-702f8aeef6e4 rr:predicate medusa:azimuth .
+km-dev:PredicateObjectMap_479aa1b8-5121-4151-a60a-c38051b55a3c rr:predicate medusa:azimuth .
 
-_:node19kvhn60vx10 rr:column "azimuth" ;
+_:node19kvn2b7ux10 rr:column "azimuth" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap _:node19kvhn60vx10 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux10 .
 
-km-dev:PredicateObjectMap_8f6d5bdc-9697-4bf4-a8d0-702f8aeef6e4 rr:objectMap _:node19kvhn60vx10 .
+km-dev:PredicateObjectMap_479aa1b8-5121-4151-a60a-c38051b55a3c rr:objectMap _:node19kvn2b7ux10 .
 
-km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 rr:predicateObjectMap km-dev:PredicateObjectMap_8f6d5bdc-9697-4bf4-a8d0-702f8aeef6e4 .
+km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e rr:predicateObjectMap km-dev:PredicateObjectMap_479aa1b8-5121-4151-a60a-c38051b55a3c .
 
-km-dev:PredicateObjectMap_8f6d5bdc-9697-4bf4-a8d0-702f8aeef6e4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_479aa1b8-5121-4151-a60a-c38051b55a3c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8f6d5bdc-9697-4bf4-a8d0-702f8aeef6e4 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_479aa1b8-5121-4151-a60a-c38051b55a3c .
 
-km-dev:PredicateObjectMap_e736e9ea-9322-48ac-97e8-6300e6cb7095 rr:predicate medusa:pitch .
+km-dev:PredicateObjectMap_cd850376-50c0-4699-8333-74eae8a36b9c rr:predicate medusa:pitch .
 
-_:node19kvhn60vx11 rr:column "pitch" ;
+_:node19kvn2b7ux11 rr:column "pitch" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap _:node19kvhn60vx11 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux11 .
 
-km-dev:PredicateObjectMap_e736e9ea-9322-48ac-97e8-6300e6cb7095 rr:objectMap _:node19kvhn60vx11 .
+km-dev:PredicateObjectMap_cd850376-50c0-4699-8333-74eae8a36b9c rr:objectMap _:node19kvn2b7ux11 .
 
-km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 rr:predicateObjectMap km-dev:PredicateObjectMap_e736e9ea-9322-48ac-97e8-6300e6cb7095 .
+km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e rr:predicateObjectMap km-dev:PredicateObjectMap_cd850376-50c0-4699-8333-74eae8a36b9c .
 
-km-dev:PredicateObjectMap_e736e9ea-9322-48ac-97e8-6300e6cb7095 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_cd850376-50c0-4699-8333-74eae8a36b9c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e736e9ea-9322-48ac-97e8-6300e6cb7095 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd850376-50c0-4699-8333-74eae8a36b9c .
 
-km-dev:PredicateObjectMap_8d2349eb-ea5a-450b-be59-690d64578216 rr:predicate medusa:roll .
+km-dev:PredicateObjectMap_89cce0f7-ed38-47b1-8a35-abc84f838cd0 rr:predicate medusa:roll .
 
-_:node19kvhn60vx12 rr:column "roll" ;
+_:node19kvn2b7ux12 rr:column "roll" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap _:node19kvhn60vx12 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux12 .
 
-km-dev:PredicateObjectMap_8d2349eb-ea5a-450b-be59-690d64578216 rr:objectMap _:node19kvhn60vx12 .
+km-dev:PredicateObjectMap_89cce0f7-ed38-47b1-8a35-abc84f838cd0 rr:objectMap _:node19kvn2b7ux12 .
 
-km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 rr:predicateObjectMap km-dev:PredicateObjectMap_8d2349eb-ea5a-450b-be59-690d64578216 .
+km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e rr:predicateObjectMap km-dev:PredicateObjectMap_89cce0f7-ed38-47b1-8a35-abc84f838cd0 .
 
-km-dev:PredicateObjectMap_8d2349eb-ea5a-450b-be59-690d64578216 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_89cce0f7-ed38-47b1-8a35-abc84f838cd0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8d2349eb-ea5a-450b-be59-690d64578216 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_89cce0f7-ed38-47b1-8a35-abc84f838cd0 .
 
-km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 a rr:TriplesMap .
+km-dev:TriplesMap_abebe046-607d-433b-9063-7999abe41a4d a rr:TriplesMap .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 .
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_abebe046-607d-433b-9063-7999abe41a4d .
 
-km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:TriplesMap_abebe046-607d-433b-9063-7999abe41a4d km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx13 rr:tableName "medusa-cam-sample.json" ;
+_:node19kvn2b7ux13 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx13 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux13 .
 
-km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 rr:logicalTable _:node19kvhn60vx13 ;
-	rr:subjectMap _:node19kvhn60vx14 .
+km-dev:TriplesMap_abebe046-607d-433b-9063-7999abe41a4d rr:logicalTable _:node19kvn2b7ux13 ;
+	rr:subjectMap _:node19kvn2b7ux14 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx14 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux14 .
 
-_:node19kvhn60vx14 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux14 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://medusa.usc.edu/ontology/TechnicalFeature1" ;
+	rr:class medusa:TechnicalFeature ;
+	rr:template "{blurry_uri}" .
+
+km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 a rr:TriplesMap .
+
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 .
+
+km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 km-dev:isPartOfMapping _:node19kvn2b7ux1 .
+
+_:node19kvn2b7ux15 rr:tableName "medusa-cam-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
+
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux15 .
+
+km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 rr:logicalTable _:node19kvn2b7ux15 ;
+	rr:subjectMap _:node19kvn2b7ux16 .
+
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux16 .
+
+_:node19kvn2b7ux16 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
 	rr:class schema:GeoCoordinates ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "schema:GeoCoordinates1" .
 
-km-dev:PredicateObjectMap_adbb76b1-3fb6-4bce-8018-ae67821b1407 rr:predicate medusa:accuracy .
+km-dev:PredicateObjectMap_985defe8-96b3-4441-b084-b84b32e4d843 rr:predicate medusa:accuracy .
 
-_:node19kvhn60vx15 rr:column "accuracy" ;
+_:node19kvn2b7ux17 rr:column "accuracy" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap _:node19kvhn60vx15 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux17 .
 
-km-dev:PredicateObjectMap_adbb76b1-3fb6-4bce-8018-ae67821b1407 rr:objectMap _:node19kvhn60vx15 .
+km-dev:PredicateObjectMap_985defe8-96b3-4441-b084-b84b32e4d843 rr:objectMap _:node19kvn2b7ux17 .
 
-km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 rr:predicateObjectMap km-dev:PredicateObjectMap_adbb76b1-3fb6-4bce-8018-ae67821b1407 .
+km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 rr:predicateObjectMap km-dev:PredicateObjectMap_985defe8-96b3-4441-b084-b84b32e4d843 .
 
-km-dev:PredicateObjectMap_adbb76b1-3fb6-4bce-8018-ae67821b1407 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_985defe8-96b3-4441-b084-b84b32e4d843 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_adbb76b1-3fb6-4bce-8018-ae67821b1407 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_985defe8-96b3-4441-b084-b84b32e4d843 .
 
-km-dev:PredicateObjectMap_2371ceab-e3cc-4da7-8a76-4bfe9ad9a64f rr:predicate schema:latitude .
+km-dev:PredicateObjectMap_65c52d27-06a2-4eae-99f3-01ec76526b38 rr:predicate schema:latitude .
 
-_:node19kvhn60vx16 rr:column "lat" ;
+_:node19kvn2b7ux18 rr:column "lat" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap _:node19kvhn60vx16 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux18 .
 
-km-dev:PredicateObjectMap_2371ceab-e3cc-4da7-8a76-4bfe9ad9a64f rr:objectMap _:node19kvhn60vx16 .
+km-dev:PredicateObjectMap_65c52d27-06a2-4eae-99f3-01ec76526b38 rr:objectMap _:node19kvn2b7ux18 .
 
-km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 rr:predicateObjectMap km-dev:PredicateObjectMap_2371ceab-e3cc-4da7-8a76-4bfe9ad9a64f .
+km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 rr:predicateObjectMap km-dev:PredicateObjectMap_65c52d27-06a2-4eae-99f3-01ec76526b38 .
 
-km-dev:PredicateObjectMap_2371ceab-e3cc-4da7-8a76-4bfe9ad9a64f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_65c52d27-06a2-4eae-99f3-01ec76526b38 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2371ceab-e3cc-4da7-8a76-4bfe9ad9a64f .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_65c52d27-06a2-4eae-99f3-01ec76526b38 .
 
-km-dev:PredicateObjectMap_910a701b-543b-4476-b24d-648de9b9217f rr:predicate schema:longitude .
+km-dev:PredicateObjectMap_c251e319-c4d7-4362-925b-d4dad7da7376 rr:predicate schema:longitude .
 
-_:node19kvhn60vx17 rr:column "long" ;
+_:node19kvn2b7ux19 rr:column "long" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap _:node19kvhn60vx17 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux19 .
 
-km-dev:PredicateObjectMap_910a701b-543b-4476-b24d-648de9b9217f rr:objectMap _:node19kvhn60vx17 .
+km-dev:PredicateObjectMap_c251e319-c4d7-4362-925b-d4dad7da7376 rr:objectMap _:node19kvn2b7ux19 .
 
-km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 rr:predicateObjectMap km-dev:PredicateObjectMap_910a701b-543b-4476-b24d-648de9b9217f .
+km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 rr:predicateObjectMap km-dev:PredicateObjectMap_c251e319-c4d7-4362-925b-d4dad7da7376 .
 
-km-dev:PredicateObjectMap_910a701b-543b-4476-b24d-648de9b9217f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_c251e319-c4d7-4362-925b-d4dad7da7376 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_910a701b-543b-4476-b24d-648de9b9217f .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c251e319-c4d7-4362-925b-d4dad7da7376 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f a rr:TriplesMap .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 a rr:TriplesMap .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f .
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx18 rr:tableName "medusa-cam-sample.json" ;
+_:node19kvn2b7ux20 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx18 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux20 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f rr:logicalTable _:node19kvhn60vx18 ;
-	rr:subjectMap _:node19kvhn60vx19 .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:logicalTable _:node19kvn2b7ux20 ;
+	rr:subjectMap _:node19kvn2b7ux21 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx19 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux21 .
 
-_:node19kvhn60vx19 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux21 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Photograph1" ;
 	rr:class schema:Photograph ;
 	rr:template "{photo_uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_44fe6b0d-c36f-462e-ae0b-c7f369427a1c rr:predicate medusa:contentFeatures .
+km-dev:PredicateObjectMap_69c2ed9b-ec1c-4088-b5a0-c36c849f1ab7 rr:predicate medusa:angleOfView .
 
-km-dev:RefObjectMap_614a4d35-b1e1-486c-bbd2-a3e262ece4eb a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_d5d920e6-2b53-4da1-9cb8-cad3eda4374b ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+_:node19kvn2b7ux22 rr:column "Angle of view" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#decimal" ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap km-dev:RefObjectMap_614a4d35-b1e1-486c-bbd2-a3e262ece4eb .
+_:node19kvn2b7ux1 km-dev:hasObjectMap _:node19kvn2b7ux22 .
 
-km-dev:PredicateObjectMap_44fe6b0d-c36f-462e-ae0b-c7f369427a1c rr:objectMap km-dev:RefObjectMap_614a4d35-b1e1-486c-bbd2-a3e262ece4eb .
+km-dev:PredicateObjectMap_69c2ed9b-ec1c-4088-b5a0-c36c849f1ab7 rr:objectMap _:node19kvn2b7ux22 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f rr:predicateObjectMap km-dev:PredicateObjectMap_44fe6b0d-c36f-462e-ae0b-c7f369427a1c .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_69c2ed9b-ec1c-4088-b5a0-c36c849f1ab7 .
 
-km-dev:PredicateObjectMap_44fe6b0d-c36f-462e-ae0b-c7f369427a1c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_69c2ed9b-ec1c-4088-b5a0-c36c849f1ab7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_44fe6b0d-c36f-462e-ae0b-c7f369427a1c .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_69c2ed9b-ec1c-4088-b5a0-c36c849f1ab7 .
 
-km-dev:PredicateObjectMap_7c0b79bf-46ba-4706-b2e8-e2b8b3a3001b rr:predicate medusa:contentFeatures .
+km-dev:PredicateObjectMap_eff757b9-4d3c-42b8-837a-a479067627c4 rr:predicate medusa:contentFeatures .
 
-km-dev:RefObjectMap_838b0506-d3f5-4374-a63a-f46b44aa3bd6 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_a82c4be9-0ef3-4432-b1b4-a8593e5a4dda ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:RefObjectMap_78126db5-eb99-46ad-aefe-e1e20b3137b7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_af98ca9c-675a-42e5-b2ff-b3002aadc997 ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap km-dev:RefObjectMap_838b0506-d3f5-4374-a63a-f46b44aa3bd6 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_78126db5-eb99-46ad-aefe-e1e20b3137b7 .
 
-km-dev:PredicateObjectMap_7c0b79bf-46ba-4706-b2e8-e2b8b3a3001b rr:objectMap km-dev:RefObjectMap_838b0506-d3f5-4374-a63a-f46b44aa3bd6 .
+km-dev:PredicateObjectMap_eff757b9-4d3c-42b8-837a-a479067627c4 rr:objectMap km-dev:RefObjectMap_78126db5-eb99-46ad-aefe-e1e20b3137b7 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f rr:predicateObjectMap km-dev:PredicateObjectMap_7c0b79bf-46ba-4706-b2e8-e2b8b3a3001b .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_eff757b9-4d3c-42b8-837a-a479067627c4 .
 
-km-dev:PredicateObjectMap_7c0b79bf-46ba-4706-b2e8-e2b8b3a3001b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_eff757b9-4d3c-42b8-837a-a479067627c4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7c0b79bf-46ba-4706-b2e8-e2b8b3a3001b .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eff757b9-4d3c-42b8-837a-a479067627c4 .
 
-km-dev:PredicateObjectMap_ce02037f-7f36-4b6f-8539-e97afe0f3130 rr:predicate medusa:contentFeatures .
+km-dev:PredicateObjectMap_0c0cd740-b5eb-4dc5-b1c9-9c172f09b448 rr:predicate medusa:contentFeatures .
 
-km-dev:RefObjectMap_55a5e055-c533-428d-a36e-70edac52739f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_bcbbfb83-d183-4c30-be66-84438a53a2a2 ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:RefObjectMap_c4492e03-370b-48eb-b342-728278b7df30 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_928c98fd-60ca-40c8-9855-41e95b04bb72 ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap km-dev:RefObjectMap_55a5e055-c533-428d-a36e-70edac52739f .
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_c4492e03-370b-48eb-b342-728278b7df30 .
 
-km-dev:PredicateObjectMap_ce02037f-7f36-4b6f-8539-e97afe0f3130 rr:objectMap km-dev:RefObjectMap_55a5e055-c533-428d-a36e-70edac52739f .
+km-dev:PredicateObjectMap_0c0cd740-b5eb-4dc5-b1c9-9c172f09b448 rr:objectMap km-dev:RefObjectMap_c4492e03-370b-48eb-b342-728278b7df30 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f rr:predicateObjectMap km-dev:PredicateObjectMap_ce02037f-7f36-4b6f-8539-e97afe0f3130 .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_0c0cd740-b5eb-4dc5-b1c9-9c172f09b448 .
 
-km-dev:PredicateObjectMap_ce02037f-7f36-4b6f-8539-e97afe0f3130 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_0c0cd740-b5eb-4dc5-b1c9-9c172f09b448 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ce02037f-7f36-4b6f-8539-e97afe0f3130 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0c0cd740-b5eb-4dc5-b1c9-9c172f09b448 .
 
-km-dev:PredicateObjectMap_ebf97ea9-115b-45b2-bcd6-c53092065e13 rr:predicate medusa:sensorOrientation .
+km-dev:PredicateObjectMap_4d990a98-a45f-48f2-81e6-3c4c2afb6de4 rr:predicate medusa:contentFeatures .
 
-km-dev:RefObjectMap_d0830526-0c13-4352-b94b-68afccfef53b a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_1147883d-186d-43d0-865c-3ddadeaf32e8 ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:RefObjectMap_0439e4fa-25e7-4321-a955-db980a7b4dbd a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_05f6b136-e624-4f23-b02c-cf8446c67f25 ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap km-dev:RefObjectMap_d0830526-0c13-4352-b94b-68afccfef53b .
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_0439e4fa-25e7-4321-a955-db980a7b4dbd .
 
-km-dev:PredicateObjectMap_ebf97ea9-115b-45b2-bcd6-c53092065e13 rr:objectMap km-dev:RefObjectMap_d0830526-0c13-4352-b94b-68afccfef53b .
+km-dev:PredicateObjectMap_4d990a98-a45f-48f2-81e6-3c4c2afb6de4 rr:objectMap km-dev:RefObjectMap_0439e4fa-25e7-4321-a955-db980a7b4dbd .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f rr:predicateObjectMap km-dev:PredicateObjectMap_ebf97ea9-115b-45b2-bcd6-c53092065e13 .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_4d990a98-a45f-48f2-81e6-3c4c2afb6de4 .
 
-km-dev:PredicateObjectMap_ebf97ea9-115b-45b2-bcd6-c53092065e13 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_4d990a98-a45f-48f2-81e6-3c4c2afb6de4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ebf97ea9-115b-45b2-bcd6-c53092065e13 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4d990a98-a45f-48f2-81e6-3c4c2afb6de4 .
 
-km-dev:PredicateObjectMap_52988b59-2ceb-427d-a11a-8ffbd5eaaa92 rr:predicate schema:contentLocation .
+km-dev:PredicateObjectMap_d39164fa-5422-43e8-af67-ba6abdc563c3 rr:predicate medusa:sensorOrientation .
 
-km-dev:RefObjectMap_ef592bac-e329-4cf0-a0c9-ef28595c42ee a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_1278d6de-acaf-4daf-b53d-fa12a0f34b5e ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:RefObjectMap_77374fcb-d0fe-4020-a3ba-9c9ebcd81808 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9e2b68c8-ed7a-4957-9d7d-71122476a28e ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap km-dev:RefObjectMap_ef592bac-e329-4cf0-a0c9-ef28595c42ee .
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_77374fcb-d0fe-4020-a3ba-9c9ebcd81808 .
 
-km-dev:PredicateObjectMap_52988b59-2ceb-427d-a11a-8ffbd5eaaa92 rr:objectMap km-dev:RefObjectMap_ef592bac-e329-4cf0-a0c9-ef28595c42ee .
+km-dev:PredicateObjectMap_d39164fa-5422-43e8-af67-ba6abdc563c3 rr:objectMap km-dev:RefObjectMap_77374fcb-d0fe-4020-a3ba-9c9ebcd81808 .
 
-km-dev:TriplesMap_a3748ed2-d206-41f6-81eb-db0abc69521f rr:predicateObjectMap km-dev:PredicateObjectMap_52988b59-2ceb-427d-a11a-8ffbd5eaaa92 .
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_d39164fa-5422-43e8-af67-ba6abdc563c3 .
 
-km-dev:PredicateObjectMap_52988b59-2ceb-427d-a11a-8ffbd5eaaa92 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_d39164fa-5422-43e8-af67-ba6abdc563c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_52988b59-2ceb-427d-a11a-8ffbd5eaaa92 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d39164fa-5422-43e8-af67-ba6abdc563c3 .
 
-km-dev:TriplesMap_1278d6de-acaf-4daf-b53d-fa12a0f34b5e a rr:TriplesMap .
+km-dev:PredicateObjectMap_a15a1ac4-bd7e-4a37-9f06-e686f41cdde6 rr:predicate medusa:technicalFeatures .
 
-_:node19kvhn60vx1 km-dev:hasTriplesMap km-dev:TriplesMap_1278d6de-acaf-4daf-b53d-fa12a0f34b5e .
+km-dev:RefObjectMap_64d8ff72-d2ab-4478-9100-479625d53218 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_abebe046-607d-433b-9063-7999abe41a4d ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-km-dev:TriplesMap_1278d6de-acaf-4daf-b53d-fa12a0f34b5e km-dev:isPartOfMapping _:node19kvhn60vx1 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_64d8ff72-d2ab-4478-9100-479625d53218 .
 
-_:node19kvhn60vx20 rr:tableName "medusa-cam-sample.json" ;
+km-dev:PredicateObjectMap_a15a1ac4-bd7e-4a37-9f06-e686f41cdde6 rr:objectMap km-dev:RefObjectMap_64d8ff72-d2ab-4478-9100-479625d53218 .
+
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_a15a1ac4-bd7e-4a37-9f06-e686f41cdde6 .
+
+km-dev:PredicateObjectMap_a15a1ac4-bd7e-4a37-9f06-e686f41cdde6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
+
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a15a1ac4-bd7e-4a37-9f06-e686f41cdde6 .
+
+km-dev:PredicateObjectMap_83784b8b-f64c-4d3c-8c3b-ac972b68d8bb rr:predicate schema:contentLocation .
+
+km-dev:RefObjectMap_2231e73f-b49e-4b93-a6de-9e816bb57303 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_436c352b-0295-448e-a0cf-d6c5eda34e01 ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
+
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_2231e73f-b49e-4b93-a6de-9e816bb57303 .
+
+km-dev:PredicateObjectMap_83784b8b-f64c-4d3c-8c3b-ac972b68d8bb rr:objectMap km-dev:RefObjectMap_2231e73f-b49e-4b93-a6de-9e816bb57303 .
+
+km-dev:TriplesMap_95d4083b-3550-47d9-b1f1-bd35f7b2d066 rr:predicateObjectMap km-dev:PredicateObjectMap_83784b8b-f64c-4d3c-8c3b-ac972b68d8bb .
+
+km-dev:PredicateObjectMap_83784b8b-f64c-4d3c-8c3b-ac972b68d8bb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
+
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83784b8b-f64c-4d3c-8c3b-ac972b68d8bb .
+
+km-dev:TriplesMap_436c352b-0295-448e-a0cf-d6c5eda34e01 a rr:TriplesMap .
+
+_:node19kvn2b7ux1 km-dev:hasTriplesMap km-dev:TriplesMap_436c352b-0295-448e-a0cf-d6c5eda34e01 .
+
+km-dev:TriplesMap_436c352b-0295-448e-a0cf-d6c5eda34e01 km-dev:isPartOfMapping _:node19kvn2b7ux1 .
+
+_:node19kvn2b7ux23 rr:tableName "medusa-cam-sample.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasLogicalTable _:node19kvhn60vx20 .
+_:node19kvn2b7ux1 km-dev:hasLogicalTable _:node19kvn2b7ux23 .
 
-km-dev:TriplesMap_1278d6de-acaf-4daf-b53d-fa12a0f34b5e rr:logicalTable _:node19kvhn60vx20 ;
-	rr:subjectMap _:node19kvhn60vx21 .
+km-dev:TriplesMap_436c352b-0295-448e-a0cf-d6c5eda34e01 rr:logicalTable _:node19kvn2b7ux23 ;
+	rr:subjectMap _:node19kvn2b7ux24 .
 
-_:node19kvhn60vx1 km-dev:hasSubjectMap _:node19kvhn60vx21 .
+_:node19kvn2b7ux1 km-dev:hasSubjectMap _:node19kvn2b7ux24 .
 
-_:node19kvhn60vx21 km-dev:isPartOfMapping _:node19kvhn60vx1 ;
+_:node19kvn2b7ux24 km-dev:isPartOfMapping _:node19kvn2b7ux1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Place1" ;
 	rr:class schema:Place ;
 	rr:template "{photo_location_uri}" .
 
-km-dev:PredicateObjectMap_76cfcdeb-0674-478a-bf97-ed186d90d4c7 rr:predicate schema:geo .
+km-dev:PredicateObjectMap_a2aca037-8859-4162-bf26-fed8607ec7cc rr:predicate schema:geo .
 
-km-dev:RefObjectMap_41619ae4-8ff1-41b4-b655-b4332ff6ab15 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_7b03e9e1-841a-47d6-9b2a-be0708479096 ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:RefObjectMap_28ad4456-8e7e-450e-b83c-05d7913da00f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cdb7bee1-165d-43b8-baa0-08c7bcdca551 ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasObjectMap km-dev:RefObjectMap_41619ae4-8ff1-41b4-b655-b4332ff6ab15 .
+_:node19kvn2b7ux1 km-dev:hasObjectMap km-dev:RefObjectMap_28ad4456-8e7e-450e-b83c-05d7913da00f .
 
-km-dev:PredicateObjectMap_76cfcdeb-0674-478a-bf97-ed186d90d4c7 rr:objectMap km-dev:RefObjectMap_41619ae4-8ff1-41b4-b655-b4332ff6ab15 .
+km-dev:PredicateObjectMap_a2aca037-8859-4162-bf26-fed8607ec7cc rr:objectMap km-dev:RefObjectMap_28ad4456-8e7e-450e-b83c-05d7913da00f .
 
-km-dev:TriplesMap_1278d6de-acaf-4daf-b53d-fa12a0f34b5e rr:predicateObjectMap km-dev:PredicateObjectMap_76cfcdeb-0674-478a-bf97-ed186d90d4c7 .
+km-dev:TriplesMap_436c352b-0295-448e-a0cf-d6c5eda34e01 rr:predicateObjectMap km-dev:PredicateObjectMap_a2aca037-8859-4162-bf26-fed8607ec7cc .
 
-km-dev:PredicateObjectMap_76cfcdeb-0674-478a-bf97-ed186d90d4c7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19kvhn60vx1 .
+km-dev:PredicateObjectMap_a2aca037-8859-4162-bf26-fed8607ec7cc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19kvn2b7ux1 .
 
-_:node19kvhn60vx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_76cfcdeb-0674-478a-bf97-ed186d90d4c7 .
+_:node19kvn2b7ux1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2aca037-8859-4162-bf26-fed8607ec7cc .
