@@ -19,10 +19,17 @@ From column: _Location (long, lat, accuracy)_
 return md_getAccuracy(getValue("Location (long, lat, accuracy)"))
 ```
 
+#### _photo_uri_
+From column: _Image_
+>``` python
+return md_photo_uri(getValue("Image"))
+```
+
 
 ### Semantic Types
 | Column | Property | Class |
 |  ----- | -------- | ----- |
+| _photo_uri_ | `uri` | `schema:Photograph1`|
 
 
 ### Links

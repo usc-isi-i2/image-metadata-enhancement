@@ -11,3 +11,6 @@ def md_getAccuracy(field):
 	"""Get accuracy"""
 	return field.split(',')[2]
 
+def md_photo_uri(image_name):
+	"""Get the URI of a photo coming from Medusa."""
+	return "photo/"+image_name.strip().lower().replace('.jpg','')

@@ -8,12 +8,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node19kv639gfx1 a km-dev:R2RMLMapping ;
+_:node19kv7inqex1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "medusa-cam-sample.json" ;
-	km-dev:modelPublicationTime "1431270696464"^^xsd:long ;
+	km-dev:modelPublicationTime "1431272251214"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"accuracy\"}],[{\"columnName\":\"long\"}],[{\"columnName\":\"lat\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Image\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"accuracy\"}],[{\"columnName\":\"photo_uri\"}],[{\"columnName\":\"long\"}],[{\"columnName\":\"lat\"}]]" ;
 	km-dev:hasModelLabel "medusa-cam" ;
 	km-dev:hasBaseURI "http://medusa.usc.edu/data/medusa/" ;
 	km-dev:hasWorksheetHistory """[
@@ -242,5 +242,147 @@ _:node19kv639gfx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Image\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"photo_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return md_photo_uri(getValue(\\\"Image\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Image\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"photo_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"photo_uri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Photograph\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Photograph1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Photograph1 (add)\",
+                    \"DomainId\": \"http://schema.org/Photograph1 (add)\",
+                    \"DomainUri\": \"http://schema.org/Photograph\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"photo_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"photo_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
     }
 ]""" .
+
+km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 a rr:TriplesMap .
+
+_:node19kv7inqex1 km-dev:hasTriplesMap km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 .
+
+km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 km-dev:isPartOfMapping _:node19kv7inqex1 .
+
+_:node19kv7inqex2 rr:tableName "medusa-cam-sample.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19kv7inqex1 .
+
+_:node19kv7inqex1 km-dev:hasLogicalTable _:node19kv7inqex2 .
+
+km-dev:TriplesMap_e7285aa4-1855-4a31-897c-219234ca7912 rr:logicalTable _:node19kv7inqex2 ;
+	rr:subjectMap _:node19kv7inqex3 .
+
+_:node19kv7inqex1 km-dev:hasSubjectMap _:node19kv7inqex3 .
+
+_:node19kv7inqex3 km-dev:isPartOfMapping _:node19kv7inqex1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Photograph1" ;
+	rr:class schema:Photograph ;
+	rr:template "{photo_uri}" ;
+	a km-dev:steinerTreeRootNode .
