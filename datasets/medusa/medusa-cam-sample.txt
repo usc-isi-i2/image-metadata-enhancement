@@ -1,0 +1,60 @@
+Image name: IMG_20150427_185804_1146576096.jpg 
+Number of cars: 0
+Number of faces: 0
+Blurry: 0 
+Indoor/Outdoor: Indoor 
+Angle of view: 1.0407311297537762 
+Light: 16.0 
+Accelerometer: -1.2064972, 8.778732, 3.3890076
+Magnetic field: 21.487427, -30.006409, -27.153015
+Azimuth, Pitch, Roll: -30.427167695707823, -67.71710456376935, 19.59588786084745 
+Location (longitude, latitude, accuracy): -118.2827801, 34.0349438, 71.00700378417969
+
+Image name: IMG_20150427_185834_-918504856.jpg
+Number of cars: 0
+Number of faces: 0
+Blurry: 0 
+Indoor/Outdoor: Indoor 
+Angle of view: 1.0407311297537762
+Light: 3.0 
+Accelerometer: -0.5275116, 9.713028, -0.9639282
+Magnetic field: -0.8956909, -43.003845, -24.758911
+Azimuth, Pitch, Roll: 157.53381894187024, -83.5455693614645, 151.31023253242466
+Location (longitude, latitude, accuracy): -118.2827544, 34.0349537, 70.52200317382813
+
+
+Image name: IMG_20150427_185847_-305294432.jpg 
+Number of cars: 0
+Number of faces: 0
+Blurry: 0 
+Indoor/Outdoor: Indoor 
+Angle of view: 1.0407311297537762 
+Light: 9.0 
+Accelerometer: -1.5628052, 8.426926, 3.6627045
+Magnetic field: -24.511719, -41.615295, -18.315125
+Azimuth, Pitch, Roll: 110.71964089890031, -64.70671917765375, 23.107004660300454 
+Location (longitude, latitude, accuracy): -118.2827469, 34.0349432, 71.5989990234375
+
+Image name: IMG_20150428_112040_1038447558.jpg 
+Number of cars: 1
+Number of faces: 0
+Blurry: 0 
+Indoor/Outdoor: Outdoor 
+Angle of view: 1.0407311297537762 
+Light: 409.0 
+Accelerometer: -2.8436127, 8.937027, 3.7015991
+Magnetic field: 8.317566, -41.33911, 7.092285
+Azimuth, Pitch, Roll: -150.92320669329504, -62.422191655013734, 37.531899734503824
+Location (longitude, latitude, accuracy): -118.2827237, 34.0346166, 81.22899627685547
+
+Image name: IMG_20150428_112049_-1229958766.jpg
+Number of cars: 3
+Number of faces: 0
+Blurry: 0 
+Indoor/Outdoor: Outdoor 
+Angle of view: 1.0407311297537762 
+Light: 297.0 
+Accelerometer: -2.089035, 9.843948, 1.6425781
+Magnetic field: -18.486023, -40.42511, 7.647705
+Azimuth, Pitch, Roll: 169.47044878068127, -74.89258028689376, 51.822540610381424
+Location (longitude, latitude, accuracy): -118.2826474, 34.0346397, 45.0
