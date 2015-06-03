@@ -1,0 +1,68 @@
+{
+"mappings": {
+      "foursquare": {
+        "properties": {
+          "@context": {
+            "type": "string"
+          },
+          "a": {
+            "type": "string"
+          },
+          "address": {
+            "properties": {
+              "a": {
+                "type": "string"
+              },
+              "addressCountry": {
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                }
+              },
+              "addressLocality": {
+                "type": "string"
+              },
+              "addressRegion": {
+                "type": "string"
+              },
+              "streetAddress": {
+                "type": "string"
+              }
+            }
+          },
+          "geo": {
+            "properties": {
+              "a": {
+                "type": "string"
+              },
+              "lat": {
+                "type": "string"
+              },
+              "lon": {
+                "type": "string"
+              }
+            }
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "globalLocationNumber": {
+            "type": "geo_point"
+          },
+          "telephone": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string"
+          }
+        }
+      }
+    }
+}

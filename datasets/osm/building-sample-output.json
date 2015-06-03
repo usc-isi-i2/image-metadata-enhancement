@@ -1,0 +1,258 @@
+[
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/367139114",
+    "globalLocationNumber": "-72.6803164, 41.7632855"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Trinity Episcopal Church",
+    "uri": "osm/building/359288792",
+    "globalLocationNumber": "-72.693149, 41.7689888"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/367136624",
+    "globalLocationNumber": "-72.6884266, 41.7662111"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Asylum Avenue Green",
+    "uri": "osm/building/359287759",
+    "globalLocationNumber": "-72.6863503, 41.7683559"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Morse School of Business",
+    "uri": "osm/building/359288362",
+    "globalLocationNumber": "-72.6789715, 41.7679234"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Constitution Plaza",
+    "uri": "osm/building/359288894",
+    "globalLocationNumber": "-72.6807451, 41.7622102"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Bethesda Baptist Church",
+    "uri": "osm/building/359287799",
+    "globalLocationNumber": "-72.6862044, 41.7617667"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Iglesia Cristiana Adonay",
+    "uri": "osm/building/359288257",
+    "globalLocationNumber": "-72.6887044, 41.7689888"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Asylum Avenue Church",
+    "uri": "osm/building/359287753",
+    "globalLocationNumber": "-72.693149, 41.7703777"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Asylum Avenue District Historic District",
+    "uri": "osm/building/359287756",
+    "globalLocationNumber": "-72.6870377, 41.768711"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "gas",
+    "uri": "osm/building/930237543",
+    "globalLocationNumber": "-72.6921739, 41.7638623"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/60647966",
+    "globalLocationNumber": "-72.6830523, 41.7634935"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/367139137",
+    "globalLocationNumber": "-72.6822788, 41.7641627"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Asylum Hill Congregational Church",
+    "uri": "osm/building/359287762",
+    "globalLocationNumber": "-72.6912045, 41.7700999"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Saint Joseph Cathedral School",
+    "uri": "osm/building/359268782",
+    "globalLocationNumber": "-72.6914822, 41.768711"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Homewood Suites",
+    "uri": "osm/building/1558248272",
+    "globalLocationNumber": "-72.6793456, 41.7677187"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Spanish Seventh Day Adventist Church",
+    "uri": "osm/building/359288738",
+    "globalLocationNumber": "-72.68926, 41.761489"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "uri": "osm/building/1558256862",
+    "globalLocationNumber": "-72.6820506, 41.7689773"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/367137389",
+    "globalLocationNumber": "-72.6941636, 41.7693542"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Saint Volodimir Orthodox Church",
+    "uri": "osm/building/359288669",
+    "globalLocationNumber": "-72.6856487, 41.7612111"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Trinity School",
+    "uri": "osm/building/359270629",
+    "globalLocationNumber": "-72.6870377, 41.7634333"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "THE HARTFORD COURANT",
+    "uri": "osm/building/587006382",
+    "globalLocationNumber": "-72.6869163, 41.7649935"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "7 Sins Lounge and Bar",
+    "uri": "osm/building/2794763891",
+    "globalLocationNumber": "-72.6811856, 41.769278"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/367138851",
+    "globalLocationNumber": "-72.6790529, 41.7678551"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "uri": "osm/building/1558256816",
+    "globalLocationNumber": "-72.6822223, 41.7687092"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Bushnell Center for the Performing Arts",
+    "uri": "osm/building/367777869",
+    "globalLocationNumber": "-72.6806416, 41.762755"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Emanuel Lutheran Church",
+    "uri": "osm/building/359288044",
+    "globalLocationNumber": "-72.6856173, 41.7632076"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Connecticut State Capitol Park",
+    "uri": "osm/building/359287980",
+    "globalLocationNumber": "-72.6848154, 41.7656556"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "osm/building/367138583",
+    "globalLocationNumber": "-72.6809016, 41.7618304"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Second Church of Christ Scientist",
+    "uri": "osm/building/359288905",
+    "globalLocationNumber": "-72.6829159, 41.7615748"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Hartford Full Gospel Church",
+    "uri": "osm/building/359288217",
+    "globalLocationNumber": "-72.6850932, 41.7612111"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "uri": "osm/building/1708821453",
+    "globalLocationNumber": "-72.6805464, 41.7654476"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "First Presbyterian Church",
+    "uri": "osm/building/359288129",
+    "globalLocationNumber": "-72.6796436, 41.762322"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Cathedral of Saint Joseph",
+    "uri": "osm/building/359287875",
+    "globalLocationNumber": "-72.6921385, 41.7681014"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Elm Street Historic District",
+    "uri": "osm/building/359288038",
+    "globalLocationNumber": "-72.6848154, 41.7623222"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Christ Temple Church of God",
+    "uri": "osm/building/359287908",
+    "globalLocationNumber": "-72.6934268, 41.7684333"
+},
+{
+    "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/building-model_context.json",
+    "a": "Place",
+    "label": "Parkville",
+    "uri": "osm/building/158876757",
+    "globalLocationNumber": "-72.6937786, 41.763131"
+}
+]

@@ -8,3 +8,7 @@ def photoGetRequest(venueId):
 def photoUrl(prefix, suffix):
 	"""Construct the GET request for a foursquare photo."""
 	return prefix+"original"+suffix
+
+def getLatLong(latitude, longitude):
+	"""returns the combination of latitude and longitude as required for ElasticSearch"""
+	return latitude+", "+longitude
