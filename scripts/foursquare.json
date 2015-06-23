@@ -1,0 +1,674 @@
+[
+    {
+        "a": "Place", 
+        "uri": "4d2cb2c677a2a1cd02c387b7", 
+        "label": "QBE", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "80 Pine St", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.698978", 
+            "longitude": "-74.00043"
+        }, 
+        "globalLocationNumber": "40.698978, -74.00043"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Offices", 
+        "uri": "4cfc2f09c671721e1e74c718", 
+        "label": "Deep Net", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressRegion": "New York"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.697052", 
+            "longitude": "-73.997217"
+        }, 
+        "globalLocationNumber": "40.697052, -73.997217"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Music Venues", 
+        "uri": "4eb9edca00397fc4185d1f8e", 
+        "label": "RADICSVILLE", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "5555 Distant Water Drive", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.7030577937025", 
+            "longitude": "-73.99779081344604"
+        }, 
+        "globalLocationNumber": "40.7030577937025, -73.99779081344604"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Buildings", 
+        "uri": "4d88bd71d85f3704d7c4d7db", 
+        "label": "Solartech", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "110 Wall St", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.703065", 
+            "longitude": "-74.0023002"
+        }, 
+        "globalLocationNumber": "40.703065, -74.0023002"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Beaches", 
+        "uri": "5339a67f498ea66c3d45561a", 
+        "label": "Pier 4 Beach", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69649703108692", 
+            "longitude": "-73.99908621715002"
+        }, 
+        "globalLocationNumber": "40.69649703108692, -73.99908621715002"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Parks", 
+        "uri": "430d0a00f964a5203e271fe3", 
+        "telephone": "2128033822", 
+        "label": "Brooklyn Bridge Park", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Main St", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70227697066692", 
+            "longitude": "-73.9965033531189"
+        }, 
+        "globalLocationNumber": "40.70227697066692, -73.9965033531189"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Food Trucks", 
+        "uri": "4fedde93e4b0d57e70276de9", 
+        "label": "MorrisTruck", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70014969723652", 
+            "longitude": "-73.99916655844069"
+        }, 
+        "globalLocationNumber": "40.70014969723652, -73.99916655844069"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Parks", 
+        "uri": "4c86983e74d7b60c4c80a5d8", 
+        "label": "Hillside Park", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Columbia Heights", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69982487223443", 
+            "longitude": "-73.99571759128533"
+        }, 
+        "globalLocationNumber": "40.69982487223443, -73.99571759128533"
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Residence Halls", 
+        "uri": "4cb92bdc7148f04d9336d5ab", 
+        "label": "Livys apartment !", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "95 Wall St", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.700249", 
+            "longitude": "-74.001442"
+        }, 
+        "globalLocationNumber": "40.700249, -74.001442"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Fields", 
+        "uri": "50119b956de4139f5843df1c", 
+        "label": "Bridge View Lawn", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.702227722609486", 
+            "longitude": "-73.99688255718414"
+        }, 
+        "globalLocationNumber": "40.702227722609486, -73.99688255718414"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Parks", 
+        "uri": "51eabef6498e10cf3aea7942", 
+        "label": "Brooklyn Bridge Park - Pier 2", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Furman St", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69961164689744", 
+            "longitude": "-73.99835740533105"
+        }, 
+        "globalLocationNumber": "40.69961164689744, -73.99835740533105"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Salons / Barbershops", 
+        "uri": "4f2c1bbae4b0ccfb1d99b510", 
+        "label": "kk hair salon", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressRegion": "New York"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69956588745117", 
+            "longitude": "-74.00108337402344"
+        }, 
+        "globalLocationNumber": "40.69956588745117, -74.00108337402344"
+    }, 
+    {
+        "a": "Place", 
+        "uri": "4bee1772767dc9b64d07d4e9", 
+        "label": "Eamons", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70219570850836", 
+            "longitude": "-73.99718097095484"
+        }, 
+        "globalLocationNumber": "40.70219570850836, -73.99718097095484"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Scenic Lookouts", 
+        "uri": "4bf0066151f2c9b6c917f192", 
+        "label": "Granite Prospect", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Brooklyn Bridge Park", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70198416160947", 
+            "longitude": "-73.99747364554779"
+        }, 
+        "globalLocationNumber": "40.70198416160947, -73.99747364554779"
+    }, 
+    {
+        "a": "Place", 
+        "description": "General Entertainment", 
+        "uri": "50131cf2e4b06a7cda4c600b", 
+        "label": "Metropolitan Opera Summer Recital Series", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Brooklyn Bridge Park", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69795191386013", 
+            "longitude": "-73.9974047809779"
+        }, 
+        "globalLocationNumber": "40.69795191386013, -73.9974047809779"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Parks", 
+        "uri": "4ebac60a0cd6904066e4108f", 
+        "label": "Brookyn Bridge Park Greenway", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Fulton Ferry Landing to Atlantic Ave.", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70025980212479", 
+            "longitude": "-73.99698615074158"
+        }, 
+        "globalLocationNumber": "40.70025980212479, -73.99698615074158"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Miscellaneous Shops", 
+        "uri": "4e2edd6ffa7614797ddd30ae", 
+        "label": "A.b.c.d.e.", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "89 South St", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.7021752", 
+            "longitude": "-73.9984817"
+        }, 
+        "globalLocationNumber": "40.7021752, -73.9984817"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Bridges", 
+        "uri": "4a43bcb7f964a520bba61fe3", 
+        "label": "Brooklyn Bridge", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Brooklyn Bridge", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.705953265881305", 
+            "longitude": "-73.99656772613525"
+        }, 
+        "globalLocationNumber": "40.705953265881305, -73.99656772613525"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Historic Sites", 
+        "uri": "5240956911d2ee152900b10d", 
+        "label": "Truman Capote House", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "70 Willow St", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.698906", 
+            "longitude": "-73.99495"
+        }, 
+        "globalLocationNumber": "40.698906, -73.99495"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Parks", 
+        "uri": "42377700f964a52024201fe3", 
+        "label": "Brooklyn Heights Promenade", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Columbia Heights", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69829137715981", 
+            "longitude": "-73.99663209915161"
+        }, 
+        "globalLocationNumber": "40.69829137715981, -73.99663209915161"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Fields", 
+        "uri": "4ff63018e4b07a70b8817f64", 
+        "label": "Syfy Movies With A View: ET", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70171921454982", 
+            "longitude": "-73.99688255718414"
+        }, 
+        "globalLocationNumber": "40.70171921454982, -73.99688255718414"
+    }, 
+    {
+        "a": "Place", 
+        "uri": "4d99354579b788bf3768776a", 
+        "label": "Wells Fargo Mobile Museum", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "Fulton and South Street", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.70207382356202", 
+            "longitude": "-73.99799012903304"
+        }, 
+        "globalLocationNumber": "40.70207382356202, -73.99799012903304"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Doctor's Offices", 
+        "uri": "4dac4c974df01c19b1b0fc82", 
+        "label": "Internal Medicine Associates", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "530 1st Ave", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.698978", 
+            "longitude": "-74.00043"
+        }, 
+        "globalLocationNumber": "40.698978, -74.00043"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Churches", 
+        "uri": "4ae62580f964a52011a521e3", 
+        "label": "Danish Seamen's Church", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "102 Willow St", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.698023159650134", 
+            "longitude": "-73.99568889745463"
+        }, 
+        "globalLocationNumber": "40.698023159650134, -73.99568889745463"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Yoga Studios", 
+        "uri": "50d1e29ee4b06b9f174deb0a", 
+        "label": "Yoga At The Park", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69990921020508", 
+            "longitude": "-73.9961929321289"
+        }, 
+        "globalLocationNumber": "40.69990921020508, -73.9961929321289"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Cuban Restaurants", 
+        "uri": "5054eb43e4b04ed4f0dd1b30", 
+        "label": "La cabana", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressRegion": "New York"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69875", 
+            "longitude": "-73.99953"
+        }, 
+        "globalLocationNumber": "40.69875, -73.99953"
+    }, 
+    {
+        "a": "Place", 
+        "uri": "4d9788e5daec224b4642333e", 
+        "label": "Dr Shur", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "140 Elgar Pl", 
+            "addressLocality": "Bronx", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.698978", 
+            "longitude": "-74.00043"
+        }, 
+        "globalLocationNumber": "40.698978, -74.00043"
+    }, 
+    {
+        "a": "Place", 
+        "uri": "4c68856ad9c7c9b651d6c41a", 
+        "label": "Pacific East", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "streetAddress": "South Street seaport", 
+            "addressLocality": "New York", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.69770867949342", 
+            "longitude": "-74.00190961943183"
+        }, 
+        "globalLocationNumber": "40.69770867949342, -74.00190961943183"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Yoga Studios", 
+        "uri": "53ff2935498e161412b3e871", 
+        "label": "Brooklyn Bridge Park - Pier 2 Yoga Court", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.699657951708524", 
+            "longitude": "-73.99976911704667"
+        }, 
+        "globalLocationNumber": "40.699657951708524, -73.99976911704667"
+    }, 
+    {
+        "a": "Place", 
+        "description": "Residential Buildings (Apartments / Condos)", 
+        "uri": "512c5182e4b036e5817b9b83", 
+        "label": "119 Gym", 
+        "address": {
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress", 
+            "addressLocality": "Brooklyn", 
+            "addressRegion": "NY"
+        }, 
+        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "40.698666", 
+            "longitude": "-73.995517"
+        }, 
+        "globalLocationNumber": "40.698666, -73.995517"
+    }
+]

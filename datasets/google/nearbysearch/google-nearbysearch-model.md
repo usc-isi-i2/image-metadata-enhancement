@@ -16,7 +16,7 @@ return glTypesNice(getValue("values"))
 | _lng_ | `schema:longitude` | `schema:GeoCoordinates1`|
 | _name_ | `rdfs:label` | `schema:Place1`|
 | _types_nice_ | `schema:description` | `schema:Place2`|
-
+| _lat_lng | 'schema:description' | 'schema:GeoCoordinates1' |
 
 ### Links
 | From | Property | To |

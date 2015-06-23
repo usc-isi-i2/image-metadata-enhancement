@@ -1,0 +1,2729 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ugde: <http://karmaugde.ddns.net/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix gml: <http://www.opengis.net/gml/> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix BuildingOntology: <http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19lurf29fx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "street_-118.453541_33.976994_-118.438521_33.988560.xml" ;
+	km-dev:modelPublicationTime "1432333289775"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"Type\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"KmlGeometry\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"StateName\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"CityName\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"CountyName\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"ignore4\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"bldg_uri\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"street_uri\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"WktGeometry\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"Type\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"KmlGeometry\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"StateName\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"locationName\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"streetGeometryUri\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"CityName\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"CountyName\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"ignore2\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"ignore1\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"locationFeatureUri\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"streetLocationUri\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"ignore3\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"ignore5\"}]]" ;
+	km-dev:hasModelLabel "street" ;
+	km-dev:hasBaseURI "http://karmaugde.ddns.net/data/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://karmaugde.ddns.net/ontology/Location\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://karmaugde.ddns.net/ontology/Location1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1 (add)\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1 (add)\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"Type\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"Name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#streetName\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"CityName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#cityName\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"CountyName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#countyName\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CountyName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CountyName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"StateName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#stateName\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"street_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return generateStreetUri(getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"street_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"street_uri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"bldg:Street1 (add)\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"street_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"street_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"Name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#streetName\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"bldg:Street1\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#openstreetmapNumber\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"bldg:Street1\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"Type\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#streetType\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"bldg:Street1\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"KmlGeometry\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#streetKml\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"bldg:Street1\",
+                    \"DomainId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"DomainUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP21:WS8580AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://karmaugde.ddns.net/ontology/Location\",
+                    \"edgeId\": \"http://karmaugde.ddns.net/ontology/street_location\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"edgeTargetId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"street\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://karmaugde.ddns.net/data\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"StateName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"streetLocationUri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"p1=lineStringFirstPoint(getValue(\\\"KmlGeometry\\\"))\\np2=lineStringLastPoint(getValue(\\\"KmlGeometry\\\"))\\nreturn streetLocationUri(p1[0], p1[1], p2[0], p2[1], getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetLocationUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"streetLocationUri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://karmaugde.ddns.net/ontology/Location\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetLocationUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetLocationUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"CityName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/addressLocality\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"StateName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/addressRegion\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:Location1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/Location1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/Location\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://karmaugde.ddns.net/ontology/street_location\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"edgeTargetId\": \"http://karmaugde.ddns.net/ontology/Location1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP4:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"streetLocationUri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://karmaugde.ddns.net/ontology/LocationFeature\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://karmaugde.ddns.net/ontology/LocationFeature1 (add)\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:LocationFeature1 (add)\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/LocationFeature\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetLocationUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetLocationUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"StateName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://karmaugde.ddns.net/ontology/locationStateProvince\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:LocationFeature1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/LocationFeature\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"CountyName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://karmaugde.ddns.net/ontology/locationCountyDistrict\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:LocationFeature1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/LocationFeature\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CountyName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CountyName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"CityName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://karmaugde.ddns.net/ontology/locationCity\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"ugde:LocationFeature1\",
+                    \"DomainId\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\",
+                    \"DomainUri\": \"http://karmaugde.ddns.net/ontology/LocationFeature\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP4:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://www.opengis.net/ont/geosparql#Geometry\",
+                    \"edgeId\": \"http://www.opengis.net/ont/geosparql#hasGeometry\",
+                    \"edgeSourceId\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\",
+                    \"edgeTargetId\": \"http://www.opengis.net/ont/geosparql#Geometry1 (add)\",
+                    \"edgeSourceUri\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"KmlGeometry\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.opengis.net/ont/geosparql#asKML\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"geo:Geometry1\",
+                    \"DomainId\": \"http://www.opengis.net/ont/geosparql#Geometry1\",
+                    \"DomainUri\": \"http://www.opengis.net/ont/geosparql#Geometry\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP4:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://karmaugde.ddns.net/ontology/LocationFeature\",
+                    \"edgeId\": \"http://karmaugde.ddns.net/ontology/street_location\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\",
+                    \"edgeTargetId\": \"http://karmaugde.ddns.net/ontology/LocationFeature1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"KmlGeometry\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"WktGeometry\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return kmlLineStringToWkt(getValue(\\\"KmlGeometry\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"WktGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"WktGeometry\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.opengis.net/ont/geosparql#asKML\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"geo:Geometry1\",
+                    \"DomainId\": \"http://www.opengis.net/ont/geosparql#Geometry1\",
+                    \"DomainUri\": \"http://www.opengis.net/ont/geosparql#Geometry\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"WktGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"WktGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"street_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return generateStreetUri(getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"street_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"StateName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"streetLocationUri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"p1=lineStringFirstPoint(getValue(\\\"KmlGeometry\\\"))\\np2=lineStringLastPoint(getValue(\\\"KmlGeometry\\\"))\\nreturn streetLocationUri(p1[0], p1[1], p2[0], p2[1], getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetLocationUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"streetLocationUri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"streetGeometryUri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"p1=lineStringFirstPoint(getValue(\\\"KmlGeometry\\\"))\\np2=lineStringLastPoint(getValue(\\\"KmlGeometry\\\"))\\nreturn streetGeometryUri(p1[1], p1[0], p2[1], p2[0], getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetGeometryUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [{
+                    \"id\": [{\"columnName\": \"osm\"}],
+                    \"visible\": true,
+                    \"hideable\": false,
+                    \"name\": \"osm\",
+                    \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"kml\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"osm\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"kml\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Document\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Document\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"street_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"street_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CityName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CityName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CountyName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CountyName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetGeometryUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetGeometryUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"KmlGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"KmlGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"WktGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"WktGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"StateName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"StateName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetLocationUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetLocationUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"osm\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"kml\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]\\\"}]\"
+                }],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"streetGeometryUri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://www.opengis.net/ont/geosparql#Geometry\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://www.opengis.net/ont/geosparql#Geometry1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"geo:Geometry1\",
+                    \"DomainId\": \"http://www.opengis.net/ont/geosparql#Geometry1\",
+                    \"DomainUri\": \"http://www.opengis.net/ont/geosparql#Geometry\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetGeometryUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"streetGeometryUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"streetLocationUri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"locationName\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return generateLocationName(getValue(\\\"Name\\\"), getValue(\\\"CityName\\\"), getValue(\\\"CountyName\\\"), getValue(\\\"StateName\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"StateName\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CityName\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"CountyName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"locationName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"bldg_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return generateBuildingUri(getValue(\\\"id\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"bldg_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"KmlGeometry\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"ignore2\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return kmlToLatitude(getValue(\\\"KmlGeometry\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"ignore2\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"ignore2\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"ignore3\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return kmlToLongitude(getValue(\\\"KmlGeometry\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"ignore3\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"ignore3\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"ignore4\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return generateLocationUri(getValue(\\\"latitude\\\"), getValue(\\\"longitude\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"ignore4\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"ignore3\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"ignore5\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return pointWkt(getValue(\\\"latitude\\\"), getValue(\\\"longitude\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"ignore5\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"CountyName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"locationFeatureUri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return locationFeatureUri(getValue(\\\"latitude\\\"), getValue(\\\"longitude\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"locationFeatureUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"kml\"},
+                    {\"columnName\": \"Document\"},
+                    {\"columnName\": \"Placemark\"},
+                    {\"columnName\": \"ignore2\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"ignore1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return kmlToLatitude(getValue(\\\"KmlGeometry\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"ignore1\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [{
+                    \"id\": [{\"columnName\": \"osm\"}],
+                    \"visible\": true,
+                    \"hideable\": false,
+                    \"name\": \"osm\",
+                    \"children\": \"[{\\\"id\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"}],\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"kml\\\",\\\"children\\\":\\\"[{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"osm\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"kml\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Document\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Document\\\\\\\",\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"bldg_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"bldg_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"street_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"street_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Type\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CityName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CityName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CountyName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"CountyName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"locationFeatureUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"locationFeatureUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetGeometryUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetGeometryUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"KmlGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"KmlGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore3\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore3\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore5\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore5\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore4\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ignore4\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"WktGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"WktGeometry\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"StateName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"StateName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetLocationUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"streetLocationUri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"kml\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Document\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Placemark\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"locationName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}],\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"locationName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]\\\\\\\\\\\\\\\"}]\\\\\\\"},{\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"osm\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"kml\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}],\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]\\\"}]\"
+                }],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://karmaugde.ddns.net/data/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 a rr:TriplesMap .
+
+_:node19lurf29fx1 km-dev:hasTriplesMap km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx2 rr:tableName "street_-118.453541_33.976994_-118.438521_33.988560.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasLogicalTable _:node19lurf29fx2 .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 rr:logicalTable _:node19lurf29fx2 ;
+	rr:subjectMap _:node19lurf29fx3 .
+
+_:node19lurf29fx1 km-dev:hasSubjectMap _:node19lurf29fx3 .
+
+_:node19lurf29fx3 km-dev:isPartOfMapping _:node19lurf29fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://karmaugde.ddns.net/ontology/LocationFeature1" ;
+	rr:class ugde:LocationFeature ;
+	rr:template "{[\"osm\",\"kml\",\"Document\",\"Placemark\",\"streetLocationUri\"]}" .
+
+km-dev:PredicateObjectMap_85e74681-0cef-4243-9964-27248af1108c rr:predicate ugde:locationCity .
+
+_:node19lurf29fx4 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"CityName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx4 .
+
+km-dev:PredicateObjectMap_85e74681-0cef-4243-9964-27248af1108c rr:objectMap _:node19lurf29fx4 .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 rr:predicateObjectMap km-dev:PredicateObjectMap_85e74681-0cef-4243-9964-27248af1108c .
+
+km-dev:PredicateObjectMap_85e74681-0cef-4243-9964-27248af1108c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_85e74681-0cef-4243-9964-27248af1108c .
+
+km-dev:PredicateObjectMap_b26da0fb-6003-4d12-9c41-25da694daa78 rr:predicate ugde:locationCountyDistrict .
+
+_:node19lurf29fx5 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"CountyName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx5 .
+
+km-dev:PredicateObjectMap_b26da0fb-6003-4d12-9c41-25da694daa78 rr:objectMap _:node19lurf29fx5 .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 rr:predicateObjectMap km-dev:PredicateObjectMap_b26da0fb-6003-4d12-9c41-25da694daa78 .
+
+km-dev:PredicateObjectMap_b26da0fb-6003-4d12-9c41-25da694daa78 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b26da0fb-6003-4d12-9c41-25da694daa78 .
+
+km-dev:PredicateObjectMap_417236b4-cc04-41c1-be31-d630e6ac2c31 rr:predicate ugde:locationStateProvince .
+
+_:node19lurf29fx6 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"StateName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx6 .
+
+km-dev:PredicateObjectMap_417236b4-cc04-41c1-be31-d630e6ac2c31 rr:objectMap _:node19lurf29fx6 .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 rr:predicateObjectMap km-dev:PredicateObjectMap_417236b4-cc04-41c1-be31-d630e6ac2c31 .
+
+km-dev:PredicateObjectMap_417236b4-cc04-41c1-be31-d630e6ac2c31 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_417236b4-cc04-41c1-be31-d630e6ac2c31 .
+
+km-dev:PredicateObjectMap_d125d606-8deb-46e2-a8a9-e85100cf9aae rr:predicate geo:hasGeometry .
+
+km-dev:RefObjectMap_f35821d4-4b4b-46dc-b353-5fce2cfe4c46 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap km-dev:RefObjectMap_f35821d4-4b4b-46dc-b353-5fce2cfe4c46 .
+
+km-dev:PredicateObjectMap_d125d606-8deb-46e2-a8a9-e85100cf9aae rr:objectMap km-dev:RefObjectMap_f35821d4-4b4b-46dc-b353-5fce2cfe4c46 .
+
+km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 rr:predicateObjectMap km-dev:PredicateObjectMap_d125d606-8deb-46e2-a8a9-e85100cf9aae .
+
+km-dev:PredicateObjectMap_d125d606-8deb-46e2-a8a9-e85100cf9aae a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d125d606-8deb-46e2-a8a9-e85100cf9aae .
+
+km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 a rr:TriplesMap .
+
+_:node19lurf29fx1 km-dev:hasTriplesMap km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 .
+
+km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx7 rr:tableName "street_-118.453541_33.976994_-118.438521_33.988560.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasLogicalTable _:node19lurf29fx7 .
+
+km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 rr:logicalTable _:node19lurf29fx7 ;
+	rr:subjectMap _:node19lurf29fx8 .
+
+_:node19lurf29fx1 km-dev:hasSubjectMap _:node19lurf29fx8 .
+
+_:node19lurf29fx8 km-dev:isPartOfMapping _:node19lurf29fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.opengis.net/ont/geosparql#Geometry1" ;
+	rr:class geo:Geometry ;
+	rr:template "{[\"osm\",\"kml\",\"Document\",\"Placemark\",\"streetGeometryUri\"]}" .
+
+km-dev:PredicateObjectMap_e215e004-1158-4ac7-a3cf-4449e56e10e5 rr:predicate geo:asKML .
+
+_:node19lurf29fx9 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"KmlGeometry\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx9 .
+
+km-dev:PredicateObjectMap_e215e004-1158-4ac7-a3cf-4449e56e10e5 rr:objectMap _:node19lurf29fx9 .
+
+km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 rr:predicateObjectMap km-dev:PredicateObjectMap_e215e004-1158-4ac7-a3cf-4449e56e10e5 .
+
+km-dev:PredicateObjectMap_e215e004-1158-4ac7-a3cf-4449e56e10e5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e215e004-1158-4ac7-a3cf-4449e56e10e5 .
+
+km-dev:PredicateObjectMap_ebec183f-0e78-4e5e-9b64-1931bbbed5d6 rr:predicate geo:asKML .
+
+_:node19lurf29fx10 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"WktGeometry\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx10 .
+
+km-dev:PredicateObjectMap_ebec183f-0e78-4e5e-9b64-1931bbbed5d6 rr:objectMap _:node19lurf29fx10 .
+
+km-dev:TriplesMap_0ddcdd8b-74aa-4506-9943-c80d0a049db5 rr:predicateObjectMap km-dev:PredicateObjectMap_ebec183f-0e78-4e5e-9b64-1931bbbed5d6 .
+
+km-dev:PredicateObjectMap_ebec183f-0e78-4e5e-9b64-1931bbbed5d6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ebec183f-0e78-4e5e-9b64-1931bbbed5d6 .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 a rr:TriplesMap .
+
+_:node19lurf29fx1 km-dev:hasTriplesMap km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx11 rr:tableName "street_-118.453541_33.976994_-118.438521_33.988560.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasLogicalTable _:node19lurf29fx11 .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 rr:logicalTable _:node19lurf29fx11 ;
+	rr:subjectMap _:node19lurf29fx12 .
+
+_:node19lurf29fx1 km-dev:hasSubjectMap _:node19lurf29fx12 .
+
+_:node19lurf29fx12 km-dev:isPartOfMapping _:node19lurf29fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/ontologies/2012/9/BuildingOntology.owl#Street1" ;
+	rr:class BuildingOntology:Street ;
+	rr:template "{[\"osm\",\"kml\",\"Document\",\"Placemark\",\"street_uri\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_c1e6660a-2c31-4994-98a3-7bddcd62e840 rr:predicate ugde:street_location .
+
+km-dev:RefObjectMap_865b87a2-8458-401c-ba44-d418f7b77aca a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_366bac58-6dbb-4255-bdb3-fbe2945888f3 ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap km-dev:RefObjectMap_865b87a2-8458-401c-ba44-d418f7b77aca .
+
+km-dev:PredicateObjectMap_c1e6660a-2c31-4994-98a3-7bddcd62e840 rr:objectMap km-dev:RefObjectMap_865b87a2-8458-401c-ba44-d418f7b77aca .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 rr:predicateObjectMap km-dev:PredicateObjectMap_c1e6660a-2c31-4994-98a3-7bddcd62e840 .
+
+km-dev:PredicateObjectMap_c1e6660a-2c31-4994-98a3-7bddcd62e840 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c1e6660a-2c31-4994-98a3-7bddcd62e840 .
+
+km-dev:PredicateObjectMap_bf3435cd-271f-4969-b668-77c36e40c0cd rr:predicate BuildingOntology:openstreetmapNumber .
+
+_:node19lurf29fx13 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"id\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx13 .
+
+km-dev:PredicateObjectMap_bf3435cd-271f-4969-b668-77c36e40c0cd rr:objectMap _:node19lurf29fx13 .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 rr:predicateObjectMap km-dev:PredicateObjectMap_bf3435cd-271f-4969-b668-77c36e40c0cd .
+
+km-dev:PredicateObjectMap_bf3435cd-271f-4969-b668-77c36e40c0cd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bf3435cd-271f-4969-b668-77c36e40c0cd .
+
+km-dev:PredicateObjectMap_f20cb093-38a1-4889-9c35-b5c23728b30e rr:predicate BuildingOntology:streetName .
+
+_:node19lurf29fx14 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"Name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx14 .
+
+km-dev:PredicateObjectMap_f20cb093-38a1-4889-9c35-b5c23728b30e rr:objectMap _:node19lurf29fx14 .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 rr:predicateObjectMap km-dev:PredicateObjectMap_f20cb093-38a1-4889-9c35-b5c23728b30e .
+
+km-dev:PredicateObjectMap_f20cb093-38a1-4889-9c35-b5c23728b30e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f20cb093-38a1-4889-9c35-b5c23728b30e .
+
+km-dev:PredicateObjectMap_c1389eda-c6db-40ff-8ae2-62a70db875a0 rr:predicate BuildingOntology:streetType .
+
+_:node19lurf29fx15 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"Type\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasObjectMap _:node19lurf29fx15 .
+
+km-dev:PredicateObjectMap_c1389eda-c6db-40ff-8ae2-62a70db875a0 rr:objectMap _:node19lurf29fx15 .
+
+km-dev:TriplesMap_8fca4848-8ae8-46ab-a02e-1cba294a0132 rr:predicateObjectMap km-dev:PredicateObjectMap_c1389eda-c6db-40ff-8ae2-62a70db875a0 .
+
+km-dev:PredicateObjectMap_c1389eda-c6db-40ff-8ae2-62a70db875a0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19lurf29fx1 .
+
+_:node19lurf29fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c1389eda-c6db-40ff-8ae2-62a70db875a0 .

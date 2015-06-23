@@ -1,1092 +1,1142 @@
 [
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.28557312488556",
-        "latitude": "34.0210083540743"
+        "latitude": "34.020344666850924",
+        "description": "34.020344666850924, -118.28564489350478",
+        "longitude": "-118.28564489350478"
     },
+    "a": "Place",
     "address": {
-        "streetAddress": "3551 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
-    },
-    "description": "Arcades",
-    "a": "Place",
-    "label": "Tetris Tournament",
-    "telephone": "7132400485",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e9b212f6d86e2007a04907d"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28542",
-        "latitude": "34.020187"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
+        },
         "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Miscellaneous Shops",
-    "a": "Place",
-    "label": "USC Ticket Office",
-    "uri": "http://medusa.usc.edu/data/foursquare/512663bce4b07130befa4057"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28602170269764",
-        "latitude": "34.0206393635339"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Auditoriums",
-    "a": "Place",
-    "label": "The Forum",
-    "uri": "http://medusa.usc.edu/data/foursquare/4ebdd9ca4901f56b0d210139"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28526735305786",
-        "latitude": "34.020332528390696"
-    },
-    "address": {
-        "streetAddress": "3607 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "General Colleges & Universities",
-    "a": "Place",
-    "label": "USC Reunion Weekend",
-    "uri": "http://medusa.usc.edu/data/foursquare/4ebc51bdd5fb1fb0d8e4807e"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28597031967497",
-        "latitude": "34.020440674496356"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Student Centers",
-    "a": "Place",
-    "label": "Gonzo's Fountain Paradise",
-    "uri": "http://medusa.usc.edu/data/foursquare/4fb0892ee4b08594940b1e27"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28563",
-        "latitude": "34.02096"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Universities",
-    "a": "Place",
-    "label": "USC Women's Conference",
-    "uri": "http://medusa.usc.edu/data/foursquare/5318b7b6498ed955b5e8a2cc"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28609883785248",
-        "latitude": "34.02059040987855"
-    },
-    "address": {
-        "streetAddress": "3607 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "American Restaurants",
-    "a": "Place",
-    "label": "Lemonade USC",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c782964566db60c4bb3400e"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28559458255768",
-        "latitude": "34.020963892023644"
-    },
-    "address": {
-        "streetAddress": "3551 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Auditoriums",
-    "a": "Place",
-    "label": "Bovard Administration Building (ADM)",
-    "telephone": "2137404211",
-    "uri": "http://medusa.usc.edu/data/foursquare/4b678e72f964a5201f552be3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.286121",
-        "latitude": "34.020305"
-    },
-    "address": {
-        "streetAddress": "Ronald Tutor Campus Center",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Coffee Shops",
-    "a": "Place",
-    "label": "The Coffee Bean & Tea Leaf",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c7424dab474a1cd8cc0b5bf"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28571796417236",
-        "latitude": "34.02017246362487"
-    },
-    "address": {
-        "streetAddress": "3601 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Administrative Buildings",
-    "a": "Place",
-    "label": "Student Union (STU)",
-    "uri": "http://medusa.usc.edu/data/foursquare/4b8db80af964a520690a33e3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28592464586403",
-        "latitude": "34.02034143332676"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Student Centers",
-    "a": "Place",
-    "label": "Steven And Kathryn Sample Hall",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e7106471f6ec963ae3e4c2b"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28639388084412",
-        "latitude": "34.02133737252531"
-    },
-    "address": {
-        "streetAddress": "3560 Watts Way",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Rec Centers",
-    "a": "Place",
-    "label": "Physical Education Building (PED)",
-    "uri": "http://medusa.usc.edu/data/foursquare/4b732a4ef964a520509f2de3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.285889",
-        "latitude": "34.020148"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Administrative Buildings",
-    "a": "Place",
-    "label": "El Rodeo Staff Room",
-    "uri": "http://medusa.usc.edu/data/foursquare/4f8736fbe4b0e6f346803553"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28531831502914",
-        "latitude": "34.02046591546501"
-    },
-    "address": {
-        "streetAddress": "U S C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Quads",
-    "a": "Place",
-    "label": "Hahn Plaza",
-    "uri": "http://medusa.usc.edu/data/foursquare/4bda1e6e63c5c9b68dd42268"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28540722",
-        "latitude": "34.02053594"
-    },
-    "address": {
-        "addressRegion": "California",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Quads",
-    "a": "Place",
-    "label": "Traveler Statue",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e623c6262e13e3bce8a66f1"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28383505344391",
-        "latitude": "34.02015912488073"
-    },
-    "address": {
-        "streetAddress": "3550 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Libraries",
-    "a": "Place",
-    "label": "Doheny Memorial Library (DML)",
-    "telephone": "2137402924",
-    "uri": "http://medusa.usc.edu/data/foursquare/4ac94884f964a52087bf20e3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.285395",
-        "latitude": "34.020353"
-    },
-    "address": {
-        "streetAddress": "3601 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Drugstores / Pharmacies",
-    "a": "Place",
-    "label": "University Park Campus Pharmacy (STU)",
-    "telephone": "2137402738",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c758f5fb474a1cd4ba2b9bf"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.285959",
-        "latitude": "34.020377"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Theaters",
-    "a": "Place",
-    "label": "The Rosen Family Screening Theater",
-    "uri": "http://medusa.usc.edu/data/foursquare/4d6485c83384a093e21f9d3c"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28620076179504",
-        "latitude": "34.02038143700895"
-    },
-    "address": {
-        "streetAddress": "3607 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Student Centers",
-    "a": "Place",
-    "label": "Ronald Tutor Campus Center (TCC)",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c28eb6b97d00f47799e40ea"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28611875947594",
-        "latitude": "34.020328576487735"
-    },
-    "address": {
-        "streetAddress": "3607 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Performing Arts Venues",
-    "a": "Place",
-    "label": "The Trojan Grand Ballroom in The Ronald Tutor Campus Center",
-    "uri": "http://medusa.usc.edu/data/foursquare/4ee7d04a5c5c04b331afb76b"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.286187",
-        "latitude": "34.020384"
-    },
-    "address": {
-        "streetAddress": "3207 Trousdale Parkway",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Student Centers",
-    "a": "Place",
-    "label": "Graduate Student Lounge (USC Tutor Center)",
-    "uri": "http://medusa.usc.edu/data/foursquare/4d936a1b9213b1f741f5c746"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.2856",
-        "latitude": "34.0205"
-    },
-    "address": {
-        "addressRegion": "California",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Academic Buildings",
-    "a": "Place",
-    "label": "Kortschak Center",
-    "uri": "http://medusa.usc.edu/data/foursquare/4ed549117ee5ddf314e888d4"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.285595",
-        "latitude": "34.020394"
-    },
-    "address": {
-        "streetAddress": "Student Union B3",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Auditoriums",
-    "a": "Place",
-    "label": "Trojan Presentation Room",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e6fe505483b7e6502b2b7c8"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28613102537922",
-        "latitude": "34.020309"
-    },
-    "address": {
-        "streetAddress": "U S C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Pizza Places",
-    "a": "Place",
-    "label": "California Pizza Kitchen",
-    "telephone": "2138213481",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c4a04035609c9b6b391158f"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28535318374634",
-        "latitude": "34.02052371646544"
-    },
-    "address": {
-        "streetAddress": "U S C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Sculpture Gardens",
-    "a": "Place",
-    "label": "Tommy Trojan",
-    "uri": "http://medusa.usc.edu/data/foursquare/4b11ac2bf964a520ef8123e3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28458070755005",
-        "latitude": "34.02058151742651"
-    },
-    "address": {
-        "streetAddress": "U S C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Quads",
-    "a": "Place",
-    "label": "Alumni Park",
-    "uri": "http://medusa.usc.edu/data/foursquare/4b11ad92f964a5200f8223e3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.285593",
-        "latitude": "34.020398"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Libraries",
-    "a": "Place",
-    "label": "URSC Meeting Room",
-    "uri": "http://medusa.usc.edu/data/foursquare/501b2930e4b0edc1a8518183"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.2862651348114",
-        "latitude": "34.02027917350229"
-    },
-    "address": {
-        "streetAddress": "3607 Trousdale Pkwy, TCC Basement",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Sports Bars",
-    "a": "Place",
-    "label": "Traditions Bar & Grill",
-    "telephone": "2138213449",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c6c84fc99b9236aecf4e2c9"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28562776579437",
-        "latitude": "34.02044984872263"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Administrative Buildings",
-    "a": "Place",
-    "label": "Residential Education Office",
-    "uri": "http://medusa.usc.edu/data/foursquare/4f9b127de4b08ea038757cac"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28564489350478",
-        "latitude": "34.020344666850924"
-    },
-    "address": {
         "streetAddress": "3601 Trousdale Pkwy, Ste 200H",
         "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
+        "addressRegion": "CA"
     },
-    "a": "Place",
     "label": "URSC Office",
-    "uri": "http://medusa.usc.edu/data/foursquare/4dacb78affcb9b393b9c1ee2"
+    "uri": "http://medusa.usc.edu/data/foursquare/4dacb78affcb9b393b9c1ee2",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.285832",
-        "latitude": "34.020347"
+        "latitude": "34.02096849830335",
+        "description": "34.02096849830335, -118.28511964293614",
+        "longitude": "-118.28511964293614"
     },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "General Colleges & Universities",
     "a": "Place",
-    "label": "SJACS",
-    "uri": "http://medusa.usc.edu/data/foursquare/50bcf818e4b032480fbc2de3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28494548797607",
-        "latitude": "34.02090164511358"
-    },
     "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
-    },
-    "description": "College Quads",
-    "a": "Place",
-    "label": "Trousdale Parkway",
-    "uri": "http://medusa.usc.edu/data/foursquare/4d5082259b27721ecfa5ae46"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28511964293614",
-        "latitude": "34.02096849830335"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
+        },
         "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
     "description": "General Entertainment",
-    "a": "Place",
     "label": "Los Angeles Times Festival Of Books",
-    "uri": "http://medusa.usc.edu/data/foursquare/51743bed498e2324ac201269"
+    "uri": "http://medusa.usc.edu/data/foursquare/51743bed498e2324ac201269",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.28552",
-        "latitude": "34.020339"
+        "latitude": "34.02053594",
+        "description": "34.02053594, -118.28540722",
+        "longitude": "-118.28540722"
     },
-    "address": {
-        "streetAddress": "3601 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "College Administrative Buildings",
     "a": "Place",
-    "label": "USC Office of International Services (OIS)",
-    "telephone": "2137402666",
-    "uri": "http://medusa.usc.edu/data/foursquare/4fc7a937e4b0b85ee231d15f"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28649044036865",
-        "latitude": "34.02066154946147"
-    },
     "address": {
-        "streetAddress": "840 Childs Way",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "addressRegion": "California"
     },
-    "description": "College Bookstores",
+    "description": "College Quads",
+    "label": "Traveler Statue",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e623c6262e13e3bce8a66f1",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02027917350229",
+        "description": "34.02027917350229, -118.2862651348114",
+        "longitude": "-118.2862651348114"
+    },
     "a": "Place",
-    "label": "USC Bookstore (BKS)",
-    "telephone": "2137400066",
-    "uri": "http://medusa.usc.edu/data/foursquare/45001c89f964a520ad381fe3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28520298004149",
-        "latitude": "34.02034142086885"
-    },
     "address": {
-        "streetAddress": "U S C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy, TCC Basement",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
-    "description": "Universities",
+    "description": "Sports Bars",
+    "telephone": "2138213449",
+    "label": "Traditions Bar & Grill",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c6c84fc99b9236aecf4e2c9",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02093699846506",
+        "description": "34.02093699846506, -118.28478801523579",
+        "longitude": "-118.28478801523579"
+    },
     "a": "Place",
-    "label": "University of Southern California",
-    "telephone": "2137402311",
-    "uri": "http://medusa.usc.edu/data/foursquare/45001adcf964a520ab381fe3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28606128692627",
-        "latitude": "34.02056373251961"
-    },
     "address": {
-        "streetAddress": "3607 Trousdale Pkwy",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "addressRegion": "California"
     },
-    "description": "Sandwich Places",
+    "description": "College Quads",
+    "label": "The Helenes Bench",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e5ff277b993678bb52a9fbd",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020985663753024",
+        "description": "34.020985663753024, -118.28543936086642",
+        "longitude": "-118.28543936086642"
+    },
     "a": "Place",
-    "label": "Seeds Marketplace",
-    "telephone": "2138213465",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c76c29ef247370449f563eb"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.285537",
-        "latitude": "34.020903"
-    },
     "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
-    },
-    "description": "Music Venues",
-    "a": "Place",
-    "label": "Los Angeles A Cappella Festival",
-    "uri": "http://medusa.usc.edu/data/foursquare/510c9073e4b0a3ee45f5f7a3"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28576624393463",
-        "latitude": "34.020302295684814"
-    },
-    "address": {
-        "streetAddress": "3601 U S C, Fl UNIV",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
+        },
         "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Student Centers",
-    "a": "Place",
-    "label": "Center For Black Cultural And Student Affairs (CBCSA)",
-    "uri": "http://medusa.usc.edu/data/foursquare/4d9a2d580d5f224b2290a04e"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28612565994263",
-        "latitude": "34.020332528390696"
-    },
-    "address": {
-        "streetAddress": "3607 Trousdale Pkwy",
         "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Chinese Restaurants",
-    "a": "Place",
-    "label": "Panda Express",
-    "telephone": "2138213482",
-    "uri": "http://medusa.usc.edu/data/foursquare/4c6d96b8c52437049c9728eb"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28574195049778",
-        "latitude": "34.02038389057227"
-    },
-    "address": {
-        "streetAddress": "3601 Trousdale Pkwy, Ste 202C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
-    },
-    "description": "Student Centers",
-    "a": "Place",
-    "label": "USC Center for Women and Men (STU 202)",
-    "telephone": "2137404900",
-    "uri": "http://medusa.usc.edu/data/foursquare/4d48968856eab60c897b4386"
-},
-{
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
-    "geo": {
-        "a": "GeoCoordinates",
-        "longitude": "-118.28543936086642",
-        "latitude": "34.020985663753024"
-    },
-    "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
+        "addressRegion": "CA"
     },
     "description": "College Auditoriums",
-    "a": "Place",
     "label": "Bovard Auditorium",
-    "uri": "http://medusa.usc.edu/data/foursquare/4f4043bde4b062d5cb78f983"
+    "uri": "http://medusa.usc.edu/data/foursquare/4f4043bde4b062d5cb78f983",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.28572316",
-        "latitude": "34.02029044"
+        "latitude": "34.020347",
+        "description": "34.020347, -118.285832",
+        "longitude": "-118.285832"
     },
+    "a": "Place",
     "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "General Colleges & Universities",
+    "label": "SJACS",
+    "uri": "http://medusa.usc.edu/data/foursquare/50bcf818e4b032480fbc2de3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02133737252531",
+        "description": "34.02133737252531, -118.28639388084412",
+        "longitude": "-118.28639388084412"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3560 Watts Way",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Rec Centers",
+    "label": "Physical Education Building (PED)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4b732a4ef964a520509f2de3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02029044",
+        "description": "34.02029044, -118.28572316",
+        "longitude": "-118.28572316"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
         "streetAddress": "3601 Trousdale Parkway, STU 202B",
         "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
+        "addressRegion": "CA"
     },
     "description": "College Administrative Buildings",
-    "a": "Place",
     "label": "USC LGBT Resource Center",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e4aa41c62847afcaf18beb5"
+    "uri": "http://medusa.usc.edu/data/foursquare/4e4aa41c62847afcaf18beb5",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.28580475205204",
-        "latitude": "34.02043341288356"
+        "latitude": "34.020328576487735",
+        "description": "34.020328576487735, -118.28611875947594",
+        "longitude": "-118.28611875947594"
     },
+    "a": "Place",
     "address": {
-        "streetAddress": "3601 U S C",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Performing Arts Venues",
+    "label": "The Trojan Grand Ballroom in The Ronald Tutor Campus Center",
+    "uri": "http://medusa.usc.edu/data/foursquare/4ee7d04a5c5c04b331afb76b",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020305",
+        "description": "34.020305, -118.286121",
+        "longitude": "-118.286121"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "Ronald Tutor Campus Center",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Coffee Shops",
+    "label": "The Coffee Bean & Tea Leaf",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c7424dab474a1cd8cc0b5bf",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020148",
+        "description": "34.020148, -118.285889",
+        "longitude": "-118.285889"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Administrative Buildings",
+    "label": "El Rodeo Staff Room",
+    "uri": "http://medusa.usc.edu/data/foursquare/4f8736fbe4b0e6f346803553",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02038389057227",
+        "description": "34.02038389057227, -118.28574195049778",
+        "longitude": "-118.28574195049778"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3601 Trousdale Pkwy, Ste 202C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
     "description": "Student Centers",
-    "a": "Place",
-    "label": "USC Kortschak Center For Learning And Creativity",
-    "telephone": "2137407884",
-    "uri": "http://medusa.usc.edu/data/foursquare/4f6a0ccae4b0330c1de228c0"
+    "telephone": "2137404900",
+    "label": "USC Center for Women and Men (STU 202)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4d48968856eab60c897b4386",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.285116",
-        "latitude": "34.020592"
+        "latitude": "34.02090164511358",
+        "description": "34.02090164511358, -118.28494548797607",
+        "longitude": "-118.28494548797607"
     },
+    "a": "Place",
     "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
     "description": "College Quads",
-    "a": "Place",
-    "label": "Protect Tommy Campout",
-    "uri": "http://medusa.usc.edu/data/foursquare/50a0b600e4b0191a31d9d1d0"
+    "label": "Trousdale Parkway",
+    "uri": "http://medusa.usc.edu/data/foursquare/4d5082259b27721ecfa5ae46",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.285622",
-        "latitude": "34.020354"
+        "latitude": "34.0202",
+        "description": "34.0202, -118.285515",
+        "longitude": "-118.285515"
     },
+    "a": "Place",
     "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
     "description": "General Colleges & Universities",
-    "a": "Place",
-    "label": "Residential Education Study Room",
-    "uri": "http://medusa.usc.edu/data/foursquare/507ccedce4b074e852a996cf"
+    "label": "Cardinal and Gold Conference Room",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e84ec9cf790181b8932eb3d",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.285878",
-        "latitude": "34.02031"
+        "latitude": "34.02031",
+        "description": "34.02031, -118.285878",
+        "longitude": "-118.285878"
     },
+    "a": "Place",
     "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
         "streetAddress": "3601 Trousdale Pkwy",
         "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
-        "addressCountry": {
-            "a": "Country",
-            "label": "United States"
-        }
+        "addressRegion": "CA"
     },
     "description": "Student Centers",
-    "a": "Place",
     "label": "Asian Pacific American Student Services (APASS)",
-    "uri": "http://medusa.usc.edu/data/foursquare/4f3433a7e4b00c3266cb5555"
+    "uri": "http://medusa.usc.edu/data/foursquare/4f3433a7e4b00c3266cb5555",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.28478801523579",
-        "latitude": "34.02093699846506"
+        "latitude": "34.02034142086885",
+        "description": "34.02034142086885, -118.28520298004149",
+        "longitude": "-118.28520298004149"
     },
+    "a": "Place",
     "address": {
-        "addressRegion": "California",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "streetAddress": "U S C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Universities",
+    "telephone": "2137402311",
+    "label": "University of Southern California",
+    "uri": "http://medusa.usc.edu/data/foursquare/45001adcf964a520ab381fe3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020309",
+        "description": "34.020309, -118.28613102537922",
+        "longitude": "-118.28613102537922"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "U S C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Pizza Places",
+    "telephone": "2138213481",
+    "label": "California Pizza Kitchen",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c4a04035609c9b6b391158f",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02038143700895",
+        "description": "34.02038143700895, -118.28620076179504",
+        "longitude": "-118.28620076179504"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Student Centers",
+    "label": "Ronald Tutor Campus Center (TCC)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c28eb6b97d00f47799e40ea",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020903",
+        "description": "34.020903, -118.285537",
+        "longitude": "-118.285537"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Music Venues",
+    "label": "Los Angeles A Cappella Festival",
+    "uri": "http://medusa.usc.edu/data/foursquare/510c9073e4b0a3ee45f5f7a3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020353",
+        "description": "34.020353, -118.285395",
+        "longitude": "-118.285395"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3601 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Drugstores / Pharmacies",
+    "telephone": "2137402738",
+    "label": "University Park Campus Pharmacy (STU)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c758f5fb474a1cd4ba2b9bf",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020354",
+        "description": "34.020354, -118.285622",
+        "longitude": "-118.285622"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "General Colleges & Universities",
+    "label": "Residential Education Study Room",
+    "uri": "http://medusa.usc.edu/data/foursquare/507ccedce4b074e852a996cf",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02058151742651",
+        "description": "34.02058151742651, -118.28458070755005",
+        "longitude": "-118.28458070755005"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "U S C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
     "description": "College Quads",
-    "a": "Place",
-    "label": "The Helenes Bench",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e5ff277b993678bb52a9fbd"
+    "label": "Alumni Park",
+    "uri": "http://medusa.usc.edu/data/foursquare/4b11ad92f964a5200f8223e3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.285515",
-        "latitude": "34.0202"
+        "latitude": "34.020963892023644",
+        "description": "34.020963892023644, -118.28559458255768",
+        "longitude": "-118.28559458255768"
     },
+    "a": "Place",
     "address": {
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3551 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
-    "description": "General Colleges & Universities",
-    "a": "Place",
-    "label": "Cardinal and Gold Conference Room",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e84ec9cf790181b8932eb3d"
+    "description": "College Auditoriums",
+    "telephone": "2137404211",
+    "label": "Bovard Administration Building (ADM)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4b678e72f964a5201f552be3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 },
 {
-    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json",
     "geo": {
         "a": "GeoCoordinates",
-        "longitude": "-118.28569627662561",
-        "latitude": "34.02046402648388"
+        "latitude": "34.020440674496356",
+        "description": "34.020440674496356, -118.28597031967497",
+        "longitude": "-118.28597031967497"
     },
+    "a": "Place",
     "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Student Centers",
+    "label": "Gonzo's Fountain Paradise",
+    "uri": "http://medusa.usc.edu/data/foursquare/4fb0892ee4b08594940b1e27",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02066154946147",
+        "description": "34.02066154946147, -118.28649044036865",
+        "longitude": "-118.28649044036865"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "840 Childs Way",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Bookstores",
+    "telephone": "2137400066",
+    "label": "USC Bookstore (BKS)",
+    "uri": "http://medusa.usc.edu/data/foursquare/45001c89f964a520ad381fe3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020377",
+        "description": "34.020377, -118.285959",
+        "longitude": "-118.285959"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Theaters",
+    "label": "The Rosen Family Screening Theater",
+    "uri": "http://medusa.usc.edu/data/foursquare/4d6485c83384a093e21f9d3c",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02034143332676",
+        "description": "34.02034143332676, -118.28592464586403",
+        "longitude": "-118.28592464586403"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Student Centers",
+    "label": "Steven And Kathryn Sample Hall",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e7106471f6ec963ae3e4c2b",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02044984872263",
+        "description": "34.02044984872263, -118.28562776579437",
+        "longitude": "-118.28562776579437"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Administrative Buildings",
+    "label": "Residential Education Office",
+    "uri": "http://medusa.usc.edu/data/foursquare/4f9b127de4b08ea038757cac",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020398",
+        "description": "34.020398, -118.285593",
+        "longitude": "-118.285593"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Libraries",
+    "label": "URSC Meeting Room",
+    "uri": "http://medusa.usc.edu/data/foursquare/501b2930e4b0edc1a8518183",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020592",
+        "description": "34.020592, -118.285116",
+        "longitude": "-118.285116"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Quads",
+    "label": "Protect Tommy Campout",
+    "uri": "http://medusa.usc.edu/data/foursquare/50a0b600e4b0191a31d9d1d0",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020339",
+        "description": "34.020339, -118.28552",
+        "longitude": "-118.28552"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3601 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Administrative Buildings",
+    "telephone": "2137402666",
+    "label": "USC Office of International Services (OIS)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4fc7a937e4b0b85ee231d15f",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02046591546501",
+        "description": "34.02046591546501, -118.28531831502914",
+        "longitude": "-118.28531831502914"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "U S C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Quads",
+    "label": "Hahn Plaza",
+    "uri": "http://medusa.usc.edu/data/foursquare/4bda1e6e63c5c9b68dd42268",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02056373251961",
+        "description": "34.02056373251961, -118.28606128692627",
+        "longitude": "-118.28606128692627"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Sandwich Places",
+    "telephone": "2138213465",
+    "label": "Seeds Marketplace",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c76c29ef247370449f563eb",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020384",
+        "description": "34.020384, -118.286187",
+        "longitude": "-118.286187"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3207 Trousdale Parkway",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Student Centers",
+    "label": "Graduate Student Lounge (USC Tutor Center)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4d936a1b9213b1f741f5c746",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020332528390696",
+        "description": "34.020332528390696, -118.28612565994263",
+        "longitude": "-118.28612565994263"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Chinese Restaurants",
+    "telephone": "2138213482",
+    "label": "Panda Express",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c6d96b8c52437049c9728eb",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020394",
+        "description": "34.020394, -118.285595",
+        "longitude": "-118.285595"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "Student Union B3",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Auditoriums",
+    "label": "Trojan Presentation Room",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e6fe505483b7e6502b2b7c8",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02015912488073",
+        "description": "34.02015912488073, -118.28383505344391",
+        "longitude": "-118.28383505344391"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3550 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Libraries",
+    "telephone": "2137402924",
+    "label": "Doheny Memorial Library (DML)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4ac94884f964a52087bf20e3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.0210083540743",
+        "description": "34.0210083540743, -118.28557312488556",
+        "longitude": "-118.28557312488556"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3551 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Arcades",
+    "telephone": "7132400485",
+    "label": "Tetris Tournament",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e9b212f6d86e2007a04907d",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02052371646544",
+        "description": "34.02052371646544, -118.28535318374634",
+        "longitude": "-118.28535318374634"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "U S C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Sculpture Gardens",
+    "label": "Tommy Trojan",
+    "uri": "http://medusa.usc.edu/data/foursquare/4b11ac2bf964a520ef8123e3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.0206393635339",
+        "description": "34.0206393635339, -118.28602170269764",
+        "longitude": "-118.28602170269764"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Auditoriums",
+    "label": "The Forum",
+    "uri": "http://medusa.usc.edu/data/foursquare/4ebdd9ca4901f56b0d210139",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02046402648388",
+        "description": "34.02046402648388, -118.28569627662561",
+        "longitude": "-118.28569627662561"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
         "streetAddress": "Trousdale Pkwy",
         "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "a": "PostalAddress",
+        "addressRegion": "CA"
+    },
+    "description": "General Colleges & Universities",
+    "telephone": "2137409111",
+    "label": "USC Career Center",
+    "uri": "http://medusa.usc.edu/data/foursquare/4e289fa8e4cd6c6cb348e354",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020332528390696",
+        "description": "34.020332528390696, -118.28526735305786",
+        "longitude": "-118.28526735305786"
+    },
+    "a": "Place",
+    "address": {
         "addressCountry": {
             "a": "Country",
             "label": "United States"
-        }
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
     },
     "description": "General Colleges & Universities",
+    "label": "USC Reunion Weekend",
+    "uri": "http://medusa.usc.edu/data/foursquare/4ebc51bdd5fb1fb0d8e4807e",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020302295684814",
+        "description": "34.020302295684814, -118.28576624393463",
+        "longitude": "-118.28576624393463"
+    },
     "a": "Place",
-    "label": "USC Career Center",
-    "telephone": "2137409111",
-    "uri": "http://medusa.usc.edu/data/foursquare/4e289fa8e4cd6c6cb348e354"
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3601 U S C, Fl UNIV",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Student Centers",
+    "label": "Center For Black Cultural And Student Affairs (CBCSA)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4d9a2d580d5f224b2290a04e",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.020187",
+        "description": "34.020187, -118.28542",
+        "longitude": "-118.28542"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Miscellaneous Shops",
+    "label": "USC Ticket Office",
+    "uri": "http://medusa.usc.edu/data/foursquare/512663bce4b07130befa4057",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02096",
+        "description": "34.02096, -118.28563",
+        "longitude": "-118.28563"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Universities",
+    "label": "USC Women's Conference",
+    "uri": "http://medusa.usc.edu/data/foursquare/5318b7b6498ed955b5e8a2cc",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02043341288356",
+        "description": "34.02043341288356, -118.28580475205204",
+        "longitude": "-118.28580475205204"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3601 U S C",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "Student Centers",
+    "telephone": "2137407884",
+    "label": "USC Kortschak Center For Learning And Creativity",
+    "uri": "http://medusa.usc.edu/data/foursquare/4f6a0ccae4b0330c1de228c0",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02017246362487",
+        "description": "34.02017246362487, -118.28571796417236",
+        "longitude": "-118.28571796417236"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3601 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "College Administrative Buildings",
+    "label": "Student Union (STU)",
+    "uri": "http://medusa.usc.edu/data/foursquare/4b8db80af964a520690a33e3",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.0205",
+        "description": "34.0205, -118.2856",
+        "longitude": "-118.2856"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "addressRegion": "California"
+    },
+    "description": "College Academic Buildings",
+    "label": "Kortschak Center",
+    "uri": "http://medusa.usc.edu/data/foursquare/4ed549117ee5ddf314e888d4",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "latitude": "34.02059040987855",
+        "description": "34.02059040987855, -118.28609883785248",
+        "longitude": "-118.28609883785248"
+    },
+    "a": "Place",
+    "address": {
+        "addressCountry": {
+            "a": "Country",
+            "label": "United States"
+        },
+        "a": "PostalAddress",
+        "streetAddress": "3607 Trousdale Pkwy",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA"
+    },
+    "description": "American Restaurants",
+    "label": "Lemonade USC",
+    "uri": "http://medusa.usc.edu/data/foursquare/4c782964566db60c4bb3400e",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-foursquare-sample_json-context.json"
 }
 ]

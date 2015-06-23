@@ -1,0 +1,69 @@
+{
+    "mappings": {
+      "“googlemaps”": {
+        "properties": {
+          "@context": {
+            "type": "string"
+          },
+          "a": {
+            "type": "string"
+          },
+          "address": {
+            "properties": {
+              "a": {
+                "type": "string"
+              },
+              "addressCountry": {
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                }
+              },
+              "addressLocality": {
+                "type": "string"
+              },
+              "addressRegion": {
+                "type": "string"
+              },
+              "streetAddress": {
+                "type": "string"
+              }
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "geo": {
+            "properties": {
+              "a": {
+                "type": "string"
+              },
+              "lat": {
+                "type": "string"
+              },
+              "lon": {
+                "type": "string"
+              }
+            }
+          },
+          "globalLocationNumber": {
+            "type": "geo_point"
+          },
+          "label": {
+            "type": "string"
+          },
+          "telephone": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string"
+          }
+        }
+      }
+    }
+
+}

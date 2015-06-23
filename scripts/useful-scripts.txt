@@ -71,3 +71,117 @@ curl -XPUT http://localhost:9200/foursquare_data -d '
       }
     }
 }'
+
+
+for google maps
+curl -XPUT http://localhost:9200/googlemaps_data -d '
+{
+"mappings": {
+      “googlemaps”: {
+        "properties": {
+          "@context": {
+            "type": "string"
+          },
+          "a": {
+            "type": "string"
+          },
+          "address": {
+            "properties": {
+              "a": {
+                "type": "string"
+              },
+              "addressCountry": {
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  }
+                }
+              },
+              "addressLocality": {
+                "type": "string"
+              },
+              "addressRegion": {
+                "type": "string"
+              },
+              "streetAddress": {
+                "type": "string"
+              }
+            }
+          },
+          "geo": {
+            "properties": {
+              "a": {
+                "type": "string"
+              },
+              "lat": {
+                "type": "string"
+              },
+              "lon": {
+                "type": "string"
+              }
+            }
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "globalLocationNumber": {
+            "type": "geo_point"
+          },
+          "telephone": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string"
+          }
+        }
+      }
+    }
+}'
+
+Sense requests:
+
+GET _search
+        {
+            "query": {
+                "match": {
+                   "description": "Yoga"
+                }
+            }
+        }
+
+GET googlemaps_data/_search
+        {
+            "query": {
+                "match": {
+                   "description": "Health"
+                }
+            }
+        }
+
+
+geo-spatial query:
+GET foursquare_data/_search
+        {
+            "query": {
+                "filtered": {
+                   "query": {
+                   "match_all": {}
+                   },
+                   "filter": {
+                       "geo_distance": {
+                          "distance": 100,
+                          "distance_unit": "km",
+                          "globalLocationNumber": "40.699657951708524, -73.99976911704667"
+                       }
+                   }
+                }
+            }
+        }
+
+

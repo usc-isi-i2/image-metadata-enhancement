@@ -1,0 +1,369 @@
+[
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6820506, 41.7689773"
+    },
+    "a": "Place",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/1558256862",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6811856, 41.769278"
+    },
+    "a": "Place",
+    "label": "7 Sins Lounge and Bar",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/2794763891",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6807451, 41.7622102"
+    },
+    "a": "Place",
+    "label": "Constitution Plaza",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288894",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6793456, 41.7677187"
+    },
+    "a": "Place",
+    "label": "Homewood Suites",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/1558248272",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6806416, 41.762755"
+    },
+    "a": "Place",
+    "label": "Bushnell Center for the Performing Arts",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367777869",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6822223, 41.7687092"
+    },
+    "a": "Place",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/1558256816",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6790529, 41.7678551"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367138851",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6848154, 41.7623222"
+    },
+    "a": "Place",
+    "label": "Elm Street Historic District",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288038",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6805464, 41.7654476"
+    },
+    "a": "Place",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/1708821453",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6848154, 41.7656556"
+    },
+    "a": "Place",
+    "label": "Connecticut State Capitol Park",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287980",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6796436, 41.762322"
+    },
+    "a": "Place",
+    "label": "First Presbyterian Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288129",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6829159, 41.7615748"
+    },
+    "a": "Place",
+    "label": "Second Church of Christ Scientist",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288905",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6862044, 41.7617667"
+    },
+    "a": "Place",
+    "label": "Bethesda Baptist Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287799",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.693149, 41.7703777"
+    },
+    "a": "Place",
+    "label": "Asylum Avenue Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287753",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6941636, 41.7693542"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367137389",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6937786, 41.763131"
+    },
+    "a": "Place",
+    "label": "Parkville",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/158876757",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6789715, 41.7679234"
+    },
+    "a": "Place",
+    "label": "Morse School of Business",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288362",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.693149, 41.7689888"
+    },
+    "a": "Place",
+    "label": "Trinity Episcopal Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288792",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6863503, 41.7683559"
+    },
+    "a": "Place",
+    "label": "Asylum Avenue Green",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287759",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6803164, 41.7632855"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367139114",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6856487, 41.7612111"
+    },
+    "a": "Place",
+    "label": "Saint Volodimir Orthodox Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288669",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6921739, 41.7638623"
+    },
+    "a": "Place",
+    "label": "gas",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/930237543",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6809016, 41.7618304"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367138583",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6830523, 41.7634935"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/60647966",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6887044, 41.7689888"
+    },
+    "a": "Place",
+    "label": "Iglesia Cristiana Adonay",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288257",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6869163, 41.7649935"
+    },
+    "a": "Place",
+    "label": "THE HARTFORD COURANT",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/587006382",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6850932, 41.7612111"
+    },
+    "a": "Place",
+    "label": "Hartford Full Gospel Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288217",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.68926, 41.761489"
+    },
+    "a": "Place",
+    "label": "Spanish Seventh Day Adventist Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288738",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6884266, 41.7662111"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367136624",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6870377, 41.768711"
+    },
+    "a": "Place",
+    "label": "Asylum Avenue District Historic District",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287756",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6914822, 41.768711"
+    },
+    "a": "Place",
+    "label": "Saint Joseph Cathedral School",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359268782",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6856173, 41.7632076"
+    },
+    "a": "Place",
+    "label": "Emanuel Lutheran Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359288044",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6912045, 41.7700999"
+    },
+    "a": "Place",
+    "label": "Asylum Hill Congregational Church",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287762",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6921385, 41.7681014"
+    },
+    "a": "Place",
+    "label": "Cathedral of Saint Joseph",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287875",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6934268, 41.7684333"
+    },
+    "a": "Place",
+    "label": "Christ Temple Church of God",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359287908",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6870377, 41.7634333"
+    },
+    "a": "Place",
+    "label": "Trinity School",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/359270629",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+},
+{
+    "geo": {
+        "a": "GeoCoordinates",
+        "description": "-72.6822788, 41.7641627"
+    },
+    "a": "Place",
+    "label": "Hartford",
+    "uri": "http://medusa.usc.edu/data/osm/osm/building/367139137",
+    "@context": "http://localhost:8080/publish/JSON/WSP1WS1-building-sample_xml-context.json"
+}
+]
