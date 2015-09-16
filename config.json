@@ -1,0 +1,8 @@
+{
+  "FoursquareKarma-URI":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/datasets/foursquare/foursquare-model.ttl",
+  "GoogleMapsKarma-URI":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/datasets/google/nearbysearch/google-nearbysearch-model.ttl",
+  "OsmKarma-URI":"/Users/rajagopal/Desktop/image-enhancement-backup/datasets/osm/building-model.ttl",
+  "foursquare-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/foursquare.json",
+  "googlemaps-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/googlemaps.json",
+  "osm-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/osm.json"
+}

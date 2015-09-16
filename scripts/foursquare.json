@@ -1,674 +1,701 @@
 [
     {
         "a": "Place", 
-        "uri": "4d2cb2c677a2a1cd02c387b7", 
-        "label": "QBE", 
+        "description": "Ice Cream Shops", 
+        "uri": "4be24e15f07b0f47ab4df543", 
+        "label": "The Pink Mango", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "6540 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "80 Pine St", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.698978", 
-            "longitude": "-74.00043"
-        }, 
-        "globalLocationNumber": "40.698978, -74.00043"
+            "latitude": "34.24565231739248", 
+            "description": "34.24565231739248, -118.2753324508667", 
+            "longitude": "-118.2753324508667"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Offices", 
-        "uri": "4cfc2f09c671721e1e74c718", 
-        "label": "Deep Net", 
+        "description": "Spas", 
+        "uri": "514dfd2be4b0c471f1412286", 
+        "label": "Orchid Skin Care", 
         "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3746 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressRegion": "New York"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.697052", 
-            "longitude": "-73.997217"
-        }, 
-        "globalLocationNumber": "40.697052, -73.997217"
+            "latitude": "34.23580205253088", 
+            "description": "34.23580205253088, -118.26120761063565", 
+            "longitude": "-118.26120761063565"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Music Venues", 
-        "uri": "4eb9edca00397fc4185d1f8e", 
-        "label": "RADICSVILLE", 
+        "description": "Dentist's Offices", 
+        "uri": "4c0d0f37c700c9b6b9c9a1dd", 
+        "label": "Dr. Barton Conroy", 
         "address": {
+            "addressLocality": "Glendale", 
+            "addressRegion": "CA", 
+            "streetAddress": "2101 Broadview Dr", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "5555 Distant Water Drive", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.7030577937025", 
-            "longitude": "-73.99779081344604"
-        }, 
-        "globalLocationNumber": "40.7030577937025, -73.99779081344604"
+            "latitude": "34.22803382850415", 
+            "description": "34.22803382850415, -118.24570982199621", 
+            "longitude": "-118.24570982199621"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Buildings", 
-        "uri": "4d88bd71d85f3704d7c4d7db", 
-        "label": "Solartech", 
+        "description": "Pizza Places", 
+        "uri": "530a2ec711d200e772358126", 
+        "telephone": "8186068593", 
+        "label": "Jack Loves Pizza", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "7067 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "110 Wall St", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.703065", 
-            "longitude": "-74.0023002"
-        }, 
-        "globalLocationNumber": "40.703065, -74.0023002"
+            "latitude": "34.248277442456185", 
+            "description": "34.248277442456185, -118.28548192977904", 
+            "longitude": "-118.28548192977904"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Beaches", 
-        "uri": "5339a67f498ea66c3d45561a", 
-        "label": "Pier 4 Beach", 
+        "description": "Electronics Stores", 
+        "uri": "4c3d0a8f7d00d13aa2cc3950", 
+        "telephone": "8183534613", 
+        "label": "RadioShack", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "6571 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.69649703108692", 
-            "longitude": "-73.99908621715002"
-        }, 
-        "globalLocationNumber": "40.69649703108692, -73.99908621715002"
+            "latitude": "34.2466", 
+            "description": "34.2466, -118.2759", 
+            "longitude": "-118.2759"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Parks", 
-        "uri": "430d0a00f964a5203e271fe3", 
-        "telephone": "2128033822", 
-        "label": "Brooklyn Bridge Park", 
+        "description": "Korean Restaurants", 
+        "uri": "4b499a16f964a520997126e3", 
+        "telephone": "8189578940", 
+        "label": "han kook market", 
         "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3157 Foothill Blvd #G", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Main St", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.70227697066692", 
-            "longitude": "-73.9965033531189"
-        }, 
-        "globalLocationNumber": "40.70227697066692, -73.9965033531189"
+            "latitude": "34.22945068065919", 
+            "description": "34.22945068065919, -118.24797119323077", 
+            "longitude": "-118.24797119323077"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Food Trucks", 
-        "uri": "4fedde93e4b0d57e70276de9", 
-        "label": "MorrisTruck", 
+        "description": "Medical Centers", 
+        "uri": "501c06bde4b067b04196bda5", 
+        "label": "Oakpark Healthcare Center", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "9166 Tujunga Canyon Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.70014969723652", 
-            "longitude": "-73.99916655844069"
-        }, 
-        "globalLocationNumber": "40.70014969723652, -73.99916655844069"
+            "latitude": "34.23651419190948", 
+            "description": "34.23651419190948, -118.27037200172258", 
+            "longitude": "-118.27037200172258"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Parks", 
-        "uri": "4c86983e74d7b60c4c80a5d8", 
-        "label": "Hillside Park", 
+        "description": "Laundry Services", 
+        "uri": "4fbafad0e4b0c29d94e2c60f", 
+        "telephone": "8189573332", 
+        "label": "Sandra's Coin Laundry", 
         "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3452 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Columbia Heights", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.69982487223443", 
-            "longitude": "-73.99571759128533"
-        }, 
-        "globalLocationNumber": "40.69982487223443, -73.99571759128533"
+            "latitude": "34.233058", 
+            "description": "34.233058, -118.254905", 
+            "longitude": "-118.254905"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "College Residence Halls", 
-        "uri": "4cb92bdc7148f04d9336d5ab", 
-        "label": "Livys apartment !", 
+        "description": "Lounges", 
+        "uri": "55ebc1b6498e79406d564852", 
+        "label": "Vicki's Watering Hole", 
         "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "Acampo", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "95 Wall St", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.700249", 
-            "longitude": "-74.001442"
-        }, 
-        "globalLocationNumber": "40.700249, -74.001442"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Fields", 
-        "uri": "50119b956de4139f5843df1c", 
-        "label": "Bridge View Lawn", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.702227722609486", 
-            "longitude": "-73.99688255718414"
-        }, 
-        "globalLocationNumber": "40.702227722609486, -73.99688255718414"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Parks", 
-        "uri": "51eabef6498e10cf3aea7942", 
-        "label": "Brooklyn Bridge Park - Pier 2", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Furman St", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.69961164689744", 
-            "longitude": "-73.99835740533105"
-        }, 
-        "globalLocationNumber": "40.69961164689744, -73.99835740533105"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Salons / Barbershops", 
-        "uri": "4f2c1bbae4b0ccfb1d99b510", 
-        "label": "kk hair salon", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "addressRegion": "New York"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.69956588745117", 
-            "longitude": "-74.00108337402344"
-        }, 
-        "globalLocationNumber": "40.69956588745117, -74.00108337402344"
-    }, 
-    {
-        "a": "Place", 
-        "uri": "4bee1772767dc9b64d07d4e9", 
-        "label": "Eamons", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.70219570850836", 
-            "longitude": "-73.99718097095484"
-        }, 
-        "globalLocationNumber": "40.70219570850836, -73.99718097095484"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Scenic Lookouts", 
-        "uri": "4bf0066151f2c9b6c917f192", 
-        "label": "Granite Prospect", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Brooklyn Bridge Park", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.70198416160947", 
-            "longitude": "-73.99747364554779"
-        }, 
-        "globalLocationNumber": "40.70198416160947, -73.99747364554779"
-    }, 
-    {
-        "a": "Place", 
-        "description": "General Entertainment", 
-        "uri": "50131cf2e4b06a7cda4c600b", 
-        "label": "Metropolitan Opera Summer Recital Series", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Brooklyn Bridge Park", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.69795191386013", 
-            "longitude": "-73.9974047809779"
-        }, 
-        "globalLocationNumber": "40.69795191386013, -73.9974047809779"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Parks", 
-        "uri": "4ebac60a0cd6904066e4108f", 
-        "label": "Brookyn Bridge Park Greenway", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Fulton Ferry Landing to Atlantic Ave.", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.70025980212479", 
-            "longitude": "-73.99698615074158"
-        }, 
-        "globalLocationNumber": "40.70025980212479, -73.99698615074158"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Miscellaneous Shops", 
-        "uri": "4e2edd6ffa7614797ddd30ae", 
-        "label": "A.b.c.d.e.", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "89 South St", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.7021752", 
-            "longitude": "-73.9984817"
-        }, 
-        "globalLocationNumber": "40.7021752, -73.9984817"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Bridges", 
-        "uri": "4a43bcb7f964a520bba61fe3", 
-        "label": "Brooklyn Bridge", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Brooklyn Bridge", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.705953265881305", 
-            "longitude": "-73.99656772613525"
-        }, 
-        "globalLocationNumber": "40.705953265881305, -73.99656772613525"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Historic Sites", 
-        "uri": "5240956911d2ee152900b10d", 
-        "label": "Truman Capote House", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "70 Willow St", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.698906", 
-            "longitude": "-73.99495"
-        }, 
-        "globalLocationNumber": "40.698906, -73.99495"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Parks", 
-        "uri": "42377700f964a52024201fe3", 
-        "label": "Brooklyn Heights Promenade", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Columbia Heights", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.69829137715981", 
-            "longitude": "-73.99663209915161"
-        }, 
-        "globalLocationNumber": "40.69829137715981, -73.99663209915161"
-    }, 
-    {
-        "a": "Place", 
-        "description": "Fields", 
-        "uri": "4ff63018e4b07a70b8817f64", 
-        "label": "Syfy Movies With A View: ET", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.70171921454982", 
-            "longitude": "-73.99688255718414"
-        }, 
-        "globalLocationNumber": "40.70171921454982, -73.99688255718414"
-    }, 
-    {
-        "a": "Place", 
-        "uri": "4d99354579b788bf3768776a", 
-        "label": "Wells Fargo Mobile Museum", 
-        "address": {
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress", 
-            "streetAddress": "Fulton and South Street", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
-        }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "40.70207382356202", 
-            "longitude": "-73.99799012903304"
-        }, 
-        "globalLocationNumber": "40.70207382356202, -73.99799012903304"
+            "latitude": "34.235902", 
+            "description": "34.235902, -118.264037", 
+            "longitude": "-118.264037"
+        }
     }, 
     {
         "a": "Place", 
         "description": "Doctor's Offices", 
-        "uri": "4dac4c974df01c19b1b0fc82", 
-        "label": "Internal Medicine Associates", 
+        "uri": "50217a69e4b0d98d04339ad3", 
+        "telephone": "8183538581", 
+        "label": "health care partners tujunga", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "6673 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "530 1st Ave", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.698978", 
-            "longitude": "-74.00043"
-        }, 
-        "globalLocationNumber": "40.698978, -74.00043"
+            "latitude": "34.24720580548378", 
+            "description": "34.24720580548378, -118.27802289231366", 
+            "longitude": "-118.27802289231366"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Churches", 
-        "uri": "4ae62580f964a52011a521e3", 
-        "label": "Danish Seamen's Church", 
+        "description": "American Restaurants", 
+        "uri": "5387546f498e432045b7b7b3", 
+        "telephone": "8187365530", 
+        "label": "Canyon Grille", 
         "address": {
+            "addressLocality": "Burbank", 
+            "addressRegion": "CA", 
+            "streetAddress": "1500 E Walnut Ave", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "102 Willow St", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.698023159650134", 
-            "longitude": "-73.99568889745463"
-        }, 
-        "globalLocationNumber": "40.698023159650134, -73.99568889745463"
+            "latitude": "34.206733908729966", 
+            "description": "34.206733908729966, -118.30443866236905", 
+            "longitude": "-118.30443866236905"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Yoga Studios", 
-        "uri": "50d1e29ee4b06b9f174deb0a", 
-        "label": "Yoga At The Park", 
+        "description": "Automotive Shops", 
+        "uri": "5569e509498e8087c733a695", 
+        "telephone": "8183215566", 
+        "label": "RW Performance", 
         "address": {
+            "addressLocality": "Panorama City", 
+            "addressRegion": "CA", 
+            "streetAddress": "14540 Van Nuys Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.69990921020508", 
-            "longitude": "-73.9961929321289"
-        }, 
-        "globalLocationNumber": "40.69990921020508, -73.9961929321289"
+            "latitude": "34.24619352577616", 
+            "description": "34.24619352577616, -118.29218755285835", 
+            "longitude": "-118.29218755285835"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Cuban Restaurants", 
-        "uri": "5054eb43e4b04ed4f0dd1b30", 
-        "label": "La cabana", 
+        "description": "Doctor's Offices", 
+        "uri": "4bacee20f964a520d51a3be3", 
+        "label": "Tujunga Medical Group", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "6673 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressRegion": "New York"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.69875", 
-            "longitude": "-73.99953"
-        }, 
-        "globalLocationNumber": "40.69875, -73.99953"
+            "latitude": "34.24740355", 
+            "description": "34.24740355, -118.27790974", 
+            "longitude": "-118.27790974"
+        }
     }, 
     {
         "a": "Place", 
-        "uri": "4d9788e5daec224b4642333e", 
-        "label": "Dr Shur", 
+        "description": "Disc Golf Courses", 
+        "uri": "50196e60e4b0f528fa9c8bf7", 
+        "label": "De Bell Disc Golf Course", 
         "address": {
+            "addressLocality": "Burbank", 
+            "addressRegion": "CA", 
+            "streetAddress": "1200 E Harvard Rd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "140 Elgar Pl", 
-            "addressLocality": "Bronx", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.698978", 
-            "longitude": "-74.00043"
-        }, 
-        "globalLocationNumber": "40.698978, -74.00043"
+            "latitude": "34.19915510700988", 
+            "description": "34.19915510700988, -118.30283453656993", 
+            "longitude": "-118.30283453656993"
+        }
     }, 
     {
         "a": "Place", 
-        "uri": "4c68856ad9c7c9b651d6c41a", 
-        "label": "Pacific East", 
+        "description": "Korean Restaurants", 
+        "uri": "5287ecdc498ec1755b18c199", 
+        "label": "Tofu Love", 
         "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3115 Foothill Blvd Ste O", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "streetAddress": "South Street seaport", 
-            "addressLocality": "New York", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.69770867949342", 
-            "longitude": "-74.00190961943183"
-        }, 
-        "globalLocationNumber": "40.69770867949342, -74.00190961943183"
+            "latitude": "34.22862312696078", 
+            "description": "34.22862312696078, -118.24682909027699", 
+            "longitude": "-118.24682909027699"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Yoga Studios", 
-        "uri": "53ff2935498e161412b3e871", 
-        "label": "Brooklyn Bridge Park - Pier 2 Yoga Court", 
+        "description": "Veterinarians", 
+        "uri": "4cd2061d01eaf04dfed2c15d", 
+        "label": "Crescenta Valley Veterinary Hospital", 
         "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3254 Foothill Blvd", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.699657951708524", 
-            "longitude": "-73.99976911704667"
-        }, 
-        "globalLocationNumber": "40.699657951708524, -73.99976911704667"
+            "latitude": "34.23067691488907", 
+            "description": "34.23067691488907, -118.25091778368507", 
+            "longitude": "-118.25091778368507"
+        }
     }, 
     {
         "a": "Place", 
-        "description": "Residential Buildings (Apartments / Condos)", 
-        "uri": "512c5182e4b036e5817b9b83", 
-        "label": "119 Gym", 
+        "uri": "4ed2c5ecf790d0703b55d496", 
+        "label": "Foothil Food Mart", 
         "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "Foothill Blvd.", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
-            "a": "PostalAddress", 
-            "addressLocality": "Brooklyn", 
-            "addressRegion": "NY"
+            "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/d3admin/Desktop/github_repos/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model-new_context.json", 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "40.698666", 
-            "longitude": "-73.995517"
+            "latitude": "34.242587437197706", 
+            "description": "34.242587437197706, -118.27005796530361", 
+            "longitude": "-118.27005796530361"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Bakeries", 
+        "uri": "518b2d1350195824915f76de", 
+        "telephone": "8189577576", 
+        "label": "Le Bon Patissier", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3038 Foothill Blvd", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
         }, 
-        "globalLocationNumber": "40.698666, -73.995517"
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.22750478834878", 
+            "description": "34.22750478834878, -118.24533462524414", 
+            "longitude": "-118.24533462524414"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Liquor Stores", 
+        "uri": "5011b141e4b05d9dc73a13d6", 
+        "label": "Village Liquor", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "2905 Honolulu Ave", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.21291732788086", 
+            "description": "34.21291732788086, -118.2419204711914", 
+            "longitude": "-118.2419204711914"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Mountains", 
+        "uri": "52ed06e5498ead6b61b5a799", 
+        "label": "Verdugo \"Hills,\" Whiting Woods Summit", 
+        "address": {
+            "addressLocality": "Glendale", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.21541670714238", 
+            "description": "34.21541670714238, -118.27672683274562", 
+            "longitude": "-118.27672683274562"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Automotive Shops", 
+        "uri": "5593fbc3498e911af5342b27", 
+        "telephone": "8189571763", 
+        "label": "Brady's Mercedes Service", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3627 Foothill Blvd", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.23530373691823", 
+            "description": "34.23530373691823, -118.25724478717994", 
+            "longitude": "-118.25724478717994"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Laundry Services", 
+        "uri": "4d3e151914aa8cfab4c1b95e", 
+        "telephone": "8189572251", 
+        "label": "Kim's Tailoring & Cleaning", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3620 Foothill Blvd", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.235355", 
+            "description": "34.235355, -118.25811803340912", 
+            "longitude": "-118.25811803340912"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "uri": "4cc518d8b3de9c74e36bb3c9", 
+        "telephone": "8182485443", 
+        "label": "Salon Andalucia", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3073 Foothill Blvd", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.228559732437134", 
+            "description": "34.228559732437134, -118.24639678001404", 
+            "longitude": "-118.24639678001404"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Middle Eastern Restaurants", 
+        "uri": "554c0bcb498eb0c13b57da6d", 
+        "label": "Mante House", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.247746", 
+            "description": "34.247746, -118.281283", 
+            "longitude": "-118.281283"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Automotive Shops", 
+        "uri": "507701788302ec3d5c5ea254", 
+        "telephone": "8183696650", 
+        "label": "360 Auto Clinic", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3835 Foothill Blvd", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.23875210499844", 
+            "description": "34.23875210499844, -118.2630157470703", 
+            "longitude": "-118.2630157470703"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Schools", 
+        "uri": "4d973bdb0caaa143ed4c8cb3", 
+        "telephone": "8189573398", 
+        "label": "Chamlian Armenian School", 
+        "address": {
+            "addressLocality": "Glendale", 
+            "addressRegion": "CA", 
+            "streetAddress": "4444 Lowell Ave", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.23884080026293", 
+            "description": "34.23884080026293, -118.26576232910156", 
+            "longitude": "-118.26576232910156"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Laundry Services", 
+        "uri": "5162208ce4b0f9da27a7a0e3", 
+        "label": "Modern Coin Laundry", 
+        "address": {
+            "addressLocality": "Tujunga", 
+            "addressRegion": "CA", 
+            "streetAddress": "Foothill At Marcus", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.24757608238278", 
+            "description": "34.24757608238278, -118.28233350414979", 
+            "longitude": "-118.28233350414979"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Automotive Shops", 
+        "uri": "50cf61dde4b0b0b990511781", 
+        "label": "American Tire Depot", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "3445 Foothill Blvd", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.2336934322044", 
+            "description": "34.2336934322044, -118.25455526824574", 
+            "longitude": "-118.25455526824574"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Elementary Schools", 
+        "uri": "4d38f34f76d1a35d2202038e", 
+        "telephone": "8182481758", 
+        "label": "Dunsmore Elementary School", 
+        "address": {
+            "addressLocality": "La Crescenta", 
+            "addressRegion": "CA", 
+            "streetAddress": "4717 Dunsmore Ave", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.238982712491705", 
+            "description": "34.238982712491705, -118.25780153274536", 
+            "longitude": "-118.25780153274536"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Trails", 
+        "uri": "4f247045e4b02a95fe6cb2f2", 
+        "label": "Hostetter Hiking Trails", 
+        "address": {
+            "addressLocality": "Sun Valley", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.23360273554206", 
+            "description": "34.23360273554206, -118.28269890199584", 
+            "longitude": "-118.28269890199584"
+        }
     }
 ]
