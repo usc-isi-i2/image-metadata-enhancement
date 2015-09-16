@@ -35,21 +35,21 @@ http://open.mapquestapi.com/xapi/ - Website
 http://open.mapquestapi.com/xapi/api/0.6/node[amenity=pub][bbox=-77.041579,38.885851,-77.007247,38.900881]?key=YOUR_KEY_HERE
 
 
-How to run the script:
+<b>How to run the script:</b>
 
 python publishdata-ES.py --lat <latitude> --long <longitude>
 
 In config.json file please configure the filepaths of karma-model uris and and files where
 
 
-How it works:
+<b>How it works:</b>
 
 1. We send a http request to each of foursquare, googlemaps and OSM api and process the response using karma as Service model. We will publish the json ld
 we get from karma to ES.
 
 
-Troubleshooting:
-1. Encode the URL always when you send http request
+<b>Troubleshooting:</b><br />
+1. Encode the URL always when you send http request <br />
 2. Check the port numbers on which web service is running
 
 
