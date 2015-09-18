@@ -125,9 +125,9 @@ esType = 'foursquare'
 
 parse_args()
 
-karmaURL = 'http://localhost:9999/rdf/r2rml/json'
-ESURL = 'http://localhost:9998/publish/es/jsonld'
 config = json.load(open("../config.json"))
+karmaURL = config['karmaURL']
+ESURL = config['ESURL']
 
 
 #for foursquare api
