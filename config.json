@@ -6,5 +6,5 @@
   "googlemaps-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/googlemaps.json",
   "osm-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/osm.json",
   "ESURL":"http://localhost:9998/publish/es/jsonld",
-  "KarmaURL":"http://localhost:9999/rdf/r2rml/json"
+  "karmaURL":"http://localhost:9999/rdf/r2rml/json"
 }
