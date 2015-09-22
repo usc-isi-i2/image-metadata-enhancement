@@ -40,6 +40,7 @@ public class osmFetch {
 	
 	//The url to download OSM data
 	private static String url = "";
+	private static String OSM_API_KEY="b8uBAGZowqebVTadpoak56zmANQtQyUA";
 	//The string of OSM data in xml format
 	private static String xmlResult = "";
 	private int PRETTY_PRINT_INDENT_FACTOR = 4;
@@ -81,6 +82,7 @@ public class osmFetch {
 		System.out.println(minLon+" "+minLat+" "+maxLon+" "+maxLat+" "+type);
 		
 		url = "bbox=" + minLon+","+minLat+","+maxLon+","+maxLat;
+		url += ("&key="  +OSM_API_KEY);
 		
 		//Download original OSM data
 		outputToOSM(url);
