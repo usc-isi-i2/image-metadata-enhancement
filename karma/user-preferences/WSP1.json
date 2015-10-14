@@ -1,9 +1,9 @@
 {
     "ViewPreferences": {
+        "defaultRowsToShowInTopTables": 150,
         "maxRowsToShowInNestedTables": 20,
         "maxCharactersInHeader": 10,
-        "maxCharactersInCell": 200,
-        "defaultRowsToShowInTopTables": 150
+        "maxCharactersInCell": 200
     },
     "Commands": [
         {
@@ -13,8 +13,19 @@
         {
             "Command": "ImportServiceCommandPreferences",
             "PreferenceValues": {
-                "ServiceUrl": "https://api.foursquare.com/v2/venues/43695300f964a5208c291fe3/photos?oauth_token=GGCGJ04UILGC43NGC2MRQODT1WQQQCN5EQCPORAWSIBPWKEU&v=20150508",
-                "WorksheetName": "photos"
+                "WorksheetName": "photos",
+                "ServiceUrl": "https://api.foursquare.com/v2/venues/43695300f964a5208c291fe3/photos?oauth_token=GGCGJ04UILGC43NGC2MRQODT1WQQQCN5EQCPORAWSIBPWKEU&v=20150508"
+            }
+        },
+        {
+            "Command": "ImportSQLCommandPreferences",
+            "PreferenceValues": {
+                "portnumber": 3306,
+                "username": "root",
+                "query": "select * from film limit 1000;",
+                "hostname": "localhost",
+                "dbType": "MySQL",
+                "dBorSIDName": "sakila"
             }
         }
     ]

@@ -1,10 +1,17 @@
 {
-  "FoursquareKarma-URI":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/datasets/foursquare/foursquare-model.ttl",
-  "GoogleMapsKarma-URI":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/datasets/google/nearbysearch/google-nearbysearch-model.ttl",
-  "OsmKarma-URI":"/Users/rajagopal/Desktop/image-enhancement-backup/datasets/osm/building-model.ttl",
-  "foursquare-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/foursquare.json",
-  "googlemaps-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/googlemaps.json",
-  "osm-jsonldPath":"/Users/rajagopal/Desktop/github_repos/image-enhancement-backup/scripts/osm.json",
-  "ESURL":"http://localhost:9998/publish/es/jsonld",
-  "karmaURL":"http://localhost:9999/rdf/r2rml/json"
+  "FoursquareKarmaModel":"/home/lk/Desktop/github/image-metadata-enhancement/datasets/foursquare/foursquare-model.ttl",
+  "foursquare-jsonldPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/foursquare.json",
+
+  "GoogleMapsKarmaModel":"/home/lk/Desktop/github/image-metadata-enhancement/datasets/google/nearbysearch/google-nearbysearch-model.ttl",
+  "googlemaps-jsonldPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/googlemaps.json",
+
+  "OsmKarmaModel":"/home/lk/Desktop/github/image-metadata-enhancement/datasets/osm/way-model.ttl",
+  "osm-jsonldPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/osm.json",
+  "osm-waysJsonPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/osmWays.json",
+
+  "Karma-PublishES-URL":"http://localhost:9998/publish/es/jsonld",
+  "Karma-RDF-URL":"http://localhost:9999/rdf/r2rml/json",
+
+  "ElasticSearchHost":"localhost",
+  "ElasticSearchPort":"9200"
 }

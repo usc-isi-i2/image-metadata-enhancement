@@ -1,546 +1,55 @@
 [
     {
         "a": "Place", 
-        "description": "Ice Cream Shops", 
-        "uri": "4be24e15f07b0f47ab4df543", 
-        "label": "The Pink Mango", 
+        "description": "Churches", 
+        "uri": "4be4d48b2468c928fe69ff42", 
+        "label": "United University Church (UUC)", 
         "address": {
-            "addressLocality": "Tujunga", 
+            "addressLocality": "Los Angeles", 
             "addressRegion": "CA", 
-            "streetAddress": "6540 Foothill Blvd", 
+            "streetAddress": "817 W 34th St", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
             "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.24565231739248", 
-            "description": "34.24565231739248, -118.2753324508667", 
-            "longitude": "-118.2753324508667"
+            "latitude": "34.023142505115594", 
+            "description": "34.023142505115594, -118.2843017578125", 
+            "longitude": "-118.2843017578125"
         }
     }, 
     {
         "a": "Place", 
-        "description": "Spas", 
-        "uri": "514dfd2be4b0c471f1412286", 
-        "label": "Orchid Skin Care", 
+        "description": "College Academic Buildings", 
+        "uri": "4cbb6a7d86dd95217b64ace6", 
+        "label": "Booth Memorial Hall (BMH)", 
         "address": {
-            "addressLocality": "La Crescenta", 
+            "addressLocality": "Los Angeles", 
             "addressRegion": "CA", 
-            "streetAddress": "3746 Foothill Blvd", 
+            "streetAddress": "846 W 34th St", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
             "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.23580205253088", 
-            "description": "34.23580205253088, -118.26120761063565", 
-            "longitude": "-118.26120761063565"
+            "latitude": "34.02273346365639", 
+            "description": "34.02273346365639, -118.28468799591064", 
+            "longitude": "-118.28468799591064"
         }
     }, 
     {
         "a": "Place", 
-        "description": "Dentist's Offices", 
-        "uri": "4c0d0f37c700c9b6b9c9a1dd", 
-        "label": "Dr. Barton Conroy", 
-        "address": {
-            "addressLocality": "Glendale", 
-            "addressRegion": "CA", 
-            "streetAddress": "2101 Broadview Dr", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.22803382850415", 
-            "description": "34.22803382850415, -118.24570982199621", 
-            "longitude": "-118.24570982199621"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Pizza Places", 
-        "uri": "530a2ec711d200e772358126", 
-        "telephone": "8186068593", 
-        "label": "Jack Loves Pizza", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "7067 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.248277442456185", 
-            "description": "34.248277442456185, -118.28548192977904", 
-            "longitude": "-118.28548192977904"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Electronics Stores", 
-        "uri": "4c3d0a8f7d00d13aa2cc3950", 
-        "telephone": "8183534613", 
-        "label": "RadioShack", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "6571 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.2466", 
-            "description": "34.2466, -118.2759", 
-            "longitude": "-118.2759"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Korean Restaurants", 
-        "uri": "4b499a16f964a520997126e3", 
-        "telephone": "8189578940", 
-        "label": "han kook market", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3157 Foothill Blvd #G", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.22945068065919", 
-            "description": "34.22945068065919, -118.24797119323077", 
-            "longitude": "-118.24797119323077"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Medical Centers", 
-        "uri": "501c06bde4b067b04196bda5", 
-        "label": "Oakpark Healthcare Center", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "9166 Tujunga Canyon Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.23651419190948", 
-            "description": "34.23651419190948, -118.27037200172258", 
-            "longitude": "-118.27037200172258"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Laundry Services", 
-        "uri": "4fbafad0e4b0c29d94e2c60f", 
-        "telephone": "8189573332", 
-        "label": "Sandra's Coin Laundry", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3452 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.233058", 
-            "description": "34.233058, -118.254905", 
-            "longitude": "-118.254905"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Lounges", 
-        "uri": "55ebc1b6498e79406d564852", 
-        "label": "Vicki's Watering Hole", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "Acampo", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.235902", 
-            "description": "34.235902, -118.264037", 
-            "longitude": "-118.264037"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Doctor's Offices", 
-        "uri": "50217a69e4b0d98d04339ad3", 
-        "telephone": "8183538581", 
-        "label": "health care partners tujunga", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "6673 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.24720580548378", 
-            "description": "34.24720580548378, -118.27802289231366", 
-            "longitude": "-118.27802289231366"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "American Restaurants", 
-        "uri": "5387546f498e432045b7b7b3", 
-        "telephone": "8187365530", 
-        "label": "Canyon Grille", 
-        "address": {
-            "addressLocality": "Burbank", 
-            "addressRegion": "CA", 
-            "streetAddress": "1500 E Walnut Ave", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.206733908729966", 
-            "description": "34.206733908729966, -118.30443866236905", 
-            "longitude": "-118.30443866236905"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Automotive Shops", 
-        "uri": "5569e509498e8087c733a695", 
-        "telephone": "8183215566", 
-        "label": "RW Performance", 
-        "address": {
-            "addressLocality": "Panorama City", 
-            "addressRegion": "CA", 
-            "streetAddress": "14540 Van Nuys Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.24619352577616", 
-            "description": "34.24619352577616, -118.29218755285835", 
-            "longitude": "-118.29218755285835"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Doctor's Offices", 
-        "uri": "4bacee20f964a520d51a3be3", 
-        "label": "Tujunga Medical Group", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "6673 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.24740355", 
-            "description": "34.24740355, -118.27790974", 
-            "longitude": "-118.27790974"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Disc Golf Courses", 
-        "uri": "50196e60e4b0f528fa9c8bf7", 
-        "label": "De Bell Disc Golf Course", 
-        "address": {
-            "addressLocality": "Burbank", 
-            "addressRegion": "CA", 
-            "streetAddress": "1200 E Harvard Rd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.19915510700988", 
-            "description": "34.19915510700988, -118.30283453656993", 
-            "longitude": "-118.30283453656993"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Korean Restaurants", 
-        "uri": "5287ecdc498ec1755b18c199", 
-        "label": "Tofu Love", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3115 Foothill Blvd Ste O", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.22862312696078", 
-            "description": "34.22862312696078, -118.24682909027699", 
-            "longitude": "-118.24682909027699"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Veterinarians", 
-        "uri": "4cd2061d01eaf04dfed2c15d", 
-        "label": "Crescenta Valley Veterinary Hospital", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3254 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.23067691488907", 
-            "description": "34.23067691488907, -118.25091778368507", 
-            "longitude": "-118.25091778368507"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "uri": "4ed2c5ecf790d0703b55d496", 
-        "label": "Foothil Food Mart", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "Foothill Blvd.", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.242587437197706", 
-            "description": "34.242587437197706, -118.27005796530361", 
-            "longitude": "-118.27005796530361"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Bakeries", 
-        "uri": "518b2d1350195824915f76de", 
-        "telephone": "8189577576", 
-        "label": "Le Bon Patissier", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3038 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.22750478834878", 
-            "description": "34.22750478834878, -118.24533462524414", 
-            "longitude": "-118.24533462524414"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Liquor Stores", 
-        "uri": "5011b141e4b05d9dc73a13d6", 
-        "label": "Village Liquor", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "2905 Honolulu Ave", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.21291732788086", 
-            "description": "34.21291732788086, -118.2419204711914", 
-            "longitude": "-118.2419204711914"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Mountains", 
-        "uri": "52ed06e5498ead6b61b5a799", 
-        "label": "Verdugo \"Hills,\" Whiting Woods Summit", 
-        "address": {
-            "addressLocality": "Glendale", 
-            "addressRegion": "CA", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.21541670714238", 
-            "description": "34.21541670714238, -118.27672683274562", 
-            "longitude": "-118.27672683274562"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Automotive Shops", 
-        "uri": "5593fbc3498e911af5342b27", 
-        "telephone": "8189571763", 
-        "label": "Brady's Mercedes Service", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3627 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.23530373691823", 
-            "description": "34.23530373691823, -118.25724478717994", 
-            "longitude": "-118.25724478717994"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Laundry Services", 
-        "uri": "4d3e151914aa8cfab4c1b95e", 
-        "telephone": "8189572251", 
-        "label": "Kim's Tailoring & Cleaning", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3620 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.235355", 
-            "description": "34.235355, -118.25811803340912", 
-            "longitude": "-118.25811803340912"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "uri": "4cc518d8b3de9c74e36bb3c9", 
-        "telephone": "8182485443", 
-        "label": "Salon Andalucia", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3073 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.228559732437134", 
-            "description": "34.228559732437134, -118.24639678001404", 
-            "longitude": "-118.24639678001404"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Middle Eastern Restaurants", 
-        "uri": "554c0bcb498eb0c13b57da6d", 
-        "label": "Mante House", 
+        "description": "Fairs", 
+        "uri": "4f7f8cede4b0bf6cc89f29bd", 
+        "label": "Transmedia Hollywood", 
         "address": {
             "addressLocality": "Los Angeles", 
             "addressRegion": "CA", 
@@ -550,139 +59,45 @@
             }, 
             "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.247746", 
-            "description": "34.247746, -118.281283", 
-            "longitude": "-118.281283"
+            "latitude": "34.021961", 
+            "description": "34.021961, -118.285162", 
+            "longitude": "-118.285162"
         }
     }, 
     {
         "a": "Place", 
-        "description": "Automotive Shops", 
-        "uri": "507701788302ec3d5c5ea254", 
-        "telephone": "8183696650", 
-        "label": "360 Auto Clinic", 
+        "description": "College Administrative Buildings", 
+        "uri": "4de820a7d22d09215a156017", 
+        "telephone": "2137406616", 
+        "label": "USC Office of Admission", 
         "address": {
-            "addressLocality": "La Crescenta", 
+            "addressLocality": "Los Angeles", 
             "addressRegion": "CA", 
-            "streetAddress": "3835 Foothill Blvd", 
+            "streetAddress": "3607 Trousdale Pkwy", 
             "addressCountry": {
                 "a": "Country", 
                 "label": "United States"
             }, 
             "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.23875210499844", 
-            "description": "34.23875210499844, -118.2630157470703", 
-            "longitude": "-118.2630157470703"
+            "latitude": "34.02005686110624", 
+            "description": "34.02005686110624, -118.28614711761475", 
+            "longitude": "-118.28614711761475"
         }
     }, 
     {
         "a": "Place", 
-        "description": "Schools", 
-        "uri": "4d973bdb0caaa143ed4c8cb3", 
-        "telephone": "8189573398", 
-        "label": "Chamlian Armenian School", 
+        "description": "College Labs", 
+        "uri": "4e62fb0d7d8b854089e99116", 
+        "label": "Bing Design Lab", 
         "address": {
-            "addressLocality": "Glendale", 
-            "addressRegion": "CA", 
-            "streetAddress": "4444 Lowell Ave", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.23884080026293", 
-            "description": "34.23884080026293, -118.26576232910156", 
-            "longitude": "-118.26576232910156"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Laundry Services", 
-        "uri": "5162208ce4b0f9da27a7a0e3", 
-        "label": "Modern Coin Laundry", 
-        "address": {
-            "addressLocality": "Tujunga", 
-            "addressRegion": "CA", 
-            "streetAddress": "Foothill At Marcus", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.24757608238278", 
-            "description": "34.24757608238278, -118.28233350414979", 
-            "longitude": "-118.28233350414979"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Automotive Shops", 
-        "uri": "50cf61dde4b0b0b990511781", 
-        "label": "American Tire Depot", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "3445 Foothill Blvd", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.2336934322044", 
-            "description": "34.2336934322044, -118.25455526824574", 
-            "longitude": "-118.25455526824574"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Elementary Schools", 
-        "uri": "4d38f34f76d1a35d2202038e", 
-        "telephone": "8182481758", 
-        "label": "Dunsmore Elementary School", 
-        "address": {
-            "addressLocality": "La Crescenta", 
-            "addressRegion": "CA", 
-            "streetAddress": "4717 Dunsmore Ave", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.238982712491705", 
-            "description": "34.238982712491705, -118.25780153274536", 
-            "longitude": "-118.25780153274536"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Trails", 
-        "uri": "4f247045e4b02a95fe6cb2f2", 
-        "label": "Hostetter Hiking Trails", 
-        "address": {
-            "addressLocality": "Sun Valley", 
+            "addressLocality": "Los Angeles", 
             "addressRegion": "CA", 
             "addressCountry": {
                 "a": "Country", 
@@ -690,12 +105,584 @@
             }, 
             "a": "PostalAddress"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/foursquare-model_context.json", 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.23360273554206", 
-            "description": "34.23360273554206, -118.28269890199584", 
-            "longitude": "-118.28269890199584"
+            "latitude": "34.022477", 
+            "description": "34.022477, -118.285783", 
+            "longitude": "-118.285783"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Communications Buildings", 
+        "uri": "49ecda07f964a520a0671fe3", 
+        "telephone": "2137403951", 
+        "label": "USC Annenberg School for Communication and Journalism (ASC)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3502 Watts Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02201319020797", 
+            "description": "34.02201319020797, -118.28622221946716", 
+            "longitude": "-118.28622221946716"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Bus Lines", 
+        "uri": "4db0ccf31e729fcc564646ad", 
+        "label": "USC Tram", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02274351979783", 
+            "description": "34.02274351979783, -118.28405200907187", 
+            "longitude": "-118.28405200907187"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "General Colleges & Universities", 
+        "uri": "4bed6997bac3c9b6ea37fee9", 
+        "label": "USC Thornton School of Music", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "830 W 34th St", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022715679200395", 
+            "description": "34.022715679200395, -118.28493475914001", 
+            "longitude": "-118.28493475914001"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "General Colleges & Universities", 
+        "uri": "4bda732e3904a593a48b469e", 
+        "label": "USC Inverted Fountain", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02235554316479", 
+            "description": "34.02235554316479, -118.28559994697571", 
+            "longitude": "-118.28559994697571"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Sculpture Gardens", 
+        "uri": "4bda6acac79cc9281bd97ee9", 
+        "label": "Finger Fountain", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02289171674563", 
+            "description": "34.02289171674563, -118.28388073028914", 
+            "longitude": "-118.28388073028914"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Arts Buildings", 
+        "uri": "4bbf99b6461576b05ed57832", 
+        "label": "Raubenheimer Music Faculty Building (MUS)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "840 W 34th St", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022946876837565", 
+            "description": "34.022946876837565, -118.28509032726288", 
+            "longitude": "-118.28509032726288"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Academic Buildings", 
+        "uri": "5290de7311d2721acb23325a", 
+        "label": "USC", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02221513830967", 
+            "description": "34.02221513830967, -118.28421757839823", 
+            "longitude": "-118.28421757839823"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "uri": "5186fd1b498eca9e71548bb1", 
+        "label": "Statler and Waldorf's Palace", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "29th street", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.0223", 
+            "description": "34.0223, -118.2849", 
+            "longitude": "-118.2849"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Quads", 
+        "uri": "4d42000caed776eb0b286a97", 
+        "label": "Queen's Courtyard", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02247853463755", 
+            "description": "34.02247853463755, -118.28487985409465", 
+            "longitude": "-118.28487985409465"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Medical Centers", 
+        "uri": "4b4cc6fcf964a5206ebe26e3", 
+        "telephone": "2137408742", 
+        "label": "Student Health Center (SHC)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "849 W 34th St", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02348040744276", 
+            "description": "34.02348040744276, -118.28527808189392", 
+            "longitude": "-118.28527808189392"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Quads", 
+        "uri": "4d5082259b27721ecfa5ae46", 
+        "label": "Trousdale Parkway", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02090164511358", 
+            "description": "34.02090164511358, -118.28494548797607", 
+            "longitude": "-118.28494548797607"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Arts Buildings", 
+        "uri": "4f8b52dfe4b0b1c4b1838fc4", 
+        "label": "USC The John Williams Scoring Stage", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022572", 
+            "description": "34.022572, -118.285554", 
+            "longitude": "-118.285554"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "General Entertainment", 
+        "uri": "51743bed498e2324ac201269", 
+        "label": "Los Angeles Times Festival Of Books", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02096849830335", 
+            "description": "34.02096849830335, -118.28511964293614", 
+            "longitude": "-118.28511964293614"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "uri": "4d42000aaed776eb7c276a97", 
+        "label": "Moving Image Archive (NCT)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3507 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022456078145694", 
+            "description": "34.022456078145694, -118.28555354569613", 
+            "longitude": "-118.28555354569613"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Theaters", 
+        "uri": "4bb81a94b35776b0edaac801", 
+        "telephone": "2137408686", 
+        "label": "Bing Theatre (BIT)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3500 Watts Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02240445061731", 
+            "description": "34.02240445061731, -118.28600764274597", 
+            "longitude": "-118.28600764274597"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Classrooms", 
+        "uri": "4b58a2fcf964a520d76228e3", 
+        "telephone": "2137406935", 
+        "label": "Ramo Hall of Music (RHM)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "830 W 34th St", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022697894740666", 
+            "description": "34.022697894740666, -118.28517079353333", 
+            "longitude": "-118.28517079353333"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Classrooms", 
+        "uri": "4b083102f964a520e60523e3", 
+        "label": "Taper Hall (THH)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3501 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.0221643592163", 
+            "description": "34.0221643592163, -118.28456997871399", 
+            "longitude": "-118.28456997871399"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Universities", 
+        "uri": "45001adcf964a520ab381fe3", 
+        "telephone": "2137402311", 
+        "label": "University of Southern California", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02034142086885", 
+            "description": "34.02034142086885, -118.28520298004149", 
+            "longitude": "-118.28520298004149"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Classrooms", 
+        "uri": "4a6d1129f964a52075d21fe3", 
+        "label": "Norris Cinema Theater (NCT)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3507 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022097667039915", 
+            "description": "34.022097667039915, -118.28533709049225", 
+            "longitude": "-118.28533709049225"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Classrooms", 
+        "uri": "52122ebc11d25e7b76994fc7", 
+        "label": "USC Language Center", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022355", 
+            "description": "34.022355, -118.284602", 
+            "longitude": "-118.284602"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Classrooms", 
+        "uri": "54c7bb31498edeaa80af7240", 
+        "label": "HBIO-401: Physiology and Biomechanics", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022179", 
+            "description": "34.022179, -118.284714", 
+            "longitude": "-118.284714"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Administrative Buildings", 
+        "uri": "45004645f964a520b8381fe3", 
+        "label": "Heritage Hall (HER)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3501 Watts Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022564511174025", 
+            "description": "34.022564511174025, -118.2868230342865", 
+            "longitude": "-118.2868230342865"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Concert Halls", 
+        "uri": "42547800f964a520d1201fe3", 
+        "telephone": "2137485116", 
+        "label": "Shrine Auditorium & Expo Hall", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "700 W 32nd St.", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02286684695752", 
+            "description": "34.02286684695752, -118.28173756599426", 
+            "longitude": "-118.28173756599426"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Technology Buildings", 
+        "uri": "4bd21597a8b3a593a018675f", 
+        "telephone": "2137403919", 
+        "label": "Annenberg Digital Lab", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3502 U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02190648251055", 
+            "description": "34.02190648251055, -118.28599691390991", 
+            "longitude": "-118.28599691390991"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Arts Buildings", 
+        "uri": "4d42000eaed776eb58286a97", 
+        "label": "Spielberg Stage (SSS)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3450 Watts Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02272457142884", 
+            "description": "34.02272457142884, -118.28562676906586", 
+            "longitude": "-118.28562676906586"
         }
     }
 ]

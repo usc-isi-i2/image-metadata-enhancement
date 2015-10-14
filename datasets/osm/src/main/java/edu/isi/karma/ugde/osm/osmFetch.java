@@ -81,6 +81,8 @@ public class osmFetch {
 		System.out.println(minLon+" "+minLat+" "+maxLon+" "+maxLat+" "+type);
 		
 		url = "bbox=" + minLon+","+minLat+","+maxLon+","+maxLat;
+		url += "&key=b8uBAGZowqebVTadpoak56zmANQtQyUA";
+		System.out.println("HEYHEYHEY");
 		
 		//Download original OSM data
 		outputToOSM(url);

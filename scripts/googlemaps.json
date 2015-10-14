@@ -2,41 +2,418 @@
     {
         "a": "Place", 
         "description": [
-            "Political", 
-            "Locality"
+            "Stadium", 
+            "Establishment", 
+            "Point Of Interest"
         ], 
-        "uri": "81d903c3dffe5869115780e5c3ddb7f110af0052", 
-        "label": "Burbank", 
+        "uri": "325e88e00178edc7c825afd3baf2d15a94be1de0", 
+        "label": "Uytengsu Aquatics Center", 
         "address": {
             "a": "PostalAddress", 
-            "label": "Burbank"
+            "label": "1026 West 34th Street, Los Angeles"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/google-nearbysearch-model_context.json", 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.1808392", 
-            "description": "34.1808392, -118.3089661", 
-            "longitude": "-118.3089661"
+            "latitude": "34.02396", 
+            "description": "34.02396, -118.288428", 
+            "longitude": "-118.288428"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "4d6868247544dfacf08ece69d26b106ece3448ca", 
+        "label": "Galen Center", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3400 South Figueroa Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020855", 
+            "description": "34.020855, -118.279851", 
+            "longitude": "-118.279851"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest", 
+            "University"
+        ], 
+        "uri": "a896816956d277575bee97e399a02e08c917b2df", 
+        "label": "USC Gould School of Law", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "699 Exposition Boulevard, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.018664", 
+            "description": "34.018664, -118.28435", 
+            "longitude": "-118.28435"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Restaurant", 
+            "Food", 
+            "Bar", 
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "cc23e696ae0f1a0618778bb22cb3933c27291e49", 
+        "label": "The Lab Gastropub", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3500 South Figueroa Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.019907", 
+            "description": "34.019907, -118.280567", 
+            "longitude": "-118.280567"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "School", 
+            "Point Of Interest"
+        ], 
+        "uri": "18109af82096f72bfa7c0360593957c5d08d8f0a", 
+        "label": "32nd Street USC Performing Arts Magnet", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "822 West 32nd Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02454", 
+            "description": "34.02454, -118.282462", 
+            "longitude": "-118.282462"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Library", 
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "4b7ccded25f6f30d7a4860bbba1dea4a9477f6b5", 
+        "label": "Edward L Doheny Memorial Library", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3550 Trousdale Parkway, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020081", 
+            "description": "34.020081, -118.283659", 
+            "longitude": "-118.283659"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "School", 
+            "Point Of Interest"
+        ], 
+        "uri": "420291f337701a0d2efda7fa04883a4a9c52cddb", 
+        "label": "USC Marshall School of Business", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3670 Trousdale Parkway, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.018829", 
+            "description": "34.018829, -118.285803", 
+            "longitude": "-118.285803"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "School", 
+            "Point Of Interest", 
+            "University"
+        ], 
+        "uri": "bdfeda5dbdd0d30631ea0f875cca9660c95a9b27", 
+        "label": "USC Roski School of Fine Arts", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "850 West 37th Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.019114", 
+            "description": "34.019114, -118.288009", 
+            "longitude": "-118.288009"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "3ad2135bb976cbc42d09b10bf60cd31dcf5f1eb6", 
+        "label": "Dedeaux Field", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.023957", 
+            "description": "34.023957, -118.289753", 
+            "longitude": "-118.289753"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Establishment", 
+        "uri": "1ad3d9295c8b92789dda03c127b18084f7da17a1", 
+        "label": "Tommy Trojan", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3531 Trousdale Parkway, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02056", 
+            "description": "34.02056, -118.285418", 
+            "longitude": "-118.285418"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Restaurant", 
+            "Food", 
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "da3056285f94cde0c4556a206fe4a6f2bcc0372e", 
+        "label": "Lemonade", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3601 Trousdale Parkway, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020604", 
+            "description": "34.020604, -118.286042", 
+            "longitude": "-118.286042"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest", 
+            "University"
+        ], 
+        "uri": "dcdf991751e3a7a305ee2fbe972d9935eaa91b7c", 
+        "label": "USC School of Cinematic Arts", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "900 West 34th Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02339", 
+            "description": "34.02339, -118.28717", 
+            "longitude": "-118.28717"
         }
     }, 
     {
         "a": "Place", 
         "description": [
             "Political", 
-            "Locality"
+            "Neighborhood"
         ], 
-        "uri": "01b238406f7bd5ce1a195b0b80f227b6a8a78797", 
-        "label": "Glendale", 
+        "uri": "ee5f89a282247c19d7fb246477316e62f127e926", 
+        "label": "South Figueroa Corridor", 
         "address": {
             "a": "PostalAddress", 
-            "label": "Glendale"
+            "label": "Los Angeles"
         }, 
-        "@context": "file:/Users/rajagopal/Desktop/Web-Karma/karma-web-services/web-services-rdf/context/google-nearbysearch-model_context.json", 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.1425078", 
-            "description": "34.1425078, -118.255075", 
-            "longitude": "-118.255075"
+            "latitude": "34.002058", 
+            "description": "34.002058, -118.2818967", 
+            "longitude": "-118.2818967"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Finance", 
+            "Bank", 
+            "Atm", 
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "566a87bb8a4c16d81146e76c7f985b0957bcf25b", 
+        "label": "Chase Bank", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3335 S Figueroa St, Ste N, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022799", 
+            "description": "34.022799, -118.279838", 
+            "longitude": "-118.279838"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Political", 
+            "Neighborhood"
+        ], 
+        "uri": "38fd4a8b4111ed88966041ac8bab948ce4244b28", 
+        "label": "University Park", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.0309703", 
+            "description": "34.0309703, -118.2789735", 
+            "longitude": "-118.2789735"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "6521713ab6783e7a8911945d02ec6b9b8c729b01", 
+        "label": "Shrine Auditorium and Expo Hall", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "665 West Jefferson Boulevard, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.023495", 
+            "description": "34.023495, -118.281346", 
+            "longitude": "-118.281346"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest", 
+            "University"
+        ], 
+        "uri": "b85217d74722f6fec94a4135f209e13092d81a5e", 
+        "label": "University of Southern California", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022352", 
+            "description": "34.022352, -118.285117", 
+            "longitude": "-118.285117"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest", 
+            "University"
+        ], 
+        "uri": "a797e11ccc095827b355378596ff54694d702057", 
+        "label": "Annenberg School for Communication and Journalism", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "Watt Way, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022034", 
+            "description": "34.022034, -118.286154", 
+            "longitude": "-118.286154"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest", 
+            "University"
+        ], 
+        "uri": "ab53c902bf17383815a2b9a73cbd0e73a7541d77", 
+        "label": "USC Viterbi School of Engineering", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3650 McClintock Avenue, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020679", 
+            "description": "34.020679, -118.28945", 
+            "longitude": "-118.28945"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Lodging", 
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "7d7bd0af8dd790ca88a206bb32301a72c1401f25", 
+        "label": "Radisson Hotel Los Angeles Midtown at USC", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3540 South Figueroa Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.019076", 
+            "description": "34.019076, -118.281419", 
+            "longitude": "-118.281419"
         }
     }
 ]
