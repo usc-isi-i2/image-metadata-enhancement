@@ -112,11 +112,14 @@ def convertToJSON(xmlResponse):
     return o
 
 
-def addGeoJSONtoJSONLD(o):
+def addGeoJSONtoJSONLD(o,type):
 
     for item in o:
         geoJSONstr = ""
-        points = item["geo"]["line"].split(" ")
+        if type == "ways":
+            points = item["geo"]["line"].split(" ")
+        if type == "buildings":
+            points = item["geo"]["polygon"].split(" ")
         geolinestring = []
         for i in range(0,len(points),2):
             geolinestring.append([points[i+1],points[i]])
@@ -132,7 +135,7 @@ def getjsonld(lat,lng,url,type,config):
     if type is 'foursquare':
         api_request = 'https://api.foursquare.com/v2/venues/search?ll=' + str(lat) + ',' + str(lng) \
         + '&client_id=4QJ5FZZWNOGPLT3A25UO4CN0EK3FQPJS0PNRO3KC31RL15YR&client_secret=FIYPITFGMNWYGJ02EX4XQINXJETDTNTSJ4ICTVCDVETQOHE3&v=20150528'
-        print(api_request)
+        #print(api_request)
         encoded_url = urllib.quote_plus(api_request)
         req = 'R2rmlURI=file://' + config['FoursquareKarmaModel'] +'&ContentType=JSON&DataURL='
         req = req + encoded_url
@@ -158,17 +161,27 @@ def getjsonld(lat,lng,url,type,config):
         api_request_url = "http://open.mapquestapi.com/xapi/api/0.6/map/*" + getBoundaryBox(lat,lng,0.3) + "?key=b8uBAGZowqebVTadpoak56zmANQtQyUA"
         xmlResponse = urllib2.urlopen(api_request_url).read()
         o = convertToJSON(xmlResponse)
-        file = open(config['osm-waysJsonPath'],'w')
+        file = open(config['osmJsonPath'],'w')
         file.write(json.dumps(o,indent=4))
         file.close()
 
-        req = 'R2rmlURI=file://' + config['OsmKarmaModel'] +'&ContentType=JSON&' \
-            'DataURL=file://' + config['osm-waysJsonPath'];
+        req = 'R2rmlURI=file://' + config['OsmKarmaModel-ways'] +'&ContentType=JSON&' \
+            'DataURL=file://' + config['osmJsonPath'];
         req=urllib2.Request(url,req)
         response=urllib2.urlopen(req)
         jsonOutput=json.loads(response.read())
-        jsonOutput = addGeoJSONtoJSONLD(jsonOutput)
-        file = open(config['osm-jsonldPath'],'w')
+        jsonOutput = addGeoJSONtoJSONLD(jsonOutput,"ways")
+        file = open(config['osm-jsonldPath-ways'],'w')
+        file.write(json.dumps(jsonOutput,indent=4))
+        file.close()
+
+        req = 'R2rmlURI=file://' + config['OsmKarmaModel-buildings'] +'&ContentType=JSON&' \
+                                                                 'DataURL=file://' + config['osmJsonPath'];
+        req=urllib2.Request(url,req)
+        response=urllib2.urlopen(req)
+        jsonOutput=json.loads(response.read())
+        jsonOutput = addGeoJSONtoJSONLD(jsonOutput,"buildings")
+        file = open(config['osm-jsonldPath-buildings'],'w')
         file.write(json.dumps(jsonOutput,indent=4))
         file.close()
 
@@ -179,12 +192,21 @@ def pushjsonldToES(url,esHost,esPort,esIndex,esType,config):
     elif esType is 'googlemaps':
         api_request='DataURL=file://' + config['googlemaps-jsonldPath']
     elif esType is 'osm':
-        api_request='DataURL=file://' + config['osm-jsonldPath']
-    api_request = api_request + '&ESHostname='+esHost+'&ESPort='+esPort+'&ESIndex='+esIndex+'&ESType='+esType
+        api_request='DataURL=file://' + config['osm-jsonldPath-ways']
+    api_request = api_request + '&ESHostname='+esHost+'&ESPort='+esPort+'&ESIndex='+esIndex+'&ESType='+esType+'-way'
     req=urllib2.Request(url,api_request)
     response=urllib2.urlopen(req)
     jsonOutput=json.loads(response.read())
     print(jsonOutput)
+    if esType is 'osm':
+
+        api_request='DataURL=file://' + config['osm-jsonldPath-buildings']
+        api_request = api_request + '&ESHostname='+esHost+'&ESPort='+esPort+'&ESIndex='+esIndex+'&ESType='+esType+'-building'
+        req=urllib2.Request(url,api_request)
+        response=urllib2.urlopen(req)
+        jsonOutput=json.loads(response.read())
+        print(jsonOutput)
+
 
 def main(argv):
     lat = 34.02235

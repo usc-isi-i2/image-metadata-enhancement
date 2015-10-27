@@ -189,9 +189,9 @@ http://open.mapquestapi.com/xapi/api/0.6/map/*[bbox=11.54,48.14,11.543,48.145]?k
 http://wiki.openstreetmap.org/wiki/Xapi#Tag_Predicates
 
 #ELASTIC SEARCH OSM MAPPING
-PUT _mapping/osm
+PUT _mapping/osm-way
 {
- "osm": {
+ "osm-way": {
             "properties": {
                "@context": {
                   "type": "string"
@@ -204,11 +204,50 @@ PUT _mapping/osm
                      "a": {
                         "type": "string"
                      },
-                     "latitude": {
+                     "line": {
+                        "type": "string",
+                         "index":"not_analyzed"
+                     }
+                  }
+               },
+               "geoJSONpin": {
+                  "properties": {
+                     "location": {
+                         "type": "geo_shape"
+                     }
+                  }
+               },
+                "geoJSONpinStr": {
+                  "type": "string",
+                  "index":"not_analyzed"
+               },
+               "label": {
+                  "type": "string"
+               },
+               "uri": {
+                  "type": "string"
+               }
+            }
+         }
+}
+PUT _mapping/osm-building
+{
+ "osm-building": {
+            "properties": {
+               "@context": {
+                  "type": "string"
+               },
+               "a": {
+                  "type": "string"
+               },
+               "geo": {
+                  "properties": {
+                     "a": {
                         "type": "string"
                      },
-                     "longitude": {
-                        "type": "string"
+                     "polygon": {
+                        "type": "string",
+                         "index":"not_analyzed"
                      }
                   }
                },
@@ -275,5 +314,34 @@ GET foursquare_data/_search
 
 
 
+#Geo Spatial Query - invoke script to re rank the results :
+GET _search
+{
+      "sort" : [ {"_score" : "asc"} ],
+"size":5,
+   "query": {
+      "function_score": {
+         "query": {
+            "match_all": {
 
+            }
+
+         },
+
+
+         "functions": [
+            {
+               "script_score": {
+                  "params": {
+                     "lat": 34.0212021,
+                     "lon": -118.2872039
+                  },
+                  "script": "geoshape_search_nearest",
+                  "lang": "native"
+               }
+            }
+         ]
+      }
+   }
+}
 
