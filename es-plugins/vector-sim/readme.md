@@ -13,9 +13,9 @@ This will create the jar file in target/releases folder.
 
 ##Running the Script
 The Script takes 3 parameters.
-metric - The type of vector similarity to run on the features. Expected Value : "cosine"
-vector - The target vector to perform similarity for each document. Expected Value : Array of double values.
-field  - The field in your document you wish to compare.
+* metric - The type of vector similarity to run on the features. Expected Value : "cosine"
+* vector - The target vector to perform similarity for each document. Expected Value : Array of double values.
+* field  - The field in your document you wish to compare.
 Example Script:
 ```
 GET _search
