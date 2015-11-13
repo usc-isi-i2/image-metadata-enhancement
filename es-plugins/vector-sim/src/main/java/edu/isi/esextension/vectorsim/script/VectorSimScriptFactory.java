@@ -1,5 +1,4 @@
 package edu.isi.esextension.vectorsim.script;
-import org.elasticsearch.index.fielddata.ScriptDocValues;
 import org.elasticsearch.script.AbstractDoubleSearchScript;
 import org.elasticsearch.script.ExecutableScript;
 import org.elasticsearch.script.NativeScriptFactory;
@@ -17,6 +16,7 @@ public class VectorSimScriptFactory implements NativeScriptFactory
 	public static final String SCRIPT_VECTOR_COMPARISON_TYPE_PARAMNAME = "metric";
 	public static final String SCRIPT_VECTOR_COMPARISON_FIELD_PARAMNAME = "field";
 	public static  String DOC_VECTOR_FIELD_NAME;
+	
 	
 	public enum Similarity_Measure {
 		COSINE
@@ -42,13 +42,11 @@ public class VectorSimScriptFactory implements NativeScriptFactory
 
 		@Override
 		public double runAsDouble() {
-			ScriptDocValues docValue =  (ScriptDocValues) doc().get(DOC_VECTOR_FIELD_NAME);
-			System.out.println(docValue.toString());
-			List<Double> docVectorList= ((ScriptDocValues.Doubles) docValue).getValues();
-			System.out.println("---" + docVectorList.toString());
+			List<Double> docVectorList =  (List<Double>) source().get(DOC_VECTOR_FIELD_NAME);
+
 			Double docVector[] = new Double[docVectorList.size()];
-			(((ScriptDocValues.Doubles) docValue).getValues()).toArray(docVector);
-			switch (simMeasure) {
+			docVectorList.toArray(docVector);
+					switch (simMeasure) {
 			
 			case COSINE:
 				return CosineSimilarity.cosineSimilarity(docVector, features);
