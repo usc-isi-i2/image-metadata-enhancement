@@ -1,0 +1,149 @@
+import json
+import urllib2
+import urllib
+import sys
+from elasticsearch import Elasticsearch
+from sys import stderr
+import osmscript
+import json
+
+def createMappings(filepath,hostname,port,index):
+    try:
+        print("Connecting to "+hostname + " at port: " + str(port))
+        es=Elasticsearch(['http://localhost:9200'])
+        with open(filepath) as m:
+            mapping = m.read()
+            print "Mapping "+mapping
+            es.indices.create(index=index,body=mapping,ignore=400)
+    except Exception, e:
+        print >> stderr.write('ERROR: %s\n' % str(e))
+
+def useKarmaService(url,fileUri,filename):
+    req=urllib2.Request(url,fileUri)
+    response=urllib2.urlopen(req)
+    jsonOutput=json.loads(response.read())
+    file = open(filename,'w')
+    file.write(json.dumps(jsonOutput,indent=4))
+    print(jsonOutput)
+
+
+def getjsonld(lat,long,url,type,config):
+
+    if type is 'foursquare':
+
+        api_request = 'https://api.foursquare.com/v2/venues/search?ll=' + str(lat) + ',' + str(long) \
+        + '&client_id=4QJ5FZZWNOGPLT3A25UO4CN0EK3FQPJS0PNRO3KC31RL15YR&client_secret=FIYPITFGMNWYGJ02EX4XQINXJETDTNTSJ4ICTVCDVETQOHE3&v=20150528'
+
+
+	
+        encoded_url = urllib.quote_plus(api_request)
+
+        req = 'R2rmlURI=file://' + config['FoursquareKarma-URI'] +'&ContentType=JSON&DataURL='
+        req = req + encoded_url
+
+
+        req=urllib2.Request(url,req)
+        response=urllib2.urlopen(req)
+        jsonOutput=json.loads(response.read())
+        file = open(config['foursquare-jsonldPath'],'w')
+        file.write(json.dumps(jsonOutput,indent=4))
+        file.close()
+        #print(jsonOutput)
+
+    elif type is 'googlemaps':
+
+        api_request = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + str(lat) + ',' + str(long) +  \
+        '&radius=500&key=AIzaSyCvuvRV_XM1u49nRik46VsE0_1amOexOrw'
+
+        encoded_url = urllib.quote_plus(api_request)
+
+        req = 'R2rmlURI=file://' + config['GoogleMapsKarma-URI'] + '&ContentType=JSON&DataURL='
+
+        #req = 'R2rmlURI=file:///Users/rajagopal/Desktop/github_repos/image-enhancement-backup/datasets/' \
+         # 'google/nearbysearch/google-nearbysearch-model.ttl&ContentType=JSON&DataURL='
+
+        req = req + encoded_url
+	
+        req=urllib2.Request(url,req)
+        response=urllib2.urlopen(req)
+        jsonOutput=json.loads(response.read())
+        file = open(config['googlemaps-jsonldPath'],'w')
+        file.write(json.dumps(jsonOutput,indent=4))
+        #print(jsonOutput)
+        file.close()
+
+
+    elif type is 'osm':
+        req = 'R2rmlURI=file:/' + config['OsmKarma-URI'] +'&ContentType=XML&' \
+              'DataURL=file:///Users/d3admin/Desktop/image-metadata-enhancement/datasets/osm/building-sample.xml'
+
+        req=urllib2.Request(url,req)
+        response=urllib2.urlopen(req)
+        jsonOutput=json.loads(response.read())
+        file = open(config['osm-jsonldPath'],'w')
+        file.write(json.dumps(jsonOutput,indent=4))
+        #print(jsonOutput)
+        file.close()
+
+
+def pushjsonldToES(url,esHost,esPort,esIndex,esType,config):
+    if esType is 'foursquare':
+        api_request='DataURL=file://' + config['foursquare-jsonldPath']
+    elif esType is 'googlemaps':
+        api_request='DataURL=file://' + config['googlemaps-jsonldPath']
+    elif esType is 'osm':
+        api_request='DataURL=file://' + config['osm-jsonldPath']
+
+    api_request = api_request + '&ESHostname='+esHost+'&ESPort='+esPort+'&ESIndex='+esIndex+'&ESType='+esType
+
+    req=urllib2.Request(url,api_request)
+    response=urllib2.urlopen(req)
+    jsonOutput=json.loads(response.read())
+    file = open('osm.json','w')
+    file.write(json.dumps(jsonOutput,indent=4))
+    print(jsonOutput)
+
+lat = 34.036254
+lng = -118.283990
+
+def parse_args():
+    global lat
+    global long
+    for arg_idx,arg in enumerate(sys.argv):
+        if arg == "--lat":
+            lat=sys.argv[arg_idx+1]
+            continue
+        if arg == "--long":
+            lng=sys.argv[arg_idx+1]
+            continue
+
+
+esHost='localhost'
+esPort='9200'
+esIndex = 'foursquare_data'
+esType = 'foursquare'
+
+parse_args()
+
+config = json.load(open("../config.json"))
+karmaURL = config['karmaURL']
+ESURL = config['ESURL']
+
+
+#for foursquare api
+getjsonld(lat,lng,karmaURL,'foursquare',config)
+pushjsonldToES(ESURL,'localhost','9200','foursquare_data','foursquare',config)
+
+
+#googlemaps-api:
+getjsonld(lat,lng,karmaURL,'googlemaps',config)
+pushjsonldToES(ESURL,'localhost','9200','googlemaps_data','googlemaps',config)
+
+##osm api
+#createMappings('../mappingFiles/osmmapping.json',esHost,esPort,'osm_data')
+osmscript.getOsmData(lat,long,0.01)
+getjsonld(lat,long,karmaURL,'osm',config)
+pushjsonldToES(ESURL,'localhost','9200','osm_data','osm',config)
+
+
+

@@ -1,663 +1,580 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/> .
-@prefix medusa-content: <http://medusa.usc.edu/thesauri/content/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix schema: <http://schema.org/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix medusa-content: <http://medusa.usc.edu/thesauri/content/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix medusa: <http://medusa.usc.edu/ontology/> .
+@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node19nss092ix1 a km-dev:R2RMLMapping ;
-	km-dev:sourceName "building-sample.xml" ;
-	km-dev:modelPublicationTime "1434414228563"^^xsd:long ;
+_:node1a1p3uhe2x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "osmWays.json" ;
+	km-dev:modelPublicationTime "1445025760706"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"KmlGeometry\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"Name\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"buildingUri\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"lat_lng\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"kml\"},{\"columnName\":\"Document\"},{\"columnName\":\"Placemark\"},{\"columnName\":\"Name\"}]]" ;
-	km-dev:hasModelLabel "building" ;
-	km-dev:hasBaseURI "http://medusa.usc.edu/data/osm/" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"buildings\"},{\"columnName\":\"shapecoordinates\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"buildings\"},{\"columnName\":\"@id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"buildings\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"buildings\"},{\"columnName\":\"shapecoordinates\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"buildings\"},{\"columnName\":\"@id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"buildings\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasModelLabel "osmWays.json" ;
 	km-dev:hasWorksheetHistory """[
     {
-        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"tags\": [\"SemanticType\"],
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"KmlGeometry\"}
-                ]
+                    {\"columnName\": \"buildings\"},
+                    {\"columnName\": \"@id\"}
+                ],
+                \"type\": \"hNodeId\"
             },
             {
                 \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
             },
             {
                 \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"newColumnName\",
-                \"type\": \"other\",
-                \"value\": \"lat_lng\"
-            },
-            {
-                \"name\": \"transformationCode\",
-                \"type\": \"other\",
-                \"value\": \"return kml2globalLocationNumber(getValue(\\\"KmlGeometry\\\"))\"
-            },
-            {
-                \"name\": \"errorDefaultValue\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"isJSONOutput\",
-                \"type\": \"other\",
-                \"value\": \"false\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"KmlGeometry\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"lat_lng\"}
-                ]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://schema.org/Place\",
-                    \"DomainId\": \"http://schema.org/Place1 (add)\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://schema.org/globalLocationNumber\",
-                    \"DomainLabel\": \"schema:Place1 (add)\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": false
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Modeling\"]
-    },
-    {
-        \"commandName\": \"SubmitPythonTransformationCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"id\"}
-                ]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"newColumnName\",
-                \"type\": \"other\",
-                \"value\": \"buildingUri\"
-            },
-            {
-                \"name\": \"transformationCode\",
-                \"type\": \"other\",
-                \"value\": \"return buildingUri(getValue(\\\"id\\\"))\"
-            },
-            {
-                \"name\": \"errorDefaultValue\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"isJSONOutput\",
-                \"type\": \"other\",
-                \"value\": \"false\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"id\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"buildingUri\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"SetMetaPropertyCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"buildingUri\"}
-                ]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"metaPropertyName\",
-                \"type\": \"other\",
-                \"value\": \"isUriOfClass\"
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"metaPropertyUri\",
-                \"type\": \"other\",
-                \"value\": \"http://schema.org/Place\"
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"metaPropertyId\",
-                \"type\": \"other\",
-                \"value\": \"http://schema.org/Place1\"
+                \"value\": \"http://schema.org/Place2\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://schema.org/Place\",
-                    \"DomainId\": \"http://schema.org/Place1\",
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"schema:Place1\"
-                }]
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place2 (add)\",
+                    \"DomainId\": \"http://schema.org/Place2\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
             },
             {
                 \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": false
+                \"value\": true,
+                \"type\": \"other\"
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
+                \"value\": \"\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"buildingUri\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"buildings\\\"},{\\\"columnName\\\":\\\"@id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"buildingUri\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"buildings\\\"},{\\\"columnName\\\":\\\"@id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
             }
         ],
-        \"tags\": [\"Modeling\"]
+        \"commandName\": \"SetMetaPropertyCommand\"
     },
     {
-        \"commandName\": \"SetSemanticTypeCommand\",
+        \"tags\": [\"SemanticType\"],
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"Name\"}
-                ]
+                    {\"columnName\": \"buildings\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
             },
             {
                 \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
             },
             {
                 \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://schema.org/Place\",
-                    \"DomainId\": \"http://schema.org/Place1\",
-                    \"isPrimary\": true,
                     \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
-                    \"DomainLabel\": \"schema:Place1\"
-                }]
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Place2\",
+                    \"DomainId\": \"http://schema.org/Place2\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
             },
             {
                 \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": false
+                \"value\": true,
+                \"type\": \"other\"
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
+                \"value\": \"\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"buildings\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"buildings\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
             }
         ],
-        \"tags\": [\"Modeling\"]
+        \"commandName\": \"SetSemanticTypeCommand\"
     },
     {
-        \"commandName\": \"SetWorksheetPropertiesCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"properties\",
-                \"type\": \"other\",
-                \"value\": {
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": true,
-                    \"baseURI\": \"http://medusa.usc.edu/data/osm/\",
-                    \"hasPrefix\": false,
-                    \"hasServiceProperties\": false
-                }
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            }
-        ],
-        \"tags\": [\"Modeling\"]
-    },
-    {
-        \"commandName\": \"SetWorksheetPropertiesCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"properties\",
-                \"type\": \"other\",
-                \"value\": {
-                    \"graphLabel\": \"building\",
-                    \"hasBaseURI\": false,
-                    \"hasPrefix\": false,
-                    \"hasServiceProperties\": false
-                }
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            }
-        ],
-        \"tags\": [\"Modeling\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
+        \"tags\": [\"SemanticType\"],
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
                 \"value\": [
                     {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"lat_lng\"}
-                ]
+                    {\"columnName\": \"buildings\"},
+                    {\"columnName\": \"shapecoordinates\"}
+                ],
+                \"type\": \"hNodeId\"
             },
             {
                 \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
             },
             {
                 \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://schema.org/GeoCoordinates\",
-                    \"DomainId\": \"http://schema.org/GeoCoordinates1 (add)\",
+                    \"FullType\": \"http://schema.org/polygon\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://schema.org/additionalType\",
-                    \"DomainLabel\": \"schema:GeoCoordinates1 (add)\"
-                }]
+                    \"DomainLabel\": \"schema:GeoShape2 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoShape2\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
             },
             {
                 \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": false
+                \"value\": true,
+                \"type\": \"other\"
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
+                \"value\": \"\",
+                \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"buildings\\\"},{\\\"columnName\\\":\\\"shapecoordinates\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"buildings\\\"},{\\\"columnName\\\":\\\"shapecoordinates\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
             }
         ],
-        \"tags\": [\"Modeling\"]
+        \"commandName\": \"SetSemanticTypeCommand\"
     },
     {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"osm\"},
-                    {\"columnName\": \"kml\"},
-                    {\"columnName\": \"Document\"},
-                    {\"columnName\": \"Placemark\"},
-                    {\"columnName\": \"lat_lng\"}
-                ]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://schema.org/GeoCoordinates\",
-                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://schema.org/description\",
-                    \"DomainLabel\": \"schema:GeoCoordinates1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": false
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"kml\\\"},{\\\"columnName\\\":\\\"Document\\\"},{\\\"columnName\\\":\\\"Placemark\\\"},{\\\"columnName\\\":\\\"lat_lng\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Modeling\"]
-    },
-    {
-        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"tags\": [\"Modeling\"],
         \"model\": \"new\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
             },
             {
                 \"name\": \"initialEdges\",
-                \"type\": \"other\",
                 \"value\": [{
-                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
                     \"edgeId\": \"http://schema.org/geo\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }]
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape1\"
+                }],
+                \"type\": \"other\"
             },
             {
                 \"name\": \"newEdges\",
-                \"type\": \"other\",
                 \"value\": [{
-                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
                     \"edgeId\": \"http://schema.org/geo\",
-                    \"edgeSourceId\": \"http://schema.org/Place1\"
-                }]
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape1\"
+                }],
+                \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
             }
         ],
-        \"tags\": [\"Modeling\"]
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS2AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/GeoShape\",
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/GeoShape2\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape2\",
+                    \"edgeSourceUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/GeoShape2\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape2\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS2AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS2AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/GeoShape\",
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/Place2\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape2\",
+                    \"edgeSourceUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS2AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS2AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
     }
 ]""" .
 
-km-dev:TriplesMap_77cc7e73-1b75-422c-bcf8-511b939a4ef1 a rr:TriplesMap .
+km-dev:TriplesMap_57cf3824-552f-4a88-b634-e6bf6358b364 a rr:TriplesMap .
 
-_:node19nss092ix1 km-dev:hasTriplesMap km-dev:TriplesMap_77cc7e73-1b75-422c-bcf8-511b939a4ef1 .
+_:node1a1p3uhe2x1 km-dev:hasTriplesMap km-dev:TriplesMap_57cf3824-552f-4a88-b634-e6bf6358b364 .
 
-km-dev:TriplesMap_77cc7e73-1b75-422c-bcf8-511b939a4ef1 km-dev:isPartOfMapping _:node19nss092ix1 .
+km-dev:TriplesMap_57cf3824-552f-4a88-b634-e6bf6358b364 km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
 
-_:node19nss092ix2 rr:tableName "building-sample.xml" ;
+_:node1a1p3uhe2x2 rr:tableName "osmWays.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
 
-_:node19nss092ix1 km-dev:hasLogicalTable _:node19nss092ix2 .
+_:node1a1p3uhe2x1 km-dev:hasLogicalTable _:node1a1p3uhe2x2 .
 
-km-dev:TriplesMap_77cc7e73-1b75-422c-bcf8-511b939a4ef1 rr:logicalTable _:node19nss092ix2 ;
-	rr:subjectMap _:node19nss092ix3 .
+km-dev:TriplesMap_57cf3824-552f-4a88-b634-e6bf6358b364 rr:logicalTable _:node1a1p3uhe2x2 ;
+	rr:subjectMap _:node1a1p3uhe2x3 .
 
-_:node19nss092ix1 km-dev:hasSubjectMap _:node19nss092ix3 .
+_:node1a1p3uhe2x1 km-dev:hasSubjectMap _:node1a1p3uhe2x3 .
 
-_:node19nss092ix3 km-dev:isPartOfMapping _:node19nss092ix1 ;
+_:node1a1p3uhe2x3 km-dev:isPartOfMapping _:node1a1p3uhe2x1 ;
 	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
-	rr:class schema:GeoCoordinates ;
-	rr:termType rr:BlankNode ;
-	km-dev:namePrefix "schema:GeoCoordinates1" .
-
-km-dev:PredicateObjectMap_e0696d0a-eb8f-4798-b9e1-9967f7f6b0a8 rr:predicate schema:description .
-
-_:node19nss092ix4 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"lat_lng\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
-
-_:node19nss092ix1 km-dev:hasObjectMap _:node19nss092ix4 .
-
-km-dev:PredicateObjectMap_e0696d0a-eb8f-4798-b9e1-9967f7f6b0a8 rr:objectMap _:node19nss092ix4 .
-
-km-dev:TriplesMap_77cc7e73-1b75-422c-bcf8-511b939a4ef1 rr:predicateObjectMap km-dev:PredicateObjectMap_e0696d0a-eb8f-4798-b9e1-9967f7f6b0a8 .
-
-km-dev:PredicateObjectMap_e0696d0a-eb8f-4798-b9e1-9967f7f6b0a8 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
-
-_:node19nss092ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0696d0a-eb8f-4798-b9e1-9967f7f6b0a8 .
-
-km-dev:TriplesMap_1370febe-4181-4d56-997b-7f9a7fe984f4 a rr:TriplesMap .
-
-_:node19nss092ix1 km-dev:hasTriplesMap km-dev:TriplesMap_1370febe-4181-4d56-997b-7f9a7fe984f4 .
-
-km-dev:TriplesMap_1370febe-4181-4d56-997b-7f9a7fe984f4 km-dev:isPartOfMapping _:node19nss092ix1 .
-
-_:node19nss092ix5 rr:tableName "building-sample.xml" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
-
-_:node19nss092ix1 km-dev:hasLogicalTable _:node19nss092ix5 .
-
-km-dev:TriplesMap_1370febe-4181-4d56-997b-7f9a7fe984f4 rr:logicalTable _:node19nss092ix5 ;
-	rr:subjectMap _:node19nss092ix6 .
-
-_:node19nss092ix1 km-dev:hasSubjectMap _:node19nss092ix6 .
-
-_:node19nss092ix6 km-dev:isPartOfMapping _:node19nss092ix1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	km-dev:alignmentNodeId "http://schema.org/Place2" ;
 	rr:class schema:Place ;
-	rr:template "{[\"osm\",\"kml\",\"Document\",\"Placemark\",\"buildingUri\"]}" ;
+	rr:template "{[\"osm\",\"buildings\",\"@id\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_1ecb5880-ce75-4edc-bcf3-39442dc2cf2b rr:predicate schema:geo .
+km-dev:PredicateObjectMap_f9062b52-659f-4b5e-b3a7-ac4d65e238bd rr:predicate schema:geo .
 
-km-dev:RefObjectMap_494631e2-9b5e-49b1-9557-01ecd67bdcb4 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_77cc7e73-1b75-422c-bcf8-511b939a4ef1 ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
+km-dev:RefObjectMap_6c7aedb8-39e1-4b99-bc92-9d33d2479280 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0dc16605-c30b-4d3d-a7b4-dafd653901cf ;
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
 
-_:node19nss092ix1 km-dev:hasObjectMap km-dev:RefObjectMap_494631e2-9b5e-49b1-9557-01ecd67bdcb4 .
+_:node1a1p3uhe2x1 km-dev:hasObjectMap km-dev:RefObjectMap_6c7aedb8-39e1-4b99-bc92-9d33d2479280 .
 
-km-dev:PredicateObjectMap_1ecb5880-ce75-4edc-bcf3-39442dc2cf2b rr:objectMap km-dev:RefObjectMap_494631e2-9b5e-49b1-9557-01ecd67bdcb4 .
+km-dev:PredicateObjectMap_f9062b52-659f-4b5e-b3a7-ac4d65e238bd rr:objectMap km-dev:RefObjectMap_6c7aedb8-39e1-4b99-bc92-9d33d2479280 .
 
-km-dev:TriplesMap_1370febe-4181-4d56-997b-7f9a7fe984f4 rr:predicateObjectMap km-dev:PredicateObjectMap_1ecb5880-ce75-4edc-bcf3-39442dc2cf2b .
+km-dev:TriplesMap_57cf3824-552f-4a88-b634-e6bf6358b364 rr:predicateObjectMap km-dev:PredicateObjectMap_f9062b52-659f-4b5e-b3a7-ac4d65e238bd .
 
-km-dev:PredicateObjectMap_1ecb5880-ce75-4edc-bcf3-39442dc2cf2b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
+km-dev:PredicateObjectMap_f9062b52-659f-4b5e-b3a7-ac4d65e238bd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
 
-_:node19nss092ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ecb5880-ce75-4edc-bcf3-39442dc2cf2b .
+_:node1a1p3uhe2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f9062b52-659f-4b5e-b3a7-ac4d65e238bd .
 
-km-dev:PredicateObjectMap_287860e8-195d-4f61-88c1-03ac65ef26d5 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_379ec50b-7eac-49da-8e5f-24e26949bee6 rr:predicate rdfs:label .
 
-_:node19nss092ix7 rr:column "[\"osm\",\"kml\",\"Document\",\"Placemark\",\"Name\"]" ;
+_:node1a1p3uhe2x4 rr:column "[\"osm\",\"buildings\",\"name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
 
-_:node19nss092ix1 km-dev:hasObjectMap _:node19nss092ix7 .
+_:node1a1p3uhe2x1 km-dev:hasObjectMap _:node1a1p3uhe2x4 .
 
-km-dev:PredicateObjectMap_287860e8-195d-4f61-88c1-03ac65ef26d5 rr:objectMap _:node19nss092ix7 .
+km-dev:PredicateObjectMap_379ec50b-7eac-49da-8e5f-24e26949bee6 rr:objectMap _:node1a1p3uhe2x4 .
 
-km-dev:TriplesMap_1370febe-4181-4d56-997b-7f9a7fe984f4 rr:predicateObjectMap km-dev:PredicateObjectMap_287860e8-195d-4f61-88c1-03ac65ef26d5 .
+km-dev:TriplesMap_57cf3824-552f-4a88-b634-e6bf6358b364 rr:predicateObjectMap km-dev:PredicateObjectMap_379ec50b-7eac-49da-8e5f-24e26949bee6 .
 
-km-dev:PredicateObjectMap_287860e8-195d-4f61-88c1-03ac65ef26d5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node19nss092ix1 .
+km-dev:PredicateObjectMap_379ec50b-7eac-49da-8e5f-24e26949bee6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
 
-_:node19nss092ix1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_287860e8-195d-4f61-88c1-03ac65ef26d5 .
+_:node1a1p3uhe2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_379ec50b-7eac-49da-8e5f-24e26949bee6 .
+
+km-dev:TriplesMap_0dc16605-c30b-4d3d-a7b4-dafd653901cf a rr:TriplesMap .
+
+_:node1a1p3uhe2x1 km-dev:hasTriplesMap km-dev:TriplesMap_0dc16605-c30b-4d3d-a7b4-dafd653901cf .
+
+km-dev:TriplesMap_0dc16605-c30b-4d3d-a7b4-dafd653901cf km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
+
+_:node1a1p3uhe2x5 rr:tableName "osmWays.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
+
+_:node1a1p3uhe2x1 km-dev:hasLogicalTable _:node1a1p3uhe2x5 .
+
+km-dev:TriplesMap_0dc16605-c30b-4d3d-a7b4-dafd653901cf rr:logicalTable _:node1a1p3uhe2x5 ;
+	rr:subjectMap _:node1a1p3uhe2x6 .
+
+_:node1a1p3uhe2x1 km-dev:hasSubjectMap _:node1a1p3uhe2x6 .
+
+_:node1a1p3uhe2x6 km-dev:isPartOfMapping _:node1a1p3uhe2x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoShape2" ;
+	rr:class schema:GeoShape ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoShape2" .
+
+km-dev:PredicateObjectMap_58ed37a5-3304-4152-add1-e951dcd9597b rr:predicate schema:polygon .
+
+_:node1a1p3uhe2x7 rr:column "[\"osm\",\"buildings\",\"shapecoordinates\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
+
+_:node1a1p3uhe2x1 km-dev:hasObjectMap _:node1a1p3uhe2x7 .
+
+km-dev:PredicateObjectMap_58ed37a5-3304-4152-add1-e951dcd9597b rr:objectMap _:node1a1p3uhe2x7 .
+
+km-dev:TriplesMap_0dc16605-c30b-4d3d-a7b4-dafd653901cf rr:predicateObjectMap km-dev:PredicateObjectMap_58ed37a5-3304-4152-add1-e951dcd9597b .
+
+km-dev:PredicateObjectMap_58ed37a5-3304-4152-add1-e951dcd9597b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a1p3uhe2x1 .
+
+_:node1a1p3uhe2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_58ed37a5-3304-4152-add1-e951dcd9597b .

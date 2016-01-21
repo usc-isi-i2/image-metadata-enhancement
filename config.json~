@@ -1,0 +1,12 @@
+{
+  "FoursquareKarma-URI":"/home/lk/Desktop/github/image-metadata-enhancement/datasets/foursquare/foursquare-model.ttl",
+  "GoogleMapsKarma-URI":"/home/lk/Desktop/github/image-metadata-enhancement/datasets/google/nearbysearch/google-nearbysearch-model.ttl",
+  "OsmKarma-URI":"/home/lk/Desktop/github/image-metadata-enhancement/datasets/osm/building-model.ttl",
+  "foursquare-jsonldPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/foursquare.json",
+  "googlemaps-jsonldPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/googlemaps.json",
+  "osm-jsonldPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/osm.json",
+  "osm-buildingXLMLPath":"/home/lk/Desktop/github/image-metadata-enhancement/scripts/OPENSTREETMAP_BUILDING.xml",
+
+  "ESURL":"http://localhost:9998/publish/es/jsonld",
+  "karmaURL":"http://localhost:9999/rdf/r2rml/json"
+}

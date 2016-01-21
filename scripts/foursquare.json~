@@ -1,0 +1,656 @@
+[
+    {
+        "a": "Place", 
+        "description": "Post Offices", 
+        "uri": "4b735a1df964a52038aa2de3", 
+        "telephone": "2137402467", 
+        "label": "USC Mail Stop (PSX)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "620 Mc Carthy Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02055484006477", 
+            "longitude": "-118.2824456691742"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Academic Buildings", 
+        "uri": "4ed59965f7904ee27f54e82e", 
+        "label": "Sol Price School Of Public Policy", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "312 Childs Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.01943419721813", 
+            "longitude": "-118.28330979976984"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "4d5deb8ab19fa1435e13d3c8", 
+        "telephone": "2137400183", 
+        "label": "USC Music Library", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020493063118906", 
+            "longitude": "-118.28378938153458"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Event Spaces", 
+        "uri": "4e99a97c0aaf0a73a1f0cae1", 
+        "label": "Models Of Pride", 
+        "address": {
+            "a": "PostalAddress", 
+            "addressRegion": "California", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020955", 
+            "longitude": "-118.28423706"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Beer Gardens", 
+        "uri": "4f9f5e6ee4b027acbf089656", 
+        "label": "Study Nights", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020695", 
+            "longitude": "-118.283357"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Event Spaces", 
+        "uri": "508c3b3de4b0c2bf3fb6de83", 
+        "label": "Los Angeles Archives Bazaar", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020047813531725", 
+            "longitude": "-118.28403488120136"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Administrative Buildings", 
+        "uri": "4b7b2ee8f964a52075562fe3", 
+        "label": "Hubbard Hall (JHH)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "700 Childs Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.01946106101355", 
+            "longitude": "-118.28415155410767"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Quads", 
+        "uri": "53ee8c2c498ef43ed71649c6", 
+        "label": "VKC Courtyard", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.021078", 
+            "longitude": "-118.284055"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "4ac94884f964a52087bf20e3", 
+        "telephone": "2137402924", 
+        "label": "Doheny Memorial Library (DML)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02015912488073", 
+            "longitude": "-118.28383505344391"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "General Colleges & Universities", 
+        "uri": "4ba2e205f964a520492038e3", 
+        "label": "Widney Alumni House (ALM)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "635 Childs Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.01945661472848", 
+            "longitude": "-118.28279435634613"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "5233765e11d284988b188b92", 
+        "label": "Feuchtwanger Memorial Library", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "DML 207", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02025118682606", 
+            "longitude": "-118.28417761340314"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "513bbc8fe4b0725370c2a858", 
+        "label": "Lewis Carroll Collection", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020367", 
+            "longitude": "-118.283813"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "4d9f4ebe97b58eecd60ef044", 
+        "label": "East Asian Library", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02032268597889", 
+            "longitude": "-118.283452532579"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Parking", 
+        "uri": "4b74e4b3f964a52027f72de3", 
+        "label": "Parking Structure X (PSX)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "620 W 35th St", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02043479183309", 
+            "longitude": "-118.28209161758423"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Coffee Shops", 
+        "uri": "4b561c2bf964a520d50028e3", 
+        "label": "LiteraTea", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02018135611976", 
+            "longitude": "-118.2833468914032"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Outdoor Sculptures", 
+        "uri": "4b11ac2bf964a520ef8123e3", 
+        "label": "Tommy Trojan", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02052371646544", 
+            "longitude": "-118.28535318374634"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Auditoriums", 
+        "uri": "51fedeec498e9587e48e34a2", 
+        "label": "Rib Wedding", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020813210300524", 
+            "longitude": "-118.28439456612087"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Quads", 
+        "uri": "4b11ad92f964a5200f8223e3", 
+        "label": "Alumni Park", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02058151742651", 
+            "longitude": "-118.28458070755005"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "4d8a84a9d9305941e4c3d769", 
+        "telephone": "2137403994", 
+        "label": "Cinematic Arts Library", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02008353862451", 
+            "longitude": "-118.2837438583374"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Offices", 
+        "uri": "521b7b9611d29f14cdcb9dad", 
+        "label": "Dean's Suite", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02065102921645", 
+            "longitude": "-118.28374370713897"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Libraries", 
+        "uri": "4d8a83acd9305941b7b6d769", 
+        "telephone": "2137405900", 
+        "label": "USC Libraries Special Collections", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy Rm 209", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02008353862451", 
+            "longitude": "-118.28370094299316"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Public Art", 
+        "uri": "50eefa97e4b064e724cfbda7", 
+        "label": "Moseley Snowflake Fractal", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02044004610048", 
+            "longitude": "-118.2844288217879"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Quads", 
+        "uri": "4d5082259b27721ecfa5ae46", 
+        "label": "Trousdale Parkway", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02090164511358", 
+            "longitude": "-118.28494548797607"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "General Entertainment", 
+        "uri": "51743bed498e2324ac201269", 
+        "label": "Los Angeles Times Festival Of Books", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02096849830335", 
+            "longitude": "-118.28511964293614"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Classrooms", 
+        "uri": "4b5e13f3f964a520727c29e3", 
+        "label": "Von KleinSmid Center (VKC)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3518 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02111506290087", 
+            "longitude": "-118.28401207923889"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Quads", 
+        "uri": "4bb926ec53649c7452c747fb", 
+        "label": "McCarthy Quad", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02109727810575", 
+            "longitude": "-118.28307867050171"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Universities", 
+        "uri": "45001adcf964a520ab381fe3", 
+        "telephone": "2137402311", 
+        "label": "University of Southern California", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "U S C", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02034142086885", 
+            "longitude": "-118.28520298004149"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Strip Clubs", 
+        "uri": "4f277c98e4b0c48620bd34af", 
+        "label": "Club Herklotz", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.0202522277832", 
+            "longitude": "-118.28356170654297"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Art Galleries", 
+        "uri": "4cd1de5586cbb713026bfb36", 
+        "label": "Treasure Room", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3550 Trousdale Pkwy", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.019976828501136", 
+            "longitude": "-118.28391551971436"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Universities", 
+        "uri": "514a39ebe4b0e04b7da3945b", 
+        "label": "Price PhD Student Lounge", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.020724", 
+            "longitude": "-118.283837"
+        }
+    }
+]

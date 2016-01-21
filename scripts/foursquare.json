@@ -1,29 +1,6 @@
 [
     {
         "a": "Place", 
-        "description": "Churches", 
-        "uri": "4be4d48b2468c928fe69ff42", 
-        "label": "United University Church (UUC)", 
-        "address": {
-            "addressLocality": "Los Angeles", 
-            "addressRegion": "CA", 
-            "streetAddress": "817 W 34th St", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.023142505115594", 
-            "description": "34.023142505115594, -118.2843017578125", 
-            "longitude": "-118.2843017578125"
-        }
-    }, 
-    {
-        "a": "Place", 
         "description": "College Academic Buildings", 
         "uri": "4cbb6a7d86dd95217b64ace6", 
         "label": "Booth Memorial Hall (BMH)", 
@@ -43,6 +20,29 @@
             "latitude": "34.02273346365639", 
             "description": "34.02273346365639, -118.28468799591064", 
             "longitude": "-118.28468799591064"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "Churches", 
+        "uri": "4be4d48b2468c928fe69ff42", 
+        "label": "United University Church (UUC)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "817 W 34th St", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.023142505115594", 
+            "description": "34.023142505115594, -118.2843017578125", 
+            "longitude": "-118.2843017578125"
         }
     }, 
     {
@@ -268,9 +268,9 @@
         "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.02221513830967", 
-            "description": "34.02221513830967, -118.28421757839823", 
-            "longitude": "-118.28421757839823"
+            "latitude": "34.02277699230564", 
+            "description": "34.02277699230564, -118.28631287286669", 
+            "longitude": "-118.28631287286669"
         }
     }, 
     {
@@ -431,30 +431,6 @@
     }, 
     {
         "a": "Place", 
-        "description": "College Theaters", 
-        "uri": "4bb81a94b35776b0edaac801", 
-        "telephone": "2137408686", 
-        "label": "Bing Theatre (BIT)", 
-        "address": {
-            "addressLocality": "Los Angeles", 
-            "addressRegion": "CA", 
-            "streetAddress": "3500 Watts Way", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.02240445061731", 
-            "description": "34.02240445061731, -118.28600764274597", 
-            "longitude": "-118.28600764274597"
-        }
-    }, 
-    {
-        "a": "Place", 
         "description": "College Classrooms", 
         "uri": "4b58a2fcf964a520d76228e3", 
         "telephone": "2137406935", 
@@ -475,6 +451,30 @@
             "latitude": "34.022697894740666", 
             "description": "34.022697894740666, -118.28517079353333", 
             "longitude": "-118.28517079353333"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": "College Theaters", 
+        "uri": "4bb81a94b35776b0edaac801", 
+        "telephone": "2137408686", 
+        "label": "Bing Theatre (BIT)", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "streetAddress": "3500 Watts Way", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.02240445061731", 
+            "description": "34.02240445061731, -118.28600764274597", 
+            "longitude": "-118.28600764274597"
         }
     }, 
     {
@@ -549,6 +549,28 @@
     }, 
     {
         "a": "Place", 
+        "description": "College Academic Buildings", 
+        "uri": "4fda493be4b00800dd6322ca", 
+        "label": "Music School Room 319", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022849", 
+            "description": "34.022849, -118.285097", 
+            "longitude": "-118.285097"
+        }
+    }, 
+    {
+        "a": "Place", 
         "description": "College Classrooms", 
         "uri": "52122ebc11d25e7b76994fc7", 
         "label": "USC Language Center", 
@@ -593,6 +615,28 @@
     }, 
     {
         "a": "Place", 
+        "description": "College Auditoriums", 
+        "uri": "4f3171d1e4b0f41ae7930715", 
+        "label": "Taper Hall Room 301", 
+        "address": {
+            "addressLocality": "Los Angeles", 
+            "addressRegion": "CA", 
+            "addressCountry": {
+                "a": "Country", 
+                "label": "United States"
+            }, 
+            "a": "PostalAddress"
+        }, 
+        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022491703143984", 
+            "description": "34.022491703143984, -118.28446878672408", 
+            "longitude": "-118.28446878672408"
+        }
+    }, 
+    {
+        "a": "Place", 
         "description": "College Administrative Buildings", 
         "uri": "45004645f964a520b8381fe3", 
         "label": "Heritage Hall (HER)", 
@@ -612,30 +656,6 @@
             "latitude": "34.022564511174025", 
             "description": "34.022564511174025, -118.2868230342865", 
             "longitude": "-118.2868230342865"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "Concert Halls", 
-        "uri": "42547800f964a520d1201fe3", 
-        "telephone": "2137485116", 
-        "label": "Shrine Auditorium & Expo Hall", 
-        "address": {
-            "addressLocality": "Los Angeles", 
-            "addressRegion": "CA", 
-            "streetAddress": "700 W 32nd St.", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.02286684695752", 
-            "description": "34.02286684695752, -118.28173756599426", 
-            "longitude": "-118.28173756599426"
         }
     }, 
     {
@@ -660,29 +680,6 @@
             "latitude": "34.02190648251055", 
             "description": "34.02190648251055, -118.28599691390991", 
             "longitude": "-118.28599691390991"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": "College Arts Buildings", 
-        "uri": "4d42000eaed776eb58286a97", 
-        "label": "Spielberg Stage (SSS)", 
-        "address": {
-            "addressLocality": "Los Angeles", 
-            "addressRegion": "CA", 
-            "streetAddress": "3450 Watts Way", 
-            "addressCountry": {
-                "a": "Country", 
-                "label": "United States"
-            }, 
-            "a": "PostalAddress"
-        }, 
-        "@context": "http://127.0.1.1:8080/foursquare-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.02272457142884", 
-            "description": "34.02272457142884, -118.28562676906586", 
-            "longitude": "-118.28562676906586"
         }
     }
 ]

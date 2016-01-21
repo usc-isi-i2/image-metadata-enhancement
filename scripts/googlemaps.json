@@ -44,21 +44,40 @@
         "a": "Place", 
         "description": [
             "Establishment", 
-            "Point Of Interest", 
-            "University"
+            "Point Of Interest"
         ], 
-        "uri": "a896816956d277575bee97e399a02e08c917b2df", 
-        "label": "USC Gould School of Law", 
+        "uri": "acd3451f667d7a664ae35b95a2688d3631601051", 
+        "label": "USC Thornton School of Music", 
         "address": {
             "a": "PostalAddress", 
-            "label": "699 Exposition Boulevard, Los Angeles"
+            "label": "840 West 34th Street, Los Angeles"
         }, 
         "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.018664", 
-            "description": "34.018664, -118.28435", 
-            "longitude": "-118.28435"
+            "latitude": "34.022968", 
+            "description": "34.022968, -118.285085", 
+            "longitude": "-118.285085"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest"
+        ], 
+        "uri": "4cc9347a18a3ed80c75010aedd819ad702a45960", 
+        "label": "University Gateway Apartments", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "3335 South Figueroa Street, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.022964", 
+            "description": "34.022964, -118.280206", 
+            "longitude": "-118.280206"
         }
     }, 
     {
@@ -131,7 +150,8 @@
         "description": [
             "Establishment", 
             "School", 
-            "Point Of Interest"
+            "Point Of Interest", 
+            "University"
         ], 
         "uri": "420291f337701a0d2efda7fa04883a4a9c52cddb", 
         "label": "USC Marshall School of Business", 
@@ -151,22 +171,20 @@
         "a": "Place", 
         "description": [
             "Establishment", 
-            "School", 
-            "Point Of Interest", 
-            "University"
+            "Point Of Interest"
         ], 
-        "uri": "bdfeda5dbdd0d30631ea0f875cca9660c95a9b27", 
-        "label": "USC Roski School of Fine Arts", 
+        "uri": "9ca3c99a03dcb380a0b525819d5a5304252bd063", 
+        "label": "KXSC", 
         "address": {
             "a": "PostalAddress", 
-            "label": "850 West 37th Street, Los Angeles"
+            "label": "3607 Trousdale Parkway, Los Angeles"
         }, 
         "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.019114", 
-            "description": "34.019114, -118.288009", 
-            "longitude": "-118.288009"
+            "latitude": "34.020024", 
+            "description": "34.020024, -118.286444", 
+            "longitude": "-118.286444"
         }
     }, 
     {
@@ -191,7 +209,10 @@
     }, 
     {
         "a": "Place", 
-        "description": "Establishment", 
+        "description": [
+            "Establishment", 
+            "Point Of Interest"
+        ], 
         "uri": "1ad3d9295c8b92789dda03c127b18084f7da17a1", 
         "label": "Tommy Trojan", 
         "address": {
@@ -204,28 +225,6 @@
             "latitude": "34.02056", 
             "description": "34.02056, -118.285418", 
             "longitude": "-118.285418"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": [
-            "Restaurant", 
-            "Food", 
-            "Establishment", 
-            "Point Of Interest"
-        ], 
-        "uri": "da3056285f94cde0c4556a206fe4a6f2bcc0372e", 
-        "label": "Lemonade", 
-        "address": {
-            "a": "PostalAddress", 
-            "label": "3601 Trousdale Parkway, Los Angeles"
-        }, 
-        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.020604", 
-            "description": "34.020604, -118.286042", 
-            "longitude": "-118.286042"
         }
     }, 
     {
@@ -272,24 +271,23 @@
     {
         "a": "Place", 
         "description": [
-            "Finance", 
-            "Bank", 
-            "Atm", 
+            "Restaurant", 
+            "Food", 
             "Establishment", 
             "Point Of Interest"
         ], 
-        "uri": "566a87bb8a4c16d81146e76c7f985b0957bcf25b", 
-        "label": "Chase Bank", 
+        "uri": "da3056285f94cde0c4556a206fe4a6f2bcc0372e", 
+        "label": "Lemonade", 
         "address": {
             "a": "PostalAddress", 
-            "label": "3335 S Figueroa St, Ste N, Los Angeles"
+            "label": "3601 Trousdale Parkway, Los Angeles"
         }, 
         "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
         "geo": {
             "a": "GeoCoordinates", 
-            "latitude": "34.022799", 
-            "description": "34.022799, -118.279838", 
-            "longitude": "-118.279838"
+            "latitude": "34.020604", 
+            "description": "34.020604, -118.286042", 
+            "longitude": "-118.286042"
         }
     }, 
     {
@@ -360,27 +358,6 @@
             "Point Of Interest", 
             "University"
         ], 
-        "uri": "a797e11ccc095827b355378596ff54694d702057", 
-        "label": "Annenberg School for Communication and Journalism", 
-        "address": {
-            "a": "PostalAddress", 
-            "label": "Watt Way, Los Angeles"
-        }, 
-        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
-        "geo": {
-            "a": "GeoCoordinates", 
-            "latitude": "34.022034", 
-            "description": "34.022034, -118.286154", 
-            "longitude": "-118.286154"
-        }
-    }, 
-    {
-        "a": "Place", 
-        "description": [
-            "Establishment", 
-            "Point Of Interest", 
-            "University"
-        ], 
         "uri": "ab53c902bf17383815a2b9a73cbd0e73a7541d77", 
         "label": "USC Viterbi School of Engineering", 
         "address": {
@@ -393,6 +370,28 @@
             "latitude": "34.020679", 
             "description": "34.020679, -118.28945", 
             "longitude": "-118.28945"
+        }
+    }, 
+    {
+        "a": "Place", 
+        "description": [
+            "Food", 
+            "Establishment", 
+            "Cafe", 
+            "Point Of Interest"
+        ], 
+        "uri": "c6b3cc5626df18572de4b222dd781f067eb7e752", 
+        "label": "Ground Zero Performance Cafe", 
+        "address": {
+            "a": "PostalAddress", 
+            "label": "615 Childs Way, Los Angeles"
+        }, 
+        "@context": "http://127.0.1.1:8080/google-nearbysearch-model_context.json", 
+        "geo": {
+            "a": "GeoCoordinates", 
+            "latitude": "34.019572", 
+            "description": "34.019572, -118.282292", 
+            "longitude": "-118.282292"
         }
     }, 
     {

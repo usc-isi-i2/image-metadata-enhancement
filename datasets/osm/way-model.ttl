@@ -1,0 +1,351 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix medusa-content: <http://medusa.usc.edu/thesauri/content/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix medusa: <http://medusa.usc.edu/ontology/> .
+@prefix medusa-technical: <http://medusa.usc.edu/thesauri/technical/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a1fvjjesx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "osmWays.json" ;
+	km-dev:modelPublicationTime "1444719218141"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"paths\"},{\"columnName\":\"@id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"paths\"},{\"columnName\":\"name\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"paths\"},{\"columnName\":\"shapecoordinates\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"osm\"},{\"columnName\":\"paths\"},{\"columnName\":\"@id\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"paths\"},{\"columnName\":\"name\"}],[{\"columnName\":\"osm\"},{\"columnName\":\"paths\"},{\"columnName\":\"shapecoordinates\"}]]" ;
+	km-dev:hasModelLabel "osmWays.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"paths\"},
+                    {\"columnName\": \"@id\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Place\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Place1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Place1 (add)\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"paths\\\"},{\\\"columnName\\\":\\\"@id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"paths\\\"},{\\\"columnName\\\":\\\"@id\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"paths\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"schema:Place1\",
+                    \"DomainId\": \"http://schema.org/Place1\",
+                    \"DomainUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"paths\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"paths\\\"},{\\\"columnName\\\":\\\"name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"osm\"},
+                    {\"columnName\": \"paths\"},
+                    {\"columnName\": \"shapecoordinates\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/line\",
+                    \"DomainLabel\": \"schema:GeoShape1 (add)\",
+                    \"DomainId\": \"http://schema.org/GeoShape1\",
+                    \"DomainUri\": \"http://schema.org/GeoShape\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"paths\\\"},{\\\"columnName\\\":\\\"shapecoordinates\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"osm\\\"},{\\\"columnName\\\":\\\"paths\\\"},{\\\"columnName\\\":\\\"shapecoordinates\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeTargetId\": \"http://schema.org/GeoShape1\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_5b71af79-9ce7-45cb-afda-48399a9ec2ed a rr:TriplesMap .
+
+_:node1a1fvjjesx1 km-dev:hasTriplesMap km-dev:TriplesMap_5b71af79-9ce7-45cb-afda-48399a9ec2ed .
+
+km-dev:TriplesMap_5b71af79-9ce7-45cb-afda-48399a9ec2ed km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx2 rr:tableName "osmWays.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasLogicalTable _:node1a1fvjjesx2 .
+
+km-dev:TriplesMap_5b71af79-9ce7-45cb-afda-48399a9ec2ed rr:logicalTable _:node1a1fvjjesx2 ;
+	rr:subjectMap _:node1a1fvjjesx3 .
+
+_:node1a1fvjjesx1 km-dev:hasSubjectMap _:node1a1fvjjesx3 .
+
+_:node1a1fvjjesx3 km-dev:isPartOfMapping _:node1a1fvjjesx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place ;
+	rr:template "{[\"osm\",\"paths\",\"@id\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_d01dd7e8-42e0-4aa9-95f7-80f5fbd29a0f rr:predicate schema:geo .
+
+km-dev:RefObjectMap_98d922e8-0a25-482f-8b90-c9e45cd0ae3b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e0e00d60-8acd-4774-a8e6-243c8dc70801 ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasObjectMap km-dev:RefObjectMap_98d922e8-0a25-482f-8b90-c9e45cd0ae3b .
+
+km-dev:PredicateObjectMap_d01dd7e8-42e0-4aa9-95f7-80f5fbd29a0f rr:objectMap km-dev:RefObjectMap_98d922e8-0a25-482f-8b90-c9e45cd0ae3b .
+
+km-dev:TriplesMap_5b71af79-9ce7-45cb-afda-48399a9ec2ed rr:predicateObjectMap km-dev:PredicateObjectMap_d01dd7e8-42e0-4aa9-95f7-80f5fbd29a0f .
+
+km-dev:PredicateObjectMap_d01dd7e8-42e0-4aa9-95f7-80f5fbd29a0f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d01dd7e8-42e0-4aa9-95f7-80f5fbd29a0f .
+
+km-dev:PredicateObjectMap_1cb16ca6-c6c0-4132-b95b-85c61d516bd7 rr:predicate rdfs:label .
+
+_:node1a1fvjjesx4 rr:column "[\"osm\",\"paths\",\"name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasObjectMap _:node1a1fvjjesx4 .
+
+km-dev:PredicateObjectMap_1cb16ca6-c6c0-4132-b95b-85c61d516bd7 rr:objectMap _:node1a1fvjjesx4 .
+
+km-dev:TriplesMap_5b71af79-9ce7-45cb-afda-48399a9ec2ed rr:predicateObjectMap km-dev:PredicateObjectMap_1cb16ca6-c6c0-4132-b95b-85c61d516bd7 .
+
+km-dev:PredicateObjectMap_1cb16ca6-c6c0-4132-b95b-85c61d516bd7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1cb16ca6-c6c0-4132-b95b-85c61d516bd7 .
+
+km-dev:TriplesMap_e0e00d60-8acd-4774-a8e6-243c8dc70801 a rr:TriplesMap .
+
+_:node1a1fvjjesx1 km-dev:hasTriplesMap km-dev:TriplesMap_e0e00d60-8acd-4774-a8e6-243c8dc70801 .
+
+km-dev:TriplesMap_e0e00d60-8acd-4774-a8e6-243c8dc70801 km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx5 rr:tableName "osmWays.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasLogicalTable _:node1a1fvjjesx5 .
+
+km-dev:TriplesMap_e0e00d60-8acd-4774-a8e6-243c8dc70801 rr:logicalTable _:node1a1fvjjesx5 ;
+	rr:subjectMap _:node1a1fvjjesx6 .
+
+_:node1a1fvjjesx1 km-dev:hasSubjectMap _:node1a1fvjjesx6 .
+
+_:node1a1fvjjesx6 km-dev:isPartOfMapping _:node1a1fvjjesx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoShape1" ;
+	rr:class schema:GeoShape ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoShape1" .
+
+km-dev:PredicateObjectMap_c5f45e31-aeb0-442f-8764-192d858ef82c rr:predicate schema:line .
+
+_:node1a1fvjjesx7 rr:column "[\"osm\",\"paths\",\"shapecoordinates\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasObjectMap _:node1a1fvjjesx7 .
+
+km-dev:PredicateObjectMap_c5f45e31-aeb0-442f-8764-192d858ef82c rr:objectMap _:node1a1fvjjesx7 .
+
+km-dev:TriplesMap_e0e00d60-8acd-4774-a8e6-243c8dc70801 rr:predicateObjectMap km-dev:PredicateObjectMap_c5f45e31-aeb0-442f-8764-192d858ef82c .
+
+km-dev:PredicateObjectMap_c5f45e31-aeb0-442f-8764-192d858ef82c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a1fvjjesx1 .
+
+_:node1a1fvjjesx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c5f45e31-aeb0-442f-8764-192d858ef82c .

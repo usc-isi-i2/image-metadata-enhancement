@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<osm>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark id="21306060">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839809,34.0237688</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="25522209">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2739636,34.0352531</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122659202">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839748,34.0302903</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122674587">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2834169,34.0349493</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122674590">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839801,34.0344066</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122719216">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.283951,34.0273864</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122740204">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839919,34.0351627</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122814447">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839607,34.0290035</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="122814461">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839678,34.0293437</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="123178871">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839615,34.0283727</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="123183649">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839836,34.0335883</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="123183849">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839816,34.0331949</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="123408740">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839893,34.0317033</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="123693000">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.283951,34.0255014</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="211145875">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.3003499,34.0399757</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="212387023">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2839972,34.0365404</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="1286136428">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>-118.2840503,34.0236543</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+</Document>
+</kml>
+</osm>
+

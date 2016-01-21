@@ -1,0 +1,346 @@
+-72.695494 41.761174 -72.678928 41.770457 building
+this.url=http://open.mapquestapi.com/xapi/api/0.6/map?bbox=-72.695494,41.761174,-72.678928,41.770457
+~~~
+ @@@ 
+ # of nodes = 2827
+60647966 Hartford
+158876757 Parkville
+359268782 Saint Joseph Cathedral School
+359270629 Trinity School
+359287753 Asylum Avenue Church
+359287756 Asylum Avenue District Historic District
+359287759 Asylum Avenue Green
+359287762 Asylum Hill Congregational Church
+359287799 Bethesda Baptist Church
+359287875 Cathedral of Saint Joseph
+359287908 Christ Temple Church of God
+359287980 Connecticut State Capitol Park
+359288038 Elm Street Historic District
+359288044 Emanuel Lutheran Church
+359288129 First Presbyterian Church
+359288217 Hartford Full Gospel Church
+359288257 Iglesia Cristiana Adonay
+359288362 Morse School of Business
+359288669 Saint Volodimir Orthodox Church
+359288738 Spanish Seventh Day Adventist Church
+359288792 Trinity Episcopal Church
+359288894 Constitution Plaza
+359288905 Second Church of Christ Scientist
+367136624 Hartford
+367137389 Hartford
+367138583 Hartford
+367138851 Hartford
+367139114 Hartford
+367139137 Hartford
+367777869 Bushnell Center for the Performing Arts
+587006382 THE HARTFORD COURANT
+930237543 gas
+1558248272 Homewood Suites
+1558256816 
+1558256862 
+1708821453 
+2794763891 7 Sins Lounge and Bar
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<osm>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark id="60647966">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>yes</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7634935,-72.6830523</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="158876757">
+<Name>Parkville</Name>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.763131,-72.6937786</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359268782">
+<Name>Saint Joseph Cathedral School</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.768711,-72.6914822</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359270629">
+<Name>Trinity School</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7634333,-72.6870377</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287753">
+<Name>Asylum Avenue Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7703777,-72.693149</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287756">
+<Name>Asylum Avenue District Historic District</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.768711,-72.6870377</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287759">
+<Name>Asylum Avenue Green</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7683559,-72.6863503</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287762">
+<Name>Asylum Hill Congregational Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7700999,-72.6912045</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287799">
+<Name>Bethesda Baptist Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7617667,-72.6862044</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287875">
+<Name>Cathedral of Saint Joseph</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7681014,-72.6921385</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287908">
+<Name>Christ Temple Church of God</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7684333,-72.6934268</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359287980">
+<Name>Connecticut State Capitol Park</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7656556,-72.6848154</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288038">
+<Name>Elm Street Historic District</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7623222,-72.6848154</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288044">
+<Name>Emanuel Lutheran Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7632076,-72.6856173</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288129">
+<Name>First Presbyterian Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.762322,-72.6796436</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288217">
+<Name>Hartford Full Gospel Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7612111,-72.6850932</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288257">
+<Name>Iglesia Cristiana Adonay</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7689888,-72.6887044</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288362">
+<Name>Morse School of Business</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7679234,-72.6789715</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288669">
+<Name>Saint Volodimir Orthodox Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7612111,-72.6856487</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288738">
+<Name>Spanish Seventh Day Adventist Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.761489,-72.68926</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288792">
+<Name>Trinity Episcopal Church</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7689888,-72.693149</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288894">
+<Name>Constitution Plaza</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7622102,-72.6807451</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="359288905">
+<Name>Second Church of Christ Scientist</Name>
+<CityName/>
+<CountyName/>
+<StateName>09</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7615748,-72.6829159</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367136624">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>CT</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7662111,-72.6884266</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367137389">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>CT</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7693542,-72.6941636</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367138583">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>CT</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7618304,-72.6809016</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367138851">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>CT</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7678551,-72.6790529</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367139114">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>CT</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7632855,-72.6803164</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367139137">
+<Name>Hartford</Name>
+<CityName/>
+<CountyName/>
+<StateName>CT</StateName>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7641627,-72.6822788</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="367777869">
+<Name>Bushnell Center for the Performing Arts</Name>
+<CityName>Hartford</CityName>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.762755,-72.6806416</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="587006382">
+<Name>THE HARTFORD COURANT</Name>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7649935,-72.6869163</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="930237543">
+<Name>gas</Name>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7638623,-72.6921739</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="1558248272">
+<Name>Homewood Suites</Name>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7677187,-72.6793456</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="1558256816">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7687092,-72.6822223</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="1558256862">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7689773,-72.6820506</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="1708821453">
+<Name/>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.7654476,-72.6805464</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+<Placemark id="2794763891">
+<Name>7 Sins Lounge and Bar</Name>
+<CityName/>
+<CountyName/>
+<StateName/>
+<Type>building</Type>
+<KmlGeometry><![CDATA[<Point><coordinates>41.769278,-72.6811856</coordinates></Point>]]></KmlGeometry>
+</Placemark>
+</Document>
+</kml>
+</osm>
+

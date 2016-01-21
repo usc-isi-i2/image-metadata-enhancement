@@ -1,0 +1,4 @@
+org.elasticsearch.metadatasearch.index.mapper.image
+org.elasticsearch.metadatasearch.index.query.image
+org.elasticsearch.metadatasearch.lire.feature
+org.elasticsearch.metadatasearch.plugin.image
