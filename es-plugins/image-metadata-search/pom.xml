@@ -10,19 +10,9 @@
     
 
 
-    <developers>
-        <developer>
-            <id>kasinath</id>
-            <name>Lakshmi Kasinathan</name>
-            <email>kasinath@usc.edu</email>
-        </developer>
-    </developers>
-  
-
-
     <properties>
-        <elasticsearch.version>1.7.4</elasticsearch.version>
-        <lucene.version>4.10.4</lucene.version>
+        <elasticsearch.version>2.1.1</elasticsearch.version>
+        <lucene.version>5.3.1</lucene.version>
         <es.logger.level>INFO</es.logger.level>
     </properties>
 
@@ -47,27 +37,7 @@
             <version>0.9.4-kzwang-beta1</version>
         </dependency>
         
-      <dependency>
-	<groupId>com.googlecode.json-simple</groupId>
-	<artifactId>json-simple</artifactId>
-	<version>1.1.1</version>
-</dependency>
-
-
-        
-        <dependency>
-		<groupId>com.fasterxml.jackson.core</groupId>
-		<artifactId>jackson-databind</artifactId>
-		<version>2.6.3</version>
-	</dependency>
-	
-
-        <dependency>
-            <groupId>com.drewnoakes</groupId>
-            <artifactId>metadata-extractor</artifactId>
-            <version>2.6.2</version>
-        </dependency>
-
+    
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -83,16 +53,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-            <version>1.3</version>
-            <scope>test</scope>
-        </dependency>
-
-      
-
-    </dependencies>
+        </dependencies>
 
     <build>
         <resources>
@@ -108,6 +69,20 @@
                 <filtering>false</filtering>
                 <excludes>
                     <exclude>*.properties</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>plugin-descriptor.properties</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>plugin-descriptor.properties</exclude>
                 </excludes>
             </resource>
         </resources>

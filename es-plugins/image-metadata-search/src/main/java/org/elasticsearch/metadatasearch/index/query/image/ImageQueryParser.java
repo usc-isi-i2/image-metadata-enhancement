@@ -53,7 +53,7 @@ public class ImageQueryParser implements QueryParser {
 
         XContentParser.Token token = parser.nextToken();
         if (token != XContentParser.Token.FIELD_NAME) {
-            throw new QueryParsingException(parseContext.index(), "[image] query malformed, no field");
+            throw new QueryParsingException(parseContext.index(), 0, 0, "[image] query malformed, no field", null);
         }
 
 
@@ -102,7 +102,7 @@ public class ImageQueryParser implements QueryParser {
                     } else if ("routing".equals(currentFieldName)) {
                         lookupRouting = parser.textOrNull();
                     } else {
-                        throw new QueryParsingException(parseContext.index(), "[image] query does not support [" + currentFieldName + "]");
+                        throw new QueryParsingException(parseContext.index(), 0, 0, "[image] query does not support [" + currentFieldName + "]", null);
                     }
                 }
             }
@@ -110,7 +110,7 @@ public class ImageQueryParser implements QueryParser {
         }
 
         if (featureEnum == null) {
-            throw new QueryParsingException(parseContext.index(), "No feature specified for image query");
+            throw new QueryParsingException(parseContext.index(), 0, 0, "No feature specified for image query", null);
         }
 
         String luceneFieldName = fieldName + "." + featureEnum.name();
@@ -118,9 +118,9 @@ public class ImageQueryParser implements QueryParser {
 		try {
 			feature = featureEnum.getFeatureClass().newInstance();
 		} catch (InstantiationException e1) {
-			throw new QueryParsingException(parseContext.index(), "Error extarcting Features");
+			throw new QueryParsingException(parseContext.index(), 0, 0, "Error extarcting Features", e1);
 		} catch (IllegalAccessException e1) {
-			throw new QueryParsingException(parseContext.index(), "Error extarcting Features");
+			throw new QueryParsingException(parseContext.index(), 0, 0, "Error extarcting Features", e1);
 		}
         
         if (content != null) {
@@ -149,7 +149,7 @@ public class ImageQueryParser implements QueryParser {
             }
         }*/
         if (feature == null) {
-            throw new QueryParsingException(parseContext.index(), "No image specified for image query");
+            throw new QueryParsingException(parseContext.index(), limit, limit, "No image specified for image query", null);
         }
 
 

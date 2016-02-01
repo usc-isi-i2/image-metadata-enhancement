@@ -1,6 +1,6 @@
 package org.elasticsearch.metadatasearch.index.query.image;
 
-import org.elasticsearch.common.collect.MapMaker;
+import com.google.common.collect.MapMaker;
 
 import java.util.Map;
 

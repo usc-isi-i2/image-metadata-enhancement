@@ -2,12 +2,12 @@ package org.elasticsearch.metadatasearch.index.query.image;
 
 
 import org.elasticsearch.common.xcontent.XContentBuilder;
-import org.elasticsearch.index.query.BaseQueryBuilder;
 import org.elasticsearch.index.query.BoostableQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
 
 import java.io.IOException;
 
-public class ImageQueryBuilder extends BaseQueryBuilder implements BoostableQueryBuilder<ImageQueryBuilder> {
+public class ImageQueryBuilder extends QueryBuilder implements BoostableQueryBuilder<ImageQueryBuilder> {
 
     private final String fieldName;
 

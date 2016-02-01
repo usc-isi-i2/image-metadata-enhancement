@@ -2,7 +2,7 @@ package org.elasticsearch.metadatasearch.index.query.image;
 
 import net.semanticmetadata.lire.utils.SerializationUtils;
 
-import org.apache.lucene.index.AtomicReader;
+import org.apache.lucene.index.LeafReader;
 import org.apache.lucene.index.BinaryDocValues;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.search.Scorer;
@@ -38,7 +38,7 @@ public abstract class AbstractImageScorer extends Scorer {
         assert docID() != NO_MORE_DOCS;
 
         if (binaryDocValues == null) {
-            AtomicReader atomicReader = (AtomicReader) reader;
+            LeafReader atomicReader = (LeafReader) reader;
             binaryDocValues = atomicReader.getBinaryDocValues(luceneFieldName);
         }
 
