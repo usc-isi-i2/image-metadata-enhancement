@@ -47,13 +47,8 @@ public abstract class AbstractImageScorer extends Scorer {
             bytesRef =   binaryDocValues.get(docID());
             ImageLireFeature docFeature = lireFeature.getClass().newInstance();
             docFeature.setByteArrayRepresentation(bytesRef.bytes);
-            float distance = lireFeature.getDistance(docFeature);
-            float score;
-            if (Float.compare(distance, 1.0f) <= 0) { // distance less than 1, consider as same image
-                score = 2f - distance;
-            } else {
-                score = 1 / distance;
-            }
+            float score =  lireFeature.getSimilarity(docFeature);
+
             return score * boost;
         } catch (Exception e) {
             throw new ElasticsearchException("Failed to calculate score", e);
