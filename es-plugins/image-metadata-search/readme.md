@@ -8,7 +8,7 @@ This will create the jar file in target/releases folder.
 
 2. Install the plugin
 ```
-<ES_HOME>/bin/plugin install vector-similarity-plugin -url file://<PATH TO JAR ARCHIVE>
+sudo <ES_HOME>/bin/plugin install file://<PATH TO JAR ARCHIVE>
 ```
 
 ## Creating an image type
