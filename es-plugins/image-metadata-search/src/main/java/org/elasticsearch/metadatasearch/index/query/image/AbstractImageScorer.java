@@ -46,7 +46,7 @@ public abstract class AbstractImageScorer extends Scorer {
             BytesRef bytesRef = new BytesRef();
             bytesRef =   binaryDocValues.get(docID());
             ImageLireFeature docFeature = lireFeature.getClass().newInstance();
-            docFeature.setHistogramFromDoubleArray(SerializationUtils.castToDoubleArray(bytesRef.bytes));
+            docFeature.setByteArrayRepresentation(bytesRef.bytes);
             float distance = lireFeature.getDistance(docFeature);
             float score;
             if (Float.compare(distance, 1.0f) <= 0) { // distance less than 1, consider as same image
