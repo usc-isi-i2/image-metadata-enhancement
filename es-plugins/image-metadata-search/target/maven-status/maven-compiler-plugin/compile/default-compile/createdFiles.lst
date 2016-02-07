@@ -1,3 +1,4 @@
+org/elasticsearch/metadatasearch/plugin/utils/Utils.class
 org/elasticsearch/metadatasearch/index/query/image/AbstractImageScorer.class
 org/elasticsearch/metadatasearch/similarity/CosineSimilarity.class
 org/elasticsearch/metadatasearch/index/query/image/ImageHashQuery$ImageHashWeight.class
@@ -13,6 +14,7 @@ org/elasticsearch/metadatasearch/index/mapper/image/ImageMapper$TypeParser.class
 org/elasticsearch/metadatasearch/plugin/image/ImagePlugin.class
 org/elasticsearch/metadatasearch/index/mapper/image/HashEnum.class
 org/elasticsearch/metadatasearch/index/query/image/ImageQueryBuilder.class
+org/elasticsearch/metadatasearch/index/hashes/LSH.class
 org/elasticsearch/metadatasearch/index/query/image/ImageHashQuery$ImageHashScorer.class
 org/elasticsearch/metadatasearch/index/query/image/ImageHashQuery.class
 org/elasticsearch/metadatasearch/index/mapper/image/ImageMapper$ImageFieldType.class

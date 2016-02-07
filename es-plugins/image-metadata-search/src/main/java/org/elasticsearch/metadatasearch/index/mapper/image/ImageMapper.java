@@ -1,7 +1,5 @@
 package org.elasticsearch.metadatasearch.index.mapper.image;
 
-import net.semanticmetadata.lire.indexing.hashing.LocalitySensitiveHashing;
-import net.semanticmetadata.lire.utils.SerializationUtils;
 import org.apache.lucene.document.BinaryDocValuesField;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.index.IndexOptions;
@@ -20,7 +18,9 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentParser;
 import org.elasticsearch.index.mapper.*;
+import org.elasticsearch.metadatasearch.index.hashes.LSH;
 import org.elasticsearch.metadatasearch.lire.feature.ImageLireFeature;
+import org.elasticsearch.metadatasearch.plugin.utils.Utils;
 import org.elasticsearch.threadpool.ThreadPool;
 import java.io.IOException;
 import java.util.Iterator;
@@ -37,14 +37,16 @@ public class ImageMapper extends FieldMapper {
     public static final String HASH = "hash";
     public static final String FEATURE = "feature";
     public static final String METADATA = "metadata";
-    public static final String LSH_HASH_FILE = "/hash/lshHashFunctions.obj";
+    
 
     static {
-        try {
-            LocalitySensitiveHashing.readHashFunctions(ImageMapper.class.getResourceAsStream(LSH_HASH_FILE));
-        } catch (IOException e) {
-            logger.error("Failed to initialize hash function", e);
-        }
+        try 
+        {
+            LSH.readHashFunctions();
+        } 
+        catch (Exception e) {
+        	 logger.error("Failed to initialize hash function", e);
+		}
     }
 
     static final class ImageFieldType extends MappedFieldType {
@@ -335,11 +337,13 @@ public class ImageMapper extends FieldMapper {
                         HashEnum hashEnum = HashEnum.valueOf(h);
                         int[] hashVals = null;
                         if (hashEnum.equals(HashEnum.LSH)) {
-                            hashVals = LocalitySensitiveHashing.generateHashes(lireFeature.getDoubleHistogram());
+                            hashVals = LSH.lsh.hash(lireFeature.getDoubleHistogram());
                         }
                         String mapperName = featureEnum.name() + "." + HASH + "." + h;
                         FieldMapper hashMapper = (FieldMapper) hashMappers.get(mapperName);
-                        context = context.createExternalValueContext(SerializationUtils.arrayToString(hashVals));
+                      
+                        String hv = Utils.hashArrayToString(hashVals);
+                        context = context.createExternalValueContext(hv);
                         hashMapper.parse(context);
                     }
                 }

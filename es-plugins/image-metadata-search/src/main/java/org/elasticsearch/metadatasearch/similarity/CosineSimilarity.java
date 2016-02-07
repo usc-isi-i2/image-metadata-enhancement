@@ -14,5 +14,5 @@ public class CosineSimilarity  {
 	        normA += Math.pow(vectorA[i], 2);
 	        normB += Math.pow(vectorB[i], 2);
 	    }   
-	    return (float) (dotProduct*100 / (Math.sqrt(normA) * Math.sqrt(normB)));	}
+	    return (float) (dotProduct / (Math.sqrt(normA) * Math.sqrt(normB)));	}
 }

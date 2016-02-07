@@ -36,7 +36,11 @@
             <artifactId>lire</artifactId>
             <version>0.9.4-kzwang-beta1</version>
         </dependency>
-        
+        <dependency>
+    <groupId>info.debatty</groupId>
+    <artifactId>java-lsh</artifactId>
+    <version>0.8</version>
+</dependency>
     
         <dependency>
             <groupId>log4j</groupId>

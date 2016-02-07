@@ -1,7 +1,5 @@
 package org.elasticsearch.metadatasearch.index.query.image;
 
-import net.semanticmetadata.lire.utils.SerializationUtils;
-
 import org.apache.lucene.index.LeafReader;
 import org.apache.lucene.index.BinaryDocValues;
 import org.apache.lucene.index.IndexReader;

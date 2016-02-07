@@ -1,7 +1,6 @@
 package org.elasticsearch.metadatasearch.index.query.image;
 
 
-import net.semanticmetadata.lire.indexing.hashing.LocalitySensitiveHashing;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.BooleanQuery;
@@ -14,10 +13,12 @@ import org.elasticsearch.common.xcontent.XContentParser;
 import org.elasticsearch.index.query.QueryParseContext;
 import org.elasticsearch.index.query.QueryParser;
 import org.elasticsearch.index.query.QueryParsingException;
+import org.elasticsearch.metadatasearch.index.hashes.LSH;
 import org.elasticsearch.metadatasearch.index.mapper.image.FeatureEnum;
 import org.elasticsearch.metadatasearch.index.mapper.image.HashEnum;
 import org.elasticsearch.metadatasearch.index.mapper.image.ImageMapper;
 import org.elasticsearch.metadatasearch.lire.feature.ImageLireFeature;
+import org.elasticsearch.metadatasearch.plugin.utils.Utils;
 
 import java.io.IOException;
 
@@ -155,7 +156,7 @@ public class ImageQueryParser implements QueryParser {
 
             int[] hash = null;
             if (hashEnum.equals(HashEnum.LSH)) {
-                hash = LocalitySensitiveHashing.generateHashes(feature.getDoubleHistogram());
+                hash = LSH.lsh.hash(feature.getDoubleHistogram());
             }
             String hashFieldName = luceneFieldName + "." + ImageMapper.HASH + "." + hashEnum.name();
 
@@ -163,9 +164,15 @@ public class ImageQueryParser implements QueryParser {
                 BooleanQuery query = new BooleanQuery(true);
                 ImageScoreCache imageScoreCache = new ImageScoreCache();
 
-                for (int h : hash) {
-                    query.add(new BooleanClause(new ImageHashQuery(new Term(hashFieldName, Integer.toString(h)), luceneFieldName, feature, imageScoreCache, boost), BooleanClause.Occur.SHOULD));
+               
+                for(int i=0;i<hash.length;i++)
+                {
+                	String x = Utils.hashTermToString(i+1, hash[i]) ;
+                	query.add(new BooleanClause(new ImageHashQuery(new Term(hashFieldName, x), luceneFieldName, feature, imageScoreCache, boost), BooleanClause.Occur.SHOULD));
+
                 }
+                
+                	
                 query.setMinimumNumberShouldMatch(FEATURE_MATCH_TRESHOLD);
                 return query;
             }
