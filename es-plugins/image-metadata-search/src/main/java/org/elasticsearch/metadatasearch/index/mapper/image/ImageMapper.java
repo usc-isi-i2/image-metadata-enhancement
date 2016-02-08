@@ -11,6 +11,7 @@ import org.elasticsearch.common.collect.ImmutableOpenMap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.MapMaker;
 import com.google.common.collect.Maps;
+import net.semanticmetadata.lire.utils.SerializationUtils;
 import com.carrotsearch.hppc.cursors.ObjectObjectCursor;
 import org.elasticsearch.common.logging.ESLogger;
 import org.elasticsearch.common.logging.ESLoggerFactory;
@@ -266,11 +267,11 @@ public class ImageMapper extends FieldMapper {
     }
 
     public Mapper parse(ParseContext context) throws IOException {
-        String content = null;
+        byte[] content = null;
         XContentParser parser = context.parser();
         XContentParser.Token token = parser.currentToken();
         if (token == XContentParser.Token.VALUE_STRING) {
-            content =new String( Base64.decode(parser.text()));
+            content =Base64.decode(parser.text());
         }
 
         if (content == null) {
@@ -279,7 +280,7 @@ public class ImageMapper extends FieldMapper {
 
         final Boolean useThreadPool = settings.getAsBoolean("index.image.use_thread_pool", true);
         final Boolean ignoreMetadataError = settings.getAsBoolean("index.image.ignore_metadata_error", true);
-        final double[] featVector = getFeatureVector(new String(content));
+        final double[] featVector = SerializationUtils.toDoubleArray(content);
         final Map<FeatureEnum, ImageLireFeature> featureExtractMap = new MapMaker().makeMap();
 
         // have multiple features, use ThreadPool to process each feature
@@ -379,16 +380,6 @@ public class ImageMapper extends FieldMapper {
         return null;
 
     }
-
-    private double[] getFeatureVector(String string) {
-		
-    	String str[] = string.trim().split("-");
-    	double d[] = new double[str.length];
-    	for(int i=0;i<d.length;i++)
-    		d[i] = Double.parseDouble(str[i]);
-    	return d;
-    	
-	}
 
 	public void close() {
     }

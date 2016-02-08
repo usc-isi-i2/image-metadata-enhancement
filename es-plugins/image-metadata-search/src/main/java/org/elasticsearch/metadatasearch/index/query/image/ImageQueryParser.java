@@ -19,7 +19,7 @@ import org.elasticsearch.metadatasearch.index.mapper.image.HashEnum;
 import org.elasticsearch.metadatasearch.index.mapper.image.ImageMapper;
 import org.elasticsearch.metadatasearch.lire.feature.ImageLireFeature;
 import org.elasticsearch.metadatasearch.plugin.utils.Utils;
-
+import net.semanticmetadata.lire.utils.SerializationUtils;
 import java.io.IOException;
 
 public class ImageQueryParser implements QueryParser {
@@ -38,15 +38,7 @@ public class ImageQueryParser implements QueryParser {
     public String[] names() {
         return new String[] {NAME};
     }
-    private double[] getFeatureVector(String string) {
-		
-    	String str[] = string.trim().split("-");
-    	double d[] = new double[str.length];
-    	for(int i=0;i<d.length;i++)
-    		d[i] = Double.parseDouble(str[i]);
-    	return d;
-    	
-	}
+    
 
     @Override
     public Query parse(QueryParseContext parseContext) throws IOException, QueryParsingException {
@@ -60,7 +52,7 @@ public class ImageQueryParser implements QueryParser {
 
         String fieldName = parser.currentName();
         FeatureEnum featureEnum = null;
-        String content = null;
+        byte[] content = null;
         double[] featVec = null;
         HashEnum hashEnum = null;
         float boost = 1.0f;
@@ -83,8 +75,8 @@ public class ImageQueryParser implements QueryParser {
                     if ("feature".equals(currentFieldName)) {
                         featureEnum = FeatureEnum.getByName(parser.text());
                     } else if ("image".equals(currentFieldName)) {
-                        content =new String(Base64.decode(parser.text()));
-                        featVec = getFeatureVector(new String(content));
+                        content =Base64.decode(parser.text());
+                        featVec = SerializationUtils.toDoubleArray(content);
 
                     } else if ("hash".equals(currentFieldName)) {
                         hashEnum = HashEnum.getByName(parser.text());
